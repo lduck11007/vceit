@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from vceit.com/p/designtools.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:15:31 GMT -->
+<head>
+<title>VCE IT Lecture Notes - Analysis / Design documentation Tools</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-21490715-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-21490715-2";
+</script>
+<link href="../etc/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<p align="center"><a href="../index.html"><img src="../etc/vceit-main3.jpg" border = "0" /></a></p>
+<div align="center"> 
+<p><a href="../index.html" target="_top"><font size="2">VCE IT Lecture Notes by Mark Kelly</font></a><font size="2"></font><br />
+<br />
+</p>
+</div>
+<table width="666" border="1" cellpadding="5" align="center" cellspacing="0">
+<tr> 
+<td width="100%" colspan="2" bgcolor="#FFFFFF" > 
+<h1 align="center">Analysis and Design<br />
+Documentation Tools</h1></td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><p>See slideshows on</p>
+<p><a href="../slideshows/Design-Tools-Database.html"><img src="../etc/linkppt.gif" alt="Slideshow link" width="19" height="21" hspace="2" border="0" align="absbottom" />Database design tools</a> </p>
+<p><a href="../slideshows/Design-Tools-Website.html"><img src="../etc/linkppt.gif" alt="Slideshow link" width="19" height="21" hspace="2" border="0" align="absbottom" />Website design tools</a> </p>
+<p><a href="../slideshows/Design-Tools-Website.html"><img src="../etc/linkppt.gif" alt="Slideshow link" width="19" height="21" hspace="2" border="0" align="absbottom" />Website design tools</a></p>
+<p><a href="../slideshows/Design-Tools-Website.html"><img src="../etc/linkppt.gif" alt="Slideshow link" width="19" height="21" hspace="2" border="0" align="absbottom" />Data Dictionaries</a></p>
+<p><a href="../slideshows/Design-Tools-Website.html"><img src="../etc/linkppt.gif" alt="Slideshow link" width="19" height="21" hspace="2" border="0" align="absbottom" />Entity Relationship Diagrams</a></p>
+<p><a href="../slideshows/Design-Tools-Website.html"><img src="../etc/linkppt.gif" alt="Slideshow link" width="19" height="21" hspace="2" border="0" align="absbottom" />Programming Design Tools (Flowchart, NS)</a></p>
+<p><a href="../slideshows/Design-Tools-Website.html"><img src="../etc/linkppt.gif" alt="Slideshow link" width="19" height="21" hspace="2" border="0" align="absbottom" />Use Case diagrams</a></p>
+<p><a href="../slideshows/SD-Design-Tools-DFD.html"><img src="../etc/linkppt.gif" alt="Slideshow link" width="19" height="21" hspace="2" border="0" align="absbottom" />Data Flow &amp; Context Diagrams</a></p>
+<p><a href="../slideshows/Design-Tools-Website.html"><img src="../etc/linkppt.gif" alt="Slideshow link" width="19" height="21" hspace="2" border="0" align="absbottom" />SRS (Software Requirements Specifications)</a></p>
+</td>
+</tr>
+<tr> 
+<td colspan="2" valign="top"> 
+<p>THEORY PAGES ON...</p>
+<p>&nbsp;</p>
+<p><a href="#dtdt">Decision Trees and Decision Tables</a></p>
+<p><a href="#context">Context diagrams </a></p>
+<p><a href="#orgchart">Organisational Charts</a></p>
+<p><a href="#ipo">Hierarchy diagram</a></p>
+<p><a href="systemflowcharts.html">System Flow Charts</a></p>
+<p><a href="#flow">Flowcharts</a> ... <a href="flowcharts.html">Flowchart symbols</a> </p>
+<p><a href="#ns">Nassi-Schneiderman (N-S) charts</a> (e.g. for programming, 
+system procedures)</p>
+<p><a href="nassi-shneiderman.html">N-S 
+Tutorial</a></p>
+<p><a href="#dfd">Data flow diagrams</a> (DFD) - <a href="dfd.html">details are here</a></p>
+<p><a href="#dsc">Data structure charts</a>, <a href="#dst">data structure 
+tables</a>, <a href="#dsd">data structure diagrams</a></p>
+<p><a href="#tem">Templates</a> (e.g. to create consistent chapter formats 
+in a book, or consistent pages in a website)</p>
+<p><a href="#story">Storyboards</a> (e.g. in film production, multimedia 
+presentations on CD-ROMs, &#145;Flash&#146; animations)</p>
+<p><a href="#pseudo">Structured English</a>; a.k.a. Pseudocode</p>
+<p><a href="#dd">Data Dictionaries</a></p>
+<p><a href="#checklist">Checklists</a></p>
+<p><a href="#ipo">Input - Processing - Output (IPO) charts</a></p>
+<p><a href="#erd">Entity Relationship Diagram (ERD)</a> </p>
+<p><a href="design-prototyping.html">Prototyping</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#FFFFFF"><h2 align="center">Categories of Design Tools: logical and physical 
+</h2></td>
+</tr>
+<tr>
+<td colspan="2"><h3>Logical design tools for PSM analysis </h3>
+<blockquote>
+<p><b>Logical</b> Design Tools are used during analysis to represent what is required of an information system represent (i.e. its specifications) but does not try to say <em>how</em> the specifications will be constructed. They lay out what the system's features and abilities will be. They include </p>
+</blockquote>
+<ul>
+<ul>
+<li>Context Diagrams </li>
+<li>Data Dictionaries </li>
+<li>Hierarchy Charts / Org charts</li>
+<li>Decision Trees </li>
+</ul>
+</ul></td>
+</tr>
+<tr>
+<td colspan="2"><h3>Physical design tools for PSM design </h3>
+<blockquote>
+<p><b>Physical </b>Design Tools - describe how a system will be physically implemented (like a blueprint). They include: </p>
+</blockquote>
+<ul>
+<ul>
+<li>Data Flow Diagrams</li>
+<li>Storyboards</li>
+<li>Flow Charts, N-S charts</li>
+<li>Structure Charts</li>
+<li>IPO charts </li>
+<li>Layout diagrams / mockups </li>
+<li>Pseudocode</li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#FFFFFF"><h1><a name="logical"></a>Logical Design Tools - used during PSM analysis phase</h1></td>
+</tr>
+<tr>
+<td colspan="2"><p><strong><a name="context"></a></strong><a href="contextdiagram.html">CONTEXT DIAGRAMS - please go to this page</a></p>
+<p><br />
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"><p><b>HIERARCHY DIAGRAM</b></p>
+<p>A Hierarchy Diagram shows the inter-relationship of modules or sub-programs. 
+It looks like a corporate <strong>organisational chart</strong>.</p>
+<p align="center"><img src="../m/design-hierarchy-diagram.jpg" width="330" height="334" /></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"><p><a name="orgchart"></a><b>ORGANISATIONAL CHART (&quot;Org chart&quot;)</b></p>
+<p>An organisational chart graphically shows the parts of an organisation 
+and their relationships to each other (e.g. which part is a subsidiary 
+of another). They are especially useful in large organisations with many 
+parts, such as the United Nations (<a href="../../www.un.org/media/chart/unsyst.html">click 
+here for their org chart</a>), government departments etc.</p>
+<p align="center"><a href="../../www.un.org/media/chart/unsyst.html"><img src="../m/design-unitednations-orgchart.gif" width="277" height="223" alt="Click to see it full size on the web" border="0" /></a></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"><p><b><a name="checklist"></a>CHECKLIST</b></p>
+<p>A checklist is simply a list of items or actions that need to be addressed 
+- like a shopping list or a &quot;To Do&quot; list. It helps you remember 
+to do things.</p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"><p><b><a name="dtdt"></a>DECISION TREES, DECISION TABLES</b></p>
+<p>Decision trees and tables are a set of rules for what to do in certain 
+conditions. e.g. If <i>this</i> happens, do <i>that</i> otherwise go to <i>this</i> step. They can be used to enforce strict compliance with local 
+procedures, and avoid improper behaviour, especially in complex procedures 
+or life-and-death situations.</p>
+<p>e.g. If the photocopier breaks down, call Alex. If Alex is not available, 
+call Bert. If Bert is away, ring Sally.</p>
+<p>They are valuable when setting out how the system should behave, and what conditions it will need to be able to cope with. </p>
+<p align="center"><img src="../m/design-decisiontree.gif" width="427" height="187" /></p>
+<p align="center">A decision tree showing decisions and actions required of a software system<br />
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#FFFFFF"><h1><a name="physical"></a>Physical Design Tools - used during PSM design phase</h1></td>
+</tr>
+<tr> 
+<td colspan="2"> 
+<p>&nbsp;</p>
+<h2><a name="ipo"></a><a href="ipo-chart.html">IPO charts - please see this page</a></h2>
+<p>In brief - when you want to calculate some information, an IPO chart sets out the data needed and the logic of the necessary calculation (algorithm).</p>
+<p>e.g.</p>
+<table width="65%" border="1" cellspacing="0" cellpadding="3">
+<tr>
+<th width="22%" scope="col">INPUT</th>
+<th width="40%" scope="col">PROCESSING</th>
+<th width="38%" scope="col">OUTPUT</th>
+</tr>
+<tr>
+<th scope="row"> <center>
+Date of birth<br />
+Current date
+</center>
+</th>
+<td><center>
+<strong>(Current Date - Date of Birth) / 365.25 </strong>
+</center></td>
+<td><center>Age
+</center></td>
+</tr>
+<tr>
+<th scope="row">Date Borrowed<br />
+Date Now</th>
+<td><p>if (Datenow - Date Borrowed) &gt;7, show Datenow - Date Borrowed and &quot;days&quot; <br />
+else show 
+&quot;Not overdue&quot;</p>
+</td>
+<td><center>
+How long overdue
+</center></td>
+</tr>
+</table>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr> 
+<td colspan="2"> 
+<p>&nbsp;</p>
+<h2><a name="dd"></a><a href="data-dictionary.html">DATA DICTIONARY - please see this page</a><a href="data-dictionary.html"></a></h2>
+<p>In brief - a data dictionary is a blueprint of how a database table should be built, including its field names, field types, validation rules etc.</p>
+<p><br />
+</p>
+</td>
+</tr>
+<tr> 
+<td colspan="2"> 
+<p>&nbsp;</p>
+<h2><a name="pseudo"></a><a href="design-pseudocode.html">PSEUDOCODE - also known as STRUCTURED ENGLISH - see this page</a></h2>
+<p>In brief - pseudocode describes algorithms (calculation strategies) with an expression that is halfway 
+between normal language and programming language what allows very rapid planning of ideas and methods without 
+getting bogged down in 100% accurate program coding.</p>
+</td>
+</tr>
+<tr> 
+<td colspan="2"> 
+<p>&nbsp;</p>
+<h2><a name="story"></a><b>STORY BOARDS</b></h2>
+<p>Ususally used for animations, film making and webpages, story boards 
+are a graphical outline of what a presentation will look like. They show 
+&quot;key frames&quot; of a presentation and include information on camera 
+positions, sound effects, lighting, fade ins and fade outs, captions, 
+movements, scripts: everything a director needs to visualise the finished 
+product.</p>
+<p><b>Note: the old VCAA IT Glossary defined a storyboard as &quot;A method 
+of representing the design of a multimedia solution. Not to be confused 
+with a film storyboard, multimedia storyboarding refers to drawing a structure 
+chart identifying each page and indicating the links between pages (whether 
+one-way or two-way). A layout diagram may accompany this.&quot;</b></p>
+<p>If you see the term used in the exam, it will probably be referring to the definition given above (even if it's not in the 2011-2014 study design), but most people in the world use &quot;storyboard&quot; 
+in the sense I described. That type of storyboard is still a valuable 
+multimedia design tool.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr> 
+<td colspan="2"> 
+<p>&nbsp;</p>
+<h2><b><a name="tem"></a>TEMPLATES</b></h2>
+<p>A template is simply a document with structure but no detail. For example, 
+if you were writing a textbook, you could create a Word document with 
+some dummy text that has been formatted the way you want it to be. It 
+could have standard sections in it (with dummy text) so you when you create 
+a new chapter, you just have to load the template and replace the dummy 
+text with real text. The pre-defined headings remind you of what to include, 
+and since the text is already formatted, it saves time and ensures each 
+chapter looks similar.</p>
+<p>These web pages are all based on the same template.htm file: every time 
+I start a new page, I load 'template.htm', add the text and save it with 
+a new name. The formatting, date codes, heading styles, colouring etc 
+are already done for me!</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr> 
+<td colspan="2"> 
+<p>&nbsp;</p>
+<h2><b><a name="dfd"></a><a href="dfd.html">DATA FLOW DIAGRAM</a></b><a href="dfd.html"> - details are here</a></h2>
+<p>In brief - shows how data and information flow into, within and out from an organisation. 
+For example, it shows who processes data, passes it onto another person 
+to do something else with it.</p>
+<p>DFD <a href="dfd.html">details are here</a> </p>
+<p><img src="../m/dfd.jpg" width="382" height="223" /><br />
+<br />
+Important note: A DFD is a <strong> physical</strong> design tool) and is a detailed version of a <strong>context diagram</strong> (which is a logical design tool). </p>
+<p>The <strong>context diagram</strong> is an overview of how data flows between the system and its external entities. It has few or no details of the inner workings of the system. That's why it's called a context diagram, because it shows the system in the context of its surroundings. </p>
+<p>The <strong>DFD</strong> is similar, but goes into much more detail and describes how processes <strong>within</strong> the organisation work. </p>
+</td>
+</tr>
+<tr>
+<td colspan="2"><p>&nbsp;</p>
+<h2><b><a name="dsc"></a>DATA STRUCTURE CHARTS and TABLES</b> <strong>and DIAGRAMS</strong></h2>
+<p><img src="../m/datastrucchart.jpg" width="394" height="207" /></p>
+<p>Visually shows the structure of data &#150; fields, records, tables etc.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="2"><p>&nbsp;</p>
+<p><b><a name="dst"></a>DATA STRUCTURE TABLE</b><br />
+</p>
+<p>The table summarises field information (similar to defining fields in 
+&#145;Access&#146;)</p>
+<p><img src="../m/datastructable.jpg" width="432" height="184" /></p>
+</td>
+</tr>
+<tr> 
+<td colspan="2" valign="top"><p>&nbsp;</p>
+<h2><b><a name="dsd"></a>DATA STRUCTURE DIAGRAM</b></h2>
+<p><img src="../m/datastrucdiag.jpg" width="387" height="222" /></p>
+<p>This diagram shows the relationships between tables in a database</p>
+<p>Though many people consider the diagram below to be an ERD, we now will call it a data structure diagram...</p>
+<p><img src="../m/datastruct-erd.gif" width="495" height="310" /></p>
+<p><br />
+</p>
+</td>
+</tr>
+<tr> 
+<td colspan="2"> 
+<p>&nbsp;</p>
+<p><b><a name="flow"></a><a href="flowcharts.html">FLOWCHART</a></b><a href="flowcharts.html"> - details are here</a></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr> 
+<td colspan="2"> 
+<p>&nbsp;</p>
+<h2><b><a name="ns"></a>NASSI-SHNEIDERMAN (N-S) CHART</b></h2>
+<p><img src="../m/nassi-shneiderman.jpg" width="289" height="242" /></p>
+<p>N-S charts are similar to flowcharts, but are more concise and have built-in 
+support for common operations like decisions and loops. N-S charts are 
+named after I. Nassi and B. Shneiderman, who published this technique 
+in 1982. Note: there is no &quot;c&quot; in Shneiderman! </p>
+<p><a href="nassi-shneiderman.html"></a> 
+<a href="nassi-shneiderman.html">N-S Chart tutorial</a><br />
+<br />
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<h2><a name="erd"></a><strong>Entity Relationship Diagram (ERD)</strong></h2>
+<p><a href="../slideshows/Design-Tools-ERD.html"><img src="../etc/linkppt.gif" alt="Slideshow link" width="19" height="21" hspace="2" border="0" align="absbottom" /></a> See the new <a href="../slideshows/Design-Tools-ERD.html">ERD theory slideshow</a> for 2011 </p>
+<p>There are three basic elements in ER models:	 </p>
+<ul>
+<li><strong>Entities</strong> are the "things" about which we want to store information. </li>
+<li><strong>Attributes</strong> are the properties or data we collect about the entities. </li>
+<li><strong>Relationships</strong> provide the structure needed to draw information from multiple entities. In a database ERD they show 
+how two entities share information in the database structure.</li>
+</ul> 
+<p>They are often used to 
+illustrate the logical structure of databases. e.g.</p>
+<p>2011 - VCAA has decided that the pink chart above is not actually an ERD: it's a data structure diagram. They have decided that an ERD looks like this</p>
+<p><a href="../m/ERD-sample.png"><img src="../m/ERD-sample_tn.png" width="213" height="150" /></a></p>
+<p>Here's anothe ERD from the same place that inspired the VCAA sample ERD... Note the underlined primary keys and indicators of cardinality (e.g. 1:1 , 1:many , many:many)</p>
+<p><img src="../m/ERD-conceptdraw.jpg" width="498" height="736" /></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p><a name="unless"></a>*Unless you print it in black and white, that is. </p>
+<p><font size="2">Several pictures were taken from <i>IT@Work </i>by Andersen, Christophersen 
+and Timmer-Arends, pub. VCTA / MacMillan.</font></p>
+<p></p>
+</td>
+</tr>
+</table>
+<p align="center"><a href="../index.html" target="_top">Back to the IT Lecture Notes index</a></p>
+<p align="center">&copy; Mark Kelly 2001-<script type="text/javascript">
+D = new Date();
+year = D.getFullYear();
+document.write(year);
+</script></p>
+<p align="center"><font size="2">Last changed:
+<!-- #BeginDate format:Am1a -->February 7, 2013 1:18 PM<!-- #EndDate -->
+</font></p>
+<p align="center"><font size="2">VCE IT Lecture notes &copy; Mark Kelly </font></p>
+<!-- #BeginLibraryItem "/Library/GoogleAd.lbi" -->
+<p align="center">
+</p><p align="center">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"> </script>
+</p>
+<!-- #EndLibraryItem -->
+</body>
+
+<!-- Mirrored from vceit.com/p/designtools.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:15:47 GMT -->
+</html>

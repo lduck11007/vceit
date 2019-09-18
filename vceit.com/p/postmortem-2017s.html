@@ -1,0 +1,1220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from vceit.com/p/postmortem-2017s.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:16:17 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>VCE Informatics Exam 2016 - Post Mortem by Mark Kelly</title>
+<script type="text/javascript">
+var gaq = gaq || [];
+gaq.push(['setAccount', 'UA-21490715-2']);
+gaq.push(['trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">
+window.googleanalyticsuacct = "UA-21490715-2";
+</script>
+<link href="../etc/css.css" rel="stylesheet" type="text/css" />
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="../../use.edgefonts.net/courier-prime_n4_default.js" type="text/javascript"></script>
+
+<style type="text/css">
+<!--
+.NormalTable {
+cellspacing:0;
+cellpadding:10;
+border-collapse:collapse;
+border:none;
+}
+.fontstyle0 {
+font-family:ArialMT;
+font-size:11pt;
+font-style:normal;
+font-weight:normal;
+color:rgb(0,0,0);
+}
+-->
+</style>
+<style type="text/css">
+<!--
+span.BodyText1 {
+font-family:"Arial",sans-serif;
+font-variant:normal !important;
+color:black;
+position:relative;
+top:0pt;
+letter-spacing:0pt;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;
+text-underline:none;
+text-line-through:none;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+p.BodyText3 {
+margin-top:12.0pt;
+margin-right:0cm;
+margin-bottom:3.0pt;
+margin-left:0cm;
+text-indent:-21.0pt;
+line-height:13.9pt;
+background:white;
+font-size:10.0pt;
+font-family:"Arial",sans-serif;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+p.Tablecaption20 {
+margin:0cm;
+margin-bottom:.0001pt;
+background:white;
+font-size:10.0pt;
+font-family:"Arial",sans-serif;
+}
+-->
+</style>
+</head>
+<body lang="EN-US" >
+<h2 align="center" class="red">STILL IN DEVELOPMENT</h2>
+<h2 align="center" class="red"><a href="../index.html"><img src="../etc/vceit-main3.jpg" alt="VCE IT Post Mortem by Mark Kelly
+" border = "0" /></a></h2>
+<p align="center"><font size="2">Last changed: 
+ <!-- #BeginDate format:Am1a -->December 1, 2017 12:34 PM<!-- #EndDate --> 
+ </font></p>
+<p align="center"><a href="../index.html">VCE IT Lecture Notes</a> by <a href="../etc/mailform.html">Mark Kelly</a> </p>
+<div align="center">
+  <table width="75%" border="1" cellspacing="0" cellpadding="3">
+ <tr>
+ <td align="center">
+ <h1 align="center">VCAA Software Development Exam Post Mortem </h1>
+ <h1 align="center">2017</h1><img src="../m/toetags2016.jpg" alt="Post Mortem banner" width="800" height="310" usemap="#Map" border="0"/>
+ <h1 align="center"></h1>
+ <p align="center">Now in living colour - and with an exciting new SECTION C !</p></td>
+ </tr>
+ <tr>
+ <td><div align="center"><!-- #BeginLibraryItem "/Library/PostMortem Notes.lbi" -->
+<link href="../etc/css.css" rel="stylesheet" type="text/css" />
+<h3 align="center" >Post Mortem Notes</h3>
+<div align="center"> This is <em>not</em> a VCAA publication!<br />
+  I do <em>not</em> speak for the VCAA, the IT examiners, or exam markers.<br />
+  I was <em>not</em> involved in the setting or marking of this examination.<br />
+  Extracts from exams are all Copyright &copy; VCAA, and are used with permission. Thanks, VCAA!<br />
+  Use these post mortems at your own risk. <br />
+  I reserve the right to change my mind <em>completely</em>, at <em>short notice</em>, about <em>anything</em> I've said here.<br />
+  <a href="../wp/contact-me-at-vceit-com-2/index.html">Suggestions, discussions and corrections are welcome.</a><br />
+  If any third-party copyrighted material has inadvertently been used, please <a href="../wp/contact-me-at-vceit-com-2/index.html">let me know</a>
+  <p> <span class="question">Questions are in black.</span><br />
+    <span class="myanswer">My suggested answers are in blue.</span><br />
+    <span class="comment">My editorial ramblings about the exam are in blue italics.</span><br />
+    <span class="examiner">Examiners' report comments are in red italics.<br />
+    </span><span class="explanation">Purple shows the explanation of an answer.</span><br />
+</p>
+</div>
+
+<!-- #EndLibraryItem --></div></td>
+ </tr>
+ <tr>
+ <td><!-- #BeginLibraryItem "/Library/postmortems.lbi" -->
+<p align="center">Other VCE IT Post Mortems to enjoy</p>
+<p align="center">ITA/Informatics - 
+<a href="postmortem-2001i.html">2001</a> | 
+<a href="postmortem-2002i.html">2002</a> | 
+<a href="postmortem-2003i.html">2003</a> | 
+<a href="postmortem-2004i.html">2004</a> | 
+<a href="postmortem-2005i.html">2005</a> | 
+<a href="postmortem-2006i.html">2006</a> | 
+<a href="postmortem-2007i.html">2007</a> |
+<a href="postmortem-2008i.html">2008</a> | 
+<a href="postmortem-2009i.html">2009</a> | 
+<a href="postmortem-2010i.html">2010</a> | 
+<a href="postmortem-2011i.html">2011</a> | 
+<a href="postmortem-2012i.html">2012</a> | 
+<a href="postmortem-2013i.html">2013</a> | 
+<a href="postmortem-2014i.html">2014</a> |
+<a href="postmortem-2015i.html">2015</a> |
+<a href="postmortem-2016i.html">2016</a> | <a href="postmortem-2017i.html">2017</a> </p>
+
+<p align="center"><br />
+SD - 
+<a href="postmortem-2006s.html">2006</a> | 
+<a href="postmortem-2007s.html">2007</a> | 
+<a href="postmortem-2008s.html">2008</a> | 
+<a href="postmortem-2009s.html">2009</a> | 
+<a href="postmortem-2010s.html">2010</a> | 
+<a href="postmortem-2012s.html">2011</a> | 
+<a href="postmortem-2012s.html">2012</a> | 
+<a href="postmortem-2013s.html">2013</a> | 
+<a href="postmortem-2014s.html">2014</a> | 
+<a href="postmortem-2015s.html">2015</a> |
+<a href="postmortem-2016s.html">2016</a>
+ | 2017</p><!-- #EndLibraryItem --></td>
+ </tr>
+ </table>
+</div>
+<table width="777" border="0" align="center" cellpadding="5" cellspacing="0">
+ <tr>
+ <td><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> 
+ <script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"> </script></td>
+ </tr>
+</table>
+<table width="75%" border="1" align="center" cellpadding="5" cellspacing="0">
+ <tr>
+ <td colspan="2"><div align="center">
+ <h2>The Post Mortem Awards</h2>
+ </div></td>
+ </tr>
+ <tr>
+ <td width="18%" valign="top"><p align="center"><img src="../m/schmacho.jpg" alt="Dog's Breakfast Award" width="98" height="150" /></p>
+ <p>The infamous <strong>SCHMACKOS</strong> <strong>award</strong> for questions that are a complete dog's breakfast.</p></td>
+ <td width="18%" valign="top"><div align="center"><img src="../m/sickdog.jpg" alt="Sick as a Dog Award" width="125" height="125" /></div>
+ <p align="center">The <strong>Questions That Make You Sick As A Dog</strong> Award<br />
+ Questions that are <em>wrong </em>in a way that does not jeopardise the answer, or are just <em>dumb</em>.</p></td>
+ </tr>
+ <tr>
+   <td valign="top"><div align="center"><img src="../m/stamp_of_approval.jpg" alt="Stamp of Approval" /></div>
+    <p align="center">The <strong>Stamp of Approval</strong> for questions I like.</p></td>
+   <td valign="top"><p align="center"><img src="../m/illiterate.jpg" alt="Illiteracy Award" width="47" height="89" /></p>
+    <p align="center">The exciting <strong>Illiteracy Award</strong> for crimes against the English language.</p></td>
+ </tr>
+</table>
+<table width="75%" border="1" align="center" cellpadding="5" cellspacing="0">
+ <tr>
+ <td><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> 
+ <script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"> </script></td>
+ </tr>
+ <tr>
+ <td height="885"><h3 align="center" >COMPUTING: SOFTWARE DEVELOPMENT</h3>
+ <h3 align="center" >Written examination</h3>
+ <p align="center"><strong>Friday 15 November 2017</strong></p>
+ <p align="center"><strong>Reading time: 3.00 pm to 3.15 (15 minutes) </strong></p>
+ <p align="center"><strong>Writing time: 3.15 noon to 5:15 pm (2 hours)</strong></p>
+ <table border="1" align="center" cellpadding="3" cellspacing="0">
+ <tr>
+ <td width="95" ><div ></div></td>
+ <td width="100"><p ><strong><em>Number of questions</em></strong></p></td>
+ <td width="152"><p ><strong><em>Number of questions to be answered</em></strong></p></td>
+ <td width="105"><p ><strong><em>Number of marks</em></strong></p></td>
+ </tr>
+ <tr>
+ <td width="95"><p ><a href="#a">Section A</a></p></td>
+ <td width="100" align="center"><p >20</p></td>
+ <td width="152" align="center"><p >20</p></td>
+ <td width="105" align="right"><p >20</p></td>
+ </tr>
+ <tr>
+ <td width="95"><p ><a href="#b">Section B</a></p></td>
+ <td width="100" align="center" ><div >6</div></td>
+ <td width="152" align="center"><p >6</p></td>
+ <td width="105" align="right"><p >30</p></td>
+ </tr>
+ <tr>
+ <td width="95"><p ><a href="#c1">Section C</a></p></td>
+ <td width="100" align="center" ><div >15</div></td>
+ <td width="152" align="center">15</td>
+ <td width="105" align="right"><p >50</p></td>
+ </tr>
+ <tr>
+ <td width="95"><div ></div></td>
+ <td width="100"><div ></div></td>
+ <td width="152"><div ></div></td>
+ <td width="105" align="right"><p >Total 100</p></td>
+ </tr>
+ </table>
+ <ul>
+ <li> Students are permitted to bring into the examination room: pens, pencils, highlighters, erasers, sharpeners and rulers and one scientific calculator.
+ </li>
+ <li>Students are NOT permitted to bring into the examination room: blank sheets of paper and/or correction fluid/tape. </li>
+ </ul>
+ <p align="left">Materials supplied</p>
+ <ul>
+ <li> Question and answer book of 24 pages</li>
+ <li>Detachable insert containing a case study for Section C in the centrefold. </li>
+ <li>Answer sheet for multiple-choice questions. </li>
+ </ul>
+ <p align="left">Instructions</p>
+ <ul>
+ <li> Detach the insert containing the case study during reading time.
+ </li>
+ <li>Write your <strong>student number</strong> in the space provided above on this page. </li>
+ <li>Check that your <strong>name</strong> and <strong>student number</strong> as printed on your answer sheet for multiple-choice questions are correct, <strong>and</strong> sign your name in the space provided to verify this. </li>
+ <li>All written responses must be in English. </li>
+ </ul>
+ <p><strong>At the end of the examination </strong></p>
+ <ul>
+ <li> Place the answer sheet for multiple-choice questions inside the front cover of this book.
+ </li>
+ <li>You may keep the detached insert.</li>
+ </ul>
+ <p><strong>Students are NOT permitted to bring mobile phones and/or any other unauthorised electronic devices into the examination room.</strong></p></td>
+ </tr>
+</table>
+<table width="75%" border="1" align="center" cellpadding="5" cellspacing="0">
+ <tr>
+ <td colspan="2"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> 
+ <script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"></script></td>
+ </tr>
+ <tr>
+ <td colspan="2" ><p class="examiner"><strong>Examiners' report general comments</strong> - to be added when available</p>
+ <p class="examiner">&nbsp;</p>
+ <p class="examiner"><br />
+   <!--EndF>><!--EndFragment--> </p></td>
+ </tr>
+ <tr>
+   <td colspan="2" bgcolor="#CCCCCC" ><h2><a name="a"></a>SECTION A - Multiple-choice questions</h2>
+     <p><strong>Instructions for Section A</strong></p>
+     <p>Answer <strong>all</strong> questions in pencil on the answer sheet provided for multiple-choice questions. <br />
+       Choose the response that is <strong>correct</strong> or that <strong>best answers</strong> the question. <br />
+       A correct answer scores 1, an incorrect answer scores 0. <br />
+       Marks will <strong>not</strong> be deducted for incorrect answers.<br />
+       No marks will be given if more than one 
+    answer is completed for any question</p></td>
+ </tr>
+ <tr>
+   <td width="99" valign="top" bgcolor="#CCCCCC"><strong><a name="a1" id="a1"></a>A1</strong></td>
+   <td width="873" valign="top"><p>Question 1<br />
+     A student is developing a database as a software solution.<br />
+     Which one of the following is an example of a functional requirement of the student's software solution?<br />
+     A.	low price<br />
+     B.	open source<br />
+     C.	maintainability<br />
+     D.	search for a record in a file</p>
+     <p><br />
+      </p>
+     <p class="myanswer">Answer is .</p>
+     <p class="explanation">Comment.</p>
+    <p><span class="examiner">% of the state got this right.</span> (info to be added later)</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a2" id="a2"></a>A2</strong></td>
+ <td valign="top">
+   <p>Question 2<br />
+To evaluate the effectiveness of a new software solution for an online book sales company, Lee, a systems analyst, will need to<br />
+A.	measure the transaction times of processes.<br />
+B.	compare the costs of the new solution with the old solution.<br />
+C.	check the number of customer complaints about the accuracy of invoices.<br />
+D.	compare the workload of staff before and after the implementation of the software solution.</p>
+   <p>&nbsp;</p>
+   <p><br />
+ </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a3" id="a3"></a>A3</strong></td>
+ <td valign="top" >
+   <p>Question 3<br />
+The characteristics of data integrity include<br />
+A.	timeliness, accuracy, security, correctness.<br />
+B.	accuracy, reasonableness, authenticity, depth.<br />
+C.	accuracy, annotations, timeliness, authenticity.<br />
+D.	timeliness, reasonableness, authenticity, correctness.</p>
+   <p>&nbsp;</p>
+   <p><br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a4" id="a4"></a>A4</strong></td>
+ <td valign="top" >
+   <p>Question 4<br />
+A software solution requires users to enter their height in centimetres and weight in kilograms so that it is able to calculate their body mass index. If users enter the data incorrectly, the software solution will not work. Validation checks have been placed on the height entry field to ensure that the height entered is between 100 cm and 250 cm, and that the data is numeric.<br />
+These checks are called<br />
+A.	type checking and spell checking.<br />
+B.	range checking and type checking.<br />
+C.	existence checking and type checking.<br />
+D.	existence checking and range checking.<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a5" id="a5"></a>A5</strong></td>
+ <td valign="top" >
+ <p>Question 5<br />
+Which documentation should be included in a software requirements specification?<br />
+A.	software testing plan<br />
+B.	user interface designs<br />
+C.	project management plan<br />
+D.	constraints on the solution</p>
+ <p>&nbsp;</p>
+ <p><br />
+ </p>
+ <p class="myanswer">Answer is .</p>
+ <p class="explanation">Comment.</p>
+ <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a6" id="a6"></a>A6</strong></td>
+ <td valign="top" >
+   <p>Question 6<br />
+a = 5; <br />
+b = 7;<br />
+c = 3;</p>
+   <p>Given the values of the variables above, which one of the following functions will return a value of False?<br />
+     <img src="../m/pm/2017s-a06.png" width="573" height="290" alt=""/></p>
+   <p><br />
+ </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p>
+ <p class="myanswer">&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a7" id="a7"></a>A7</strong></td>
+ <td valign="top" >
+   <p>Question 7<br />
+There are a number of design tools that can be used to design software.<br />
+Which one of the following is an example of a design tool that would demonstrate the order of execution of code in a software solution?<br />
+A.	pseudocode<br />
+B.	data dictionary<br />
+C.	context diagram<br />
+D.	use case diagram</p>
+   <p>&nbsp;</p>
+   <p><br />
+ </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a8" id="a8"></a>A8</strong></td>
+ <td valign="top" bgcolor="#FFFFFF" >
+   <p>Question 8<br />
+The purpose of a data flow diagram is to display<br />
+A.	the organisation of data in storage.<br />
+B.	where data originates and where it is stored.<br />
+C.	the sequence of tasks involved in completing a project.<br />
+D.	the order in which the processes within a system occur. </p>
+   <p>&nbsp;</p>
+   <p><br />
+ </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a9" id="a9"></a>A9</strong></td>
+ <td valign="top" >
+   <p>Question 9<br />
+The variables in a software solution are to be given names.<br />
+The documentation that includes the variable names is called a<br />
+A.	storyboard.<br />
+B.	Gantt chart.<br />
+C.	data dictionary.<br />
+D.	use case diagram.</p>
+   <p>&nbsp;</p>
+   <p><br />
+ </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p> 
+ </td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a10" id="a10"></a>A10</strong></td>
+ <td valign="top" >
+   <p>Question 10<br />
+Testing the usability of a new solution could include<br />
+A.	interviews with the users of the	new solution.<br />
+B.	measuring the time users take to perform	the tasks with the new solution.<br />
+C.	measuring the number of errors	made due	to the design of the new solution.<br />
+D.	measuring the time taken to process data	entered by users of the new solution.</p>
+   <p><br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a11" id="a11"></a>A11</strong></td>
+ <td valign="top" >
+   <p>Question 11<br />
+Andrew has been hired to develop a new web-based software solution for a medical centre.<br />
+A technical constraint on the software solution would be<br />
+A.	usability.<br />
+B.	project cost.<br />
+C.	effectiveness.<br />
+D.	available hardware.</p>
+   <p>&nbsp;</p>
+   <p></p>
+   <p><br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p>
+   <p align="left">&nbsp;</p>
+ <p align="left">&nbsp;</p> </td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#CCCCCC"><strong><a name="a12" id="a12"></a>A12</strong></td>
+   <td valign="top" >
+     <p>Question 12<br />
+Sarah is developing a new software solution for a bank and, as part of the analysis stage, she is compiling a list of the system's requirements. She has learnt that in 18 months the bank will be upgrading the server that the software solution will run on and a decision has not been made as to which operating system will be chosen.<br />
+Which one of the following would be a non-functional requirement of the new software solution caused by the upgrading of the server?<br />
+A.	portability<br />
+B.	customer login<br />
+C.	view customer balance<br />
+D.	update credit card limit<br />
+     </p>
+     <p class="myanswer">Answer is .</p>
+     <p class="explanation">Comment.</p>
+    <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#CCCCCC"><strong><a name="a13" id="a13"></a>A13</strong></td>
+   <td valign="top" >
+     <p>Question 13<br />
+Luca creates a project plan for the creation of a software solution for a new design.<br />
+At which stage of the problem-solving methodology will the monitoring of this plan begin?<br />
+A.	design<br />
+B.	analysis<br />
+C.	evaluation<br />
+D.	development<br />
+     </p>
+     <p class="myanswer">Answer is .</p>
+     <p class="explanation">Comment.</p>
+    <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a14" id="a14"></a>A14</strong></td>
+ <td valign="top" >
+   <p>Question 14<br />
+     Associative arrays are best described as<br />
+     A.	never using hash tables.<br />
+     B.	only having data as strings.<br />
+     C.	aiding in the organisation of data.<br />
+     D.	keeping data in alphabetical order.</p>
+   <p><br />
+ </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a15" id="a15"></a>A15</strong></td>
+ <td valign="top" >
+
+   <p>Question 15<br />
+     Which one of the following is a correct statement about selection sort and quick sort for large files?<br />
+     A.	A selection sort is normally faster than a quick sort,	which uses a pivot.<br />
+     B.	A quick sort is normally faster than	a selection sort,	which uses a pivot.<br />
+     C.	The algorithm for a quick sort produces fewer comparisons than the algorithm for a selection sort.<br />
+     D.	The algorithm for a selection sort produces fewer comparisons than the algorithm for a quick sort.</p>
+   <p><br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p>
+ <p align="left">&nbsp;</p> </td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a16" id="a16"></a>A16</strong></td>
+ <td valign="top" >
+   <p>Question 16<br />
+Which one of the following is the most appropriate statement about data storage?<br />
+A.	A network fileserver can only hold files with large amounts of data.<br />
+B.	Individual pieces of data can never be accessed without reading the whole file if the data is stored in a computer's internal storage.<br />
+C.	Storing files on a high-speed network fileserver allows faster access to data than storing files in a computer's internal storage.<br />
+D.	Storing files in a computer's internal storage allows faster access to data than storing files on a high-speed network fileserver.<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#CCCCCC"><strong><a name="a17" id="a17"></a>A17</strong></td>
+   <td valign="top" >
+     <p>Question 17<br />
+       Procedures and techniques for managing files include<br />
+       A.	integrity, security, accuracy.<br />
+       B.	security, archiving, backing up.<br />
+       C.	validation, security, backing up.<br />
+      D.	instructions, functions, control structures.</p>
+     <p><br />
+   </p>
+     <p class="myanswer">Answer is .</p>
+     <p class="explanation">Comment.</p>
+     <p><span class="examiner">% of the state got this right.</span></p>
+     <p><br />
+     </p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#CCCCCC"><strong><a name="a18" id="a18"></a>A18</strong></td>
+   <td valign="top" >
+     <p>Question 18<br />
+Which one of the following gives examples of an information system goal and an information system objective for a new financial information system?<br />
+</p>
+     <p><img src="../m/pm/2017s-a18.png" width="443" height="230" alt=""/><br />
+     </p>
+     <p class="myanswer">Answer is .</p>
+     <p class="explanation">Comment.</p>
+     <p><span class="examiner">% of the state got this right.</span></p>
+    <p class="comment">&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a19" id="a19"></a>A19</strong></td>
+ <td valign="top" >
+
+
+   <p>Question 19<br />
+     Which one of the following statements about wired networks and wireless networks is correct?<br />
+     A.	Wired networks are easier to set up than wireless networks.<br />
+     B.	Wired networks are considered more secure from hacking than wireless networks.<br />
+     C.	Wireless networks are considered more secure from hacking than wired networks.<br />
+     D.	Wireless networks can easily be limited to specific locations compared to wired networks.</p>
+   <p><br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC" ><strong><a name="a20" id="a20"></a>A20</strong></td>
+ <td valign="top" >
+   <p>Question 20<br />
+A network that allows all members of an organisation to access information system resources while logged in at a particular location is best described as<br />
+A.	an intranet.<br />
+B.	the internet.<br />
+C.	a client server.<br />
+D.	a virtual private network.<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Comment.</p>
+   <p><span class="examiner">% of the state got this right.</span></p>
+<br clear="all" /></td>
+ </tr>
+ <tr>
+ <td bgcolor="#CCCCCC" ></td>
+ <td><p align="left">&nbsp;</p>
+ <p align="left"><strong>Overall for section A</strong> </p>
+ <p align="left" class="comment"><br />
+ </p> </td>
+ </tr>
+ <tr>
+ <td colspan="2"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> 
+ <script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"></script></td>
+ </tr>
+</table>
+<table width="75%" border="1" align="center" cellpadding="5" cellspacing="0">
+ <tr>
+   <td colspan="2" valign="top" bgcolor="#99CCFF" ><h2><a name="b" id="c"></a>SECTION B - short answer questions</h2>
+     <p class="blueback">Instructions for Section B<br />
+    Answer all questions in the spaces provided.</p></td>
+ </tr>
+ <tr>
+   <td width="31" valign="top" bgcolor="#99CCFF"><p><strong><a name="b1" id="c21"></a>B1 <br />
+    </strong></p></td>
+   <td width="931" valign="top"  ><p class="question">Question 1 (4 marks)<br />
+       Robert has presented a new program that he has been working on to Vanessa so that she can test the code. Vanessa notices that Robert has not included internal documentation throughout the program. She tells Robert that it will be difficult for her to properly test his code unless he adds the internal documentation.<br />
+       Identify two characteristics of internal documentation and explain how each will help Vanessa to test the code.<br />
+       Characteristic 1					_		 _<br />
+       Explanation	: <br />
+      Characteristic 2 . Explanation </p>
+<p class="examiner">Average mark -  /
+</p>
+    <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#99CCFF"><p><strong><a name="b1" id="b2"></a>B2<br />
+ </strong></p>
+ <p>&nbsp;</p></td>
+ <td valign="top"><p class="question">Question 2 (4 marks)<br />
+     A doctors' surgery has installed a new patient records system. All records, including patient records, emails and files downloaded from the internet, are stored in a large server room located on Hie surgery's premises. The business that upgraded the system suggested that the owners address data security as part of the upgrade.<br />
+     For each of the following threats to the integrity and security of the surgery's data, explain the risk that the threat might pose to the surgery's database and suggest a way in which the patient records system can be protected.<br />
+     A power surge <br />
+     Staff opening a phishing email</p>
+   <p class="examiner">Average mark -  / </p>
+   <p>&nbsp;</p>
+   
+   <p>&nbsp;</p>
+   
+<p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#99CCFF"><p><strong><a name="b1" id="b3"></a>B3<br />
+ </strong></p>
+ <p>&nbsp;</p></td>
+ <td valign="top"><p class="question">Question 3 (2 marks)<br />
+     Explain how two people who have never physically met can use public key cryptography to send data between them securely over the internet.<br />
+   </p>
+   <p class="examiner">Average mark -  / </p>
+   <p><span class="examiner"><br />
+   </span> </p>
+ <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#99CCFF"><strong><a name="b4" id="b4"></a>B4</strong></td>
+ <td valign="top"><p class="question">Question 4 (4 marks)<br />
+     The All-Star Sports Club needs to find out who is eligible to enter an upcoming Masters event.<br />
+     All participants in the Masters event must be 40 years old or older. The club needs to print out a list of eligible members.<br />
+     When the club's system is running, all data is stored in a series of arrays. The relevant fields are date_of_birth[], surname[], firstname[] and gender[], all with the same index value for all fields of a member.<br />
+     The variable numbermembers holds the number of members of the club and the arrays start at the value 1.<br />
+     It has been proposed to add a procedure that will start at the first record and look through each record, printing out the first name, surname, gender and date of birth of each person who is at least 40 years old.<br />
+     To compute age, all members must be bom before 1977.<br />
+     Write the pseudocode for this procedure.<br />
+     Begin</p>
+   <p class="question"><br />
+     End </p>
+   <p class="examiner">Average mark -  / </p>   <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#99CCFF"><strong><a name="b5" id="b5"></a>B5</strong></td>
+ <td valign="top"><p class="question">Question 5 (2 marks)<br />
+     TCP/IP is used when transmitting and receiving data over the internet and often over local networks. It consists of two protocols - the TCP protocol and the IP protocol.<br />
+     a.	Outline the main role of the TCP protocol when transmitting and receiving data.	1	mark<br />
+     b.	Outline the main role of the IP protocol.	1 mark </p>
+   <p class="examiner">Average mark -  / </p>
+   <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#99CCFF"><strong><a name="b6" id="b6"></a>B6</strong></td>
+   <td valign="top"><p class="question">Question 6 (4 marks)<br />
+     A regional department store has decided to introduce free wi-fi for its instore customers. The decision to provide free wi-fi was made on the understanding that the department store could recover its costs through data mining.<br />
+     a.	Define the term 'data mining'.	1	mark</p>
+     <p class="question">     b.	State two types of internet data retrieved through data mining that could be kept by the     department store and how these types of internet data could be used by the department store.	2 marks</p>
+     <p class="question">     c.	Outline how the practice of data mining might cause a conflict between the department store     and its customers.	1	mark<br />
+      </p>
+    <p class="examiner">Average mark -  / </p>   <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td colspan="2" valign="top" bgcolor="#99CCFF"><p class="comment">Section B overall - <br />
+     </p>
+    <p class="comment">&nbsp;</p></td>
+ </tr>
+</table>
+<div align="left">
+ <table width="75%" border="1" align="center" cellpadding="5" cellspacing="0">
+ <tr>
+ <td valign="top" ><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> 
+ <script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"></script></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#E9E5A7" ><h2 align="left"><a name="cs" id="cs"></a>Case study</h2>
+ <p align="left">Insert for Section C - Case study<br />
+ Please remove from the centre of this book during reading time. <br />
+ </p>
+ <p><br />
+   Modern Bus Services (MBS) has approached the state government to run a demand-responsive transport (DRT) system in a new, expanding residential area currently not serviced by public transport. The company runs traditional bus services in other areas, but feels that a traditional service will not be economical in this area. The government sees the potential of this new concept and has approved a pilot program based on MBS's proposal.</p>
+ <p>   The DRT system will be cheaper for passengers than a taxi or other single-use vehicle, but will be more costly than a traditional bus ride.<br />
+   The service will commence with three minibuses, but more can be added quickly if the demand is above what is expected. The plan is to use 20-seat luxury minibuses.<br />
+   </p>
+ <p>The advantages of the proposal are as follows:<br />
+   1. door-to-door service<br />
+   2. pick-up close to the time requested (no fixed timetable)<br />
+   3. lower cost than similar single-user services, such as taxis<br />
+   4. luxury facilities<br />
+   5. reliability, as the DRT system will be run by a well-established company </p>
+ <p>Now, the software solution needs to be designed and implemented.<br />
+   The proposed DRT system will consist of a:<br />
+   &bull; central computer at the minibus depot<br />
+   &bull; mobile tablet in each minibus.<br />
+   Each minibus will also be fitted with a Global Positioning System (GPS) sensor to provide its exact location at all times.<br />
+   </p>
+ <p>The central computer:<br />
+   &bull; collects location data generated from satellites via the GPS sensor<br />
+   &bull; sends traffic requests to the Roads Department<br />
+   &bull;  receives traffic warnings and notifications of delays to assist with computing the most efficient route<br />
+   &bull;  works out the route required for the minibus to pick up passengers<br />
+   &bull; computes pick-up times<br />
+   &bull; sends credit card details and payment amounts to the bank when a passenger's account is low<br />
+   &bull; gets payment confirmation from the bank when the account is topped up.</p>
+ <p><br />
+   <strong>Registering</strong><br />
+   To use the DRT system, passengers will be required to install an application on their mobile device. Passengers will register an account within the system and set up their method of payment. Payment will be deducted from the passenger's account, which will be set up through the application at the time of registration.</p>
+ <p>   To register, passengers will be required to supply the following information to MBS:<br />
+   &bull; name<br />
+   &bull; billing address and postal address<br />
+   &bull; email address<br />
+   &bull; payment information</p>
+ <p>   Options for payment will include:<br />
+   &bull; depositing money into an MBS account<br />
+   &bull; registering for direct debit or credit card payment.<br />
+   Each registered passenger will then be provided with a unique passenger number and password for future transactions.<br />
+   <br />
+   <strong>Booking</strong><br />
+   Passengers will use the application on their mobile device to contact MBS and make a booking. All locations must be within a defined area.<br />
+   When booking a minibus, the passenger will provide the following information:<br />
+   &bull; time<br />
+   &bull; date<br />
+   &bull; location for the pick up<br />
+   &bull; location for the drop off<br />
+   &bull; passenger number (which will automatically be added)<br />
+   </p>
+ <p>As passengers make bookings, the central computer will ensure that each booking does not increase the total travel time by more than five minutes or cause overcrowding on that trip. If these conditions cannot be met, passengers will be booked on the next minibus.<br />
+   </p>
+ <p>Using the given data, the central computer will generate a route map for each minibus and send it through to the relevant vehicle's on-board tablet.<br />
+   When the booking is complete, the application will give the passenger an approximate pick-up time and produce a route map.<br />
+   </p>
+ <p>After each completed trip, passenger feedback will be sought via the application. Passengers will be able to rate the drive, the condition of the minibus and the timeliness of each trip. This will enable MBS to continually monitor the service and to make improvements where necessary.<br />
+   </p>
+ <p>Logan and Riya from Grommet Computer Services (GCS) have been selected by MBS to develop the software solution and install all hardware that MBS will need to implement the DRT system.<br />
+ </p>
+ <p><img src="../m/pm/2017s-cs.png" width="652" height="499" alt=""/><br />
+ </p>
+ <p><strong>END OF INSERT</strong></p>
+ <p align="left" class="comment">&nbsp;</p> 
+ </td>
+ </tr>
+ </table>
+ <table width="75%" border="1" align="center" cellpadding="3" cellspacing="0">
+ <tr>
+   <td colspan="2" bgcolor="#FFFFCC"><p align="left"><strong>Instructions for Section C</strong></p>
+     <p align="left"> Please remove from the centre of this book during reading time. </p>
+     <p align="left">Use the case study provided in the insert to answer the questions in this section. Answers must apply to the case study.<br />
+       Answer all questions in the spaces provided.</p>
+     <p align="left">Answer <strong>all</strong> questions in the spaces provided. </p> 
+     </td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c1" id="c1"></a>C1 </strong></p>
+     
+     <p>&nbsp;</p></td>
+   <td valign="top"><p>Question 1 (4 marks)<br />
+     Logan considers the data flows for the proposed demand-responsive transport (DRT) system and begins to draw a data flow diagram for the central computer, the hardware and software on the minibuses, and the application on passengers' mobile devices.</p>
+     <p><img src="../m/pm/2017s-c01.png" width="643" height="386" alt=""/><br />
+     </p>
+     <p>Complete the data flow diagram that Logan has started by writing the correct labels for A, B, C and D in the spaces provided below.<br />
+       A <br />
+       B<br />
+       C<br />
+       D</p>
+     <p align="left"><br />
+     </p>
+     <p align="left">&nbsp;</p>
+     <p><span class="examiner">Average mark -  / </span></p>
+     <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td width="65" valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c2" id="c2"></a>C2</strong></p>
+ </td>
+ <td width="1260" valign="top"><p align="left">Question 2 (4 marks)<br />
+   Once a passenger is logged in to the MBS application, they must complete the 'Create booking' procedure. On completion of the 'Create booking' procedure, the passenger has the option to 'Purchase headphones', which come at an additional cost but can be used to listen to a series of pre-tuned radio stations on the minibus throughout the journey.<br />
+   If the passenger's plans change, it is possible to 'Modify booking' or 'Delete booking' up to 12 hours prior to the journey. In order to modify a booking, the passenger must use the 'Search existing bookings' function and select the booking that they wish to modify. If a passenger wishes to use the 'Delete booking' feature, they can do so through 'Modify booking'.<br />
+   Complete the use case diagram below to show the stated requirements.<br />
+   <br />
+ </p>
+   <p align="left"><img src="../m/pm/2017s-c02.png" width="565" height="401" alt=""/></p>
+   <p><span class="examiner">Average mark -  / </span></p>   <p><br />
+ </p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c3" id="c3"></a>C3</strong></p>
+ 
+ <p>&nbsp;</p></td>
+ <td valign="top">
+   <p align="left">Question 3 (2 marks)<br />
+     Sophie works in the IT Department of MBS and is responsible for the project management and rollout of the DRT system. Several months ago, her team launched a website that allows potential passengers of the DRT system to register their details, including name, phone number and address, so that they can receive updates on the rollout of the DRT system.<br />
+     Sophie wants to recruit many interested passengers so that when the DRT system goes live, it will already have many potential passengers. However, Sophie is concerned about keeping the collected passenger data safe and private.<br />
+     Describe one action, other than physical security methods, that could be used to secure passenger data.</p>
+   <p><span class="examiner">Average mark -  / </span></p>
+   <p align="left"><br />
+   </p>
+ <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c4" id="c4"></a>C4</strong></p>
+ 
+ <p>&nbsp;</p></td>
+ <td valign="top">
+   <p>Question 4 (4 marks)<br />
+     In order for the new DRT system to meet the needs of MBS, its minibus drivers and its passengers, the GCS development team must collect a range of data to determine these needs and the requirements of the DRT system.<br />
+     Identify a suitable data collection technique for each stakeholder listed in the table below and justify why this is the best technique to use for this stakeholder. An example has been provided.<br />
+     </p>
+   <p>&nbsp;</p>
+   <table width="76%" border="1" cellspacing="0" cellpadding="3">
+     <tbody>
+       <tr>
+         <td width="17%"><strong>Stakeholder</strong></td>
+         <td width="18%"><strong>Technique</strong></td>
+         <td width="65%"><strong>Justification</strong></td>
+       </tr>
+       <tr>
+         <td>minibus drivers</td>
+         <td><em>observation</em></td>
+         <td><em>Observing drivers on their routes would allow the development team to get an understanding of the time it takes to pick up and drop off passengers.<br />
+The development team would see regular issues that may arise during the day. The development team would also see a driver's interaction with passengers and gain information that may influence the way the application may work.</em></td>
+       </tr>
+       <tr>
+         <td>MBS</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+       <tr>
+         <td>passengers</td>
+         <td>&nbsp;</td>
+         <td>&nbsp;</td>
+       </tr>
+     </tbody>
+   </table>
+   <p>&nbsp;</p>
+   <p><span class="examiner">Average mark -  / </span></p>
+ <p><br clear="all" />
+ </p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c5" id="c5"></a>C5</strong></p>
+     
+     <p>&nbsp;</p></td>
+   <td valign="top">
+     <p>Question 5 (4 marks)<br />
+       As a first step, Logan starts to plan the project and decides to use three separate teams to develop the DRT system. He estimates that it will take 25 days to write, test and debug the software needed on the central computer. It will take 15 days to write, test and debug the software needed on the tablet on the bus and 20 days to write, test and debug the application that will be on the passengers' mobile devices. It will take 10 days to install the software and hardware, and test if the central computer can communicate with the passengers' mobile devices and with the tablet in the bus and its associated GPS sensor. It will take a further five days to test the DRT system.<br />
+     </p>
+     <p><img src="../m/pm/2017s-c05.png" width="657" height="500" alt=""/></p>
+     <p><br />
+       a. Indicate on the Gantt chart above <strong>two</strong> milestones that occur during this project.<br />
+     </p>
+     <p>b. Using the Gantt chart above, identify <strong>two</strong> tasks that can be undertaken concurrently.</p>
+     <p>       c. Using the Gantt chart above, identify the tasks on the critical path.	1	mark</p>
+     <p align="left">&nbsp;</p>
+     <p><span class="examiner">Average mark -  / </span></p>
+     <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c6" id="c6"></a>C6</strong></p>
+     
+     <p>&nbsp;</p></td>
+   <td valign="top"><p align="left">Question 6 (4 marks)<br />
+     Identify two techniques that Logan could use to record the progress of the project and explain how each technique will assist him with running the project successfully.<br />
+     Technique 1 <br />
+     Explanation <br />
+     Technique 2 Explanation<br />
+   </p>
+     <p align="left">&nbsp;</p>
+     <p><span class="examiner">Average mark -  / </span></p>
+     <p align="left"><br />
+     </p>
+     <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c7" id="c7"></a>C7</strong></p>
+ 
+ <p>&nbsp;</p></td>
+ <td valign="top">
+   <p>Question 7 (4 marks)<br />
+     Shown below is an extract from the MBS data dictionary, listing variable names and explaining how the variables will be used in development.<br />
+     From the following list of data types and structures, select the most appropriate type or structure for each variable and its accompanying explanation. Write your selection in the spaces provided below.<br />
+     integer floating point Boolean character string array record</p>
+   <table width="90%" border="1" cellspacing="0" cellpadding="3">
+     <tbody>
+       <tr>
+         <td width="17%"><strong>Variable name</strong></td>
+         <td width="21%"><strong>Data type or structure</strong></td>
+         <td width="62%"><strong>Explanation</strong></td>
+       </tr>
+       <tr>
+         <td>Passenger_Name</td>
+         <td>&nbsp;</td>
+         <td>the name of the passenger using the MBS application</td>
+       </tr>
+       <tr>
+         <td>Passenger_Phone_Number</td>
+         <td>&nbsp;</td>
+         <td>the mobile phone number of the passenger using the MBS application, in the form +61 444 444 444</td>
+       </tr>
+       <tr>
+         <td>Passenger_List</td>
+         <td>&nbsp;</td>
+         <td>the list of passengers who have registered using the MBS application</td>
+       </tr>
+       <tr>
+         <td>Passenger_SMS_N</td>
+         <td>&nbsp;</td>
+         <td>a value representing whether the passenger would like an SMS notification when the minibus is approaching their pick-up location</td>
+       </tr>
+     </tbody>
+   </table>
+   <p><span class="examiner">Average mark -  / </span></p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c8" id="c8"></a>C8</strong></p>
+     
+     <p>&nbsp;</p></td>
+   <td valign="top"><p align="left">
+Question 8 (9 marks)<br />
+       When a passenger makes a booking, they need to have enough money in their account (accountbalance) to pay for the fare or have given MBS permission to automatically top up their balance from a nominated credit card (topup = true). If neither of these conditions is met, then the booking is refused and a 'low balance' message is sent to the passenger.<br />
+       The following pseudocode is used to check these conditions.</p>
+     <p align="left"><img src="../m/pm/2017s-c08.png" width="432" height="115" alt=""/><br />
+       </p>
+     <p align="left">a. Complete the following test table so that this pseudocode is fully tested, and include expected<br />
+       and actual results. Use a fare of $5.00 for testing purposes.	5	marks<br />
+       </p>
+     <p align="left">&nbsp;</p>
+     <table width="90%" border="1" cellspacing="0" cellpadding="3">
+       <tbody>
+         <tr>
+           <td width="12%"><strong>Test no.</strong></td>
+           <td width="17%"><strong>account_balance</strong></td>
+           <td width="15%"><strong>topup</strong></td>
+           <td width="28%"><strong>Expected result</strong></td>
+           <td width="28%"><strong>Actual result</strong></td>
+         </tr>
+         <tr>
+           <td>1</td>
+           <td>5</td>
+           <td>True</td>
+           <td>valid_booking <img src="../m/pm/equals.jpg" width="15" height="13" alt=""/> True <br />
+             No message</td>
+           <td>valid booking  <img src="../m/pm/equals.jpg" width="15" height="13" alt=""/> True <br />
+             No message</td>
+         </tr>
+         <tr>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+         </tr>
+         <tr>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+         </tr>
+         <tr>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+         </tr>
+         <tr>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+         </tr>
+         <tr>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+         </tr>
+       </tbody>
+     </table>
+     <p align="left">&nbsp;</p>
+     <p>b. What are the errors in the pseudocode that would cause the invalid responses in the test table? 2 marks</p>
+     <p>c. Rewrite the pseudocode so that it works correctly.</p>
+     <p align="left">&nbsp;</p>
+     <p align="left">&nbsp;</p>
+     <p><span class="examiner">Average mark -  / </span></p>
+     <p align="left"><br />
+     </p>
+     <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c9" id="c9"></a>C9</strong></p>
+     
+     <p>&nbsp;</p></td>
+   <td valign="top"><p>Question 9 (2 marks)<br />
+     The following is an extract from the data file that stores journey data from the MBS application.<br />
+  <img src="../m/pm/2017s-c09.png" width="506" height="131" alt=""/><br />
+     Name the file format that has been used to create this file and describe one advantage of using this file format.     </p>
+     <p><span class="examiner">Average mark -  / </span></p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c10" id="c10"></a>C10</strong></p>
+     
+     <p>&nbsp;</p></td>
+   <td valign="top"><p align="left">Question 10 (6 marks)<br />
+       When a passenger logs in to the MBS application, they will do so using a passenger number that will be issued to them during registration, along with a password.<br />
+       Before authenticating the passenger's password, the MBS application will search for their passenger number and ensure that it exists. The data in the passenger table is ordered by passenger number.<br />
+       </p>
+     <p align="left"><img src="../m/pm/2017s-c10.png" width="569" height="145" alt=""/></p>
+     <p align="left"><br />
+       a. Name the search technique that has been used to search for the passenger in the pseudocode       above.	.	1	mark<br />
+       b. State one advantage and one disadvantage of the search technique named in part a.	2 marks<br />
+       </p>
+     <p align="left">Advantage</p>
+     <p align="left">       Disadvantage </p>
+     <p align="left"><br />
+       c. Name a more suitable search technique that could be used. Explain why it is more suitable.	3 marks<br />
+       Name</p>
+     <p align="left">       Explanation <br />
+     </p>
+     <p align="left">&nbsp;</p>
+     <p><span class="examiner">Average mark -  / </span></p>
+     <p align="left"><br />
+     </p>
+     <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c11" id="c11"></a>C11</strong></p>
+     
+     <p>&nbsp;</p></td>
+   <td valign="top"><p align="left">
+Question 11 (3 marks)<br />
+       On the whole, the project has run smoothly, with the exception of the cost of the outsourced interfaces being higher than was originally anticipated.<br />
+       Jeff is the lead technical officer at LCS (an information marketing firm) and he has approached Riya with the proposition that MBS agree to sell their database of prospective passengers in return for a sum of money. Jeff says that passengers' details will be used for advertising purposes in different projects run by LCS and that there is no way that any of the passengers will find out that it was MBS who provided their information.<br />
+       Riya is concerned that such actions would be illegal, but she is not sure which legislation applies or why.<br />
+       Identify one piece of legislation that could potentially be breached if the proposition were accepted and justify your choice.<br />
+       Legislation <br />
+       Justification </p>
+     <p><span class="examiner">Average mark -  / </span></p>     <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c12" id="c12"></a>C12</strong></p>
+ 
+ <p>&nbsp;</p></td>
+ <td valign="top">
+   <p align="left">Question 12 (4 marks)<br />
+     Riya is concerned about the possibility of MBS suffering from a cyber attack due to the fact that the DRT system will be online to mobile devices and will contain large amounts of sensitive data.<br />
+     Riya proposes a number of actions to help protect the DRT system. She suggests that a physical firewall be installed in the head office to help protect the central computer from attacks over the internet.<br />
+     a. What is the role of the firewall?	1 mark<br />
+     <br />
+     b. Where should the firewall be placed to best protect the central computer?	1	mark<br />
+     <br />
+     c. Describe two other steps that Riya could propose to protect the data on the central computer     from attack through the internet.	2	marks</p>
+   <p align="left">1.</p>
+   <p align="left">2.</p>
+   <p align="left">&nbsp;</p>
+   <p><span class="examiner">Average mark -  / </span></p>   <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c13" id="c13"></a>C13</strong></p>
+     
+     <p>&nbsp;</p></td>
+   <td valign="top">
+     <p align="left">Question 13 (4 marks)<br />
+       MBS expects large amounts of data to be created every day. For example, each request to make a booking will create GPS data, data from the generation of the optimum route and data from the bank. Some of the data will only be required for a short period of time, while other data will be more stable and change less frequently.<br />
+       </p>
+     <p align="left">a. Suggest a backup strategy that could be used to back up frequently changing data and more stable data. Give reasons for your suggestion.<br />
+       b. MBS has decided to archive the data files.       Explain the difference between archiving and backing up.</p>
+     <p><span class="examiner">Average mark -  / </span></p>
+     <p><br />
+       </p>
+     <p class="explanation">&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c14" id="c14"></a>C14</strong></p>
+     <p>&nbsp;</p></td>
+   <td valign="top"><p align="left">
+Question 14 (2 marks)<br />
+       Once the DRT system is running, it is noted that passengers regularly enter a house number that does not exist in a given street. Data about the lowest and highest house number is known to the DRT system and the house number entered by the passenger must fall between these. GCS decides to add some code so that the passenger is prompted when an invalid house number is entered.<br />
+       a. What is this process called?<br />
+       b. Describe how this process works.</p>
+     <p><span class="examiner">Average mark -  / </span></p>
+     <p><br />
+     </p>
+     <p class="explanation">&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c15" id="c15"></a>C15</strong></p>
+     <p>&nbsp;</p></td>
+   <td valign="top"><p align="left">
+Question 15 (4 marks)<br />
+       Logan has developed a number of evaluation criteria to measure the effectiveness of the software solution developed for the DRT system. Two of these criteria are as follows:<br />
+       1. All passengers are to be picked up within five minutes of the requested time.<br />
+       2. Passenger satisfaction is to be gauged by the number of repeat bookings.<br />
+       Outline a strategy for evaluating each criterion.<br />
+       Criterion 1			_ <br />
+       Criterion 2</p>
+     <p><span class="examiner">Average mark -  / </span></p>
+     <p><br />
+     </p>
+     <p class="explanation">&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td colspan="2"><div align="center">
+     <p>&nbsp;</p>
+     <p><strong>END OF QUESTION AND ANSWER BOOK</strong></p>
+     </div></td>
+ </tr>
+ <tr>
+ <td colspan="2"><div align="center" class="comment">
+ <p><strong>Section C summary</strong></p>
+ <p align="left"><br />
+ </p>
+ <p align="left">&nbsp;</p>
+ </div></td>
+ </tr>
+ <tr>
+ <td colspan="2"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script></td>
+ </tr>
+ </table>
+ <p align="center"><a href="../index.html" target="top">Back to the IT Lecture Notes index</a></p>
+ <p align="center"><a href="javascript:history.go(-1)">Back to the last page you visited</a></p>
+ <p align="center"><font size="2">Created 10 November 2016</font></p>
+ <p align="center"><font size="2">Last changed: 
+ <!-- #BeginDate format:Am1a -->December 1, 2017 12:34 PM<!-- #EndDate --> 
+ </font></p>
+ <p align="center"><font size="2">Original Content &copy; Mark Kelly 2017<br />
+ Images and questions are &copy; Victorian Curriculum 
+ and Assessment Authority 2016. <br />
+ Reproduced here with permission for educational purposes.</font><br />
+ Thanks, VCAA!</p>
+ <p align="center"><font size="2">VCE IT Lecture notes &copy; <a href="../etc/mailform.html">Mark Kelly</a></font></p>
+ <p align="center">&nbsp;</p>
+</div>
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="548,302,563,303" href="#" />
+  <area shape="rect" coords="549,108,657,301" href="postmortem-2017i.html" />
+</map>
+</body>
+
+<!-- Mirrored from vceit.com/p/postmortem-2017s.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:16:40 GMT -->
+</html>

@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+vceit.com	TRUE	/wp/	FALSE	1999999999	wordpress_test_cookie	WP+Cookie+check
+visualcase.com	TRUE	/	FALSE	1999999999	SRV	lander04|XYIEH|XYIEH
+

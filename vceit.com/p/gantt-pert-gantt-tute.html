@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from vceit.com/p/gantt-pert-gantt-tute.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:15:47 GMT -->
+<head>
+<title>IT Lecture Notes - Gantt chart tutorial</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../etc/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<p align="center"><a href="../index.html"><img src="../etc/vceit-main3.jpg" border = "0" /></a></p>
+<div align="center"> 
+<p><a href="../index.html" target="_top">VCE IT Lecture Notes</a>
+by <a href="../wp/contact-me-at-vceit-com-2/index.html">Mark Kelly</a> </p>
+</div>
+<table width="666" border="1" cellpadding="5" align="center" cellspacing="0">
+<tr> 
+<td> 
+<h1 align="center" id="background">Gantt Chart tutorial</h1>
+<p align="center">Also see <a href="gantt-pert-pert-tute.html">PERT 
+practice</a></p>
+<p align="center">Also see real Gantt/PERT questions and solutions in these 
+previous exams... <a href="postmortem-2001i.html#2001gp">2001</a>, 
+<a href="postmortem-2002i.html#2002gp">2002</a>, <a href="postmortem-2003i.html#gantt">2003</a> </p>
+<p align="center">Knowledge of Gantt and PERT is <em>not</em> required for VCE ITA or SD in 2011-2014</p>
+</td>
+</tr>
+<tr>
+<td><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"> </script>&nbsp;</td>
+</tr>
+<tr> 
+<td><br />
+This problem comes from the 2000 end of year IPM exam. It has been roundly 
+criticised for its difficulty and vagueness. Let's see what we can do with 
+it.<br />
+</td>
+</tr>
+<tr> 
+<td> 
+<p>&nbsp;</p>
+<p><img src= "../m/gantt-pert-gantt.gif" width="712" height="278" /></p>
+<p><i>&quot;Hopeful Secondary College School Council decided at its last 
+meeting that a new computer laboratory was required. The project commenced 
+on Monday 16 October. The plan for the process and its progress are shown 
+in the diagram above. The school council has decided to manage to refurbishment 
+of the room and is required to have the room completed by Friday 22 December. 
+Due to class requirements, the commencement of alterations to the classroom 
+cannot commence before Monday 11 December.&quot;</i></p>
+<p><i><br />
+</i></p>
+</td>
+</tr>
+<tr> 
+<td> 
+<p><br />
+First: this Gantt chart was produced using <b>Microsoft Project</b>. This 
+is a common tool for producing Gantt charts, but it is only one way of 
+doing so: other charts may look a bit different.</p>
+<p>Look at the time scale at the top of the chart. Notice anything odd? 
+Yes, folks. The minor date scale (under the line beginning &quot;16 Oct 
+'00&quot;) shows every <i>fourth</i> day. Makes it much harder to read. 
+Heaven knows why the examiners did it (I can guess: it was the only way 
+they could get it to fit onto the printed page.) </p>
+<p>Anyway, just <i>remember to always check the time scale</i> before interpreting 
+a chart.</p>
+<p>The major scale is in units of fortnights (the first step is 16 Oct, 
+the next is the 30th - 14 days apart.) The dotty lines going down the 
+chart mark beginnings of major time units. e.g. task 8 begins on the dotty 
+line that marks the beginning of major unit beginning December 11 so you 
+can easily tell it starts on Dec 11.</p>
+<p>There are 13 tasks, listed downwards in the left column.</p>
+<p>The blue bars graphically show the length of each task (which is also 
+visible numerically in column 2)</p>
+<p>The arrows from the end of one task to the beginning of another mean 
+the second task must wait for the first task to end before the second 
+can begin. This is called a &quot;dependency&quot;. The earlier task is 
+called the &quot;predecessor&quot;.</p>
+<p>Most tasks follow each other in a &quot;lock-step&quot; manner until 
+you reach tasks 10 and 11 which overlap: overlapping bars mean the tasks 
+can be carried out concurrently (at the same time.)</p>
+<p> Both tasks 10 and 11 are dependent on task 9. Task 11 starts on the 
+same day as task 10 and lasts one workday longer.</p>
+<p> Notice however that task 10's bar is a fair bit shorter than task 11's 
+even though they are only one workday different: this is because task 
+11 spans a weekend, so its bar is actually 5 days long <i>even though 
+no work is done on the weekend</i>.</p>
+<p>The diamonds show <i>milestones</i>. Milestones are significant points 
+of progress in the project. They have zero length: no work is actually 
+needed for a milestone. They mark major points of project development.</p>
+<p>The black lines in the bars of the first 3 tasks indicate how much of 
+the task has been completed so far. You can see tasks 1 and 2 are finished 
+and task 3 is half-finished. This lets a project manager keep track of 
+where the project is actually up to.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr> 
+<td> 
+<p><b>Quick question 1</b>: When does the project start? </p>
+<p><b>Answer</b>: 16 October (see where task 1's bar begins on the dotty 
+line that starts off &quot;16 Oct&quot;)</p>
+<p><b>Quick question 2</b>: When does the project end?</p>
+<p><b>Answer</b>: 21 December (the milestone is dated so you can easily 
+tell) [actually, I believe the milestone is wrong - <a href="#milestonewrong">see 
+below</a>]</p>
+<p><b>Quick question 3</b>: The exam questions below are worth a total of 
+5 marks: how long should you spend on them?</p>
+<p><b>Answer</b>: For 2003 and beyond, the exam is worth 90 marks and you 
+have 120 minutes, therefore 1.333 minutes per mark.</p>
+</td>
+</tr>
+<tr> 
+<td><p>&nbsp;</p>
+<p>Here's the chart again so you don't have to scroll so far...</p>
+<p><img src= "../m/gantt-pert-gantt.gif" width="712" height="278" /></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr> 
+<td> 
+<h4>Exam Question 1: What is the first milestone in this project? (1 mark)</h4>
+</td>
+</tr>
+<tr> 
+<td><br />
+This is an easy one: it's the first diamond you can find, which is <i>task 
+7, &quot;Sign contract&quot; on 30/11/00<br />
+</i> </td>
+</tr>
+<tr> 
+<td> 
+<h4>Exam Question 2: How much 'slack' time is there after commencement of 
+the alterations, including weekends? (1)</h4>
+</td>
+</tr>
+<tr> 
+<td> 
+<p><br />
+First let's find when the alterations commence: this is task 8, &quot;Prepare 
+site&quot; on 11/12/00.</p>
+<p>Now let's mentally expand the time scale (you could mark the days off 
+with a pen). Note that while task 11's bar spans the weekend and is 5 
+days long in total, only 3 of the days are work days.</p>
+<p><img src= "../m/gantt-pert-gantt9b.gif" width="638" height="144" /></p>
+<p>Let's find the critical path, starting at task 8: what is the longest 
+possible path of tasks until the end? Tasks 8,9,11,12 add up to 1+2+3+1=7 
+days.</p>
+<p>The alternate path (since tasks 10 and 11 overlap) is Tasks 8,9,10,12 
+adding up to 1+2+2+1=6 days.</p>
+<p>So, there is a 1 day difference between the paths BUT the question adds 
+&quot;including weekends.&quot; So, if task 10 really got in trouble, 
+and they needed all the time they could muster without affecting the finish 
+date, they could work the weekend as well, giving them <b><i>3 slack days</i></b> 
+maximum.</p>
+<p>Another way to approach it is to just looking at where the 2 tasks diverge 
+(14 Dec) until the point they converge to a single path again at task 
+12 on 19 Dec (the same technique used in the <a href="gantt-pert-pert-tute.html">PERT 
+chart tutorial</a>) The shorter path [task 10] is 2 days and the longer 
+path [task 11] is 3 days - a one day difference. Add on the weekend as 
+potential working time, as the question says, and the slack is 3 days.</p>
+<p>(If you look at the original printed exam, it is VERY hard to read any 
+detail from it and teachers have given the examiners detention for this. 
+If there is a Gantt chart in the next exam, it must be easier to read 
+than the one in 2000: it couldn't be worse!)</p>
+<p><br />
+</p>
+</td>
+</tr>
+<tr> 
+<td> 
+<h4>Exam Question 3: The supplier of the cable has just informed you that 
+the cable delivered to you is faulty and the replacement cable will not 
+arrive until the end of Monday 18 December. What impact will this have 
+on the end date? (1)<br />
+</h4>
+</td>
+</tr>
+<tr> 
+<td> 
+<p>&nbsp;</p>
+<p>THIS DISCUSSION IS SUBJECT TO REVIEW ONCE I WORK OUT WHERE THE BIG APPARENT 
+PROBLEM IS!<br />
+<br />
+The examiners' answer to this question was a mess. They ended up accepting 
+3 different answers, because many students interpreted &quot;end date&quot; 
+differently.</p>
+<p>Their official <a href="http://www.vcaa.vic.edu.au/VCE/ASSESS/REPORTS/00cycle2/exams/ip_man/index.htm" target="_top">answer</a> 
+was: &quot;'[<i>The end date would be delayed by</i>] <i>1 day - cabling 
+will now start on Tuesday 19th not Monday 18th but project is still able 
+to be completed on time' </i><b>or</b><i> 'nothing' </i><b>or</b><i> 'end 
+date will be delayed by one day' </i><b>or</b><i> 'end date will still 
+be met'.</i>&quot; </p>
+<p>Now call me a rebel, but I think this answer is a pile of fetid dingo's 
+kidneys. How can it make sense?</p>
+<p>Here's the end of the Gantt chart in more detail:</p>
+<p><img src= "../m/gantt-pert-gantt9b.gif" width="638" height="144" /></p>
+<p>Let's take it step by step...</p>
+<table width="89%" border="1" cellpadding="3" cellspacing="0">
+<tr bgcolor="#FFFFFF"> 
+<td><b>TASK</b></td>
+<td><b>STARTS</b></td>
+<td><b>Length (days)</b></td>
+<td><b>ENDS</b></td>
+</tr>
+<tr> 
+<td>8 - prepare site</td>
+<td>11 Dec</td>
+<td>1</td>
+<td>11 Dec</td>
+</tr>
+<tr> 
+<td>9 - install benches</td>
+<td>12 Dec</td>
+<td>2</td>
+<td>13 Dec</td>
+</tr>
+<tr> 
+<td>10 - powerpoints</td>
+<td>14 Dec</td>
+<td>2</td>
+<td>15 Dec</td>
+</tr>
+<tr> 
+<td>11 - cabling</td>
+<td>14 Dec also</td>
+<td>3</td>
+<td>18 Dec (incl. weekend)</td>
+</tr>
+<tr> 
+<td>12 - test cabling</td>
+<td>19 Dec</td>
+<td>1</td>
+<td>19 Dec</td>
+</tr>
+<tr> 
+<td>13 - room ready milestone</td>
+<td>20 Dec</td>
+<td>0</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<p><a name="milestonewrong"></a>1. According to my calculations, the Gantt 
+chart's final milestone is wrong. It is marked 21 Dec, but it should be 
+on the 20th.</p>
+<p>2. Since the cabling should have started on the 14th of December (not 
+the 18th as the examiners' answer claims), a delivery delay causing installation 
+to start on December 19th would make the end of the Gantt chart look like 
+this:</p>
+<p><img src= "../m/gantt-pert-gantt-fixed.gif" width="617" height="145" /> </p>
+<p>Therefore, the finishing date of the project would have changed from 
+end end of Tuesday 19 Dec to the end of Friday 22 Dec - a total of THREE 
+days' delay to the 'end date', if you interpret 'end date' as the original 
+planned finishing day: December 19.</p>
+<p>If you interpreted 'end date' as the date the room had to be finished 
+by (Dec 22 in the case study), there is <i>no change</i> to the 'end date'.</p>
+<p>This fuzzy definition of 'end date' was the reason the examiners ended 
+up with a bag of acceptable answers to the question.</p>
+<p>Anyway, the examiners accepted 3 different answers (not including mine 
+above.) I still think mine is valid, if interpreting 'end date' as 'original 
+expected finishing date' (Dec 19).</p>
+<p><b>I would be VERY grateful if any smart bunnies out there could <a href="../wp/contact-me-at-vceit-com-2/index.html">alert 
+me</a> to faults in my theory about this question!</b></p>
+<p><br />
+</p>
+</td>
+</tr>
+<tr> 
+<td> 
+<h4>Exam Question 4: What options would a project manager have if the cable 
+was arriving on 21 December and the due date still had to be met? (2)<br />
+</h4>
+</td>
+</tr>
+<tr> 
+<td> 
+<p>&nbsp;</p>
+<p>This answer has <i>nothing to do with the Gantt chart</i>: it is a common 
+question to test common sense. It is really asking, &quot;How could a 
+task be hurried up?&quot; Expect this type of question and remember that 
+it is not related to the Gantt chart you are given for the other questions.</p>
+<p>The sorts of things you can do are: </p>
+<ul>
+<li>work 24 hours a day; </li>
+<li>bring in more workers; </li>
+<li>reduce the time taken on other tasks (such as cable testing); </li>
+<li>improve work efficiency (e.g. use an electric screwdriver to tighten 
+screws rather than using a manual screwdriver or replace inexperienced 
+workers with skilled and experienced staff who would work faster.)</li>
+</ul>
+<p>Methods that 'cut corners' and affect the quality of the work are not 
+recommended! Suggestion 3 above (cutting down on testing time) is perilously 
+close to 'cutting corners.'<br />
+<br />
+</p>
+</td>
+</tr>
+</table>
+<p align="center"><a href="gantt-pert-index.html" target="_top">Back to the IT Lecture Notes index</a></p>
+<p align="center">&copy; Mark Kelly 2001</p>
+<p align="center">Last changed:
+<!-- #BeginDate format:Am1a -->February 21, 2013 10:54 AM<!-- #EndDate -->
+</p>
+<p align="center"><font size="2">IT Lecture notes &copy; Mark Kelly </font></p>
+<p align="center">&nbsp;</p>
+<!-- #BeginLibraryItem "/Library/GoogleAd.lbi" -->
+<p align="center">
+<p align="center">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"> </script>
+</p>
+<!-- #EndLibraryItem -->
+</body>
+
+<!-- Mirrored from vceit.com/p/gantt-pert-gantt-tute.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:15:49 GMT -->
+</html>

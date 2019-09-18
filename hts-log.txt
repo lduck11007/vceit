@@ -1,0 +1,361 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 18 Sep 2019 18:28:00 at https://vceit.com +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://vceit.com -O1 "C:\My Web Sites\vceit" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:28:02	Warning: 	Moved Permanently for https://vceit.com/
+18:28:02	Warning: 	File has moved from https://vceit.com/ to http://vceit.com/wp/
+18:28:23	Error: 	"Method Not Allowed" (405) at link vceit.com/wp/xmlrpc.php (from vceit.com/wp/)
+19:20:21	Warning: 	Moved Permanently for vceit.com/wp/?page_id=283
+19:20:21	Warning: 	File has moved from vceit.com/wp/?page_id=283 to http://vceit.com/wp/informatics/
+19:20:21	Warning: 	Moved Permanently for vceit.com/wp/?page_id=309
+19:20:21	Warning: 	File has moved from vceit.com/wp/?page_id=309 to http://vceit.com/wp/software-development/
+19:20:21	Warning: 	Moved Permanently for vceit.com/wp/?page_id=323
+19:20:21	Warning: 	File has moved from vceit.com/wp/?page_id=323 to http://vceit.com/wp/computing-units-1-and-2/
+19:20:21	Warning: 	Moved Permanently for vceit.com/wp/?page_id=637
+19:20:21	Warning: 	File has moved from vceit.com/wp/?page_id=637 to http://vceit.com/wp/vce-computing-glossary-2016-2019/
+19:21:07	Warning: 	Moved Permanently for vceit.com/wp/?p=283
+19:21:07	Warning: 	File has moved from vceit.com/wp/?p=283 to http://vceit.com/wp/informatics/
+19:21:12	Warning: 	Retry after error -4 (Incorrect length (3264464 Bytes, 3746514 expected)) at link vceit.com/ppt2016/websites-data.pptx (from vceit.com/wp/informatics/)
+19:21:12	Warning: 	Retry after error -4 (Incorrect length (1422730 Bytes, 2027590 expected)) at link vceit.com/ppt2016/data-collection-techniques.pptx (from vceit.com/wp/informatics/)
+19:21:22	Warning: 	Retry after error -4 (Incorrect length (2017595 Bytes, 2509826 expected)) at link vceit.com/ppt2016/data-entry-controls.pptx (from vceit.com/wp/informatics/)
+19:21:48	Error: 	"Not Found" (404) at link vceit.com/ppt2016/Data-Types.ppt (from vceit.com/wp/informatics/)
+19:21:48	Warning: 	Retry after error -4 (Incorrect length (220635 Bytes, 522839 expected)) at link vceit.com/ppt2016/Data-Types.pptx (from vceit.com/wp/informatics/)
+19:21:48	Warning: 	Retry after error -4 (Incorrect length (3258504 Bytes, 3902623 expected)) at link vceit.com/ppt2016/Data-Security.pptx (from vceit.com/wp/informatics/)
+19:21:58	Warning: 	Retry after error -4 (Incorrect length (624157 Bytes, 1106459 expected)) at link vceit.com/ppt2016/Databases-Purposes.pptx (from vceit.com/wp/informatics/)
+19:22:24	Warning: 	Retry after error -4 (Incorrect length (220668 Bytes, 648259 expected)) at link vceit.com/ppt2016/Databases-Struc-Datatypes-Naming.pptx (from vceit.com/wp/informatics/)
+19:22:25	Warning: 	Retry after error -4 (Incorrect length (222045 Bytes, 458450 expected)) at link vceit.com/ppt2016/naming-conventions.pptx (from vceit.com/wp/informatics/)
+19:22:35	Warning: 	Retry after error -4 (Incorrect length (1796201 Bytes, 2506083 expected)) at link vceit.com/ppt2016/FileNaming.pptx (from vceit.com/wp/informatics/)
+19:23:01	Warning: 	Retry after error -4 (Incorrect length (233055 Bytes, 976302 expected)) at link vceit.com/ppt2016/Database-Normalisation.pptx (from vceit.com/wp/informatics/)
+19:23:04	Warning: 	Retry after error -4 (Incorrect length (220731 Bytes, 532480 expected)) at link vceit.com/ppt2016/database-normalisation-example.ppt (from vceit.com/wp/informatics/)
+19:23:11	Warning: 	Retry after error -4 (Incorrect length (234518 Bytes, 810496 expected)) at link vceit.com/ppt2016/database-normalisation-forms.ppt (from vceit.com/wp/informatics/)
+19:23:40	Warning: 	Retry after error -4 (Incorrect length (220675 Bytes, 508460 expected)) at link vceit.com/ppt2016/Design-Tools-Database.pptx (from vceit.com/wp/informatics/)
+19:23:48	Warning: 	Retry after error -4 (Incorrect length (2076435 Bytes, 2538830 expected)) at link vceit.com/ppt2016/Design-Tools-ERD.pptx (from vceit.com/wp/informatics/)
+19:23:54	Warning: 	Retry after error -4 (Incorrect length (6209320 Bytes, 6828793 expected)) at link vceit.com/ppt2016/design-principles.pptx (from vceit.com/wp/informatics/)
+19:24:24	Warning: 	Retry after error -4 (Incorrect length (1089431 Bytes, 1661428 expected)) at link vceit.com/ppt2016/DataDictionary.pptx (from vceit.com/wp/informatics/)
+19:24:27	Warning: 	Retry after error -4 (Incorrect length (580933 Bytes, 1120864 expected)) at link vceit.com/ppt2016/Design-Tools-Website.pptx (from vceit.com/wp/informatics/)
+19:24:31	Warning: 	Retry after error -4 (Incorrect length (1679612 Bytes, 2245818 expected)) at link vceit.com/ppt2016/validation.pptx (from vceit.com/wp/informatics/)
+19:25:01	Warning: 	Retry after error -4 (Incorrect length (221199 Bytes, 399251 expected)) at link vceit.com/ppt2016/search-sort-filter.pptx (from vceit.com/wp/informatics/)
+19:25:03	Error: 	"Not Found" (404) at link vceit.com/ppt2016/PSM3-Development.ppt (from vceit.com/wp/informatics/)
+19:25:03	Warning: 	Retry after error -4 (Incorrect length (503322 Bytes, 1346993 expected)) at link vceit.com/ppt2016/test-data.pptx (from vceit.com/wp/informatics/)
+19:25:07	Warning: 	Retry after error -4 (Incorrect length (2923755 Bytes, 3434161 expected)) at link vceit.com/ppt2016/user-flow-diagrams-UFD.pptx (from vceit.com/wp/informatics/)
+19:25:47	Warning: 	Moved Permanently for vceit.com/wp/informatics-sat/
+19:25:47	Warning: 	File has moved from vceit.com/wp/informatics-sat/ to http://vceit.com/wp/informatics/informatics-sat/
+19:25:54	Warning: 	Retry after error -4 (Incorrect length (2335477 Bytes, 2738789 expected)) at link vceit.com/ppt2016/Legislation-Privacy.pptx (from vceit.com/wp/informatics/)
+19:25:54	Warning: 	Retry after error -4 (Incorrect length (237109 Bytes, 786807 expected)) at link vceit.com/ppt2016/Legislation-Copyright.pptx (from vceit.com/wp/informatics/)
+19:25:57	Warning: 	Retry after error -4 (Incorrect length (818717 Bytes, 1452337 expected)) at link vceit.com/ppt2016/Legislation-Rights-Spam.pptx (from vceit.com/wp/informatics/)
+19:26:30	Warning: 	Retry after error -4 (Incorrect length (1934027 Bytes, 2558976 expected)) at link vceit.com/ppt2016/gantt.pptx (from vceit.com/wp/informatics/)
+19:26:30	Warning: 	Retry after error -4 (Incorrect length (2599818 Bytes, 3035597 expected)) at link vceit.com/ppt2016/hardware.pptx (from vceit.com/wp/informatics/)
+19:26:33	Warning: 	Retry after error -4 (Incorrect length (1605716 Bytes, 2102947 expected)) at link vceit.com/ppt2016/inclusiveness.pptx (from vceit.com/wp/informatics/)
+19:27:10	Warning: 	Retry after error -4 (Incorrect length (835644 Bytes, 1589671 expected)) at link vceit.com/ppt2016/design-ideas.pptx (from vceit.com/wp/informatics/)
+19:27:10	Warning: 	Retry after error -4 (Incorrect length (438412 Bytes, 1094821 expected)) at link vceit.com/ppt2016/evaluation-criteria.pptx (from vceit.com/wp/informatics/)
+19:27:10	Warning: 	Retry after error -4 (Incorrect length (1332279 Bytes, 1978673 expected)) at link vceit.com/ppt2016/Formats+Conventions-Web.pptx (from vceit.com/wp/informatics/)
+19:27:46	Warning: 	Retry after error -4 (Incorrect length (1178651 Bytes, 1959255 expected)) at link vceit.com/ppt2016/File-Management.pptx (from vceit.com/wp/informatics/)
+19:27:47	Warning: 	Retry after error -4 (Incorrect length (196820 Bytes, 541725 expected)) at link vceit.com/ppt2016/PSM4-Evaluation.pptx (from vceit.com/wp/informatics/)
+19:27:47	Warning: 	Retry after error -4 (Incorrect length (370943 Bytes, 835614 expected)) at link vceit.com/ppt2016/goals-objectives.pptx (from vceit.com/wp/informatics/)
+19:28:24	Warning: 	Retry after error -4 (Incorrect length (1483145 Bytes, 2027233 expected)) at link vceit.com/ppt2016/Managing-Ethical-Dilemmas.pptx (from vceit.com/wp/informatics/)
+19:28:24	Warning: 	Retry after error -4 (Incorrect length (561250 Bytes, 1130917 expected)) at link vceit.com/ppt2016/networks-hardware.pptx (from vceit.com/wp/informatics/)
+19:28:26	Warning: 	Retry after error -4 (Incorrect length (4374202 Bytes, 4855164 expected)) at link vceit.com/ppt2016/Threats.pptx (from vceit.com/wp/informatics/)
+19:29:00	Warning: 	Retry after error -4 (Incorrect length (947785 Bytes, 1580736 expected)) at link vceit.com/ppt2016/Cloud-Computing.pptx (from vceit.com/wp/informatics/)
+19:29:01	Warning: 	Moved Permanently for vceit.com/wp/?p=309
+19:29:01	Warning: 	File has moved from vceit.com/wp/?p=309 to http://vceit.com/wp/software-development/
+19:29:01	Error: 	"Not Found" (404) at link vceit.com/m/it-softdev-specs-samp.pdf (from vceit.com/wp/software-development/)
+19:29:01	Error: 	"Not Found" (404) at link vceit.com/ppt2016/ss_DataDictionary.pptx (from vceit.com/wp/software-development/)
+19:29:01	Error: 	"Not Found" (404) at link vceit.com/ppt2016/ss_mockups.pptx (from vceit.com/wp/software-development/)
+19:29:01	Warning: 	Retry after error -4 (Incorrect length (1623048 Bytes, 2180321 expected)) at link vceit.com/ppt2016/mockups.pptx (from vceit.com/wp/software-development/)
+19:29:03	Warning: 	Retry after error -4 (Incorrect length (1943242 Bytes, 2460849 expected)) at link vceit.com/ppt2016/Pseudocode.pptx (from vceit.com/wp/software-development/)
+19:29:37	Warning: 	Retry after error -4 (Incorrect length (222148 Bytes, 644459 expected)) at link vceit.com/ppt2016/xml.pptx (from vceit.com/wp/software-development/)
+19:29:38	Warning: 	Retry after error -4 (Incorrect length (1542229 Bytes, 2288025 expected)) at link vceit.com/ppt2016/Functions-Statements-etc.pptx (from vceit.com/wp/software-development/)
+19:29:39	Warning: 	Retry after error -4 (Incorrect length (302306 Bytes, 808186 expected)) at link vceit.com/ppt2016/SD-Searching.pptx (from vceit.com/wp/software-development/)
+19:30:13	Warning: 	Retry after error -4 (Incorrect length (2471153 Bytes, 2931229 expected)) at link vceit.com/ppt2016/Trace-Tables-Desk-Checks.pptx (from vceit.com/wp/software-development/)
+19:30:16	Error: 	"Not Found" (404) at link vceit.com/ppt2016/.pptx (from vceit.com/wp/software-development/)
+19:30:16	Warning: 	Retry after error -4 (Incorrect length (2786559 Bytes, 3241406 expected)) at link vceit.com/ppt2016/Use-Case-Diagram-UCD.pptx (from vceit.com/wp/software-development/)
+19:30:28	Warning: 	Retry after error -4 (Incorrect length (220540 Bytes, 615936 expected)) at link vceit.com/ppt2016/DFD-Design-Tools.ppt (from vceit.com/wp/software-development/)
+19:30:49	Warning: 	Retry after error -4 (Incorrect length (218989 Bytes, 361984 expected)) at link vceit.com/ppt2016/DFD-library-example.ppt (from vceit.com/wp/software-development/)
+19:30:52	Warning: 	Retry after error -4 (Incorrect length (3652302 Bytes, 4286975 expected)) at link vceit.com/ppt2016/design-factors.pptx (from vceit.com/wp/software-development/)
+19:31:04	Warning: 	Retry after error -4 (Incorrect length (501016 Bytes, 1213129 expected)) at link vceit.com/ppt2016/Interfaces.pptx (from vceit.com/wp/software-development/)
+19:31:13	Warning: 	Retry after error -4 (Incorrect length (2265127 Bytes, 2727040 expected)) at link vceit.com/ppt2016/hash.pptx (from vceit.com/wp/software-development/)
+19:31:29	Error: 	"Not Found" (404) at link vceit.com/ppt2016/webservers.ppt (from vceit.com/wp/software-development/)
+19:31:29	Warning: 	Retry after error -4 (Incorrect length (220722 Bytes, 625152 expected)) at link vceit.com/ppt2016/SD-Intranet-Internet-VPN.pptx (from vceit.com/wp/software-development/)
+19:31:49	Error: 	"Not Found" (404) at link vceit.com/ppt2016/Networks-hardware.ppt (from vceit.com/wp/software-development/)
+19:31:49	Error: 	"Not Found" (404) at link vceit.com/ppt2016/network-audits-errorlogs-tracking.ppt (from vceit.com/wp/software-development/)
+19:31:51	Warning: 	Moved Permanently for vceit.com/wp/?p=323
+19:31:51	Warning: 	File has moved from vceit.com/wp/?p=323 to http://vceit.com/wp/computing-units-1-and-2/
+19:58:23	Error: 	"Not Found" (404) at link vceit.com/wp/computing-units-1-and-2/vce-computing-unit-1-resources.htm (from vceit.com/wp/computing-units-1-and-2/)
+19:58:23	Error: 	"Not Found" (404) at link vceit.com/ppt2016/Managing Ethical Dilemmas.pptx (from vceit.com/wp/computing-units-1-and-2/)
+19:58:23	Warning: 	Retry after error -4 (Incorrect length (2400462 Bytes, 2963968 expected)) at link vceit.com/ppt2016/Networks-LANs+design.ppt (from vceit.com/wp/computing-units-1-and-2/)
+19:58:23	Warning: 	Retry after error -4 (Incorrect length (387738 Bytes, 956928 expected)) at link vceit.com/ppt2016/network-protocols.ppt (from vceit.com/wp/computing-units-1-and-2/)
+19:58:23	Warning: 	Moved Permanently for vceit.com/wp/?p=908
+19:58:23	Warning: 	File has moved from vceit.com/wp/?p=908 to http://vceit.com/wp/newsblog/
+19:58:23	Error: 	"Not Found" (404) at link vceit.com/m/Approved-vceit.jpg (from vceit.com/wp/newsblog/)
+19:59:58	Error: 	"Not Found" (404) at link vceit.com/p/draft-feedback-2016.htm (from vceit.com/wp/newsblog/)
+19:59:58	Warning: 	Moved Permanently for vceit.com/wp/?p=425
+19:59:58	Warning: 	File has moved from vceit.com/wp/?p=425 to http://vceit.com/wp/exams-2/
+20:06:40	Warning: 	Moved Permanently for vceit.com/wp/?p=956
+20:06:40	Warning: 	File has moved from vceit.com/wp/?p=956 to http://vceit.com/wp/exams-2/exam-tips/
+20:06:40	Warning: 	Moved Permanently for vceit.com/wp/?p=939
+20:06:40	Warning: 	File has moved from vceit.com/wp/?p=939 to http://vceit.com/wp/contact-me-at-vceit-com-2/
+20:06:43	Warning: 	Moved Permanently for vceit.com/wp/?p=637
+20:06:43	Warning: 	File has moved from vceit.com/wp/?p=637 to http://vceit.com/wp/vce-computing-glossary-2016-2019/
+20:06:43	Warning: 	Moved Permanently for vceit.com/wp/?p=918
+20:06:43	Warning: 	File has moved from vceit.com/wp/?p=918 to http://vceit.com/wp/informatics/informatics-mandated-software-tools-and-functions/
+20:06:43	Warning: 	Moved Permanently for vceit.com/wp/?p=1284
+20:06:43	Warning: 	File has moved from vceit.com/wp/?p=1284 to http://vceit.com/wp/informatics/informatics-sat/
+20:06:43	Warning: 	Moved Permanently for vceit.com/wp/?p=1350
+20:06:43	Warning: 	File has moved from vceit.com/wp/?p=1350 to http://vceit.com/wp/informatics/informatics-vcaa-sample-exam-answers/
+20:06:43	Warning: 	Retry after error -4 (Incorrect length (303903 Bytes, 307658 expected)) at link vceit.com/wp/wp-content/uploads/2016/07/it-informatics-specs-samp_2.pdf (from vceit.com/wp/informatics/informatics-vcaa-sample-exam-answers/)
+20:06:43	Warning: 	Moved Permanently for vceit.com/wp/?p=1397
+20:06:43	Warning: 	File has moved from vceit.com/wp/?p=1397 to http://vceit.com/wp/software-development/sd-sample-exam/
+20:06:46	Error: 	"Not Found" (404) at link vceit.com/ppt2016/selectiion-sort.pptx (from vceit.com/wp/software-development/sd-sample-exam/)
+20:06:46	Warning: 	Moved Permanently for vceit.com/wp/?p=915
+20:06:46	Warning: 	File has moved from vceit.com/wp/?p=915 to http://vceit.com/wp/software-development/software-development-programming-requirements-for-2016/
+20:06:46	Warning: 	Moved Permanently for vceit.com/wp/?p=1288
+20:06:46	Warning: 	File has moved from vceit.com/wp/?p=1288 to http://vceit.com/wp/software-development/software-development-sat/
+20:06:46	Warning: 	Moved Permanently for vceit.com/wp/?p=1247
+20:06:46	Warning: 	File has moved from vceit.com/wp/?p=1247 to http://vceit.com/wp/what-is-informatics/
+20:06:55	Warning: 	Retry after error -4 (Incorrect length (3487769 Bytes, 3746514 expected)) at link vceit.com/ppt2016/websites-data.pptx (from vceit.com/wp/informatics/)
+20:06:55	Warning: 	Retry after error -4 (Incorrect length (1648269 Bytes, 2027590 expected)) at link vceit.com/ppt2016/data-collection-techniques.pptx (from vceit.com/wp/informatics/)
+20:06:56	Warning: 	Retry after error -4 (Incorrect length (2241390 Bytes, 2509826 expected)) at link vceit.com/ppt2016/data-entry-controls.pptx (from vceit.com/wp/informatics/)
+20:06:57	Warning: 	Retry after error -4 (Incorrect length (443508 Bytes, 522839 expected)) at link vceit.com/ppt2016/Data-Types.pptx (from vceit.com/wp/informatics/)
+20:06:58	Warning: 	Retry after error -4 (Incorrect length (3483596 Bytes, 3902623 expected)) at link vceit.com/ppt2016/Data-Security.pptx (from vceit.com/wp/informatics/)
+20:07:21	Warning: 	Retry after error -4 (Incorrect length (847438 Bytes, 1106459 expected)) at link vceit.com/ppt2016/Databases-Purposes.pptx (from vceit.com/wp/informatics/)
+20:07:33	Warning: 	Retry after error -4 (Incorrect length (443861 Bytes, 648259 expected)) at link vceit.com/ppt2016/Databases-Struc-Datatypes-Naming.pptx (from vceit.com/wp/informatics/)
+20:07:35	Warning: 	Retry after error -4 (Incorrect length (2020822 Bytes, 2506083 expected)) at link vceit.com/ppt2016/FileNaming.pptx (from vceit.com/wp/informatics/)
+20:07:36	Warning: 	Retry after error -4 (Incorrect length (476472 Bytes, 976302 expected)) at link vceit.com/ppt2016/Database-Normalisation.pptx (from vceit.com/wp/informatics/)
+20:07:40	Warning: 	Retry after error -4 (Incorrect length (457205 Bytes, 810496 expected)) at link vceit.com/ppt2016/database-normalisation-forms.ppt (from vceit.com/wp/informatics/)
+20:08:10	Warning: 	Retry after error -4 (Incorrect length (2298373 Bytes, 2538830 expected)) at link vceit.com/ppt2016/Design-Tools-ERD.pptx (from vceit.com/wp/informatics/)
+20:08:10	Warning: 	Retry after error -4 (Incorrect length (6433730 Bytes, 6828793 expected)) at link vceit.com/ppt2016/design-principles.pptx (from vceit.com/wp/informatics/)
+20:08:16	Warning: 	Retry after error -4 (Incorrect length (1312342 Bytes, 1661428 expected)) at link vceit.com/ppt2016/DataDictionary.pptx (from vceit.com/wp/informatics/)
+20:08:17	Warning: 	Retry after error -4 (Incorrect length (804269 Bytes, 1120864 expected)) at link vceit.com/ppt2016/Design-Tools-Website.pptx (from vceit.com/wp/informatics/)
+20:08:46	Warning: 	Retry after error -4 (Incorrect length (1904076 Bytes, 2245818 expected)) at link vceit.com/ppt2016/validation.pptx (from vceit.com/wp/informatics/)
+20:08:46	Warning: 	Retry after error -4 (Incorrect length (869773 Bytes, 1346993 expected)) at link vceit.com/ppt2016/test-data.pptx (from vceit.com/wp/informatics/)
+20:08:53	Warning: 	Retry after error -4 (Incorrect length (3151578 Bytes, 3434161 expected)) at link vceit.com/ppt2016/user-flow-diagrams-UFD.pptx (from vceit.com/wp/informatics/)
+20:08:55	Warning: 	Moved Permanently for vceit.com/wp/?p=1617
+20:08:55	Warning: 	File has moved from vceit.com/wp/?p=1617 to http://vceit.com/wp/informatics/16i-c08/
+20:10:09	Warning: 	Moved Permanently for vceit.com/wp/?p=1094
+20:10:09	Warning: 	File has moved from vceit.com/wp/?p=1094 to http://vceit.com/wp/correctness-versus-accuracy/
+20:10:11	Warning: 	Moved Permanently for vceit.com/wp/?p=1306
+20:10:11	Warning: 	File has moved from vceit.com/wp/?p=1306 to http://vceit.com/wp/logical-fallacies-and-failures/
+20:10:11	Warning: 	Retry after error -4 (Incorrect length (2558840 Bytes, 2738789 expected)) at link vceit.com/ppt2016/Legislation-Privacy.pptx (from vceit.com/wp/informatics/)
+20:10:11	Warning: 	Retry after error -4 (Incorrect length (460216 Bytes, 786807 expected)) at link vceit.com/ppt2016/Legislation-Copyright.pptx (from vceit.com/wp/informatics/)
+20:10:12	Warning: 	Retry after error -4 (Incorrect length (1043955 Bytes, 1452337 expected)) at link vceit.com/ppt2016/Legislation-Rights-Spam.pptx (from vceit.com/wp/informatics/)
+20:10:12	Warning: 	Retry after error -4 (Incorrect length (2158400 Bytes, 2558976 expected)) at link vceit.com/ppt2016/gantt.pptx (from vceit.com/wp/informatics/)
+20:10:38	Warning: 	Retry after error -4 (Incorrect length (2822385 Bytes, 3035597 expected)) at link vceit.com/ppt2016/hardware.pptx (from vceit.com/wp/informatics/)
+20:10:48	Warning: 	Retry after error -4 (Incorrect length (1839159 Bytes, 2102947 expected)) at link vceit.com/ppt2016/inclusiveness.pptx (from vceit.com/wp/informatics/)
+20:10:51	Warning: 	Moved Permanently for vceit.com/wp/?p=1683
+20:10:51	Warning: 	File has moved from vceit.com/wp/?p=1683 to http://vceit.com/wp/the-myth-of-brainstorming/
+20:10:52	Warning: 	Retry after error -4 (Incorrect length (1070878 Bytes, 1589671 expected)) at link vceit.com/ppt2016/design-ideas.pptx (from vceit.com/wp/informatics/)
+20:10:52	Warning: 	Retry after error -4 (Incorrect length (659582 Bytes, 1094821 expected)) at link vceit.com/ppt2016/evaluation-criteria.pptx (from vceit.com/wp/informatics/)
+20:11:10	Warning: 	Retry after error -4 (Incorrect length (1554976 Bytes, 1978673 expected)) at link vceit.com/ppt2016/Formats+Conventions-Web.pptx (from vceit.com/wp/informatics/)
+20:11:27	Warning: 	Retry after error -4 (Incorrect length (1428483 Bytes, 1959255 expected)) at link vceit.com/ppt2016/File-Management.pptx (from vceit.com/wp/informatics/)
+20:11:28	Warning: 	Retry after error -4 (Incorrect length (416549 Bytes, 541725 expected)) at link vceit.com/ppt2016/PSM4-Evaluation.pptx (from vceit.com/wp/informatics/)
+20:11:29	Warning: 	Retry after error -4 (Incorrect length (589488 Bytes, 835614 expected)) at link vceit.com/ppt2016/goals-objectives.pptx (from vceit.com/wp/informatics/)
+20:11:46	Warning: 	Retry after error -4 (Incorrect length (1704748 Bytes, 2027233 expected)) at link vceit.com/ppt2016/Managing-Ethical-Dilemmas.pptx (from vceit.com/wp/informatics/)
+20:11:49	Warning: 	Retry after error -4 (Incorrect length (782853 Bytes, 1130917 expected)) at link vceit.com/ppt2016/networks-hardware.pptx (from vceit.com/wp/informatics/)
+20:12:04	Warning: 	Retry after error -4 (Incorrect length (4600672 Bytes, 4855164 expected)) at link vceit.com/ppt2016/Threats.pptx (from vceit.com/wp/informatics/)
+20:12:08	Warning: 	Retry after error -4 (Incorrect length (1173439 Bytes, 1580736 expected)) at link vceit.com/ppt2016/Cloud-Computing.pptx (from vceit.com/wp/informatics/)
+20:12:25	Warning: 	Retry after error -4 (Incorrect length (1846059 Bytes, 2180321 expected)) at link vceit.com/ppt2016/mockups.pptx (from vceit.com/wp/software-development/)
+20:12:38	Warning: 	Retry after error -4 (Incorrect length (2166473 Bytes, 2460849 expected)) at link vceit.com/ppt2016/Pseudocode.pptx (from vceit.com/wp/software-development/)
+20:12:45	Warning: 	Retry after error -4 (Incorrect length (445833 Bytes, 644459 expected)) at link vceit.com/ppt2016/xml.pptx (from vceit.com/wp/software-development/)
+20:12:45	Warning: 	Retry after error -4 (Incorrect length (1854317 Bytes, 2288025 expected)) at link vceit.com/ppt2016/Functions-Statements-etc.pptx (from vceit.com/wp/software-development/)
+20:13:18	Warning: 	Retry after error -4 (Incorrect length (523707 Bytes, 808186 expected)) at link vceit.com/ppt2016/SD-Searching.pptx (from vceit.com/wp/software-development/)
+20:13:19	Warning: 	Retry after error -4 (Incorrect length (2694310 Bytes, 2931229 expected)) at link vceit.com/ppt2016/Trace-Tables-Desk-Checks.pptx (from vceit.com/wp/software-development/)
+20:13:21	Warning: 	Retry after error -4 (Incorrect length (3009709 Bytes, 3241406 expected)) at link vceit.com/ppt2016/Use-Case-Diagram-UCD.pptx (from vceit.com/wp/software-development/)
+20:13:24	Warning: 	Retry after error -4 (Incorrect length (444011 Bytes, 615936 expected)) at link vceit.com/ppt2016/DFD-Design-Tools.ppt (from vceit.com/wp/software-development/)
+20:13:53	Warning: 	Retry after error -4 (Incorrect length (3876586 Bytes, 4286975 expected)) at link vceit.com/ppt2016/design-factors.pptx (from vceit.com/wp/software-development/)
+20:13:57	Warning: 	Retry after error -4 (Incorrect length (807561 Bytes, 1213129 expected)) at link vceit.com/ppt2016/Interfaces.pptx (from vceit.com/wp/software-development/)
+20:13:59	Warning: 	Retry after error -4 (Incorrect length (2487590 Bytes, 2727040 expected)) at link vceit.com/ppt2016/hash.pptx (from vceit.com/wp/software-development/)
+20:14:03	Warning: 	Retry after error -4 (Incorrect length (522578 Bytes, 625152 expected)) at link vceit.com/ppt2016/SD-Intranet-Internet-VPN.pptx (from vceit.com/wp/software-development/)
+20:14:20	Warning: 	Retry after error -4 (Incorrect length (2640497 Bytes, 2963968 expected)) at link vceit.com/ppt2016/Networks-LANs+design.ppt (from vceit.com/wp/computing-units-1-and-2/)
+20:14:30	Warning: 	Retry after error -4 (Incorrect length (622408 Bytes, 956928 expected)) at link vceit.com/ppt2016/network-protocols.ppt (from vceit.com/wp/computing-units-1-and-2/)
+20:15:11	Warning: 	Retry after error -4 (Incorrect length (248658 Bytes, 392314 expected)) at link vceit.com/m/ITApps_examrep13.pdf (from vceit.com/p/postmortem-2013i.htm)
+20:15:12	Error: 	"Not Found" (404) at link vceit.com/selection-sort.pptx (from vceit.com/p/postmortem-2016s.htm)
+20:15:12	Error: 	"Not Found" (404) at link vceit.com/p/00-psm2011.htm (from vceit.com/p/postmortem-2011i.htm)
+20:15:12	Error: 	"Not Found" (404) at link vceit.com/p/b5 (from vceit.com/p/postmortem-2015i.htm)
+20:15:12	Error: 	"Not Found" (404) at link vceit.com/p/b6 (from vceit.com/p/postmortem-2015i.htm)
+20:15:12	Error: 	"Not Found" (404) at link vceit.com/p/a20 (from vceit.com/p/postmortem-2015i.htm)
+20:15:12	Error: 	"Not Found" (404) at link vceit.com/p/b10 (from vceit.com/p/postmortem-2015i.htm)
+20:15:12	Error: 	"Not Found" (404) at link pagead2.googlesyndication.com/pagead/showads.js (from vceit.com/p/postmortem-2011s.htm)
+20:15:47	Error: 	"Not Found" (404) at link vceit.com/p/conventions-styleguide.htm (from vceit.com/p/postmortem-2001i.htm)
+20:15:49	Warning: 	Retry after error -4 (Incorrect length (256090 Bytes, 259082 expected)) at link vceit.com/wp/wp-content/uploads/2016/07/it-informatics-specs-samp_2.pdf (from vceit.com/wp/informatics/informatics-vcaa-sample-exam-answers/)
+20:15:52	Warning: 	Moved Permanently for vceit.com/wp/?p=1312
+20:15:52	Warning: 	File has moved from vceit.com/wp/?p=1312 to http://vceit.com/wp/the-new-informatics-exam-format-has-been-announced/
+20:16:02	Error: 	"Incorrect length (1879096 Bytes, 2027590 expected)" (-4) after 2 retries at link vceit.com/ppt2016/data-collection-techniques.pptx (from vceit.com/wp/informatics/)
+20:16:02	Error: 	"Incorrect length (3708259 Bytes, 3902623 expected)" (-4) after 2 retries at link vceit.com/ppt2016/Data-Security.pptx (from vceit.com/wp/informatics/)
+20:16:02	Error: 	"Incorrect length (2247672 Bytes, 2506083 expected)" (-4) after 2 retries at link vceit.com/ppt2016/FileNaming.pptx (from vceit.com/wp/informatics/)
+20:16:02	Error: 	"Incorrect length (701131 Bytes, 976302 expected)" (-4) after 2 retries at link vceit.com/ppt2016/Database-Normalisation.pptx (from vceit.com/wp/informatics/)
+20:16:02	Error: 	"Incorrect length (681361 Bytes, 810496 expected)" (-4) after 2 retries at link vceit.com/ppt2016/database-normalisation-forms.ppt (from vceit.com/wp/informatics/)
+20:16:02	Error: 	"Incorrect length (6658697 Bytes, 6828793 expected)" (-4) after 2 retries at link vceit.com/ppt2016/design-principles.pptx (from vceit.com/wp/informatics/)
+20:16:02	Error: 	"Incorrect length (1536538 Bytes, 1661428 expected)" (-4) after 2 retries at link vceit.com/ppt2016/DataDictionary.pptx (from vceit.com/wp/informatics/)
+20:16:02	Error: 	"Incorrect length (2126807 Bytes, 2245818 expected)" (-4) after 2 retries at link vceit.com/ppt2016/validation.pptx (from vceit.com/wp/informatics/)
+20:16:02	Error: 	"Incorrect length (1093839 Bytes, 1346993 expected)" (-4) after 2 retries at link vceit.com/ppt2016/test-data.pptx (from vceit.com/wp/informatics/)
+20:16:02	Warning: 	Moved Permanently for vceit.com/wp/?p=1616
+20:16:02	Warning: 	File has moved from vceit.com/wp/?p=1616 to http://vceit.com/wp/informatics/16i-c1-gantt-hand/
+20:16:06	Warning: 	Moved Permanently for vceit.com/wp/?p=1618
+20:16:06	Warning: 	File has moved from vceit.com/wp/?p=1618 to http://vceit.com/wp/informatics/16i-c08_tn-2/
+20:16:12	Warning: 	Moved Permanently for vceit.com/wp/?p=986
+20:16:12	Warning: 	File has moved from vceit.com/wp/?p=986 to http://vceit.com/wp/avoiding-nested-ifs-in-excel/
+20:16:16	Error: 	"Not Found" (404) at link vceit.com/wp/etc/mailform.htm (from vceit.com/wp/avoiding-nested-ifs-in-excel/)
+20:16:16	Error: 	"Not Found" (404) at link vceit.com/wp/m/nasty-if-months.xls (from vceit.com/wp/avoiding-nested-ifs-in-excel/)
+20:16:16	Error: 	"Not Found" (404) at link vceit.com/m/nasty-if-challenge4.xls (from vceit.com/wp/avoiding-nested-ifs-in-excel/)
+20:16:16	Error: 	"Not Found" (404) at link vceit.com/m/nasty-if-hvlookup.xls (from vceit.com/wp/avoiding-nested-ifs-in-excel/)
+20:16:16	Error: 	"Not Found" (404) at link vceit.com/m/nasty-if-salary-degree.xls (from vceit.com/wp/avoiding-nested-ifs-in-excel/)
+20:16:16	Error: 	"Not Found" (404) at link vceit.com/m/nasty-if-probation.xlsx (from vceit.com/wp/avoiding-nested-ifs-in-excel/)
+20:16:16	Error: 	"Not Found" (404) at link vceit.com/m/nasty-if-challenge8.xls (from vceit.com/wp/avoiding-nested-ifs-in-excel/)
+20:16:16	Warning: 	Moved Permanently for vceit.com/wp/?p=1310
+20:16:16	Warning: 	File has moved from vceit.com/wp/?p=1310 to http://vceit.com/wp/it-applications-exam-report-is-available/
+20:16:17	Error: 	"Incorrect length (680627 Bytes, 786807 expected)" (-4) after 2 retries at link vceit.com/ppt2016/Legislation-Copyright.pptx (from vceit.com/wp/informatics/)
+20:16:17	Error: 	"Incorrect length (1261081 Bytes, 1452337 expected)" (-4) after 2 retries at link vceit.com/ppt2016/Legislation-Rights-Spam.pptx (from vceit.com/wp/informatics/)
+20:16:17	Error: 	"Incorrect length (2376495 Bytes, 2558976 expected)" (-4) after 2 retries at link vceit.com/ppt2016/gantt.pptx (from vceit.com/wp/informatics/)
+20:16:17	Warning: 	Moved Permanently for vceit.com/wp/?p=1647
+20:16:17	Warning: 	File has moved from vceit.com/wp/?p=1647 to http://vceit.com/wp/key-knowledge-kwiz/
+20:16:17	Error: 	"Incorrect length (1294658 Bytes, 1589671 expected)" (-4) after 2 retries at link vceit.com/ppt2016/design-ideas.pptx (from vceit.com/wp/informatics/)
+20:16:17	Error: 	"Incorrect length (884706 Bytes, 1094821 expected)" (-4) after 2 retries at link vceit.com/ppt2016/evaluation-criteria.pptx (from vceit.com/wp/informatics/)
+20:16:17	Error: 	"Incorrect length (1781030 Bytes, 1978673 expected)" (-4) after 2 retries at link vceit.com/ppt2016/Formats+Conventions-Web.pptx (from vceit.com/wp/informatics/)
+20:16:17	Error: 	"Incorrect length (1655754 Bytes, 1959255 expected)" (-4) after 2 retries at link vceit.com/ppt2016/File-Management.pptx (from vceit.com/wp/informatics/)
+20:16:17	Error: 	"Incorrect length (1006509 Bytes, 1130917 expected)" (-4) after 2 retries at link vceit.com/ppt2016/networks-hardware.pptx (from vceit.com/wp/informatics/)
+20:16:17	Error: 	"Incorrect length (1396714 Bytes, 1580736 expected)" (-4) after 2 retries at link vceit.com/ppt2016/Cloud-Computing.pptx (from vceit.com/wp/informatics/)
+20:16:17	Error: 	"Incorrect length (2077474 Bytes, 2288025 expected)" (-4) after 2 retries at link vceit.com/ppt2016/Functions-Statements-etc.pptx (from vceit.com/wp/software-development/)
+20:16:17	Error: 	"Incorrect length (4103158 Bytes, 4286975 expected)" (-4) after 2 retries at link vceit.com/ppt2016/design-factors.pptx (from vceit.com/wp/software-development/)
+20:16:17	Error: 	"Incorrect length (1033963 Bytes, 1213129 expected)" (-4) after 2 retries at link vceit.com/ppt2016/Interfaces.pptx (from vceit.com/wp/software-development/)
+20:16:17	Error: 	"Incorrect length (849554 Bytes, 956928 expected)" (-4) after 2 retries at link vceit.com/ppt2016/network-protocols.ppt (from vceit.com/wp/computing-units-1-and-2/)
+20:16:17	Error: 	"Not Found" (404) at link vceit.com/m/pm/17i-c09.gif (from vceit.com/p/postmortem-2017i.htm)
+20:16:40	Error: 	"Not Found" (404) at link vceit.com/slideshows/Design-Tools-Database.ppt (from vceit.com/p/designtools.htm)
+20:16:40	Error: 	"Not Found" (404) at link vceit.com/slideshows/Design-Tools-Website.ppt (from vceit.com/p/designtools.htm)
+20:16:40	Error: 	"Not Found" (404) at link vceit.com/slideshows/SD-Design-Tools-DFD.ppt (from vceit.com/p/designtools.htm)
+20:16:58	Error: 	"Not Found" (404) at link https://www.un.org/media/chart/unsyst.gif (from vceit.com/p/designtools.htm)
+20:16:59	Error: 	"Not Found" (404) at link vceit.com/slideshows/Design-Tools-ERD.ppt (from vceit.com/p/designtools.htm)
+20:16:59	Error: 	"Not Found" (404) at link vceit.com/p/gantt-pert-pert-tute.htm (from vceit.com/p/gantt-pert-gantt-tute.htm)
+20:17:01	Error: 	"Incorrect length (501489 Bytes, 501962 expected)" (-4) after 2 retries at link vceit.com/wp/wp-content/uploads/2016/07/it-informatics-specs-samp_2.pdf (from vceit.com/wp/informatics/informatics-vcaa-sample-exam-answers/)
+20:17:01	Warning: 	Moved Permanently for vceit.com/wp/?p=1552
+20:17:01	Warning: 	File has moved from vceit.com/wp/?p=1552 to http://vceit.com/wp/a-sad-tale-of-creeping-data-rot-and-general-obsolescence/
+20:17:01	Warning: 	Moved Permanently for vceit.com/wp/?p=1562
+20:17:01	Warning: 	File has moved from vceit.com/wp/?p=1562 to http://vceit.com/wp/correctness-versus-accuracy-2/
+20:17:02	Warning: 	Moved Permanently for vceit.com/wp/?p=1558
+20:17:02	Warning: 	File has moved from vceit.com/wp/?p=1558 to http://vceit.com/wp/interbits/
+20:17:02	Warning: 	Moved Permanently for vceit.com/wp/?p=1554
+20:17:02	Warning: 	File has moved from vceit.com/wp/?p=1554 to http://vceit.com/wp/apple-does-something-right-wow/
+20:17:03	Error: 	"Not Found" (404) at link vceit.com/wp/category/uncategorized/page/etc/mailform.htm (from vceit.com/wp/category/uncategorized/page/2/)
+20:17:03	Error: 	"Not Found" (404) at link vceit.com/wp/category/uncategorized/page/m/nasty-if-months.xls (from vceit.com/wp/category/uncategorized/page/2/)
+20:17:03	Warning: 	Moved Permanently for vceit.com/wp/?p=1615
+20:17:03	Warning: 	File has moved from vceit.com/wp/?p=1615 to http://vceit.com/wp/informatics/16i-c1-gantt_tn/
+20:17:06	Warning: 	Moved Permanently for vceit.com/wp/?p=1619
+20:17:06	Warning: 	File has moved from vceit.com/wp/?p=1619 to http://vceit.com/wp/informatics/16i-c09/
+20:17:09	Warning: 	Moved Permanently for vceit.com/wp/?p=882
+20:17:09	Warning: 	File has moved from vceit.com/wp/?p=882 to http://vceit.com/wp/the-cms-site/
+20:17:09	Error: 	"Not Found" (404) at link vceit.com/wp/author/etc/mailform.htm (from vceit.com/wp/author/nylon/)
+20:17:09	Error: 	"Not Found" (404) at link vceit.com/wp/author/m/nasty-if-months.xls (from vceit.com/wp/author/nylon/)
+20:17:09	Error: 	"Not Found" (404) at link vceit.com/p/PSM-topbottom.htm (from vceit.com/p/dfd.htm)
+20:17:09	Error: 	"Not Found" (404) at link vceit.com/p/gantt-pert-pertquiz.htm (from vceit.com/p/gantt-pert-index.htm)
+20:17:10	Error: 	"Not Found" (404) at link vceit.com/p/gantt-pert-dev-pert.htm (from vceit.com/p/gantt-pert-index.htm)
+20:17:10	Warning: 	Moved Permanently for vceit.com/wp/?p=1614
+20:17:10	Warning: 	File has moved from vceit.com/wp/?p=1614 to http://vceit.com/wp/informatics/16i-c1-gantt/
+20:17:13	Warning: 	Moved Permanently for vceit.com/wp/?p=1620
+20:17:13	Warning: 	File has moved from vceit.com/wp/?p=1620 to http://vceit.com/wp/informatics/16i-c11/
+20:17:16	Error: 	"Not Found" (404) at link vceit.com/p/gantt-pert-buffalo-pert.htm (from vceit.com/p/gantt-pert-projmanterms.htm)
+20:17:16	Warning: 	Moved Permanently for vceit.com/wp/?p=1613
+20:17:16	Warning: 	File has moved from vceit.com/wp/?p=1613 to http://vceit.com/wp/informatics/16i-c01/
+20:17:19	Warning: 	Moved Permanently for vceit.com/wp/?p=1621
+20:17:19	Warning: 	File has moved from vceit.com/wp/?p=1621 to http://vceit.com/wp/informatics/16i-c12/
+20:17:23	Warning: 	Moved Permanently for vceit.com/wp/?p=1612
+20:17:23	Warning: 	File has moved from vceit.com/wp/?p=1612 to http://vceit.com/wp/informatics/16i-b05/
+20:17:26	Warning: 	Moved Permanently for vceit.com/wp/?p=1622
+20:17:26	Warning: 	File has moved from vceit.com/wp/?p=1622 to http://vceit.com/wp/informatics/16i-cs01/
+20:17:29	Warning: 	Moved Permanently for vceit.com/wp/?p=1611
+20:17:29	Warning: 	File has moved from vceit.com/wp/?p=1611 to http://vceit.com/wp/informatics/16i-b02/
+20:17:33	Warning: 	Moved Permanently for vceit.com/wp/?p=1623
+20:17:33	Warning: 	File has moved from vceit.com/wp/?p=1623 to http://vceit.com/wp/informatics/16i-cs02/
+20:17:38	Warning: 	Moved Permanently for vceit.com/wp/?p=1610
+20:17:38	Warning: 	File has moved from vceit.com/wp/?p=1610 to http://vceit.com/wp/informatics/16i-b01b-answer/
+20:17:41	Warning: 	Moved Permanently for vceit.com/wp/?p=1625
+20:17:41	Warning: 	File has moved from vceit.com/wp/?p=1625 to http://vceit.com/wp/informatics/16s-a03/
+20:17:44	Warning: 	Moved Permanently for vceit.com/wp/?p=1609
+20:17:44	Warning: 	File has moved from vceit.com/wp/?p=1609 to http://vceit.com/wp/informatics/16i-b01b/
+20:17:48	Warning: 	Moved Permanently for vceit.com/wp/?p=1626
+20:17:48	Warning: 	File has moved from vceit.com/wp/?p=1626 to http://vceit.com/wp/informatics/16s-a05/
+20:17:51	Warning: 	Moved Permanently for vceit.com/wp/?p=1608
+20:17:51	Warning: 	File has moved from vceit.com/wp/?p=1608 to http://vceit.com/wp/informatics/16i-a19/
+20:17:53	Warning: 	Moved Permanently for vceit.com/wp/?p=1627
+20:17:53	Warning: 	File has moved from vceit.com/wp/?p=1627 to http://vceit.com/wp/informatics/16s-a09/
+20:17:56	Warning: 	Moved Permanently for vceit.com/wp/?p=1607
+20:17:56	Warning: 	File has moved from vceit.com/wp/?p=1607 to http://vceit.com/wp/informatics/16i-a18/
+20:18:00	Warning: 	Moved Permanently for vceit.com/wp/?p=1628
+20:18:00	Warning: 	File has moved from vceit.com/wp/?p=1628 to http://vceit.com/wp/informatics/16s-b01/
+20:18:03	Warning: 	Moved Permanently for vceit.com/wp/?p=1606
+20:18:03	Warning: 	File has moved from vceit.com/wp/?p=1606 to http://vceit.com/wp/informatics/16i-a17d/
+20:18:06	Warning: 	Moved Permanently for vceit.com/wp/?p=1629
+20:18:06	Warning: 	File has moved from vceit.com/wp/?p=1629 to http://vceit.com/wp/informatics/16s-b04a/
+20:18:08	Warning: 	Moved Permanently for vceit.com/wp/?p=1605
+20:18:08	Warning: 	File has moved from vceit.com/wp/?p=1605 to http://vceit.com/wp/informatics/16i-a17c/
+20:18:12	Warning: 	Moved Permanently for vceit.com/wp/?p=1630
+20:18:12	Warning: 	File has moved from vceit.com/wp/?p=1630 to http://vceit.com/wp/informatics/16s-b04a-answer/
+20:18:15	Warning: 	Moved Permanently for vceit.com/wp/?p=1604
+20:18:15	Warning: 	File has moved from vceit.com/wp/?p=1604 to http://vceit.com/wp/informatics/16i-a17b/
+20:18:19	Warning: 	Moved Permanently for vceit.com/wp/?p=1631
+20:18:19	Warning: 	File has moved from vceit.com/wp/?p=1631 to http://vceit.com/wp/informatics/16s-c01/
+20:18:25	Warning: 	Moved Permanently for vceit.com/wp/?p=1603
+20:18:25	Warning: 	File has moved from vceit.com/wp/?p=1603 to http://vceit.com/wp/informatics/16i-a17a/
+20:18:29	Warning: 	Moved Permanently for vceit.com/wp/?p=1633
+20:18:29	Warning: 	File has moved from vceit.com/wp/?p=1633 to http://vceit.com/wp/informatics/16s-c01a-answer/
+20:18:36	Warning: 	Moved Permanently for vceit.com/wp/?p=1602
+20:18:36	Warning: 	File has moved from vceit.com/wp/?p=1602 to http://vceit.com/wp/informatics/16i-a16/
+20:18:40	Warning: 	Moved Permanently for vceit.com/wp/?p=1634
+20:18:40	Warning: 	File has moved from vceit.com/wp/?p=1634 to http://vceit.com/wp/informatics/16s-c03/
+20:18:45	Warning: 	Moved Permanently for vceit.com/wp/?p=1601
+20:18:45	Warning: 	File has moved from vceit.com/wp/?p=1601 to http://vceit.com/wp/informatics/16i-a13b/
+20:18:53	Warning: 	Moved Permanently for vceit.com/wp/?p=1635
+20:18:53	Warning: 	File has moved from vceit.com/wp/?p=1635 to http://vceit.com/wp/informatics/16s-c03a-answer/
+20:18:57	Warning: 	Moved Permanently for vceit.com/wp/?p=1600
+20:18:57	Warning: 	File has moved from vceit.com/wp/?p=1600 to http://vceit.com/wp/informatics/16i-a13/
+20:19:02	Warning: 	Moved Permanently for vceit.com/wp/?p=1636
+20:19:02	Warning: 	File has moved from vceit.com/wp/?p=1636 to http://vceit.com/wp/informatics/16s-c03a-answer1/
+20:19:05	Warning: 	Moved Permanently for vceit.com/wp/?p=1599
+20:19:05	Warning: 	File has moved from vceit.com/wp/?p=1599 to http://vceit.com/wp/informatics/16i-a12/
+20:19:09	Warning: 	Moved Permanently for vceit.com/wp/?p=1637
+20:19:09	Warning: 	File has moved from vceit.com/wp/?p=1637 to http://vceit.com/wp/informatics/16s-c03a-answer2/
+20:19:12	Warning: 	Moved Permanently for vceit.com/wp/?p=1598
+20:19:12	Warning: 	File has moved from vceit.com/wp/?p=1598 to http://vceit.com/wp/informatics/16i-a11-gantt2/
+20:19:17	Warning: 	Moved Permanently for vceit.com/wp/?p=1638
+20:19:17	Warning: 	File has moved from vceit.com/wp/?p=1638 to http://vceit.com/wp/informatics/16s-c04a/
+20:19:20	Warning: 	Moved Permanently for vceit.com/wp/?p=1597
+20:19:20	Warning: 	File has moved from vceit.com/wp/?p=1597 to http://vceit.com/wp/informatics/16i-a11-gantt1/
+20:19:24	Warning: 	Moved Permanently for vceit.com/wp/?p=1639
+20:19:24	Warning: 	File has moved from vceit.com/wp/?p=1639 to http://vceit.com/wp/informatics/16s-c04b/
+20:19:28	Warning: 	Moved Permanently for vceit.com/wp/?p=1596
+20:19:28	Warning: 	File has moved from vceit.com/wp/?p=1596 to http://vceit.com/wp/informatics/16i-a11/
+20:19:31	Warning: 	Moved Permanently for vceit.com/wp/?p=1640
+20:19:31	Warning: 	File has moved from vceit.com/wp/?p=1640 to http://vceit.com/wp/informatics/16s-c05/
+20:19:34	Warning: 	Moved Permanently for vceit.com/wp/?p=1595
+20:19:34	Warning: 	File has moved from vceit.com/wp/?p=1595 to http://vceit.com/wp/informatics/16i-a09/
+20:19:37	Warning: 	Moved Permanently for vceit.com/wp/?p=1641
+20:19:37	Warning: 	File has moved from vceit.com/wp/?p=1641 to http://vceit.com/wp/informatics/16s-c05-answer/
+20:19:41	Warning: 	Moved Permanently for vceit.com/wp/?p=1594
+20:19:41	Warning: 	File has moved from vceit.com/wp/?p=1594 to http://vceit.com/wp/informatics/16i-a07/
+20:19:48	Warning: 	Moved Permanently for vceit.com/wp/?p=1642
+20:19:48	Warning: 	File has moved from vceit.com/wp/?p=1642 to http://vceit.com/wp/informatics/16s-c11/
+20:19:51	Warning: 	Moved Permanently for vceit.com/wp/?p=1593
+20:19:51	Warning: 	File has moved from vceit.com/wp/?p=1593 to http://vceit.com/wp/informatics/16i-c08_tn/
+20:19:53	Warning: 	Moved Permanently for vceit.com/wp/?p=1643
+20:19:53	Warning: 	File has moved from vceit.com/wp/?p=1643 to http://vceit.com/wp/informatics/16s-c12b/
+20:19:57	Warning: 	Moved Permanently for vceit.com/wp/?p=1416
+20:19:57	Warning: 	File has moved from vceit.com/wp/?p=1416 to http://vceit.com/wp/informatics/qbe/
+20:20:00	Warning: 	Moved Permanently for vceit.com/wp/?p=1644
+20:20:00	Warning: 	File has moved from vceit.com/wp/?p=1644 to http://vceit.com/wp/informatics/16s-cs01/
+20:20:06	Warning: 	Moved Permanently for vceit.com/wp/?p=1415
+20:20:06	Warning: 	File has moved from vceit.com/wp/?p=1415 to http://vceit.com/wp/informatics/ufd2/
+20:20:08	Warning: 	Moved Permanently for vceit.com/wp/?p=1645
+20:20:08	Warning: 	File has moved from vceit.com/wp/?p=1645 to http://vceit.com/wp/informatics/16-sd-sample-exam-c1-gantt-2/
+20:20:11	Warning: 	Moved Permanently for vceit.com/wp/?p=1318
+20:20:11	Warning: 	File has moved from vceit.com/wp/?p=1318 to http://vceit.com/wp/informatics/2016-erd3/
+20:20:13	Warning: 	Moved Permanently for vceit.com/wp/?p=966
+20:20:13	Warning: 	File has moved from vceit.com/wp/?p=966 to http://vceit.com/wp/informatics/ppt-icon/
+20:20:16	Warning: 	Moved Permanently for vceit.com/wp/?p=1317
+20:20:16	Warning: 	File has moved from vceit.com/wp/?p=1317 to http://vceit.com/wp/informatics/2016-erd2/
+20:20:16	Warning: 	Moved Permanently for vceit.com/wp/?p=1316
+20:20:16	Warning: 	File has moved from vceit.com/wp/?p=1316 to http://vceit.com/wp/informatics/2016-erd1/
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 hours 52 minutes 18 seconds : 1512 links scanned, 1250 files written (126902530 bytes overall) [167163836 bytes received at 24809 bytes/sec], 3957198 bytes transferred using HTTP compression in 371 files, ratio 35%, 2.6 requests per connection
+(68 errors, 282 warnings, 0 messages)

@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from vceit.com/p/dfd.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:16:54 GMT -->
+<head>
+<title>DFD - Data Flow Diagrams - VCE IT Lecture Notes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-21490715-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-21490715-2";
+</script>
+<link href="../etc/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div align="center"> 
+<p><a href="../index.html"><img src="../etc/vceit-main3.jpg" alt="vceit" border = "0" /></a></p>
+<p><a href="../index.html" target="_top">VCE IT Lecture Notes</a>
+  by <a href="../wp/contact-me-at-vceit-com-2/index.html">Mark Kelly</a> </p>
+</div>
+<table width="666" border="1" cellpadding="5" align="center" cellspacing="0">
+<tr>
+<td>
+<div align="center">
+<h1><font color="#000000">DFD - Data Flow Diagrams</font></h1>
+</div> </td>
+</tr>
+<tr>
+<td valign="top"><div align="center">Very similar to <em>system flow charts</em> which are not used as much any more </div></td>
+</tr>
+<tr>
+<td valign="top">
+<p>&nbsp;</p>
+<p>A <strong>data flow diagram</strong> (<strong>DFD</strong>) is a design tool to represent the flow of data through an information system. </p>
+<p>A &quot;context level&quot; DFD can be used to show the interaction between a system and outside entities; it can also show the internal data flows within a system. This version is also called a <strong>context diagram</strong>. It often shows the information system as a single circular shape with no details of its inner workings: what it shows is its relationships with the <em>external entities</em>. </p>
+<p><img src="../m/pm/07s-c01.gif" width="416" height="397" /></p>
+<p>Above: an example of a <strong>context diagram</strong> for Flip Flop Baker, from the 2007 SD Exam </p>
+<p>For a diagram to be called a DFD, it needs to show the inner workings of an information system. The different levels of a DFD indicate how detailed it is, e.g. a Level 0 DFD is a broad overview of a system, showing hardly any detail within the system. A level 2 DFD explodes more summarised processes and shows another level of complexity within them. A level 3 or 4 DFD shows even more components opened up to show their inner details. </p>
+<p>With a dataflow diagram, developers can map how a system will operate, what the system will accomplish and how the system will be implemented. It's important to have a clear idea of where and how data is processed in a system to avoid double-handling and bottlenecks. A DFD also helps management organise and prioritise data handling procedures and staffing requirements. </p>
+<p>A DFD lets a system analyst study how existing systems work, locate possible areas prone to failure, track faulty procedures and reorganise components to achieve better efficiency or effectiveness. </p>
+<p>Components</p>
+<p>A data flow diagram graphically represents: </p>
+<ul>
+<li><strong>processes</strong> - jobs that are done with the data. A process transforms incoming data flow into outgoing data flow.</li>
+<li><strong>data stores</strong> - files, databases, archives. They can be manual, digital or temporary. </li>
+<li><strong>external entities</strong>/terminators in a business or other system - other systems or people beyond the control of the current system. These are the places which provide the organisation with data, or have data sent to them by the organisation (e.g. customers, partners, government bodies). External entities are sources and destinations of the system's inputs and outputs.</li>
+<li><strong>connecting data flows</strong> - arrows show how data flows from one place to another. Flows that cross the system boundary are known as Input Output Descriptions. Label the arrows with the name of the data that moves through it.</li>
+</ul>
+<p>(DFDs can also show <strong>resource flows</strong>, but it's better to avoid them in VCE IT - they can easily get confused with data flows.) </p>
+Here are the basic DFD shapes :
+<h3><img src="../m/dfd-shapes.jpg" width="169" height="247" alt="DFD shapes" /></h3>
+<h3>&nbsp;</h3>
+<h3>DFD Conventions</h3>
+<ul>
+<li>Do not allow a single page of a DFD to get too complex - it should have no more than 10 components. If it has more than this, combine some components into a single self-contained unit and create a new DFD for that unit.</li>
+<li>Each component and subcomponent should be numbered. e.g. a top level DFD has components 1 2 3 4 5. The subcomponent DFD of component 3 would have components 3.1, 3.2, 3.3, and 3.4; and the subsubcomponent DFD of component 3.2 would have components 3.2.1, 3.2.2, and 3.2.3. This enables a developer to plan in a <a href="PSM-topbottom.html"> top-down</a> manner: starting with representing large concepts, and then repeatedly breaking these objects into their components. </li>
+<li>All processes must have at least one data flow in and one data flow out. </li>
+<li>All processes should modify the incoming data, producing new forms of outgoing data. </li>
+<li>Each data store must be involved with at least one data flow. </li>
+<li>Each external entity must be involved with at least one data flow. </li>
+<li>A data flow must be attached to at least one process</li>
+<li>Data flows cannot go directly from one external entity to another external entity: such flows need to go through at least one process. </li>
+<li>Data flows cannot go directly from an external entity to a data store in the system: such flows need to go through at least one process. </li>
+</ul> </td>
+</tr>
+<tr> 
+<td> <div align="center"><img src="../m/dfdexample.gif" width="455" height="383" /><br />
+A sample DFD from http://www.smartdraw.com
+</div>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td><p>As you explore DFDs you will find two 'flavours' out there: the <em>Yourdon and Coad</em> style, and the <em>Gane and Sarson<br />
+style. </em>They have slight differences in the way components are shaped and where their numbering goes, for example:</p>
+<table border="0" cellpadding="8">
+<tr>
+<td width="118"><em><img src="../m/dfd-gs-datastore.gif" width="117" height="65" /></em></td>
+<td width="565"><em>Gane and Sarson</em> datastore notation </td>
+</tr>
+<tr>
+<td><img src="../m/dfd-yc-datastore.gif" width="116" height="67" /></td>
+<td><em>Yourdon and Coad</em> datastore notation </td>
+</tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td><h2 align="center">A DFD EXAMPLE from the 2006 Information Systems Exam </h2>
+<h4 align="center"> (copyright of the VCAA - thanks to them for letting me use the material)</h4>
+<p>A company, No Blots, supplies ink cartridges for printers which are sold only through the internet. When customers place an order, the order is checked, a confirmation is sent back to the customer and the details of the orfer are sent to the warehouse. The diagram below shows the data flow diagram (DFD) for the No Blots online purchasing system. The diagram does not show the data sources and destinations.</p>
+<p align="center"><img src="../m/pm/06s-a6.jpg" width="543" height="309" /></p>
+<p>a. In a DFD a circle represents a process. Briefly explain what is meant by a process. (1)</p>
+<p><font color="#000000">A process is some form of processing or data transformation which take
+data as input, does something to it, and provides outputs</font></p>
+<p>b. In the DFD, what do the symbols labelled <strong>stock</strong> and <strong>orders</strong> represent? (1) </p>
+<p><font color="#000000">They are data stores, including electronic 
+stores such as databases, and physical stores such as filing cabinets
+or stacks of paper.</font></p>
+<p>c. Complete the context diagram below for the No Blots system. (3)</p>
+<p align="center"><a href="../m/pm/06s-a6.jpg"><img src="../m/pm/06s-a6.jpg" width="543" height="309" /></a></p>
+<p align="left"><font color="#000000">This is the completed diagram... </font></p>
+<p align="center"><img src="../m/pm/06s-a6c2b.jpg" width="650" height="282" /></p>
+<p align="left"><em><font color="#000000">It seems that we need to provide an input to the warehouse from the online purchasing system (OPS). We would also need to add an <strong>external entity</strong>, the customer, and link the customer to the OPS. I'm only guessing that the warehouse must send some form of invoice or receipt or packing slip to the customer when the goods are shipped.</font></em></p>
+<p align="left"><em><font color="#000000">As a tip: I used Word's drawing tools (basic shapes, connectors) to draw the DFD. The connector arrows move around when you move connected shapes. Add text to shapes by right-clicking the shape and selecting &quot;Add text&quot;. Add text to arrows the hard way with a text box (formatted to have no fill and no lines). </font></em></p>
+</td>
+</tr>
+<tr>
+<td><h2 align="center"> SAMPLE DFDs </h2></td>
+</tr>
+<tr>
+<td><div align="center">
+<p>http://www.smartdraw.com/examples/preview/index.aspx?example=Quiz_Software</p>
+<p><img src="../m/dfd-Quiz_Software_L.jpg" width="496" height="451" /></p>
+</div></td>
+</tr>
+<tr>
+<td><p align="center">An example from <a href="http://visualcase.com/?f">www.visualcase.com</a> - you can download a 30 day free trial of their DFD software</p>
+<p align="center"><img src="../m/dfd-visualcase-DFD.jpg" width="360" height="290" /> </p>
+<p align="center">&quot;Student&quot; box is an external entity.<br />
+Blue circles are data transformations (processing).<br />
+Arrows are data flows.<br />
+The &quot;Student database&quot; is a data store. <br />
+</p>
+</td>
+</tr>
+<tr>
+<td><h2 align="center">Thanks</h2>
+<p>Thanks to these sources for some excellent ideas for this page:</p>
+<ul>
+<li>The VCAA 2006 IS Exam</li>
+<li>Wikipedia.org</li>
+<li>http://www.agilemodeling.com/artifacts/dataFlowDiagram.htm</li>
+<li>http://www.smartdraw.com</li>
+<li>http://visualcase.com/</li>
+</ul></td>
+</tr>
+</table>
+<p align="center"><a href="../index.html" target="_top">Back to the IT Lecture Notes index</a></p>
+<p align="center"><a href="javascript:history.go(-1)">Back to the last page you visited</a></p>
+<p align="center"><font size="2">Created 12 Feb 07 </font></p>
+<p align="center"><font size="2">Last changed: 
+<!-- #BeginDate format:Am1a -->February 21, 2013 11:45 AM<!-- #EndDate -->
+</font></p>
+<p align="center"><font size="2">VCE IT Lecture notes &copy; Mark Kelly 2001-<script type="text/javascript">
+D = new Date();
+year = D.getFullYear();
+document.write(year);
+</script></font></p>
+<!-- #BeginLibraryItem "/Library/GoogleAd.lbi" -->
+<p align="center">
+</p><p align="center">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"> </script>
+</p>
+<!-- #EndLibraryItem -->
+</body>
+
+<!-- Mirrored from vceit.com/p/dfd.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:16:57 GMT -->
+</html>

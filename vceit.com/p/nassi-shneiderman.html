@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from vceit.com/p/nassi-shneiderman.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:16:51 GMT -->
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252" />
+<title>Structured Design</title>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-21490715-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-21490715-2";
+</script>
+<link href="../etc/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body background="../etc/sidebar.jpg" lang=EN-AU>
+<p align="center"><a href="../index.html" target="_top"><font size="2">IT 
+Lecture Notes</font></a><font size="2"> 
+by <a href="../wp/contact-me-at-vceit-com-2/index.html">Mark 
+Kelly</a> 
+</font>
+</p><h2 align="center"><a name="top"></a>Structured 
+Design<b> </b><b>with Nassi-Schneiderman Charts</b></h2>
+<p align="center"><a href="designtools.html" target="_top">Back to design documentation tools</a></p>
+<p align="center"><a href="../index.html" target="_top">Back to the IT Lecture Notes index</a></p>
+<table width="666" border="0" cellspacing="0" cellpadding="5" align="center">
+<tr> 
+<td> 
+<div align="center"><font size="2">Adapted from: http://www.sombers.com/Structured%20Design%20Nassi%20Schneiderman.doc 
+</font> </div>
+<p >A tool that we use almost exclusively to design the processes that make 
+up our systems is the Nassi-Shneiderman chart. An alternative to the 
+overly flexible flow chart, NS charts enforce structure and modularity 
+in the programming process. An excellent NS charting tool is available 
+that makes the use of NS charts quite painless. This white paper describes 
+NS charts and illustrates their advantage in the modern world of structured 
+programming.</p>
+<p class=MsoBodyText> We all give lip service to “structured design techniques” 
+but how many of us are true disciples? Even worse, how do we control a 
+programming group faced with impossible schedules when getting something 
+– anything – to demonstrate quickly to management is the top priority 
+item? Wouldn’t it be nice to have a design tool that enforced structure? 
+That is what this paper is about.</p>
+<p> The first key to building a well-structured system, of course, is to 
+design the system before building it. Can you imagine your anger at an 
+architect who directs a contractor to build the kitchen and living room 
+of your new home only to find out there is no wall space left for a door 
+to the bedroom? Yet we often seem to build software systems in this piecemeal 
+fashion. I often hear the excuse “We don’t have time to design.” I submit 
+that any system will be put into operation faster if it is designed properly 
+in the first place. If you don’t have time to design, then you certainly 
+don’t have time <em>not</em> to design.</p>
+<p> Given the acceptance of proper design, we now can turn our attention 
+to design tools. A good design tool should:</p>
+<ul>
+<li> Enforce structured design.</li>
+<li>Enforce program modularity.</li>
+<li>Be easy to use.</li>
+<li>Generate design documents easily understood by others.</li>
+</ul>
+<p>There is, in fact, a hierarchy of design tools required for a large project. 
+At the outset, we must define the software architecture and the data flow 
+between elements. This paper concerns itself with the next level – the 
+detailed design of a program module.</p>
+<p> The classical <strong>flow chart</strong> used for program design has many shortcomings, 
+the greatest being its extreme flexibility. Any imaginable structure can 
+be represented by a flow chart; hence, desirable structures cannot be 
+enforced. Furthermore, arbitrarily large programs can be designed, defeating 
+any attempt at modularity. Have you ever tried following a flow chart 
+from page three via an off-page connector to page 17, then back to page 
+10? And the code is as bad!</p>
+<p> Our choice for an excellent tool which has proven its worth on dozens 
+of large projects is the <strong>Nassi-Shneiderman</strong>, or N/S chart, named for I. 
+Nassi and B. Shneiderman, who published this technique in 1982. (some 
+may recognise these as Chapin charts.)</p>
+<p>The N/S chart starts with the basic characterization of modern day languages 
+as being <i>block-structured</i> languages. In these languages, procedures 
+are blocks as shown in Figure 1. A block has a beginning and an end. When 
+the procedure is called, or when the process is entered, instruction execution 
+begins at the beginning (or top) of the block and proceeds to the end 
+(or bottom) of the block.</p>
+<table cellpadding=0 cellspacing=0 align=center>
+<tr> 
+<td width=209 height=0 ></td>
+</tr>
+<tr> 
+<td width="209" > 
+<div align="center"><img width=157 height=109 src= "../m/nassi-shneiderman-image002.gif" /></div></td>
+</tr>
+</table>
+<br clear=ALL />
+<h2>Sequential Statements</h2>
+<p align=center style='text-align:center'><b>Figure 1</b></p>
+<p> Figure 1 shows the simplest block. It simply contains a sequence of 
+instructions.</p>
+<p> The conditional IF structure is shown in Figure 2. At the top of the 
+block is a conditional test. Depending upon the outcome of the test, one 
+of two paths are taken through the block. If X equals Y, procedure A is 
+executed. If X does not equal Y, procedure B is executed. In either case, 
+control is passed to the top of the block and falls to the bottom of the 
+block.</p>
+<br clear=all
+style='page-break-before:always' />
+<table cellpadding=0 cellspacing=0 align=center>
+<tr> 
+<td ><img width=158 height=109 src= "../m/nassi-shneiderman-image003.gif" /></td>
+</tr>
+</table>
+<div align="center"><br clear=ALL />
+IF X = Y THEN A ELSE B </div>
+<p align=center style='text-align:center'><b>Figure 2</b></p>
+<p class=MsoBodyText> Figures 3 and 4 show the WHILE-DO and DO-UNTIL structures. 
+These are similar except that the WHILE-DO structure evaluates the condition 
+first before executing the procedure, and the DO-UNTIL structure executes 
+the procedure first and then evaluates the condition. In Figure 3, if 
+X is not equal to Y, procedure A is executed; otherwise, control passes 
+through the block. In Figure 4, procedure A is executed, and then the 
+condition is evaluated. If X is not equal to Y, then the procedure is 
+re-executed; otherwise, control passes from the block.</p>
+<table cellpadding=0 cellspacing=0 align=center>
+<tr> 
+<td ><img width=157 height=109 src= "../m/nassi-shneiderman-image004.gif" /></td>
+</tr>
+</table>
+<div align="center"><br clear=ALL />
+WHILE X NOT EQUAL TO Y<br />
+DO A </div>
+<p align=center style='text-align:center'><b>Figure 3</b></p>
+<table cellpadding=0 cellspacing=0 align=center>
+<tr> 
+<td ><img width=157 height=109 src= "../m/nassi-shneiderman-image005.gif" /></td>
+</tr>
+</table>
+<br clear=ALL />
+<p align=center style='text-align:center'>DO A <br />
+UNTIL X = Y</p>
+<p align=center style='text-align:center'><b>Figure 4</b></p>
+<p class=MsoBodyText> The FOR  structure in Figure 5 executes the procedure 
+A repetitively over a specified range of the variable X. Entering the 
+block from the top causes the first value of X to be chosen, and A is 
+evaluated relative to that value for X. When A completes, control is returned 
+to the top of the block where the next value of X is chosen. When all 
+values of X have been exhausted, control passes from the block.</p>
+<table cellpadding=0 cellspacing=0 align=center>
+<tr> 
+<td ><img width=157 height=109 src= "../m/nassi-shneiderman-image006.gif" /></td>
+</tr>
+</table>
+<div align="center"><br clear=ALL />
+FOR X FROM Y TO Z<br />
+DO A </div>
+<p align=center style='text-align:center'><b>Figure 5</b></p>
+<p> The CASE structure is shown in Figure 6. The variable X is tested. If 
+its value is 1, 2 or 3, the procedures A, B, or C, respectively, are executed. 
+Otherwise, procedure D is executed.</p>
+<table cellpadding=0 cellspacing=0 align=center>
+<tr> 
+<td ><img width=157 height=229 src= "../m/nassi-shneiderman-image007.gif" /></td>
+</tr>
+</table>
+<div align="center"><br clear=ALL />
+CASE ON X </div>
+<p align=center style='text-align:center'><b>Figure 6</b></p>
+<p>Note that not only are all these structures representable as blocks but 
+their sub-elements are also blocks. These sub-elements may themselves 
+be any of the allowable block structures. The structures shown in Figures 
+1 through 6 are only the most common ones. Though they are sufficient, 
+other structures may be defined for a particular project.</p>
+<p> Let us consider a simple example of an N/S representation of a program. 
+A server named MSGAB must service a queue of messages. There are but two 
+types of messages, A and B, to be processed by the procedures MSGA and 
+MSGB, respectively. Once given control, the server processes all messages, 
+if any, in its queue. If there are no messages, then the server must return 
+an “I’m Alive” message to indicate to the calling procedure that it is 
+still operational. Before exiting, it updates statistics. One exception 
+condition is the receipt of an erroneous message type (not A or B). In 
+this case an error message is returned and processing of further messages 
+is terminated.</p>
+<p> The N/S chart for this server is shown in Figure 7. It comprises three 
+main blocks. The first one initializes various parameters in the program. 
+The second one performs the message processing. The third block updates 
+statistics.</p>
+<p> The message processing block checks to see if there are any messages 
+in the queue. If not, an “I’m Alive” message is sent. If the queue contains 
+messages, their message types are analyzed via a case statement which 
+calls the appropriate message processing routine (MSGA or MSGB). If an 
+erroneous message type is found, an error message is sent and an exit 
+is made from the server.</p>
+<p> Note that three new notations have been introduced:</p>
+<p>&nbsp;The procedure or process name is indicated at the top of the chart.</p>
+<p>&nbsp;Called procedures are noted with asterisks (e.g., *MSGA*).</p>
+<p>&nbsp;The EXIT operator is an implied transfer of control to the bottom 
+of the block, thus terminating the procedure or process.</p>
+<table cellpadding=0 cellspacing=0 align=center>
+<tr> 
+<td ><img width=373 height=347 src= "../m/nassi-shneiderman-image008.gif" /></td>
+</tr>
+</table>
+<div align="center"><br clear=ALL />
+N/S Example </div>
+<p align=center style='text-align:center'><b>Figure 7</b></p>
+<p>In this example, the nesting of structure is clearly shown in the message 
+processing block. This block is an IF structure which contains a DO-WHILE 
+structure which contains a CASE structure.</p>
+<p> The power of N/S charts as a design tool useful for controlling the 
+quality of a design group can be appreciated by noting the following:</p>
+<ul>
+<li>A procedure can have only one entry point (the top) and only one exit 
+point (the bottom).</li>
+<li>No 'off-page' connectors exist, so the program is forced to be modular. 
+Large procedures simply cannot be represented. They must be organized 
+into control structures which call other procedures.</li>
+<li>Only acceptable structures can be used.</li>
+<li>Nesting of structures is limited by how sharp your pencil is.It is difficult to draw IF statements nested 11 deep.</li>
+<li>There is no way to represent a GOTO, so ' GOTO-less' coding is assured. (The 
+EXIT operator is the only case of a very limited use of GOTO in some languages.)</li>
+</ul>
+<p>Structured coding proceeds pleasantly and effortlessly from these charts. 
+Whereas (in Nassi and Shneiderman’s words) “the translation from flow 
+chart to computer program is a one to many relationship whose output ranges 
+over programs only some of which are legible, concise and efficient,” 
+N/S charts give rise to code that is quite consistent in its content and 
+quality.</p>
+In these days of being tied to the keyboard, no tool is adequate unless 
+it can be automated at the developer’s desktop. Fortunately there is an 
+excellent NS tool that is even integrated with Word, allowing NS charts 
+to be treated as objects in a Word document. One simply types in the pseudo 
+code for the desired NS chart, and out comes a pleasantly constructed chart. 
+This tool is available from Kast Associates (bobk@legato.com).Using this 
+tool, the previous example would be represented by the following pseudo 
+code: 
+<p>Initialize<br />
+<b>IF</b> Message_To_Process <b>THEN</b><br />
+<b>WHILE</b> Message_Queue_Not_Empty <b>DO</b><br />
+<b>SWITCH</b> Message_Type;<br />
+<b>CASE</b> A;<br />
+*MSGA*<br />
+<b>CASE</b> B;<br />
+*MSGB*<br />
+<b>CASE Other</b>;<br />
+Send_Error_Message<br />
+<b>Exit</b><br />
+<b>EXIT</b><br />
+<b>END</b><br />
+<b>END</b><br />
+<b>ELSE</b><br />
+&nbsp; &nbsp; Send_I'm_Alive_Message<br />
+<b>END</b><br />
+Update_Statistics</p>
+<p>A click on a button yields the following NS Chart: </p>
+<p>&nbsp; </p>
+<table cellpadding=0 cellspacing=0 align=center>
+<tr> 
+<td ><img width=336 height=265 src= "../m/nassi-shneiderman-image009.gif" /></td>
+</tr>
+</table>
+<p>Thus, N/S charts represent a valuable design tool to enforce structure 
+and modularity and to insure a consistent quality of design throughout 
+a programming organization. In addition, these charts present an easily 
+understandable depiction of data flow to the non-designers – the programmers 
+and the users – and as such form an invaluable basis for maintenance documentation.</p>
+<p align="center"><a href="#top">Top</a></p>
+<p align="center"><a href="designtools.html" target="_top">Back to design documentation tools</a></p>
+<p align="center"><a href="../index.html" target="_top">Back to the IT Lecture Notes index</a></p>
+<p>&nbsp;</p>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>Thanks again to <a href="http://www.sombers.com/Structured Design Nassi Schneiderman.doc">http://www.sombers.com/Structured%20Design%20Nassi%20Schneiderman.doc</a> </td>
+</tr>
+</table>
+<p >&nbsp;</p>
+<!-- #BeginLibraryItem "/Library/GoogleAd.lbi" -->
+<p align="center">
+</p><p align="center">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"> </script>
+</p>
+<!-- #EndLibraryItem -->
+</body>
+
+<!-- Mirrored from vceit.com/p/nassi-shneiderman.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:16:54 GMT -->
+</html>

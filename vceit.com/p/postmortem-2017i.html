@@ -1,0 +1,1154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from vceit.com/p/postmortem-2017i.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:14:33 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>VCE Informatics Exam 2017 - Post Mortem by Mark Kelly</title>
+<script type="text/javascript">
+var gaq = gaq || [];
+gaq.push(['setAccount', 'UA-21490715-2']);
+gaq.push(['trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">
+window.googleanalyticsuacct = "UA-21490715-2";
+</script>
+<link href="../etc/css.css" rel="stylesheet" type="text/css" />
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="../../use.edgefonts.net/courier-prime_n4_default.js" type="text/javascript"></script>
+
+<style type="text/css">
+<!--
+.NormalTable {
+cellspacing:0;
+cellpadding:10;
+border-collapse:collapse;
+border:none;
+}
+.fontstyle0 {
+font-family:ArialMT;
+font-size:11pt;
+font-style:normal;
+font-weight:normal;
+color:rgb(0,0,0);
+}
+-->
+</style>
+<style type="text/css">
+<!--
+span.BodyText1 {
+font-family:"Arial",sans-serif;
+font-variant:normal !important;
+color:black;
+position:relative;
+top:0pt;
+letter-spacing:0pt;
+font-weight:normal;
+font-style:normal;
+text-decoration:none;
+text-underline:none;
+text-line-through:none;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+p.BodyText3 {
+margin-top:12.0pt;
+margin-right:0cm;
+margin-bottom:3.0pt;
+margin-left:0cm;
+text-indent:-21.0pt;
+line-height:13.9pt;
+background:white;
+font-size:10.0pt;
+font-family:"Arial",sans-serif;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+p.Tablecaption20 {
+margin:0cm;
+margin-bottom:.0001pt;
+background:white;
+font-size:10.0pt;
+font-family:"Arial",sans-serif;
+}
+-->
+</style>
+</head>
+<body lang="EN-US" >
+<h2 align="center" class="red"><a href="../index.html"><img src="../etc/vceit-main3.jpg" alt="VCE IT Post Mortem by Mark Kelly
+" border = "0" /></a></h2>
+<p align="center"><font size="2">Last changed: 
+ <!-- #BeginDate format:Am1a -->November 17, 2017 1:13 PM<!-- #EndDate --> 
+ </font></p>
+<p align="center"><a href="../index.html">VCE IT Lecture Notes</a> by <a href="../etc/mailform.html">Mark Kelly</a> </p>
+
+<div align="center">
+ <table width="75%" border="1" cellspacing="0" cellpadding="3">
+ <tr>
+ <td align="center">
+ <h1 align="center">VCAA Informatics Exam Post Mortem </h1>
+ <h1 align="center">2017</h1><img src="../m/toetags2016.jpg" alt="Post Mortem banner" width="800" height="310" usemap="#Map" border="0"/></td>
+ </tr>
+ <tr>
+ <td><div align="center"><!-- #BeginLibraryItem "/Library/PostMortem Notes.lbi" -->
+<link href="../etc/css.css" rel="stylesheet" type="text/css" />
+<h3 align="center" >Post Mortem Notes</h3>
+<div align="center"> This is <em>not</em> a VCAA publication!<br />
+  I do <em>not</em> speak for the VCAA, the IT examiners, or exam markers.<br />
+  I was <em>not</em> involved in the setting or marking of this examination.<br />
+  Extracts from exams are all Copyright &copy; VCAA, and are used with permission. Thanks, VCAA!<br />
+  Use these post mortems at your own risk. <br />
+  I reserve the right to change my mind <em>completely</em>, at <em>short notice</em>, about <em>anything</em> I've said here.<br />
+  <a href="../wp/contact-me-at-vceit-com-2/index.html">Suggestions, discussions and corrections are welcome.</a><br />
+  If any third-party copyrighted material has inadvertently been used, please <a href="../wp/contact-me-at-vceit-com-2/index.html">let me know</a>
+  <p> <span class="question">Questions are in black.</span><br />
+    <span class="myanswer">My suggested answers are in blue.</span><br />
+    <span class="comment">My editorial ramblings about the exam are in blue italics.</span><br />
+    <span class="examiner">Examiners' report comments are in red italics.<br />
+    </span><span class="explanation">Purple shows the explanation of an answer.</span><br />
+</p>
+</div>
+
+<!-- #EndLibraryItem --></div></td>
+ </tr>
+ <tr>
+ <td><!-- #BeginLibraryItem "/Library/postmortems.lbi" -->
+<p align="center">Other VCE IT Post Mortems to enjoy</p>
+<p align="center">ITA/Informatics - 
+<a href="postmortem-2001i.html">2001</a> | 
+<a href="postmortem-2002i.html">2002</a> | 
+<a href="postmortem-2003i.html">2003</a> | 
+<a href="postmortem-2004i.html">2004</a> | 
+<a href="postmortem-2005i.html">2005</a> | 
+<a href="postmortem-2006i.html">2006</a> | 
+<a href="postmortem-2007i.html">2007</a> |
+<a href="postmortem-2008i.html">2008</a> | 
+<a href="postmortem-2009i.html">2009</a> | 
+<a href="postmortem-2010i.html">2010</a> | 
+<a href="postmortem-2011i.html">2011</a> | 
+<a href="postmortem-2012i.html">2012</a> | 
+<a href="postmortem-2013i.html">2013</a> | 
+<a href="postmortem-2014i.html">2014</a> |
+<a href="postmortem-2015i.html">2015</a> |
+<a href="postmortem-2016i.html">2016</a>
+</p>
+
+<p align="center"><br />
+SD - 
+<a href="postmortem-2006s.html">2006</a> | 
+<a href="postmortem-2007s.html">2007</a> | 
+<a href="postmortem-2008s.html">2008</a> | 
+<a href="postmortem-2009s.html">2009</a> | 
+<a href="postmortem-2010s.html">2010</a> | 
+<a href="postmortem-2012s.html">2011</a> | 
+<a href="postmortem-2012s.html">2012</a> | 
+<a href="postmortem-2013s.html">2013</a> | 
+<a href="postmortem-2014s.html">2014</a> | 
+<a href="postmortem-2015s.html">2015</a> |
+<a href="postmortem-2016s.html">2016</a>
+ </p><!-- #EndLibraryItem --></td>
+ </tr>
+ </table>
+</div>
+<table width="777" border="0" align="center" cellpadding="5" cellspacing="0">
+ <tr>
+ <td><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> 
+ <script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"> </script></td>
+ </tr>
+</table>
+<table width="75%" border="1" align="center" cellpadding="5" cellspacing="0">
+ <tr>
+ <td colspan="2"><div align="center">
+ <h2>The Post Mortem Awards</h2>
+ </div></td>
+ </tr>
+ <tr>
+ <td width="18%" valign="top"><p align="center"><img src="../m/schmacho.jpg" alt="Dog's Breakfast Award" width="98" height="150" /></p>
+ <p>The infamous <strong>SCHMACKOS</strong> <strong>award</strong> for questions that are a complete dog's breakfast.</p></td>
+ <td width="18%" valign="top"><div align="center"><img src="../m/sickdog.jpg" alt="Sick as a Dog Award" width="125" height="125" /></div>
+ <p align="center">The <strong>Questions That Make You Sick As A Dog</strong> Award<br />
+ Questions that are <em>wrong </em>in a way that does not jeopardise the answer, or are just <em>dumb</em>.</p></td>
+ </tr>
+ <tr>
+   <td valign="top"><div align="center"><img src="../m/stamp_of_approval.jpg" alt="Stamp of Approval" /></div>
+    <p align="center">The <strong>Stamp of Approval</strong> for questions I like.</p></td>
+   <td valign="top"><p align="center"><img src="../m/illiterate.jpg" alt="Illiteracy Award" width="47" height="89" /></p>
+    <p align="center">The exciting <strong>Illiteracy Award</strong> for crimes against the English language.</p></td>
+ </tr>
+</table>
+<table width="75%" border="1" align="center" cellpadding="5" cellspacing="0">
+ <tr>
+ <td><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> 
+ <script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"> </script></td>
+ </tr>
+ <tr>
+ <td height="885"><h3 align="center" >COMPUTING: INFORMATICS</h3>
+ <h3 align="center" >Written examination</h3>
+ <p align="center"><strong>Friday 11 November 2016</strong></p>
+ <p align="center"><strong>Reading time: 11.45 pm to 12:00 noon (15 minutes) </strong></p>
+ <p align="center"><strong>Writing time: 12:00 noon to 2:00 pm (2 hours)</strong></p>
+ <table border="1" align="center" cellpadding="3" cellspacing="0">
+ <tr>
+ <td width="95" ><div ></div></td>
+ <td width="100"><p ><strong><em>Number of questions</em></strong></p></td>
+ <td width="152"><p ><strong><em>Number of questions to be answered</em></strong></p></td>
+ <td width="105"><p ><strong><em>Number of marks</em></strong></p></td>
+ </tr>
+ <tr>
+ <td width="95"><p ><a href="#a">Section A</a></p></td>
+ <td width="100" align="center"><p >20</p></td>
+ <td width="152" align="center"><p >20</p></td>
+ <td width="105" align="right"><p >20</p></td>
+ </tr>
+ <tr>
+ <td width="95"><p ><a href="#b">Section B</a></p></td>
+ <td width="100" align="center" ><div >7</div></td>
+ <td width="152" align="center"><p >7</p></td>
+ <td width="105" align="right"><p >30</p></td>
+ </tr>
+ <tr>
+ <td width="95"><p ><a href="#c1">Section C</a></p></td>
+ <td width="100" align="center" ><div >13</div></td>
+ <td width="152" align="center">13</td>
+ <td width="105" align="right"><p >50</p></td>
+ </tr>
+ <tr>
+ <td width="95"><div ></div></td>
+ <td width="100"><div ></div></td>
+ <td width="152"><div ></div></td>
+ <td width="105" align="right"><p >Total 100</p></td>
+ </tr>
+ </table>
+ <ul>
+ <li> Students are permitted to bring into the examination room: pens, pencils, highlighters, erasers, sharpeners and rulers.
+ </li>
+ <li>Students are NOT permitted to bring into the examination room: blank sheets of paper and/or correction fluid/tape. </li>
+ <li>No calculator is allowed in this examination.</li>
+ </ul>
+ <p align="left">Materials supplied</p>
+ <ul>
+ <li> Question and answer book of <strong>26</strong> pages</li>
+ <li>Detachable insert containing a case study for Section C in the centrefold. </li>
+ <li>Answer sheet for multiple-choice questions. </li>
+ </ul>
+ <p align="left">Instructions</p>
+ <ul>
+ <li> Detach the insert containing the case study during reading time.
+ </li>
+ <li>Write your <strong>student number</strong> in the space provided above on this page. </li>
+ <li>Check that your <strong>name</strong> and <strong>student number</strong> as printed on your answer sheet for multiple-choice questions are correct, <strong>and</strong> sign your name in the space provided to verify this. </li>
+ <li>All written responses must be in English. </li>
+ </ul>
+ <p><strong>At the end of the examination </strong></p>
+ <ul>
+ <li> Place the answer sheet for multiple-choice questions inside the front cover of this book.
+ </li>
+ <li>You may keep the detached insert.</li>
+ </ul>
+ <p><strong>Students are NOT permitted to bring mobile phones and/or any other unauthorised electronic devices into the examination room.</strong></p></td>
+ </tr>
+</table>
+<table width="75%" border="1" align="center" cellpadding="5" cellspacing="0">
+ <tr>
+ <td colspan="2"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> 
+ <script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"></script></td>
+ </tr>
+ <tr>
+ <td colspan="2" ><p class="examiner"><strong>Examiners' report general comments</strong> - to be added when available</p>
+ <p class="examiner">&nbsp;</p>
+ <p class="examiner"><br />
+   <!--EndF>><!--EndFragment--> </p></td>
+ </tr>
+ <tr>
+   <td colspan="2" bgcolor="#CCCCCC" ><h2><a name="a"></a>SECTION A - Multiple-choice questions</h2>
+<p><strong>Instructions for Section A</strong></p>
+<p>Answer <strong>all</strong> questions in pencil on the answer sheet provided for multiple-choice questions. <br />
+Choose the response that is <strong>correct</strong> or that <strong>best answers</strong> the question. <br />
+A correct answer scores 1, an incorrect answer scores 0. <br />
+Marks will <strong>not</strong> be deducted for incorrect answers.<br />
+No marks will be given if more than one 
+    answer is completed for any question</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#CCCCCC">&nbsp;</td>
+   <td valign="top">Use the following information to answer Questions 1&mdash;5.<br />
+    Baum's Tree Care (BTC) offers tree pruning and removal services throughout Victoria. The diagram below shows a user flow diagram for BTC's website. Visitors to the site can obtain a quote by filling in a form on the home page.<br />
+    <img src="../m/pm/17i-a01-5.gif" width="758" height="420" alt="Informatics exam 2017"/></td>
+ </tr>
+ <tr>
+   <td width="99" valign="top" bgcolor="#CCCCCC"><strong><a name="a1" id="a1"></a>A1</strong></td>
+   <td width="873" valign="top"><p><strong>Question 1</strong></p>
+<p>When on the home page, to successfully post a review on BTC's website, a visitor to the site must<br />
+A. click	'Submit'.<br />
+B. click	'Review',	enter their name, email and postcode, and click 'Submit'.<br />
+C. enter	their name, email and postcode, write their review comments and click	'Submit'.<br />
+D. click	'Review',	enter their name, email and postcode, write their review comments	and click<br />
+'Submit'.<br />
+ </p>
+<p class="myanswer">Answer is .</p>
+  <p class="explanation">Explain.</p>
+  <p><span class="examiner">% of the state got this right.</span> (info to be added later)</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a2" id="a2"></a>A2</strong></td>
+ <td valign="top"><p><strong>Question 2</strong></p>
+   <p>To protect the privacy of the data that visitors enter into BTC's website, the website must at least<br />
+A. encrypt the data on the home page and review page.<br />
+B. force visitors to change their passwords regularly.<br />
+C. encrypt the data entered into the 'Quick quote' form.<br />
+D. include a link to BTC's privacy policy on the home page.<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a3" id="a3"></a>A3</strong></td>
+ <td valign="top" ><p><strong>Question 3</strong></p>
+   <p>The user flow diagram clearly shows that the functionality of BTC's website has been influenced by the design principles of<br />
+A. space and balance.<br />
+B. alignment and navigation.<br />
+C. ease of use and robustness.<br />
+D. error tolerance and navigation.<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a4" id="a4"></a>A4</strong></td>
+ <td valign="top" ><p><strong>Question 4</strong></p>
+   <p>The data entered by the visitor into the 'Quick quote' form will be stored in a database table.<br />
+The most suitable data type for the<br />
+A. PhoneNumber field is numeric because it	is	a number.<br />
+B. EmailAddress field is text because any character is	allowed.<br />
+C. Postcode field is Boolean because it is either entered or not entered.<br />
+D. Visitors Name field is text because only letters of the alphabet are allowed.<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a5" id="a5"></a>A5</strong></td>
+ <td valign="top" ><p><strong>Question 5</strong></p>
+ <p>The error messages shown in the user flow diagram are generated by a validation technique that checks for a blank entry. Another validation technique that could be used is a 'length check', where the data entered is checked to make sure it has the correct number of characters.<br />
+   For which fields would a length check be most appropriate?<br />
+   A. Postcode and Phone Number<br />
+   B. Email Address and Visitors_Name<br />
+   C. Phone Number and Email_Address<br />
+   D. Email Address, Postcode and Phone_Number<br />
+ </p>
+ <p class="myanswer">Answer is .</p>
+ <p class="explanation">Explain.</p>
+ <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a6" id="a6"></a>A6</strong></td>
+ <td valign="top" ><p><strong>Question 6</strong></p>
+   <p>Primary data sources include<br />
+A. interviews, observations	and surveys.<br />
+B. interviews, observations	and statistics.<br />
+C. interviews, statistics and	news websites.<br />
+D. interviews, observations	and news websites.<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p>
+ <p class="myanswer">&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a7" id="a7"></a>A7</strong></td>
+ <td valign="top" ><p><strong>Question 7</strong></p>
+   <p>Which one of the following statements is a reasonable hypothesis?<br />
+A. Computing: Informatics is the most popular VCE subject.<br />
+B. If I brush my teeth every day, I will not develop cavities.<br />
+C. I study Computing: Informatics because it is the most popular VCE subject.<br />
+D. To prevent cavities from developing, eat healthy food.<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a8" id="a8"></a>A8</strong></td>
+ <td valign="top" bgcolor="#FFFFFF" ><p><strong>Question 8</strong></p>
+   <p>Intellectual property rights are protected through the use of<br />
+A. logins, trademarks and copyright.<br />
+B. trademarks, copyright and patents.<br />
+C. patents, security protocols and logins.<br />
+D. copyright, patents and security protocols.<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a9" id="a9"></a>A9</strong></td>
+ <td valign="top" ><p><strong>Question 9</strong></p>
+   <p>Which one of the following criteria can be used to check the authenticity of data?<br />
+A. Is	the data useful?<br />
+B. Is	the data error free?<br />
+C. Is	the data up to date?<br />
+D. Is	the data from a reliable source?<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p> 
+ </td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a10" id="a10"></a>A10</strong></td>
+ <td valign="top" ><p><strong>Question 10</strong></p>
+   <p>Which of the following do Gantt charts show most clearly?<br />
+A. multiple tasks and timelines<br />
+B. the constraints on a project<br />
+C. the consequences if a project is delayed<br />
+D. all the people involved in a project and their requirements<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a11" id="a11"></a>A11</strong></td>
+ <td valign="top" ><p><strong>Question 11</strong></p>
+   <p>Digital system components that are used to input data include a<br />
+A. keyboard, mouse and printer.<br />
+B. keyboard, mouse and scanner.<br />
+C. keyboard, printer and hard disk drive.<br />
+D. keyboard, touch screen and hard disk drive.<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p>
+   <p align="left">&nbsp;</p>
+ <p align="left">&nbsp;</p> </td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#CCCCCC"><strong><a name="a12" id="a12"></a>A12</strong></td>
+   <td valign="top" ><p><strong>Question 12</strong></p>
+<p>Which one of the following is a technique that can be used to code qualitative data?<br />
+A. Sort the data into numerical order.<br />
+B. List all the nouns and verbs in the data.<br />
+C. Organise the data into categories	or	themes.<br />
+D. Search the data for the largest or	lowest values.<br />
+</p>
+<p class="myanswer">Answer is .</p>
+<p class="explanation">Explain.</p>
+    <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#CCCCCC"><strong><a name="a13" id="a13"></a>A13</strong></td>
+   <td valign="top" ><p><strong>Question 13</strong></p>
+<p>One method that could be used to evaluate the effectiveness of a multimodal online solution in communicating a conclusion is to<br />
+A.  make sure that graphs and charts display properly.<br />
+B.  ask someone to check that the conclusion is correct.<br />
+C. show the solution to a group of people and interview them afterwards.<br />
+D. calculate the number of bytes required to communicate the conclusion.<br />
+</p>
+<p class="myanswer">Answer is .</p>
+<p class="explanation">Explain.</p>
+    <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a14" id="a14"></a>A14</strong></td>
+ <td valign="top" ><p><strong>Question 14</strong></p>
+   <p>Which one of the following evaluation criteria is suitable for evaluating a design idea?<br />
+A. Is the information presented accurate?<br />
+B. Does the solution confirm or refute the hypothesis?<br />
+C. Can end users perform tasks within the expected timeframes?<br />
+D. Are the relationships between various components of the solution clear?<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a15" id="a15"></a>A15</strong></td>
+ <td valign="top" ><p><strong>Question 15</strong></p>
+   <p>A website is under construction. The purpose of the website is to provide educational material to a worldwide audience. One of its web pages will include a video clip. The video file will be hosted on the same server as the website, not on an external video-hosting site.<br />
+The first test of the video page's functionality should be to check that the<br />
+A. download time is reasonable.<br />
+B. video	plays on all major web browsers.<br />
+C. video	plays when its control is clicked on.<br />
+D. video	plays on all desktop computers, tablet computers and mobile phones.<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p>
+ <p align="left">&nbsp;</p> </td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a16" id="a16"></a>A16</strong></td>
+ <td valign="top" ><p><strong>Question 16</strong></p>
+   <p>The <em>Privacy and Data Protection Act 2014</em> governs how<br />
+A. the Victorian public sector deals with individuals' health information.<br />
+B.  private companies in Victoria deal with individuals' health information.<br />
+C.  the Victorian public sector deals with individuals' personal information.<br />
+D. private companies in Victoria deal with individuals' personal information.<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#CCCCCC">&nbsp;</td>
+   <td valign="top" ><p>Use the following information to answer Questions 17 and 18.<br />
+BAC Architects is a large architectural company in competition with several other organisations to win contracts for major building projects. It has offices in Melbourne, Sydney and Perth. Each office has an information system consisting of a number of desktop computers in a wired network with a fileserver and a Webserver. There is also a wi-fi connection for staff devices. An example of their set-up is shown in the diagram below.</p>
+<p><img src="../m/pm/17i-a17-18.gif" width="300" height="189" alt="Informatics exam 2017"/><br />
+</p>
+<p>BAC Architects' information management strategy has five main goals:<br />
+1. to maximise the ease of sharing data<br />
+2. to minimise the risk of attack from malware<br />
+3. to maximise the ease of version control of files<br />
+4. to minimise the opportunities for employees to steal data<br />
+    5. to minimise the loss of valuable company data in the event of a disaster</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#CCCCCC"><strong><a name="a17" id="a17"></a>A17</strong></td>
+   <td valign="top" ><p><strong>Question 17</strong></p>
+<p>BAC Architects' information management strategy includes the policy statement: 'Staff must store company data on the fileserver, not on desktop computer hard drives, removable storage devices (for example, mobile phones, USB memory devices, laptops) or in email accounts.'<br />
+Which set of goals does this rule most directly apply to?<br />
+A.1,2,3<br />
+B.1,3,5<br />
+C. 
+2,4,5<br />
+D. 
+3,4,5<br />
+ </p>
+<p class="myanswer">Answer is .</p>
+<p class="explanation">Explain.</p>
+    <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#CCCCCC"><strong><a name="a18" id="a18"></a>A18</strong></td>
+   <td valign="top" ><p><strong>Question 18</strong></p>
+<p>To better meet the goals of its information management strategy, BAC Architects is considering replacing the local fileserver in each office with a single cloud storage facility for the whole company.<br />
+For BAC Architects, cloud storage will<br />
+A. decrease the opportunity for employees to steal data.<br />
+B. improve sharing within the company and always be available.<br />
+C. simplify backup procedures and give BAC Architects	more control over its	data.<br />
+D. simplify backup procedures and provide quick access	to data after a	disaster.<br />
+</p>
+<p class="myanswer">Answer is .</p>
+<p class="explanation">Explain.</p>
+<p><span class="examiner">% of the state got this right.</span></p>
+    <p class="comment">&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC"><strong><a name="a19" id="a19"></a>A19</strong></td>
+ <td valign="top" ><p><strong>Question 19</strong></p>
+   <p>The main reason for having a disaster recovery plan for an information system is to<br />
+A. prevent a disaster from occurring.<br />
+B. minimise system downtime and data loss in the event of a disaster.<br />
+C. make sure everyone knows what to do in the event of a disaster.<br />
+D. guarantee that backups are carried out every day and	stored off site.<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#CCCCCC" ><strong><a name="a20" id="a20"></a>A20</strong></td>
+ <td valign="top" ><p><strong>Question 20</strong></p>
+   <p>An organisation is developing criteria for evaluating its new information management strategy for the storage and disposal of data.<br />
+What is the most important factor for the organisation to take into consideration when developing these criteria?<br />
+A. the organisation's legal requirements<br />
+B. the needs of the organisation's stakeholders<br />
+C. the goals of the organisation's information system<br />
+D. the cost of the organisation's disaster recovery plan<br />
+   </p>
+   <p class="myanswer">Answer is .</p>
+   <p class="explanation">Explain.</p>
+   <p><span class="examiner">% of the state got this right.</span></p>
+<br clear="all" /></td>
+ </tr>
+ <tr>
+ <td bgcolor="#CCCCCC" ></td>
+ <td><p align="left">&nbsp;</p>
+ <p align="left"><strong>Overall for section A</strong> </p>
+ <p align="left" class="comment"><br />
+ </p> </td>
+ </tr>
+ <tr>
+ <td colspan="2"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> 
+ <script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"></script></td>
+ </tr>
+</table>
+<table width="75%" border="1" align="center" cellpadding="5" cellspacing="0">
+ <tr>
+   <td colspan="2" valign="top" bgcolor="#99CCFF" ><h2><a name="b" id="c"></a>SECTION B - short answer questions</h2>
+<p class="blueback">Instructions for Section B<br />
+    Answer all questions in the spaces provided.</p></td>
+ </tr>
+ <tr>
+   <td width="99" valign="top" bgcolor="#99CCFF"><p><strong><a name="b1" id="c21"></a>B1 <br />
+    </strong></p></td>
+   <td width="996" valign="top"  ><p class="question"><strong>Question 1</strong> (2 marks)</p>
+<p class="question">Explain how qualitative data can be used to support quantitative data. Provide an example to illustrate your answer.</p>
+<p class="examiner">Average mark -  /
+</p>
+    <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#99CCFF"><p><strong><a name="b1" id="b2"></a>B2<br />
+ </strong></p>
+ <p>&nbsp;</p></td>
+ <td valign="top"><p class="question"><strong>Question 2</strong> (4 marks)</p>
+   <p class="question">a. Explain how legal issues can be a constraint on the acquisition and use of secondary data. 2 marks<br />
+b. Outline a process that could allow for the use and publication of secondary data.	2 marks</p>
+   <p class="examiner">Average mark -  / </p>
+   <p>&nbsp;</p>
+   
+   <p>&nbsp;</p>
+   
+<p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#99CCFF"><p><strong><a name="b1" id="b3"></a>B3<br />
+ </strong></p>
+ <p>&nbsp;</p></td>
+ <td valign="top"><p class="question"><strong>Question 3</strong> (3 marks)</p>
+   <p class="question">A science project is being set up to determine what kinds of lizards there are in Australia and how many live in towns and cities. People who take part in the project will be asked to enter sightings into a web page. More than one sighting can be entered at a time.<br />
+a. The following table shows an example of the data that could be collected from a form on the web page.<br />
+</p>
+   <table width="798" border="1" cellspacing="0" cellpadding="3">
+<tbody>
+<tr>
+  <td width="87"><strong><span class="question">date</span></strong></td>
+  <td width="115"><strong><span class="question">postcode</span></strong></td>
+  <td width="69"><strong><span class="question">state</span></strong></td>
+  <td width="227"><strong><span class="question">commonName</span></strong></td>
+  <td width="258"><strong><span class="question">speciesName</span></strong></td>
+</tr>
+<tr>
+  <td><span class="question">04-Apr</span></td>
+  <td><span class="question">3850</span></td>
+  <td><span class="question">Vic</span></td>
+  <td><span class="question">Blue tongue <br />
+    Garden skink <br />
+    Bougainville's skink</span></td>
+  <td><span class="question">Tiliqua scincoides scincoides <br />
+    Lampropholis guichenoti <br />
+    Lerista bougainvillii</span></td>
+</tr>
+</tbody>
+   </table>
+   <p>State why this data is not in first normal form.	1	mark   </p>
+   <p>b. The database designer has brought the data into second normal form, as shown in the following table structures.<br />
+   </p>
+   <p>Species Table: primary key: speciesName<br />
+</p>
+   <table width="700" border="1" cellspacing="0" cellpadding="3">
+<tbody>
+<tr>
+  <td>speciesName</td>
+  <td>commonName</td>
+</tr>
+</tbody>
+   </table>
+   <p>&nbsp;</p>
+   <p>Sightings Table: primary key: sightingID<br />
+</p>
+   <table width="700" border="1" cellspacing="0" cellpadding="3">
+<tbody>
+<tr>
+  <td>sightingID</td>
+  <td>date</td>
+  <td>postcode</td>
+  <td>state</td>
+  <td>speciesName</td>
+</tr>
+</tbody>
+   </table>
+   <p>&nbsp;</p>
+   <p>Explain why the Sightings Table is not in third normal form.	2	marks</p>
+   <p class="question">&nbsp;</p>
+   <p class="examiner">Average mark -  / </p>
+   <p><span class="examiner"><br />
+   </span></p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#99CCFF"><strong><a name="b4" id="b4"></a>B4</strong></td>
+ <td valign="top"><p class="question"><strong>Question 4</strong> (4 marks)</p>
+   <p class="question">Foodie's Restaurant has been open for two months and is proving to be a popular and successful eating establishment. Richard, the owner, has captured the online reviews of his restaurant. He would like to know whether the day of the week makes a difference to his customers' experience, particularly in relation to food, service or atmosphere.<br />
+Here is a sample of the online reviews:<br />
+&bull; 29 Sep 2017 - Great food and ambience. The combination of flavours and textures was fantastic and the<br />
+wines were very good. Service was extremely professional and friendly.<br />
+&bull; 2 Oct 2017 - Worth every cent. The food and service are amazing; can't fault a thing. We will be back.<br />
+&bull; 2 Oct 2017 - It's a little small, but cosy. One of my favourites as the food is absolutely delicious!<br />
+&bull; 19 Oct 2017 - Went here with the family and was not disappointed. Food and service were outstanding.<br />
+Will be back.<br />
+Explain how Richard could manipulate the review data to find patterns that might answer his question. Use examples to support your explanation.</p>
+   <p class="examiner">Average mark -  / </p>   <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#99CCFF"><strong><a name="b5" id="b5"></a>B5</strong></td>
+ <td valign="top"><p class="question"><strong>Question 5</strong> (2 marks)</p>
+   <p class="question">Rocks'R'Us is a geological mapping company that uses satellite imagery to highlight areas of Far North Queensland that may have valuable minerals in the ground.<br />
+Explain why having timely data would be less important to Rocks'R'Us than having accurate data.</p>
+   <p class="examiner">Average mark -  / </p>
+   <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#99CCFF"><strong><a name="b6" id="b6"></a>B6</strong></td>
+ <td valign="top"><p class="question"><strong>Question 6</strong> (4 marks)</p>
+   <p class="question">Jimbo's Real Estate Company is a large agency with an annual turnover that	exceeds $7	million.<br />
+Currently the company stores all of its corporate information on a reputable cloud	server based	in<br />
+Germany. The following information is stored:<br />
+&bull; A - all staff details, including salaries and earnings from sales<br />
+&bull; B - all sales-related items<br />
+&bull;  C - all purchaser details<br />
+&bull;  D - all seller details<br />
+The cloud storage company says that it keeps all details secure. All of Jimbo's staff members have equal access to all files stored in the cloud.<br />
+</p>
+   <p class="question">a. Outline a possible ethical dilemma related to point A above.	1 mark<br />
+   </p>
+   <p class="question">b. Outline a possible solution to the ethical dilemma outlined in part a.	1	mark<br />
+</p>
+   <p class="question">c. When Jimbo's switched over to cloud storage, its manager thought a disaster recovery plan would no longer be needed.<br />
+   </p>
+   <p class="question">Outline <strong>two</strong> important aspects of a disaster recovery plan that the manager still needs toconsider even if Jimbo's has cloud storage.	2	marks   </p>
+   <p class="examiner">Average mark -  / </p>   <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#99CCFF"><p><strong><a name="b7" id="b7"></a>B7<br />
+ </strong></p>
+ <p>&nbsp;</p></td>
+ <td valign="top"><p class="question"><strong>Question 7</strong> (11 marks)<br />
+ </p>
+   <p class="question"><img src="../m/pm/17i-b07.gif" width="500" height="623" alt="Informatics exam 2017"/></p>
+   <p class="question">The Locals' Gym is adding a new section to its website. Each month, the gym will publish on a new page an article providing advice about physical wellbeing and fitness.</p>
+   <p class="question">At the end of each month, the web page will be linked to an index page so visitors to the site can still find the article if they wish.</p>
+   <p class="question">The layout of each monthly web page will be the same. A sketch of the layout has been created and is shown above.</p>
+   <p class="question">a. With regard to the text that appears between A and B on the web page, identify two conventions that should be followed and suggest how each should be applied. 4 marks</p>
+   <p class="question">b. Apart from gender inclusiveness, explain <strong>two</strong> characteristics that the information on the new web page should have if it is to educate worldwide audiences. 4 marks</p>
+   <p class="question">c. The new section will require a suitable folder structure and file-naming conventions so that different files can be found quickly.</p>
+   <p class="question">i. In the space provided below, draw a suitable folder structure for storing the files associated with the new section of the website. Clearly label your diagram.</p>
+   <p class="question"><img src="../m/pm/17i-b07ci.gif" width="800" height="486" alt="Informatics exam 2017"/></p>
+   <p class="question">ii. Describe a file-naming convention and use an example to show how the convention would be helpful in finding files quickly. 2 marks.</p>
+   <p class="question">&nbsp;</p>
+   <p class="examiner">Average mark -  / </p>   <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td colspan="2" valign="top" bgcolor="#99CCFF"><p class="comment">Section B overall - <br />
+ </p>
+ <p class="comment">&nbsp;</p></td>
+ </tr>
+</table>
+<div align="left">
+ <table width="75%" border="1" align="center" cellpadding="5" cellspacing="0">
+ <tr>
+ <td valign="top" ><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> 
+ <script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"></script></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#E9E5A7" ><h2 align="left"><a name="cs" id="cs"></a>Case study</h2>
+ <p align="left">Insert for Section C - Case study<br />
+ Please remove from the centre of this book during reading time. <br />
+ Use the case study provided in the insert to answer the questions in this section. Answers must apply to the case study. <br />
+ </p>
+ <p align="left"><strong>Zombie Pursuit</strong><br />
+   Zombie Pursuit is a small entertainment facility on the outskirts of Melbourne. Its owners, Flynn and Elena, have converted a warehouse into a multistorey, escape-room-style facility where customers pay to fight zombies. Customers can choose to play in groups of up to 10 and can arm themselves with laser weapons. Although only one game can be played at a time, three different types of games are offered during the week. Prior to entering the playing area, customers are required to register their details on the Zombie Pursuit website and choose a unique nickname. This ensures their details are saved to the Zombie Pursuit database. They are then issued with their weapon and told the basic rules of the game:<br />
+   &bull; If you zap a zombie, it is out of the game and you get points.<br />
+   &bull; If a zombie splats green gloop on you, you get 'eaten', which means your weapon is inactive for 60 seconds and you lose points.<br />
+   &bull; Physical violence against the zombies is strictly prohibited.<br />
+   Zombie Pursuit currently has 30 employees consisting of 25 actors who play the zombies, two cleaners, one party host and two food and beverage attendants.</p>
+ <p align="left"><br />
+   <strong>Issue</strong><br />
+   At present, Zombie Pursuit's website just provides visitors with information about Zombie Pursuit. Currently all bookings are done via the telephone.<br />
+   Elena would like to modify the company's website so that customers can see available time slots, make a booking and pay in advance.<br />
+   One of the actors, Anthony, is currently completing a Master of Business degree at university and is required to complete a research project as part of his course. Anthony has a hypothesis: 'Increasing the competition between customers will increase the number of customers because competition creates enthusiasm and excitement. '<br />
+   Anthony thinks that one way to increase competition between Zombie Pursuit's customers would be to create a monthly contest where the players with the five best scores from that month are invited back to create a 'super team' and take on the zombies. The highest scorer from that team then wins a prize.<br />
+   Flynn gives Anthony permission to use the company as part of his research project. For the first part of the project, the university requires Anthony to submit his hypothesis and evidence that supports or refutes it in a multimodal online report. The report is due in June and, if it does not provide a clear, well-argued and evidenced-based conclusion, Anthony will not be able to proceed with the rest of his project.</p>
+ <p align="left">   <strong>Zombie Pursuit's information system</strong><br />
+   The information system is built around a local area network (LAN) connecting:<br />
+   &bull; a fileserver, which holds the company's database and all other important records, and has a DVD burner attached to it<br />
+   &bull;  two desktop computers, with attached printers, that are used for all administrative tasks<br />
+   &bull;  two tablet computers that are used by customers to register themselves and choose a nickname.<br />
+   The physical layout of the LAN and other components and features is shown in the diagram below.</p>
+ <p align="left"><br />
+   <img src="../m/pm/17i-casestudy.gif" width="800" height="441" alt="Informatics exam 2017"/><br />
+ </p>
+ <p><strong>Zombie Pursuit's current information management practices</strong><br />
+   &bull; Backup procedure<br />
+   The fileserver is never shut down. It automatically runs a backup every night at midnight. This is achieved by copying all the important files onto a DVD. Each evening, before leaving for home, Elena replaces the previous night's backup DVD with a blank. She stores the backup DVD in a locked cupboard in the office and then goes home.<br />
+   &bull; Disposal procedure<br />
+   To save on cupboard space, Elena only keeps the 10 most recent backup DVDs. When she places the latest backup DVD in the cupboard, she removes the oldest one and puts it into the office's rubbish bin.<br />
+   &bull; Software security controls<br />
+   The fileserver runs an antivirus program. The program scans any file when the file is opened and is also scheduled to run a full virus scan at 2 am every morning. Before running the scan, the antivirus program automatically checks for updates to the virus definitions.<br />
+   The two desktop computers have no virus detection software installed.<br />
+   END OF INSERT<br />
+ </p>
+ <p>&nbsp;</p>
+ <p align="left"><strong>END OF INSERT</strong></p>
+ <p align="left" class="comment">&nbsp;</p> 
+ </td>
+ </tr>
+ </table>
+ <table width="75%" border="1" align="center" cellpadding="3" cellspacing="0">
+ <tr>
+   <td colspan="2" bgcolor="#FFFFCC"><p align="left"><strong>Instructions for Section C</strong></p>
+<p align="left"> Please remove from the centre of this book during reading time. </p>
+<p align="left">Use the case study provided in the insert to answer the questions in this section. Answers must apply to the case study.<br />
+</p>
+<p align="left">Answer <strong>all</strong> questions in the spaces provided. </p> 
+</td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c1" id="c1"></a>C1 </strong></p>
+
+<p>&nbsp;</p></td>
+   <td valign="top"><p align="left"><strong>Question 1</strong> (4 marks)</p>
+<p align="left">In a meeting with his university lecturer, Anthony was told that his lecturer had studied the decline of pinball machine usage in the 1980s. The lecturer offered Anthony the use of the data that was collected.<br />
+Anthony is not sure whether he should accept or decline the offer. He is concerned about the integrity of the data and is aware of criteria that can be used to check its integrity.<br />
+a. Identify one criterion that could be used to support accepting the offer and explain how the<br />
+criterion does this.	2	marks<br />
+Criterion	... <br />
+Explanation <br />
+b. Identify a different criterion that could be used to support declining the offer and explain how<br />
+the criterion does this.	2	marks<br />
+Criterion <br />
+Explanation </p>
+<p><span class="examiner">Average mark -  / </span></p>
+<p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td width="65" valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c2" id="c2"></a>C2</strong></p>
+ </td>
+ <td width="1260" valign="top"><p align="left"><strong>Question 2</strong> (3 marks)</p>
+   <p align="left">During the meeting, Anthony's lecturer also mentioned a survey recently completed by the university's sports and activities coordinator. Anthony has a friend who works in the Sports Department. This friend said he could access the data for Anthony.<br />
+Discuss the legal implications of using this data for Anthony and his friend.</p>
+   <p><span class="examiner">Average mark -  / </span></p>   <p><br />
+ </p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c3" id="c3"></a>C3</strong></p>
+ 
+ <p>&nbsp;</p></td>
+ <td valign="top"><p align="left"><strong>Question 3</strong> (2 marks)</p>
+   <p align="left">Since starting his project, Anthony has been interviewing players after they finish a game, asking them questions about the idea of playing competitively. Anthony has been recording all the answers on his mobile phone. For example, one of his questions was, 'How keen are you to have a super league and play competitively?', to which players gave answers such as, 'Yeah, heaps', 'A little bit, maybe' and 'Just to prove I'm the best anyway'.<br />
+Anthony has more than 100 voice recordings. He now wants to analyse this data to discover if there are any themes that might help him understand the effect that competition might have on attendance.<br />
+Describe one way in which Anthony could easily enter the data into a spreadsheet so that he can manipulate it.</p>
+   <p><span class="examiner">Average mark -  / </span></p>
+   <p align="left"><br />
+   </p>
+ <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c4" id="c4"></a>C4</strong></p>
+ 
+ <p>&nbsp;</p></td>
+ <td valign="top"><p align="left"><strong>Question 4</strong> (3 marks)</p>
+   <p align="left">Anthony has completed his analysis of the data and formed a conclusion about his hypothesis. He now has to create his online report for the university.<br />
+a. Describe one technique that Anthony could use to generate design ideas for his multimodal<br />
+online report.	1	mark<br />
+Suggest one criterion that Anthony could use to evaluate which of his design ideas he should choose. Justify your answer.	2	marks<br />
+Criterion	_ <br />
+Justification</p>
+   <p><span class="examiner">Average mark -  / </span></p>
+ <p><br clear="all" />
+ </p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC">&nbsp;</td>
+   <td valign="top"><p>Use the following information to answer Questions 5 and 6.</p>
+<p>Anthony has constructed the first page of his online report. It is shown in the following screenshot.</p>
+<p><img src="../m/pm/17i-c05-06.gif" width="700" height="532" alt="Informatics exam 2017"/></p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c5" id="c5"></a>C5</strong></p>
+
+<p>&nbsp;</p></td>
+   <td valign="top"><p align="left"><strong>Question 5</strong> (4 marks)</p>
+<p align="left">Based on the screenshot, identify two design principles related to appearance that Anthony has used in the creation of this web page. Provide evidence of each.<br />
+Design principle 1 <br />
+Evidence	... <br />
+Design principle 2 </p>
+<p align="left">Evidence </p>
+<p><span class="examiner">Average mark -  / </span></p>
+<p>&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c6" id="c6"></a>C6</strong></p>
+
+<p>&nbsp;</p></td>
+   <td valign="top"><p align="left"><strong>Question 6</strong> (3 marks)</p>
+<p align="left">The arrows on either side of the image in the screenshot are buttons that will allow a visitor to Anthony's web page to click back and forth through a gallery of about 20 photographs.<br />
+Outline a set of tests that Anthony should perform to check that the arrow buttons operate as intended.</p>
+<p><span class="examiner">Average mark -  / </span></p>
+<p align="left"><br />
+</p>
+<p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c7" id="c7"></a>C7</strong></p>
+ 
+ <p>&nbsp;</p></td>
+ <td valign="top"><p align="left"><strong>Question 7</strong> (4 marks)</p>
+   <p align="left">During the project, Anthony monitored his progress by recording actual starting and ending times for each task on the Gantt chart he had prepared at the beginning. The project is now complete and Anthony is reviewing his plan. One portion of the Gantt chart and its key are shown below.</p>
+   <p><img src="../m/pm/17i-c07.gif" width="800" height="249" alt="Informatics exam 2017"/></p>
+   <p align="left">&nbsp;</p>
+   <p><span class="examiner">Average mark -  / </span></p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c8" id="c8"></a>C8</strong></p>
+
+<p>&nbsp;</p></td>
+   <td valign="top"><p align="left"><strong>Question 8</strong> (5 marks)</p>
+<p align="left">Elena has started creating a mock-up of a new web page using a simple drawing program. The purpose of the web page is to allow customers to make a booking online. She has printed her mock-up and written annotations in brackets on it. </p>
+<p align="left"><img src="../m/pm/17i-c08.gif" width="600" height="905" alt="Informatics exam 2017"/></p>
+<p align="left">She still has to add controls that meet the following three requirements:<br />
+1. Obtain the number of people (minimum one, maximum 10).<br />
+2. Obtain a contact number (must be entered) and email address (optional).<br />
+3. Allow a customer to proceed to payment if all of the required data has been entered.<br />
+a. Complete Elena's mock-up on page 21 so that it shows the controls needed to meet the three requirements listed above. When drawing the controls:<br />
+&bull; clearly indicate the type of control with an annotation<br />
+&bull;  make sure the purpose of the control is clear<br />
+&bull;  take into account the web page's appearance.<br />
+b. By referring to appropriate design principles related to functionality, justify the type of control used to meet requirement 1.</p>
+<p><span class="examiner">Average mark -  / </span></p>
+<p align="left"><br />
+</p>
+<p>&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c9" id="c9"></a>C9</strong></p>
+
+<p>&nbsp;</p></td>
+   <td valign="top"><p align="left"><strong>Question 9</strong> (7 marks)</p>
+<p align="left">Flynn has agreed to Anthony's idea about creating a competition between players. Together they have drawn an entity-relationship (ER) diagram for the part of the database that keeps statistics about every game a player has played in.</p>
+<p><img src="../m/pm/17i-c09.html" width="700" height="315" alt="Informatics exam 2017"/><br />
+   </p>
+<p>a. The ContactNumber attribute will contain a phone number.<br />
+State why Flynn and Anthony chose to make its data type 'Text'.	1	mark</p>
+<p>b. What data type should Flynn and Anthony choose for ZombiesZapped and TimesEaten - text,<br />
+numeric or Boolean? Give a reason for your answer.	1	mark<br />
+</p>
+<p>c. Write a word to indicate the cardinality that should be shown at X and at Y.	2	marks<br />
+At X 	 </p>
+<p>At Y <br />
+</p>
+<p>d. The ER diagram shows that when Flynn sets up the entity PlayerStatistics as a table in a relational database, he must add two more fields to act as foreign keys.<br />
+State the two fields that should be added as foreign keys and explain their purpose.	3	marks<br />
+Field 1 	 </p>
+<p>Field 2 <br />
+Purpose <br />
+</p>
+<p align="left">&nbsp;</p>
+<p><span class="examiner">Average mark -  / </span></p>
+<p>&nbsp;</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c10" id="c10"></a>C10</strong></p>
+
+<p>&nbsp;</p></td>
+   <td valign="top"><p align="left"><strong>Question 10</strong> (4 marks)</p>
+<p align="left">Flynn and Anthony have constructed the database tables needed to run the player competition.<br />
+Anthony is constructing a number of queries that will extract the required information. He represents the design of the queries using input-process-output (IPO) charts.<br />
+a. Anthony would like one of the competitions to be only for players who are under 18 years of age on 1 January of the current year. The IPO chart below shows a query that he will use to filter out any player who is too old.	2	marks<br />
+</p>
+<table width="700" border="1" cellspacing="0" cellpadding="3">
+<tbody>
+  <tr>
+    <td><strong>Input</strong></td>
+    <td><strong>CurrentYear Process</strong></td>
+    <td><strong>Output</strong></td>
+  </tr>
+  <tr>
+    <td>PlayerlD</td>
+    <td>Calculate field: Age = ThisYear - YearOfBirth</td>
+    <td rowspan="2">PlayerlD for all eligible players</td>
+  </tr>
+  <tr>
+    <td>DateOfBirth</td>
+    <td>Filter with criterion: Age &lt; 18</td>
+    </tr>
+</tbody>
+</table>
+<p align="left">Anthony has written the first line of a testing table for the query.<br />
+Complete the table below so that two other important conditions are tested. Assume CurrentYear is 2017.<br />
+</p>
+<table width="700" border="1" cellspacing="0" cellpadding="3">
+<tbody>
+  <tr>
+    <td><strong>Condition being tested</strong></td>
+    <td><strong>Data input</strong></td>
+    <td><strong>Expected result of query</strong></td>
+  </tr>
+  <tr>
+    <td>player too old</td>
+    <td><p>PlayerlD 12345 </p>
+ <p>YearOfBirth 1998</p></td>
+    <td> PlayerlD not included in output</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</tbody>
+</table>
+<p>b. To create a 'super team', Anthony needs a query that returns each player's score for a game.<br />
+In each game, players get five points for every zombie they zap, but lose 10 points every time they are 'eaten'.<br />
+Complete the process column in the IPO chart below by showing what the query needs to do<br />
+to obtain the required output.	2	marks</p>
+<table width="700" border="1" cellspacing="0" cellpadding="3">
+<tbody>
+  <tr>
+    <td><strong>Input</strong></td>
+    <td><strong>Process</strong></td>
+    <td><strong>Output</strong></td>
+  </tr>
+  <tr>
+    <td>PlayerlD<br />
+ZombiesZapped<br />
+TimesEaten</td>
+    <td>&nbsp;</td>
+    <td>PlayerID<br />
+ PlayerScoreForGame</td>
+  </tr>
+</tbody>
+</table>
+<p><span class="examiner">Average mark -  / </span><br />
+</p></td>
+ </tr>
+ <tr>
+   <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c11" id="c11"></a>C11</strong></p>
+
+<p>&nbsp;</p></td>
+   <td valign="top"><p align="left"><strong>Question 11</strong> (3 marks)</p>
+<p align="left">The case study outlines the security controls used by Zombie Pursuit.<br />
+a. Identify one physical security control used to protect Zombie Pursuit's information system.<br />
+b. Identify one weakness in the physical security provided for Zombie Pursuit's information system. Explain the threat it presents.<br />
+<br />
+</p>
+<p><span class="examiner">Average mark -  / </span></p><p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c12" id="c12"></a>C12</strong></p>
+ 
+ <p>&nbsp;</p></td>
+ <td valign="top"><p align="left"><strong>Question 12</strong> (4 marks)</p>
+   <p align="left">Elena's friend Isha is the owner of a store selling costumes. She runs a single desktop computer system connected to a cash register. At the end of each day, accounting software is used to keep the accounts up to date. All of the shop's data is stored on the hard disk of the desktop computer. At the end of each week, Isha copies all the data to cloud storage.<br />
+a. Identify one strength of Zombie Pursuit's backup procedure compared with Isha's. Explain why it is a strength.<br />
+b. Identify one strength of Isha's backup procedure compared with Zombie Pursuit's. Explain why it is a strength.</p>
+   <p><span class="examiner">Average mark -  / </span></p>   <p>&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td valign="top" bgcolor="#FFFFCC"><p class="question"><strong><a name="c13" id="c13"></a>C13</strong></p>
+ 
+ <p>&nbsp;</p></td>
+ <td valign="top"><p align="left"><strong>Question 13</strong> (11 marks)</p>
+   <p align="left">Isha's store has been in operation for a number of years. In that time, she has had many customers, suppliers and product lines. To prevent her records from becoming cluttered with out-of-date data, in July each year Isha deletes any records of customers, suppliers or product lines that have not been accessed for five years. Isha's computer is kept in an office at the back of the store and is rarely turned off. It is connected to the internet by a simple broadband modem. Isha runs a complete virus scan on her computer every week.<br />
+For each of the areas of information management shown below, decide who (Zombie Pursuit or Isha) has the more effective procedures and justify your answer.<br />
+&bull;	Disposal of data	, <br />
+&bull;	Protection from malware<br />
+   </p>
+   <p><span class="examiner">Average mark -  / </span></p>
+   <p><br />
+ </p>
+ <p class="explanation">&nbsp;</p></td>
+ </tr>
+ <tr>
+ <td colspan="2"><div align="center">
+ <p>&nbsp;</p>
+ <p><strong>END OF QUESTION AND ANSWER BOOK</strong></p>
+ </div></td>
+ </tr>
+ <tr>
+ <td colspan="2"><div align="center" class="comment">
+ <p><strong>Section C summary</strong></p>
+ <p align="left"><br />
+ </p>
+ <p align="left">&nbsp;</p>
+ </div></td>
+ </tr>
+ <tr>
+ <td colspan="2"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script></td>
+ </tr>
+ </table>
+ <p align="center">* Many thanks for Steven Wright for letting me steal his <a href="https://www.youtube.com/watch?v=r1ryQU2crKA">joke</a>.</p>
+ <p align="center"><a href="../index.html" target="top">Back to the IT Lecture Notes index</a></p>
+ <p align="center"><a href="javascript:history.go(-1)">Back to the last page you visited</a></p>
+ <p align="center"><font size="2">Created 10 November 2016</font></p>
+ <p align="center"><font size="2">Last changed: 
+ <!-- #BeginDate format:Am1a -->November 17, 2017 1:13 PM<!-- #EndDate --> 
+ </font></p>
+ <p align="center"><font size="2">Original Content &copy; Mark Kelly 2017<br />
+ Images and questions are &copy; Victorian Curriculum 
+ and Assessment Authority 2016. <br />
+ Reproduced here with permission for educational purposes.</font><br />
+ Thanks, VCAA!</p>
+ <p align="center"><font size="2">VCE IT Lecture notes &copy; <a href="../etc/mailform.html">Mark Kelly</a></font></p>
+ <p align="center">&nbsp;</p>
+</div>
+
+<map name="Map" id="Map">
+  <area shape="rect" coords="136,111,252,305" href="postmortem-2017s.html" />
+</map>
+</body>
+
+<!-- Mirrored from vceit.com/p/postmortem-2017i.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:15:11 GMT -->
+</html>

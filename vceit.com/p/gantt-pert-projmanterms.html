@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from vceit.com/p/gantt-pert-projmanterms.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:17:09 GMT -->
+<head>
+<title>VCE IT Lecture Notes - Project management terms</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-21490715-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-21490715-2";
+</script>
+<link href="../etc/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<p align="center"><a href="../index.html"><img src="../etc/vceit-main3.jpg" border = "0" /></a></p>
+<div align="center"> 
+<p><a href="../index.html" target="_top">VCE IT Lecture Notes</a>
+by <a href="../wp/contact-me-at-vceit-com-2/index.html">Mark Kelly</a> </p>
+</div>
+<table width="666" border="1" cellpadding="5" align="center" cellspacing="0">
+<tr>
+<td colspan="2" bgcolor="#FFFFFF"> 
+<h1 align="center">Project Management Terms</h1>
+<p align="center">These are not mandated knowledge for ITA or SD in the 2011-2014 study design.<br />
+Only an overview of project management is required.<br />
+</p>
+</td> 
+</tr>
+<tr>
+<td valign="top"><strong>Lead time*</strong></td> 
+<td> <p align="left"> Occurs when a task should theoretically wait for its predecessor to finish, but can actually start a little early. The time that the tasks overlap is lead time. For example, when replacing computers in a computer lab, you could actually start bringing in the new computers while the old ones were being packed up and moved out. The time during which packing and unpacking can happen at the same time is <em>lead time</em>. </p>
+<p align="left">*Not to be confused with the economic &quot;Lead time&quot; which refers to the time between conceiving an idea and bringing it to fruition</p>
+<p align="left">Lead time, according to <em>IT@Work</em>, are waiting times (like lag times) that do not involve dependencies.</p>
+<p align="left"><font color="#000000">MS Project's help says: &quot;Lead time is overlap between tasks that have a dependency. For example, if a task can start when its predecessor is half finished, you can specify a finish-to-start dependency with a lead time of 50&nbsp;percent for the successor task.&quot;</font></p>
+</td>
+</tr>
+<tr>
+<td valign="top"><strong>Lag time</strong></td>
+<td><p><em>Lag </em>is the the minimum amount of time that must pass between the finish of one activity and the start of its successor(s). For example, if task A is painting a wall, and dependent task B is putting up a picture on the wall, there would need to be some <em>lag time</em> between the end of task A and the start of task B to let the paint dry.</p>
+<p>Lag time is shown in a PERT chart as an arrow with a duration but no task assigned to it. </p>
+<p><font color="#000000">MS Project's help says: &quot;Lag time is a delay between tasks that have a dependency. For example, if you need a two-day delay between the finish of one task and the start of another, you can establish a finish-to-start dependency and specify two days of lag time.&quot;</font></p>
+</td>
+</tr>
+<tr>
+<td valign="top"><strong>Float time</strong></td>
+<td> a synonym for slack time </td>
+</tr>
+<tr>
+<td valign="top"><strong>Slack time</strong> </td>
+<td><p>the amount of time a task can be extended or delayed before it impacts on the starting time of other tasks. Tasks A and B start at the same time. Task C is dependent on both tasks A and B. Task A takes 2 days and task B takes 5 days. Task A has 3 days' slack. It can run 3 days overtime before it affects the planned starting time for task C. </p>
+</td>
+</tr>
+<tr>
+<td valign="top"><strong>Free slack</strong></td>
+<td> how much a task can slip before it delays another task.</td>
+</tr>
+<tr>
+<td valign="top"><strong>Total slack</strong></td>
+<td> how much a task can slip before it delays the finishing date of the project.</td>
+</tr>
+<tr>
+<td valign="top"><strong>Milestone</strong></td>
+<td>An event of zero duration that marks a significant point of progress in a project. Milestones are used to see whether a project is on time or not. A milestone may be &quot;Design is finished&quot;, &quot;Sign contract&quot;, &quot;Project Ends&quot; etc. </td>
+</tr>
+<tr>
+<td valign="top"><strong>Event</strong></td>
+<td>Something that happens, but that is not a task (it takes time, but does not take labour or resources). e.g. &quot;Concrete dries&quot; </td>
+</tr>
+<tr>
+<td valign="top"><strong>Task</strong></td>
+<td>Something that needs to be done that requires some time.</td>
+</tr>
+<tr>
+<td valign="top"><strong>Dependent task</strong> </td>
+<td>A task that cannot begin before a previous task finishes. e.g. Task B, 'putting on shoes' is dependent on task A, 'putting on socks'. </td>
+</tr>
+<tr>
+<td valign="top"><strong>Critical path </strong></td>
+<td>The series of tasks from the beginning of a project up to its end that takes the longest time. This is also the <em>shortest </em>time in which all tasks in the project can be completed. By definition, no task on the critical path can have any slack time. In other words, no task on the critical path can be delayed or extended without affecting the finishing date of the project. </td>
+</tr>
+<tr>
+<td valign="top"><strong>Critical task </strong></td>
+<td>A task on the critical path. </td>
+</tr>
+<tr>
+<td valign="top"><strong>Work Breakdown Structure (WBS)</strong> </td>
+<td>Table showing tasks, durations, resources (people responsible) and dependencies. <a href="gantt-pert-buffalo-pert.html">See the example</a>. To make a WBS accurate, you have to know the <em>constraints</em> of the environment. 
+<em>E.g. Constraint - the family's house has two showers.</em> </td>
+</tr>
+<tr>
+<td valign="top"><strong>Dummy Task </strong></td>
+<td><p>Shown by a dotted arrow on a PERT chart, it shows a dependency but no task. I know that means nothing, so see the <a href="gantt-pert-buffalo-pert.html">Buffalo PERT example.</a></p>
+<p>Here's another take on dummy tasks that may make sense to you.</p>
+<p><img src="../m/gantt-pert-pert_chart.gif" width="622" height="471" /></p>
+<p> Dummy tasks are tasks that must be completed in sequence but that <strong>don't require resources or completion time</strong>. These are represented by dotted lines with arrows. </p>
+<p>For example, the dashed arrow linking nodes 6 and 9 indicates that task 9 can't start until &quot;conversion&quot; (as well as &quot;training&quot; and &quot;test system&quot; are <strong>all</strong> finished, but nothing needs to be <strong>done</strong> by anyone between the end of conversion and the start of the next task.</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</table>
+<p align="center"><a href="../index.html" target="_top">Back to the IT Lecture Notes</a></p>
+<p align="center"><a href="javascript:history.go(-1)">Back to the last page you visited</a></p>
+<p align="center"><font size="2">Created July 21, 2005</font></p>
+<p align="center"><font size="2">Last changed: 
+<!-- #BeginDate format:Am1a -->November 16, 2011 1:21 PM<!-- #EndDate -->
+</font></p>
+<p align="center"><font size="2">VCE IT Lecture notes &copy; Mark Kelly 2001-<script type="text/javascript">
+D = new Date();
+year = D.getFullYear();
+document.write(year);
+</script></font></p>
+<!-- #BeginLibraryItem "/Library/GoogleAd.lbi" -->
+<p align="center">
+</p><p align="center">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"> </script>
+</p>
+<!-- #EndLibraryItem -->
+</body>
+
+<!-- Mirrored from vceit.com/p/gantt-pert-projmanterms.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:17:10 GMT -->
+</html>

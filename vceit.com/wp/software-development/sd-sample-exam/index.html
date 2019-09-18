@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-AU">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-AU">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-AU">
+<!--<![endif]-->
+
+<!-- Mirrored from vceit.com/wp/software-development/sd-sample-exam/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 09:20:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>SD Sample Exam Solutions | VCE IT Lecture Notes by Mark Kelly</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="../../xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://vceit.com/wp/wp-content/themes/twentythirteen/js/html5.js"></script>
+	<![endif]-->
+	<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="VCE IT Lecture Notes by Mark Kelly &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="VCE IT Lecture Notes by Mark Kelly &raquo; Comments Feed" href="../../comments/feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/vceit.com\/wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=0360611ccebca7c9f53642f61982dc0f"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../../wp-includes/css/dist/block-library/style.minac12.css?ver=0360611ccebca7c9f53642f61982dc0f' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='../../wp-includes/css/dist/block-library/theme.minac12.css?ver=0360611ccebca7c9f53642f61982dc0f' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='../../wp-content/plugins/contact-form-7/includes/css/styles58e0.css?ver=5.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='king-countdowner-css'  href='../../wp-content/plugins/easy-countdowner/assets/TimeCircles5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='../../wp-content/themes/twentythirteen/genericons/genericons19ce.css?ver=3.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-style-css'  href='../../wp-content/themes/twentythirteen/style4a02.css?ver=2013-07-18' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-block-style-css'  href='../../wp-content/themes/twentythirteen/css/blocks0329.css?ver=2018-12-30' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentythirteen-ie-css'  href='http://vceit.com/wp/wp-content/themes/twentythirteen/css/ie.css?ver=2013-07-18' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery4a5f.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script type='text/javascript' src='../../wp-content/plugins/easy-countdowner/assets/TimeCircles5152.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='../../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
+
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../../index7e0e.html?p=1397' />
+<link rel="alternate" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed4d90.json?url=http%3A%2F%2Fvceit.com%2Fwp%2Fsoftware-development%2Fsd-sample-exam%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed6bce?url=http%3A%2F%2Fvceit.com%2Fwp%2Fsoftware-development%2Fsd-sample-exam%2F&amp;format=xml" />
+    <style type="text/css">
+        .paypal_donation_button:before,
+        .paypal_donation_button:after {
+            content: " ";
+            display: table;
+        }
+        .paypal_donation_button:after {
+            clear: both;
+        }
+        .paypal_donation_button {
+            max-width: 147px;
+            margin: 0 auto;
+            padding: 0;
+            display: block;
+        }
+    </style>
+    <script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('../../index80c0.html?wordfence_lh=1&amp;hid=186A7D4D55CA2CCCC2B38F15A531D983');
+</script>	<style type="text/css" id="twentythirteen-header-css">
+		.site-header {
+		background: url(../../wp-content/uploads/2015/06/title.jpg) no-repeat scroll top;
+		background-size: 1600px auto;
+	}
+	@media (max-width: 767px) {
+		.site-header {
+			background-size: 768px auto;
+		}
+	}
+	@media (max-width: 359px) {
+		.site-header {
+			background-size: 360px auto;
+		}
+	}
+			.site-title,
+	.site-description {
+		position: absolute;
+		clip: rect(1px 1px 1px 1px); /* IE7 */
+		clip: rect(1px, 1px, 1px, 1px);
+	}
+			</style>
+	
+<!-- BEGIN ExactMetrics v5.3.9 Universal Analytics - https://exactmetrics.com/ -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-21490715-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- END ExactMetrics Universal Analytics -->
+<meta data-pso-pv="1.2.1" data-pso-pt="page" data-pso-th="17ac8b6976fac4c9b3bea83e209da52b"></head>
+
+<body class="page-template-default page page-id-1397 page-child parent-pageid-309 wp-embed-responsive sidebar">
+		<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<a class="home-link" href="../../index.html" title="VCE IT Lecture Notes by Mark Kelly" rel="home">
+				<h1 class="site-title">VCE IT Lecture Notes by Mark Kelly</h1>
+				<h2 class="site-description">Informatics, Software Development, Computing</h2>
+			</a>
+
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					<button class="menu-toggle">Menu</button>
+					<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
+					<div class="menu-mainmenu-container"><ul id="primary-menu" class="nav-menu"><li id="menu-item-1666" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1666"><a href="../../informatics/index.html">Informatics</a></li>
+<li id="menu-item-1667" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-1667"><a href="../index.html">Software Development</a></li>
+<li id="menu-item-1668" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1668"><a href="../../computing-units-1-and-2/index.html">IT Units 1 and 2</a></li>
+<li id="menu-item-1669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1669"><a href="../../newsblog/index.html">News/Blog</a></li>
+<li id="menu-item-1662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1662"><a href="../../exams-2/index.html">Exam Post Mortems</a></li>
+<li id="menu-item-1670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1670"><a href="../../exams-2/exam-tips/index.html">Exam Tips</a></li>
+</ul></div>					<form role="search" method="get" class="search-form" action="http://vceit.com/wp/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>				</nav><!-- #site-navigation -->
+			</div><!-- #navbar -->
+		</header><!-- #masthead -->
+
+		<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+						
+				<article id="post-1397" class="post-1397 page type-page status-publish hentry">
+					<header class="entry-header">
+						
+						<h1 class="entry-title">SD Sample Exam Solutions</h1>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						<p>In April 2016, VCAA released some <a href="http://www.vcaa.vic.edu.au/Documents/exams/technology/it-softdev-specs-samp.pdf">sample exam questions</a> for the 2016-2019 Software Development study design. Note that &#8211; unlike <a href="../../the-new-informatics-exam-format-has-been-announced/index.html">Informatics</a> &#8211; the format of the exam is unchanged from previous years.</p>
+<p>Here are some sample answers. They are neither official, nor guaranteed.</p>
+<p>To save time and effort, I have not reproduced the questions. Use the link above to download them.</p>
+<p><strong>Legend- wait for it&#8230;</strong></p>
+<ul>
+<li>Explanatory notes will be <span style="color: #0000ff;">in blue</span>.</li>
+<li>My editorial comments that are not part of the answer will be shown <span style="color: #ff0000;">in red</span>.</li>
+</ul>
+<h3>Section A (multiple choice)</h3>
+<p>A1 &#8211; <span style="color: #0000ff;">You can&#8217;t test something that has not been developed.</span></p>
+<p>A2 &#8211; <span style="color: #ff0000;">I&#8217;m not sure why the &#8220;multi- column, multi-row&#8221; was repeated for every option. Why include invariant informations? And since when has &#8220;multi-&#8221; been an acceptable, formal term in examinations? I&#8217;d expect &#8220;multiple&#8221;.</span></p>
+<p>A3 &#8211; <span style="color: #0000ff;">An interesting question. XML provides structure to a data file, but does not describe its formatting. Don&#8217;t confuse XML with HTML which <em>does</em> describe formatting.</span></p>
+<p>A4 &#8211; <span style="color: #0000ff;">Both linear and binary searching are listed in the study design (U3O1 KK07) so they are examinable.  The &#8220;selection&#8221; and &#8220;quick&#8221; options refer to <em>sorting,</em> not searching. Be careful with the difference between searching and sorting &#8211; many students confuse the two ideas.</span></p>
+<p><span style="color: #ff0000;">A lot of reading for a multiple choice question!</span></p>
+<p>A5 &#8211; <span style="color: #0000ff;">Know your basic project management terms. It&#8217;s unclear how deep you need to go, for example whether you need to understand terms like &#8220;lead time&#8221; or &#8220;lag time&#8221; but milestones and dependencies are listed in the study design (U3O2 KK14) so they are compulsory.  It is wise, however to know what critical paths and resources are.</span></p>
+<p>A6 &#8211; <span style="color: #0000ff;">The legislation theory is dry and boring, but you need to know it.</span></p>
+<p>A7 &#8211; <span style="color: #0000ff;">Goals are long-term, rather vague, idealistic targets. Objectives are specific, measurable achievements that can be seen to be reached or not. For example, &#8220;Good customer service&#8221; is a goal. It&#8217;s what is aimed at in general, but it&#8217;s hard to prove whether, or how well, it has been accomplished.</span></p>
+<p><span style="color: #0000ff;">Each goal should be specifically defined with objectives that can be quantified (measured). For example &#8220;All customer enquiries should be responded to within 24 hours&#8221;. If all of the objectives related to a goal are achieved, it indicates that the goal has also been achieved.</span></p>
+<p><span style="color: #0000ff;">Objectives can often be identified by the use of numerical targets, such as &#8220;80% reduction&#8221;. This can be measured and judged, whereas a goal such as &#8220;reliability&#8221; is too vague to measure, but is a valuable long-term target.</span></p>
+<p><span style="color: #0000ff;">The fact the objective relates to a system (the software solution) makes it an information systems objective.  It is relevant to only that system, not the organisation that produces it.</span></p>
+<p><span style="color: #0000ff;">An organisational goal or objective relates to the entire organisation that produces or uses systems. For example, &#8220;Good customer service&#8221; relates to every person, department and system within the organisation, and is sought every day with every action of the whole organisation. </span></p>
+<p><span style="color: #0000ff;">System goals and objectives relate to individual systems <em>within</em> the organisation, such as its payroll system, communications, stock management, security, customer service.</span></p>
+<p><span style="color: #0000ff;">Logically, each <em>system</em> goal and objective should aim to achieve a larger, broader <em>organisational</em> goal. So, for example, if an organisational goal were &#8220;Good customer service&#8221;, the communications system would have a goal of &#8220;Contacting customers promptly&#8221; and a related objective of &#8220;Responding to all customer enquiries within 24 hours.&#8221; Likewise, the billing system would have a goal such as &#8220;Maintaining accurate billing information&#8221; and an objective such as &#8220;No more than 1% errors in customer billing per month.&#8221; </span></p>
+<p>A8 &#8211; <span style="color: #0000ff;">Mobile devices need to use wireless. Otherwise they could not be mobile.</span></p>
+<p>A9 &#8211; <span style="color: #0000ff;">Efficiency criteria relate to <em>time</em> (speed), <em>cost</em> (of running, maintaining, upgrading, consumables, etc), and <em>labour</em> (person-hours needed). Every other criterion you can think of is related to <em>effectiveness &#8211; </em>including <em>ease of use</em> in this new study design. That&#8217;s all you have to remember.</span></p>
+<p>A10 &#8211; <span style="color: #0000ff;">An interesting question. What does &#8220;data integrity&#8221; include? Factors that make data reliable and trustworthy. Not <em>effectiveness</em>,  so rule out options A and D. Option B&#8217;s <em>security</em> is tempting &#8211; we all want our information to be securely stored &#8211; but it&#8217;s not a quality of the information itself. Option C are all qualities of quality information.</span></p>
+<p><span style="color: #ff0000;">Some of these questions are really tricky!</span></p>
+<p>A11 &#8211; <span style="color: #ff0000;">I don&#8217;t like this at all. Phishing is misrepresenting oneself as a reliable person. This scenario does not sound like that at all. And students could argue that a worm or trojan from the website could have created the pop-up screen. No. Don&#8217;t like this question.</span></p>
+<p>A12 &#8211; <span style="color: #0000ff;">Even if you didn&#8217;t know how a selection sort works (which you should, BTW), it&#8217;s pretty clear the other options would not create that output.</span></p>
+<p><span style="color: #0000ff;">Selection sort is inefficient when sorting large lists, but is relatively simple to implement, like bubble sort.</span></p>
+<p><span style="color: #0000ff;">Selection sort method: the data to be sorted are divided into two parts: the data items that have already been sorted and moved to the start of the list; and the data items that have not yet been sorted.</span></p>
+<p><span style="color: #0000ff;">The selection sort then finds the smallest (or largest, if sorting in descending order) data item in the unsorted items.  It swaps that item with the leftmost item in the unsorted list. It then moves the dividing line between sorted/unsorted items 1 place to the right.</span></p>
+<p><span style="color: #0000ff;">An example, using the data from the practice exam.</span></p>
+<p><span style="color: #0000ff;">Shaded cells are the unsorted items.</span><br />
+ <span style="color: #0000ff;">In the original data, no items are sorted so the dividing line is at position zero &#8211; all items are in the unsorted sub-list.</span></p>
+<p><span style="color: #0000ff;">Remember: the question asks about the state of the data after pass 2.</span></p>
+<table style="width: 580.452px;">
+<tbody>
+<tr style="height: 26px;">
+<td style="border-color: #2f1394; width: 104px; height: 26px;">Unsorted</td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px; background-color: #f2f0b3;">14</td>
+<td style="border-color: #2f1394; width: 50px; text-align: right; height: 26px; background-color: #f2f0b3;">7</td>
+<td style="border-color: #2f1394; width: 54px; text-align: right; height: 26px; background-color: #f2f0b3;">69</td>
+<td style="border-color: #2f1394; width: 53px; text-align: right; height: 26px; background-color: #f2f0b3;">27</td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px; background-color: #f2f0b3;">15</td>
+<td style="border-color: #2f1394; width: 35px; text-align: right; height: 26px; background-color: #f2f0b3;">23</td>
+<td style="border-color: #2f1394; width: 30px; text-align: right; height: 26px; background-color: #f2f0b3;">11</td>
+<td style="border-color: #2f1394; width: 30.4517px; text-align: right; height: 26px; background-color: #f2f0b3;">10</td>
+</tr>
+<tr style="height: 26px;">
+<td style="border-color: #2f1394; width: 104px; height: 26px;">After pass 1</td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px;"><strong>7</strong></td>
+<td style="border-color: #2f1394; width: 50px; text-align: right; height: 26px; background-color: #f2f0b3;">14</td>
+<td style="border-color: #2f1394; width: 54px; text-align: right; height: 26px; background-color: #f2f0b3;">69</td>
+<td style="border-color: #2f1394; width: 53px; text-align: right; height: 26px; background-color: #f2f0b3;">27</td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px; background-color: #f2f0b3;">15</td>
+<td style="border-color: #2f1394; width: 35px; text-align: right; height: 26px; background-color: #f2f0b3;">23</td>
+<td style="border-color: #2f1394; width: 30px; text-align: right; height: 26px; background-color: #f2f0b3;">11</td>
+<td style="border-color: #2f1394; width: 30.4517px; text-align: right; height: 26px; background-color: #f2f0b3;">10</td>
+</tr>
+<tr style="height: 26px;">
+<td style="border-color: #2f1394; width: 104px; height: 26px;"><span style="color: #ff0000;"><strong>After pass 2</strong></span></td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px;"><strong>7</strong></td>
+<td style="border-color: #2f1394; width: 50px; text-align: right; height: 26px;"><strong>10</strong></td>
+<td style="border-color: #2f1394; width: 54px; text-align: right; height: 26px; background-color: #f2f0b3;">69</td>
+<td style="border-color: #2f1394; width: 53px; text-align: right; height: 26px; background-color: #f2f0b3;">27</td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px; background-color: #f2f0b3;">15</td>
+<td style="border-color: #2f1394; width: 35px; text-align: right; height: 26px; background-color: #f2f0b3;">23</td>
+<td style="border-color: #2f1394; width: 30px; text-align: right; height: 26px; background-color: #f2f0b3;">11</td>
+<td style="border-color: #2f1394; width: 30.4517px; text-align: right; height: 26px; background-color: #f2f0b3;">14</td>
+</tr>
+<tr style="height: 26px;">
+<td style="border-color: #2f1394; width: 104px; height: 26px;">After pass 3</td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px;"><strong>7</strong></td>
+<td style="border-color: #2f1394; width: 50px; text-align: right; height: 26px;"><strong>10</strong></td>
+<td style="border-color: #2f1394; width: 54px; text-align: right; height: 26px;"><strong>11</strong></td>
+<td style="border-color: #2f1394; width: 53px; text-align: right; height: 26px; background-color: #f2f0b3;">27</td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px; background-color: #f2f0b3;">15</td>
+<td style="border-color: #2f1394; width: 35px; text-align: right; height: 26px; background-color: #f2f0b3;">23</td>
+<td style="border-color: #2f1394; width: 30px; text-align: right; height: 26px; background-color: #f2f0b3;">69</td>
+<td style="border-color: #2f1394; width: 30.4517px; text-align: right; height: 26px; background-color: #f2f0b3;">14</td>
+</tr>
+<tr style="height: 26.0425px;">
+<td style="border-color: #2f1394; width: 104px; height: 26.0425px;">After pass 4</td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26.0425px;"><strong>7</strong></td>
+<td style="border-color: #2f1394; width: 50px; text-align: right; height: 26.0425px;"><strong>10</strong></td>
+<td style="border-color: #2f1394; width: 54px; text-align: right; height: 26.0425px;"><strong>11</strong></td>
+<td style="border-color: #2f1394; width: 53px; text-align: right; height: 26.0425px;"><strong>14</strong></td>
+<td style="border-color: #2f1394; width: 40px; height: 26.0425px; text-align: right; background-color: #f2f0b3;">15</td>
+<td style="border-color: #2f1394; width: 35px; height: 26.0425px; text-align: right; background-color: #f2f0b3;">23</td>
+<td style="border-color: #2f1394; width: 30px; height: 26.0425px; text-align: right; background-color: #f2f0b3;">69</td>
+<td style="border-color: #2f1394; width: 30.4517px; height: 26.0425px; text-align: right; background-color: #f2f0b3;">27</td>
+</tr>
+<tr style="height: 26px;">
+<td style="border-color: #2f1394; width: 104px; height: 26px;">After pass 5</td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px;"><strong>7</strong></td>
+<td style="border-color: #2f1394; width: 50px; text-align: right; height: 26px;"><strong>10</strong></td>
+<td style="border-color: #2f1394; width: 54px; text-align: right; height: 26px;"><strong>11</strong></td>
+<td style="border-color: #2f1394; width: 53px; text-align: right; height: 26px;"><strong>14</strong></td>
+<td style="border-color: #2f1394; width: 40px; height: 26px; text-align: right; background-color: #f2f0b3;">15</td>
+<td style="border-color: #2f1394; width: 35px; height: 26px; text-align: right; background-color: #f2f0b3;">23</td>
+<td style="border-color: #2f1394; width: 30px; height: 26px; text-align: right; background-color: #f2f0b3;">69</td>
+<td style="border-color: #2f1394; width: 30.4517px; height: 26px; text-align: right; background-color: #f2f0b3;">27</td>
+</tr>
+<tr style="height: 26px;">
+<td style="border-color: #2f1394; width: 104px; height: 26px;">After pass 6</td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px;"><strong>7</strong></td>
+<td style="border-color: #2f1394; width: 50px; text-align: right; height: 26px;"><strong>10</strong></td>
+<td style="border-color: #2f1394; width: 54px; text-align: right; height: 26px;"><strong>11</strong></td>
+<td style="border-color: #2f1394; width: 53px; text-align: right; height: 26px;"><strong>14</strong></td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px;"><strong>15</strong></td>
+<td style="border-color: #2f1394; width: 35px; height: 26px; text-align: right; background-color: #f2f0b3;">23</td>
+<td style="border-color: #2f1394; width: 30px; height: 26px; text-align: right; background-color: #f2f0b3;">69</td>
+<td style="border-color: #2f1394; width: 30.4517px; height: 26px; text-align: right; background-color: #f2f0b3;">27</td>
+</tr>
+<tr style="height: 26px;">
+<td style="border-color: #2f1394; width: 104px; height: 26px;">After pass 7</td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px;"><strong>7</strong></td>
+<td style="border-color: #2f1394; width: 50px; text-align: right; height: 26px;"><strong>10</strong></td>
+<td style="border-color: #2f1394; width: 54px; text-align: right; height: 26px;"><strong>11</strong></td>
+<td style="border-color: #2f1394; width: 53px; text-align: right; height: 26px;"><strong>14</strong></td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px;"><strong>15</strong></td>
+<td style="border-color: #2f1394; width: 35px; text-align: right; height: 26px;"><strong>23</strong></td>
+<td style="border-color: #2f1394; width: 30px; height: 26px; text-align: right; background-color: #f2f0b3;">69</td>
+<td style="border-color: #2f1394; width: 30.4517px; height: 26px; text-align: right; background-color: #f2f0b3;">27</td>
+</tr>
+<tr style="height: 26px;">
+<td style="border-color: #2f1394; width: 104px; height: 26px;">After pass 8</td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px;"><strong>7</strong></td>
+<td style="border-color: #2f1394; width: 50px; text-align: right; height: 26px;"><strong>10</strong></td>
+<td style="border-color: #2f1394; width: 54px; text-align: right; height: 26px;"><strong>11</strong></td>
+<td style="border-color: #2f1394; width: 53px; text-align: right; height: 26px;"><strong>14</strong></td>
+<td style="border-color: #2f1394; width: 40px; text-align: right; height: 26px;"><strong>15</strong></td>
+<td style="border-color: #2f1394; width: 35px; text-align: right; height: 26px;"><strong>23</strong></td>
+<td style="border-color: #2f1394; width: 30px; height: 26px; text-align: right;"><strong>27</strong></td>
+<td style="border-color: #2f1394; width: 30.4517px; height: 26px; text-align: right; background-color: #f2f0b3;">69</td>
+</tr>
+</tbody>
+</table>
+<p>Note that after pass 8 we can finish, since the last number must be the maximum and will always stay in place.</p>
+<p>Selection sort&#8217;s number of passes required  = number of values to sort &#8211; 1</p>
+<p>Try it yourself with this test data:</p>
+<table style="width: 529.991px;">
+<tbody>
+<tr>
+<td style="width: 218px; border-color: #1c0404;">Original data</td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;">6</td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;">2</td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;">9</td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;">1</td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;">7</td>
+</tr>
+<tr>
+<td style="width: 218px; border-color: #1c0404;">After pass 1</td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+</tr>
+<tr>
+<td style="width: 218px; border-color: #1c0404;">After pass 2</td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+</tr>
+<tr>
+<td style="width: 218px; border-color: #1c0404;">After pass 3</td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+</tr>
+<tr>
+<td style="width: 218px; border-color: #1c0404;">After pass 4</td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+</tr>
+<tr>
+<td style="width: 218px; border-color: #1c0404;">After pass 5</td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+<td style="width: 218px; border-color: #1c0404; text-align: right;"> </td>
+</tr>
+</tbody>
+</table>
+<p><a href="../../../ppt2016/selectiion-sort.html">Get the selection sort slideshow</a></p>
+<p>A13 &#8211; <span style="color: #0000ff;">A control structure controls the flow of execution. The WHILE loop forces lines to be executed in a particular iterative order.</span></p>
+<p>A14 &#8211; <em>Security</em> (stopping unauthorised use by employees), <em>interoperability</em> (between 2 systems), <em>marketability</em> (to tempt the public).</p>
+<p><span style="color: #ff0000;">Yes the last two terms are pretty ugly, but they are listed in the SD study design (U3O2 KK11) , so examiners can use them. </span></p>
+<p><span style="color: #ff0000;">ESL kids will want to create their own personal glossaries of odd study design terms, with definitions and examples that mean something to them.</span></p>
+<p>A15 &#8211; <span style="color: #0000ff;">Validation checks <em>input</em> for <em>reasonableness</em> in terms of range, data type, and existence. Not to be confused with testing that checks <em>output</em> for <em>accuracy</em>.</span></p>
+<p>A16 &#8211; <span style="color: #0000ff;">The lookup value (&#8216;Amateur Skater 10&#8217;) is found in the associative array&#8217;s value column. The associated data (&#8216;Tony&#8217;) is returned. For those who know VLOOKUP in a spreadsheet, that&#8217;s really an example of an associated array.</span></p>
+<p><span style="color: #ff0000;">Golly. Do video game rental stores still exist in 2016?</span></p>
+<p>A17 &#8211; <span style="color: #ff0000;">This is just wrong. Selection sort is a pretty dumb and (usually) slower algorithm compared with quick sort! The answer should be <b>C</b>.</span></p>
+<p><span style="color: #ff0000;">Visit <a style="color: #ff0000;" href="https://en.wikipedia.org/wiki/Sorting_algorithm#Inefficient_sorts">Wikipedia</a> and read how it says that,  &#8220;Selection sort is an in-place comparison sort. It has O(n^2) complexity, making it <b>inefficient</b> on large lists, and generally <b>performs worse</b> than the similar insertion sort. Selection sort is noted for its <b>simplicity</b>, and also has performance advantages over more complicated algorithms <em>in certain situations</em>.&#8221;</span></p>
+<p>A18 &#8211; <span style="color: #ff0000;">How simple is that? A <em>wardrobe</em> could have answered that.</span></p>
+<p>A19 &#8211; <span style="color: #ff0000;">I don&#8217;t like the wording of this. It&#8217;s very confusing, especially for ESL students. It would be clearer to have said:</span><br />
+ <span style="color: #ff0000;"><em>A. Accessing the intranet via a virtual private network.</em></span><br />
+ <span style="color: #ff0000;"><em>B. Accessing the internet via a virtual private network.<br />
+ etc<br />
+ </em></span></p>
+<p><span style="color: #ff0000;">And &#8216;via&#8217; is also probably a problem for some kids.</span></p>
+<p><span style="color: #ff0000;">I realise the sample exam was probably not checked as rigorously as a real exam, but VCAA still needs to be careful.</span></p>
+<p>A20 &#8211;  <span style="color: #ff0000;">Another tricky question.</span></p>
+<hr />
+<h3>Section B (short answer)</h3>
+<p><span style="color: #000000;">B1a.</span></p>
+<p><span style="color: #0000ff;">Mechanics benefit by being able to access a car&#8217;s service history records regardless of where it was bought or previously serviced. This gives them information about what they may need to pay attention to during a service.</span></p>
+<p><span style="color: #0000ff;">The car owners benefit because they can take their car to any dealership and their mechanics will immediately have a full history of the car before it is serviced. </span></p>
+<p><span style="color: #ff0000;">This sounds dodgy to me. Since when do mechanics benefit from a car&#8217;s mechanical history? They are not doctors looking at a patient&#8217;s medical history.</span></p>
+<p>B1b.</p>
+<p><span style="color: #0000ff;">If the trustworthiness of the data in the central database is uncertain, no user can be sure that they can use it confidently. All decisions that are made based on that data will be tentative and uncertain. Users&#8217; confidence in the MMS will suffer, leading to even fewer updates, and increased improper usage.</span></p>
+<p>B2.</p>
+<p>Begin<br />
+    If Student in Student Details File Then<br />
+       If Competition_Score &gt;= 50 Then<br />
+ <span style="color: #0000ff;">         If Competition_Score &gt;= 95 then</span><br />
+ <span style="color: #0000ff;">            Award <a style="color: #0000ff;" href="../../wp-content/uploads/2015/06/equals.jpg"><img class="alignnone size-full wp-image-598" src="../../wp-content/uploads/2015/06/equals.jpg" alt="equals" width="15" height="13" /></a> &#8220;High Distinction&#8221;</span><br />
+ <span style="color: #0000ff;">         Else</span><br />
+ <span style="color: #0000ff;">            Award <a style="color: #0000ff;" href="../../wp-content/uploads/2015/06/equals.jpg"><img class="alignnone size-full wp-image-598" src="../../wp-content/uploads/2015/06/equals.jpg" alt="equals" width="15" height="13" /></a> &#8220;Pass&#8221;</span><br />
+          EndIf<br />
+       Print “Certificate” Award<br />
+    EndIf<br />
+ End</p>
+<p><span style="color: #ff0000;">The examiners would have to accept any sensible and logical pseudocode that students invented. The only non-negotiable convention is (apparently) the <a style="color: #ff0000;" href="../../wp-content/uploads/2015/06/equals.jpg"><img class="alignnone size-full wp-image-598" src="../../wp-content/uploads/2015/06/equals.jpg" alt="equals" width="15" height="13" /></a> symbol for assignment. The rest of SD pseudocode bears a spooky resemblance to good old QuickBASIC 4.5.</span><br />
+ <span style="color: #ff0000;">Students could also use alternative tests, such as &gt;94 instead of &gt;=95 as long as they produce the required logical results.</span></p>
+<p><span style="color: #ff0000;">I&#8217;m not sure if students would be penalised for inefficient (but effective) code, such as using</span><br />
+ <span style="font-family: 'courier new', courier, monospace; color: #ff0000;">Elseif Competition_Score &gt;=50 </span><br />
+ <span style="color: #ff0000;">instead of the simpler, optimised, and equally-effective &#8220;<span style="font-family: 'courier new', courier, monospace;">Else</span>&#8220;.</span></p>
+<p>B3.</p>
+<p>3.5GB software package &#8211; <span style="color: #0000ff;">DVD-ROM</span>.</p>
+<p><span style="color: #ff0000;">3.5 &lt; 4.7. Hardly a brain-bender.</span></p>
+<p>30,000,000 records of 20KB each &#8211; <span style="color: #0000ff;">1TB external hard drive</span></p>
+<p><span style="color: #ff0000;">My fear of maths leaps at me. like a digital dementor </span><br />
+ <span style="color: #ff0000;">Arghh! Memories of year 10 maths, stand back! </span></p>
+<p><span style="color: #ff0000;">30,000,000 * 20,000 (roughly a KB depending on if the question is using kilobytes or those damned stupid kibibytes) = 600,000,000,000 bytes = 600,000 MB = 600 GB which fits into 1 TB.</span></p>
+<p><span style="color: #ff0000;">Phew. Got through that in the end. Have I ever told you guys that I bought one of the first calculators in the country in about 1973 &#8211; the size of a brick, needed mains power, only had four functions. Didn&#8217;t help my maths marks <em>one single bit</em>.</span></p>
+<p>B4.</p>
+<p><span style="color: #ff0000;">First, I must point out that tapes do <strong>not</strong> cost $2,300. An 800GB tape is closer to $85. The question might have meant to say that the tape drive costs $2,300 but that is not what it said!</span></p>
+<p>There are several possible factors that are relevant. Choose any two of these, or make up your own.</p>
+<ul>
+<li><span style="color: #000080;">Tape backups are portable and are always in the complete control of the data owner. Cloud backups are entrusted to total strangers who may or may not be competent in protecting one&#8217;s data. On the other hand, responsible and capable cloud operators should be equipped and be skilled enough to carry out excellent backups.</span></li>
+<li><span style="color: #000080;">Any data stored online must be considered vulnerable to unauthorised access, use, damage or theft, regardless of the fame, size and power of the cloud host. Most online services have been hacked at least once.</span></li>
+<li><span style="color: #000080;">It is the data owner&#8217;s responsibility to carry out regular backups, test the backup procedure occasionally and take the tape backups safely offsite at the end of each day. Cloud backups  are always stored offsite, and are automated. Less time and effort is required of the owner of the data.</span></li>
+<li><span style="color: #000080;">Tapes and drives will stretch or wear out over time. Degraded tapes will eventually become unreliable, then fail, and data may be lost.</span></li>
+<li><span style="color: #000080;">Data on magnetic tapes may be accidentally wiped if they are exposed to strong electrical or magnetic fields, such those from electric motors.</span></li>
+<li><span style="color: #000080;">While there are costs associated with buying new tapes occasionally, the cloud backup are expensive. 5GB (about 5000MB) means 100MB * 50 * $20 per month = $1,000. That adds up to $12,000 a year for backups &#8211; not a small amount ! The tape backup would be far cheaper.</span></li>
+<li><span style="color: #000080;">Documents often cannot be copied (or backed up)  when they are in use, so tape backups would need to be set up in advance and scheduled to take place at night when the server is idle. Off-peak backups also prevent the backup from slowing down the network or preventing the opening of documents during work hours.</span></li>
+<li><span style="color: #000080;">Cloud backups would be very slow compared to tape. At 160MBps, 5GB would be backed up in 31 seconds! The upload speed of Jake&#8217;s internet connection is not specified, but assuming a modest 1Mbps upload speed, it would take 11.11 hours to upload 5.5GB.</span><br />
+ <span style="color: #000080;">(1Mbps = 125KB/s. 5GB = 5,000,000KB.  5,000,000 / 125 = 40,000 seconds = 11.11 hours).</span><br />
+ <span style="color: #000080;">At that speed, a nightly backup may not be finished before work resumed the next day!</span></li>
+</ul>
+<p>B5.</p>
+<p><span style="color: #000080;">The role of the algorithm is to calculate and display the average (mean) temperature of seven days.</span></p>
+<p><span style="color: #ff0000;">What? Is that <em>it</em>? A student would not need months of SD programming experience to work <em>that</em> one out. The &#8216;Display&#8217; line even <strong>announces</strong> what it has calculated! Even a Geography student could have earned 2 marks!</span></p>
+<p>B6.</p>
+<ul>
+<li><span style="color: #000080;"><em>Privacy Act 1988</em> &#8211; requires data holders to take reasonable steps to safeguard personal data against damage or loss.</span></li>
+<li><span style="color: #000080;"><em>Spam Act 2003</em> &#8211; prevents organisations from sending unsolicited emails, and requires commercial emails to (1) identify the sender, and (2) provide a functional unsubscribe facility.</span></li>
+</ul>
+<p>B7a.</p>
+<ul>
+<li><span style="color: #000080;">Annotations of the Gantt chart.</span></li>
+<li><span style="color: #000080;">Logs.</span></li>
+<li><span style="color: #000080;">Adjustments to tasks and timeframes.</span></li>
+</ul>
+<p><span style="color: #ff0000;">These are straight out of the study design.</span></p>
+<p>B7b. </p>
+<ul>
+<li><span style="color: #000080;">Failure to keep the plan updated when circumstances change, for example when tasks run overtime.</span></li>
+<li><span style="color: #000080;">Failure to include all necessary tasks in the plan.</span></li>
+<li><span style="color: #000080;">Inadequate resourcing of the project.</span></li>
+</ul>
+<hr />
+<h3>Section C (case study)</h3>
+<p><span style="color: #ff0000;">First, I must point out that this case study is identical to the <a style="color: #ff0000;" href="../../../p/postmortem-2011s.html">2011 SD exam</a>, except for a tiny edit and one typo fix.  The questions, fortunately, were new.</span></p>
+<p><span style="color: #ff0000;">Also, it&#8217;s a shame the diagram of the CDU was messed up. The arrows are pointing to the wrong places. This is how it <em>should</em> have looked (from the 2011 SD exam)</span></p>
+<p><a href="../../wp-content/uploads/2015/06/11s-cs-cdu.jpg"><img class="alignnone size-full wp-image-792" src="../../wp-content/uploads/2015/06/11s-cs-cdu.jpg" alt="11s-cs-cdu" width="525" height="208" srcset="http://vceit.com/wp/wp-content/uploads/2015/06/11s-cs-cdu.jpg 525w, http://vceit.com/wp/wp-content/uploads/2015/06/11s-cs-cdu-300x119.jpg 300w" sizes="(max-width: 525px) 100vw, 525px" /></a></p>
+<p>&nbsp;</p>
+<p>C1a. </p>
+<p><a href="../../wp-content/uploads/2016/08/16-SD-sample-exam-C1-gantt.png"><img class="alignnone size-full wp-image-1458" src="../../wp-content/uploads/2016/08/16-SD-sample-exam-C1-gantt.png" alt="Gantt chart" width="994" height="119" srcset="http://vceit.com/wp/wp-content/uploads/2016/08/16-SD-sample-exam-C1-gantt.png 994w, http://vceit.com/wp/wp-content/uploads/2016/08/16-SD-sample-exam-C1-gantt-300x36.png 300w, http://vceit.com/wp/wp-content/uploads/2016/08/16-SD-sample-exam-C1-gantt-768x92.png 768w" sizes="(max-width: 994px) 100vw, 994px" /></a></p>
+<p>C1b.  <span style="color: #ff0000;">See red arrows above. I can only assume that <em>both</em> arrows are necessary for the one mark, strictly speaking.</span></p>
+<p><span style="color: #ff0000;">We didn&#8217;t get much information at all to help decide on how to do the Gantt chart. Obviously to fit 25+20 days of tasks into 40 days requires some concurrency. The first task can&#8217;t be concurrent, since programming the computer can&#8217;t logically begin until the computer has been bought and set up.</span></p>
+<p><span style="color: #ff0000;"><em>After</em> C1a the exam tells us that testing is dependent on the programming tasks! One should have assumed that anyway, but it&#8217;s a bit late to be told key information like that <em>after</em> the Gantt chart is drawn!</span></p>
+<p><span style="color: #ff0000;">The thing that bothers me is that as far as I can tell, Kirsten is the sole programmer on the project. <em>How does she work full-time on two programming tasks simultaneously?</em> It makes the whole point of the Gantt chart pretty much useless!</span></p>
+<p>C2.</p>
+<p><span style="color: #0000ff;"><em>Timeliness</em> &#8211; the system must report overstayers in time for parking officers to get to the car and give it a ticket.</span></p>
+<p><span style="color: #0000ff;"><em>Cost</em> &#8211; the commercial software was said to be too expensive, which is why the PIMS is being created.</span></p>
+<p><span style="color: #0000ff;"><em>Compatibility</em> &#8211; between the phone software and the parking officers&#8217; phones; between the council network and the fines payment system.</span></p>
+<p><span style="color: #ff0000;">Tip &#8211; I was tempted to add &#8216;security&#8217; as a constraint, because obviously the council would not want hackers to be monitoring or interfering with the internet transmission of parking data. However, while it&#8217;s logical it&#8217;s not identified as being a concern in the case study (It is later mentioned in C4 but you should not use later information to answer earlier questions). Do not invent criteria that are not explicitly stated or strongly implied by the case study &#8211; even if they do seem logical. <em>All section C answers must relate to the case study given, and not to general cases</em>.</span></p>
+<p><a id="c3"></a>C3.</p>
+<p>A &#8211; <span style="color: #0000ff;">PIMS</span></p>
+<p>B &#8211; <span style="color: #0000ff;">Parking officer&#8217;s phone</span></p>
+<p>C &#8211; <span style="color: #0000ff;">RDL</span></p>
+<p>D &#8211; <span style="color: #0000ff;">Car details</span></p>
+<p>E &#8211; <span style="color: #0000ff;">Parking ticket information</span></p>
+<p>F &#8211; <span style="color: #0000ff;">Statistics about system operation</span></p>
+<p>C4a.</p>
+<p><span style="color: #0000ff;">A firewall prevents unauthorised access to a LAN. It can also filter out unwanted data packets. </span></p>
+<p><span style="color: #ff0000;">Don&#8217;t say &#8216;virus prevention&#8217;. Firewalls cannot detect malware.</span></p>
+<p>C4b.</p>
+<p>Advantage &#8211; <span style="color: #0000ff;">access logs keep a record of who accessed data, which helps an investigation find the people responsible for data damage, theft, or improper use.</span></p>
+<p>Disadvantage &#8211; <span style="color: #0000ff;">logs increase system workload and storage activity. They also consume storage space.</span></p>
+<p>C5a.</p>
+<p><span style="color: #0000ff;">Car details, parking ticket information.</span></p>
+<p>C5b. </p>
+<p><span style="color: #ff0000;">This is a weird one. The stem of the question solely refers to &#8220;<strong>storing</strong> important information&#8221;, not <em>communicating it</em>. Yet this question seems to be fishing for an answer like HTTPS, SSL, TLS etc. But these are not relevant to <strong>storing</strong> information; as far as I know there are <em>no</em> storage protocols &#8211; except maybe for Storage Area Networks (SANs).</span></p>
+<p><span style="color: #ff0000;">Well, let&#8217;s assume the stem of the question is wrong, and say&#8230;</span></p>
+<p><span style="color: #0000ff;">HTTPS, SSL, TLS</span></p>
+<p>C6.</p>
+<p>Input of the PIMS: <span style="color: #000080;">Parking ticket details</span></p>
+<p>Origin: <span style="color: #000080;">Traffic officer&#8217;s mobile phone</span></p>
+<p>Output of the PIMS: <span style="color: #000080;">Operational statistics</span></p>
+<p>Destination: <span style="color: #000080;">City engineer</span></p>
+<p><span style="color: #ff0000;">Didn&#8217;t we already do this in <a href="#c3">C3</a>? </span></p>
+<p><span style="color: #ff0000;">Why are we doing it again here?</span></p>
+<p>C7.</p>
+<p><span style="color: #000080;">Option A would seem better.</span></p>
+<p><span style="color: #000080;">It&#8217;s complete in that it has all the necessary fields on the same screen &#8211; criterion 1.</span></p>
+<p><span style="color: #000080;">Related fields are visually grouped neatly in frames (criterion 2).</span></p>
+<p>C8.</p>
+<table>
+<tbody>
+<tr>
+<td style="border-color: #000000; text-align: center;"><strong>Data Type</strong></td>
+<td style="border-color: #000000; text-align: center;"><strong>Variable name</strong></td>
+<td style="border-color: #000000; text-align: center;"><strong>Description of data</strong></td>
+</tr>
+<tr>
+<td style="border-color: #000000;"><strong> Boolean</strong></td>
+<td style="border-color: #000000;"><span style="color: #000080;">boolOverstayed</span></td>
+<td style="border-color: #000000;"><span style="color: #000080;">Has the vehicle overstayed? True/false</span></td>
+</tr>
+<tr>
+<td style="border-color: #000000;"><strong> String</strong></td>
+<td style="border-color: #000000;"><span style="color: #000080;">strOverstayMessage</span></td>
+<td style="border-color: #000000;"><span style="color: #000080;">Details of the bay containing the overstaying car</span></td>
+</tr>
+<tr>
+<td style="border-color: #000000;"><strong> Date/time</strong></td>
+<td style="border-color: #000000;"><span style="color: #000080;">stmpArrivalTime</span></td>
+<td style="border-color: #000000;"><span style="color: #000080;">Time/date of car&#8217;s arrival at a CDU.</span></td>
+</tr>
+</tbody>
+</table>
+<p>C9a.</p>
+<ul>
+<li><span style="color: #000080;">Time required to create a traffic ticket.</span></li>
+<li><span style="color: #000080;">Total cost of ownership per ticket issued.</span></li>
+</ul>
+<p>C9b.</p>
+<ul>
+<li><span style="color: #000080;">Accuracy of overstay detections.</span></li>
+<li><span style="color: #000080;">Security of stored and transmitted data.</span></li>
+<li><span style="color: #000080;">Ease of use of the software.</span></li>
+</ul>
+<p><span style="color: #ff0000;">Remember that &#8216;ease of use&#8217; is now an effectiveness criterion &#8211; where it belongs &#8211; and no longer classed as efficiency.</span></p>
+<p>C10. <em><span style="color: #ff0000;">VCAA has admitted that this question should not have appeared because random and serial files are not included in the study design.</span></em></p>
+<p><del>Option: <span style="color: #000080;">Random file.</span></del></p>
+<p><del>Explanation: <span style="color: #000080;">Faster data access will be important since time is an important factor in catching overstaying parkers.</span></del></p>
+<p><del><span style="color: #ff0000;">We are shown parking spot #1413 in the case study, so we can assume there are at least this number of spots to monitor, so the size of the data file may be significant. This would be an important factor in choosing random files. If there were few spots, a serial file might have done just as well.</span></del></p>
+<p>C11a.</p>
+<p><span style="color: #000080;">Internal documentation that explains the purpose and operation of code makes it much easier to debug and maintain the code over time. </span></p>
+<p><span style="color: #000080;">It does not add any size to the code and reduce efficiency because compilers ignore comments.</span></p>
+<p>C11b.</p>
+<p><span style="color: #ff0000;">The question said to &#8220;<strong>State</strong> a naming convention&#8221; and only one line was provided for the answer. That implies that students were expected to <em>name</em> a convention (e.g. CamelCase), even though no such conventions are named in the study design. </span></p>
+<p><span style="color: #ff0000;">What if kids said &#8220;CowMethod&#8221;? Would markers withhold a mark because they they had never heard of the name? By the way, CowMethod <strong>does exist because I just made it up</strong>. It is a convention whereby variables and objects are named after cows, e.g. <em>Dairybelle, Doris, Bertha</em>. I didn&#8217;t say it was a <em>good</em> convention.</span></p>
+<p><span style="color: #ff0000;">Real exam questions &#8211; especially near the end of an exam &#8211; should not rely on memorising names: they should exercise students&#8217; comprehension and judgement skills. </span></p>
+<p><span style="color: #ff0000;">This question is <em>dumb</em> (because it only needs students to name and not explain) and <em>invalid</em> (because it asks for names that are not mandated in the study design).</span></p>
+<p><span style="color: #000080;"><strong>CamelCase</strong> is a convention in which multi-word object names begin with capital letters to make the component words easier to identify and read &#8211; since another convention is to not use use spaces in object names. For example <em>TimeOfFirstArrival</em>.</span></p>
+<p><span style="color: #000080;"><strong>Hungarian Notation</strong> is the practice of prefixing objects with an indicator of the object&#8217;s type or class so each object identifies its nature in its very name and is treated appropriately, e.g. <em>txtName, lblHeading, boolMarried, sngHeight </em></span></p>
+<p><span style="color: #ff0000;">(lbl is label, sng is &#8216;single precision&#8217;)</span></p>
+<p>C12.</p>
+<p><span style="color: #000080;">Umm, registration of car, bay number, parking officer&#8217;s ID, car make and model?</span></p>
+<p><span style="color: #ff0000;">I don&#8217;t get this question. The fields are already listed in the XML; are kids meant to parrot back reg_pl, bay_num, etc ? </span></p>
+<p><span style="color: #ff0000;">When students are asked to &#8220;list three fields&#8221; &#8211; what does this <em>mean</em> exactly? Create <em>names </em> for them? e.g. txtRego, numBay, txtOfficerID etc? </span></p>
+<p><span style="color: #ff0000;">But we&#8217;ve already assessed field and variable naming at couple of times. </span></p>
+<p><span style="color: #ff0000;">Or are kids meant to fill in some sample data for 3 fields? Sounds like a waste of time.</span></p>
+<p><span style="color: #ff0000;">What KK is this question assessing? The wording of the question is terribly unclear.</span></p>
+<p>C13.</p>
+<p><span style="color: #ff0000;">This is another question that baffles me. How can one test the &#8216;purpose&#8217; of software? the purpose of the PIMS software was to control overstaying parkers. This cannot really be <em>tested</em> &#8211; it will be <em>evaluated</em> after the system has been in use for a while.</span></p>
+<p><span style="color: #ff0000;">And what does usability testing of &#8216;location&#8217; even mean? <br />
+ And how does one test the usability of <em>users</em>? What does that mean?</span></p>
+<p><span style="color: #ff0000;">Dog only knows what this question is asking for. </span></p>
+<p><span style="color: #ff0000;">Completely random responses are:</span></p>
+<p>Purpose</p>
+<p><span style="color: #000080;">Create a parking ticket. Did it create a parking ticket? Yay. It has shown it can satisfy its purpose.</span>  <span style="color: #ff0000;">(Huh?)</span></p>
+<p>Location</p>
+<p><span style="color: #000080;">Send the location of an overstaying vehicleto a parking officer&#8217;s phone. Did the officer find the right location? Yippee. Location is usable.</span>  <span style="color: #ff0000;">(What??)</span></p>
+<p>Equipment functionality</p>
+<p><span style="color: #000080;">Ask several parking officers to use their phones to enter all the (sample) data needed for some valid tickets. Are the data accurately entered in a reasonable time?</span></p>
+<p>Users</p>
+<p><span style="color: #000080;">Ask users if they feel usable. </span></p>
+<p><span style="color: #ff0000;">I don&#8217;t know. I give up. This question is bad.</span></p>
+<p> C14.</p>
+<p><span style="color: #000080;">Look over months of logs of overstayers&#8217; data, and compare them with the logs of tickets successfully issued. If most of the overstayers were issued tickets because the overstay information has been sent to the officers quickly enough, the system should be considered successful. </span></p>
+<p><span style="color: #000080;">If there were many overstayers who were not issued tickets, the system has not performed well.</span></p>
+<p>C15a.</p>
+<p><span style="color: #000080;">Data mining is the identification of an individual in multiple separate data sets and aggregating this data to form a picture of the behaviour of the individual.</span></p>
+<p><span style="color: #ff0000;">Yes, data mining <em>is</em> named in the study design (SD U4O2 KK6).</span></p>
+<p>C15b.</p>
+<ul>
+<li><span style="color: #000080;">Would it be violating the privacy of local residents?</span></li>
+<li><span style="color: #000080;">Would it be legal to use?</span></li>
+<li><span style="color: #000080;">How the hell could the data mining software be of any earthly use to the council in the first place?</span></li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>-ary. Legendary.</strong></p>
+											</div><!-- .entry-content -->
+
+					<footer class="entry-meta">
+											</footer><!-- .entry-meta -->
+				</article><!-- #post -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+	
+</div><!-- #comments -->
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	<div id="tertiary" class="sidebar-container" role="complementary">
+		<div class="sidebar-inner">
+			<div class="widget-area">
+				<aside id="search-4" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://vceit.com/wp/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside>			</div><!-- .widget-area -->
+		</div><!-- .sidebar-inner -->
+	</div><!-- #tertiary -->
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+				<div id="secondary" class="sidebar-container" role="complementary">
+		<div class="widget-area">
+			<aside id="search-2" class="widget widget_search"><h3 class="widget-title">Search the vceit.com site</h3><form role="search" method="get" class="search-form" action="http://vceit.com/wp/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside><aside id="pages-2" class="widget widget_pages"><h3 class="widget-title">Pages</h3>		<ul>
+			<li class="page_item page-item-939"><a href="../../contact-me-at-vceit-com-2/index.html">Contact me</a></li>
+<li class="page_item page-item-425 page_item_has_children"><a href="../../exams-2/index.html">Exams</a>
+<ul class='children'>
+	<li class="page_item page-item-956"><a href="../../exams-2/exam-tips/index.html">Exam Tips</a></li>
+</ul>
+</li>
+<li class="page_item page-item-637"><a href="../../vce-computing-glossary-2016-2019/index.html">Glossary</a></li>
+<li class="page_item page-item-283 page_item_has_children"><a href="../../informatics/index.html">Informatics</a>
+<ul class='children'>
+	<li class="page_item page-item-918"><a href="../../informatics/informatics-mandated-software-tools-and-functions/index.html">Informatics &#8211; software tools and functions</a></li>
+	<li class="page_item page-item-1284"><a href="../../informatics/informatics-sat/index.html">Informatics SAT</a></li>
+	<li class="page_item page-item-1350"><a href="../../informatics/informatics-vcaa-sample-exam-answers/index.html">Informatics VCAA Sample Exam Answers</a></li>
+</ul>
+</li>
+<li class="page_item page-item-908"><a href="../../newsblog/index.html">News/Blog</a></li>
+<li class="page_item page-item-309 page_item_has_children current_page_ancestor current_page_parent"><a href="../index.html">Software Development</a>
+<ul class='children'>
+	<li class="page_item page-item-1397 current_page_item"><a href="index.html" aria-current="page">SD Sample Exam Solutions</a></li>
+	<li class="page_item page-item-915"><a href="../software-development-programming-requirements-for-2016/index.html">SD: Language requirements</a></li>
+	<li class="page_item page-item-1288"><a href="../software-development-sat/index.html">Software Development SAT</a></li>
+</ul>
+</li>
+<li class="page_item page-item-323"><a href="../../computing-units-1-and-2/index.html">Units 1 and 2</a></li>
+<li class="page_item page-item-4"><a href="../../index.html">VCE IT by Mark Kelly</a></li>
+		</ul>
+			</aside><aside id="text-2" class="widget widget_text"><h3 class="widget-title">Thanks</h3>			<div class="textwidget"><p>Extracts from VCAA's study design, examinations and examiners' reports and other publications are used with permission of VCAA. I appreciate their generosity.</p>
+</div>
+		</aside><aside id="text-3" class="widget widget_text"><h3 class="widget-title">Site History</h3>			<div class="textwidget"><p>VCE IT Lecture Notes Copyright © 2015 Mark Kelly<br />
+ABN – 393 8194 2977</p>
+<p>Site created: 7 November 2001.<br />
+Moved from McKinnon SC to vceit.com: 8 June 2010.<br />
+CMS version started – December 2015</p>
+</div>
+		</aside>		</div><!-- .widget-area -->
+	</div><!-- #secondary -->
+
+			<div class="site-info">
+												<a href="https://wordpress.org/" class="imprint">
+					Proudly powered by WordPress				</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/vceit.com\/wp\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/contact-form-7/includes/js/scripts58e0.js?ver=5.1.4'></script>
+<script type='text/javascript' src='../../wp-includes/js/imagesloaded.min55a0.js?ver=3.2.0'></script>
+<script type='text/javascript' src='../../wp-includes/js/masonry.mind617.js?ver=3.3.2'></script>
+<script type='text/javascript' src='../../wp-includes/js/jquery/jquery.masonry.minef70.js?ver=3.1.2b'></script>
+<script type='text/javascript' src='../../wp-content/themes/twentythirteen/js/functionsf84f.js?ver=20160717'></script>
+<script type='text/javascript' src='../../wp-includes/js/wp-embed.minac12.js?ver=0360611ccebca7c9f53642f61982dc0f'></script>
+</body>
+
+<!-- Mirrored from vceit.com/wp/software-development/sd-sample-exam/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 09:21:03 GMT -->
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+
+Served from: vceit.com @ 2019-09-18 18:28:27 by W3 Total Cache
+-->

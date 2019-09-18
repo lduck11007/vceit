@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-AU">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-AU">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-AU">
+<!--<![endif]-->
+
+<!-- Mirrored from vceit.com/wp/software-development/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 08:59:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Software Development | VCE IT Lecture Notes by Mark Kelly</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="../xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://vceit.com/wp/wp-content/themes/twentythirteen/js/html5.js"></script>
+	<![endif]-->
+	<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="VCE IT Lecture Notes by Mark Kelly &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="VCE IT Lecture Notes by Mark Kelly &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="VCE IT Lecture Notes by Mark Kelly &raquo; Software Development Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/vceit.com\/wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=0360611ccebca7c9f53642f61982dc0f"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../wp-includes/css/dist/block-library/style.minac12.css?ver=0360611ccebca7c9f53642f61982dc0f' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='../wp-includes/css/dist/block-library/theme.minac12.css?ver=0360611ccebca7c9f53642f61982dc0f' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='../wp-content/plugins/contact-form-7/includes/css/styles58e0.css?ver=5.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='king-countdowner-css'  href='../wp-content/plugins/easy-countdowner/assets/TimeCircles5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='../wp-content/themes/twentythirteen/genericons/genericons19ce.css?ver=3.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-style-css'  href='../wp-content/themes/twentythirteen/style4a02.css?ver=2013-07-18' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-block-style-css'  href='../wp-content/themes/twentythirteen/css/blocks0329.css?ver=2018-12-30' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentythirteen-ie-css'  href='http://vceit.com/wp/wp-content/themes/twentythirteen/css/ie.css?ver=2013-07-18' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery4a5f.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script type='text/javascript' src='../wp-content/plugins/easy-countdowner/assets/TimeCircles5152.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../indexef92.html?p=309' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embedc315.json?url=http%3A%2F%2Fvceit.com%2Fwp%2Fsoftware-development%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embedf3c7?url=http%3A%2F%2Fvceit.com%2Fwp%2Fsoftware-development%2F&amp;format=xml" />
+    <style type="text/css">
+        .paypal_donation_button:before,
+        .paypal_donation_button:after {
+            content: " ";
+            display: table;
+        }
+        .paypal_donation_button:after {
+            clear: both;
+        }
+        .paypal_donation_button {
+            max-width: 147px;
+            margin: 0 auto;
+            padding: 0;
+            display: block;
+        }
+    </style>
+    <script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('../indexbaef.html?wordfence_lh=1&amp;hid=F82A70E4087F55E46B47F7B602F607D8');
+</script>	<style type="text/css" id="twentythirteen-header-css">
+		.site-header {
+		background: url(../wp-content/uploads/2015/06/title.jpg) no-repeat scroll top;
+		background-size: 1600px auto;
+	}
+	@media (max-width: 767px) {
+		.site-header {
+			background-size: 768px auto;
+		}
+	}
+	@media (max-width: 359px) {
+		.site-header {
+			background-size: 360px auto;
+		}
+	}
+			.site-title,
+	.site-description {
+		position: absolute;
+		clip: rect(1px 1px 1px 1px); /* IE7 */
+		clip: rect(1px, 1px, 1px, 1px);
+	}
+			</style>
+	
+<!-- BEGIN ExactMetrics v5.3.9 Universal Analytics - https://exactmetrics.com/ -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-21490715-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- END ExactMetrics Universal Analytics -->
+<meta data-pso-pv="1.2.1" data-pso-pt="page" data-pso-th="17ac8b6976fac4c9b3bea83e209da52b"></head>
+
+<body class="page-template-default page page-id-309 page-parent wp-embed-responsive sidebar">
+		<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<a class="home-link" href="../index.html" title="VCE IT Lecture Notes by Mark Kelly" rel="home">
+				<h1 class="site-title">VCE IT Lecture Notes by Mark Kelly</h1>
+				<h2 class="site-description">Informatics, Software Development, Computing</h2>
+			</a>
+
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					<button class="menu-toggle">Menu</button>
+					<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
+					<div class="menu-mainmenu-container"><ul id="primary-menu" class="nav-menu"><li id="menu-item-1666" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1666"><a href="../informatics/index.html">Informatics</a></li>
+<li id="menu-item-1667" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-309 current_page_item menu-item-1667"><a href="index.html" aria-current="page">Software Development</a></li>
+<li id="menu-item-1668" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1668"><a href="../computing-units-1-and-2/index.html">IT Units 1 and 2</a></li>
+<li id="menu-item-1669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1669"><a href="../newsblog/index.html">News/Blog</a></li>
+<li id="menu-item-1662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1662"><a href="../exams-2/index.html">Exam Post Mortems</a></li>
+<li id="menu-item-1670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1670"><a href="../exams-2/exam-tips/index.html">Exam Tips</a></li>
+</ul></div>					<form role="search" method="get" class="search-form" action="http://vceit.com/wp/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>				</nav><!-- #site-navigation -->
+			</div><!-- #navbar -->
+		</header><!-- #masthead -->
+
+		<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+						
+				<article id="post-309" class="post-309 page type-page status-publish hentry">
+					<header class="entry-header">
+						
+						<h1 class="entry-title">Software Development</h1>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						<h2 style="text-align: center;">Software Development</h2>
+<h3 style="text-align: center;">Key Knowledge</h3>
+<p style="text-align: center;">Jump to <a href="#SDu3o1">U3O1</a> &#8211; <a href="#SDu3o2">U3O2</a> &#8211; <a href="#SDu4o1">U4O1</a> &#8211; <a href="#SDu4o2">U402</a></p>
+<p style="text-align: center;"><strong> </strong></p>
+<p><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//--><br />
+</script> <script type="text/javascript" src="../../../pagead2.googlesyndication.com/pagead/f.txt"><br />
+</script></p>
+<table class="aligncenter" border="1" cellspacing="3" cellpadding="3" align="center">
+<tbody>
+<tr>
+<td valign="top">
+<h5><strong><span style="font-family: 'Source Sans Pro', Helvetica, sans-serif;"><span style="font-size: 16px; line-height: 21.8182px;">Legend</span></span></strong></h5>
+<ul>
+<li>SD = Software Development</li>
+<li>U<span style="color: darkgreen;"><em>x</em></span>O<span style="color: darkgreen;"><em>y</em></span> = Unit x Outcome y</li>
+<li>KK = key knowledge</li>
+<li>AOS = area of study</li>
+<li>SAT = school assessed task (U3O2 + U4O1 combined)</li>
+<li>SAC = school assessed coursework (U3O1, U4O2)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h5 style="text-align: left;" align="center">Other SD goodies</h5>
+<ul>
+<li><a href="http://www.vcaa.vic.edu.au/Documents/exams/2016 Nov exam covers/2016compsoftwaredev-cov-mc.pdf">The front page, instructions, and section A answer sheet for the 2016 exam</a></li>
+<li><a href="http://www.vcaa.vic.edu.au/Pages/vce/studies/computing/softwaredevel3-4.aspx">VCAA&#8217;s Software Development study page</a></li>
+<li><a href="http://www.vcaa.vic.edu.au/Pages/vce/studies/infotech/softwaredevel/exams.aspx">VCAA&#8217;s SD Past Exams &amp; Examiner&#8217;s reports</a></li>
+<li style="text-align: left;"><a href="http://www.vcaa.vic.edu.au/Documents/vce/computing/Software_Development_SBA.pdf">VCAA SD SAT &amp; School Based Assessment (PDF)</a></li>
+<li style="text-align: left;"><a href="software-development-programming-requirements-for-2016/index.html">SD programming language requirements</a></li>
+<li style="text-align: left;"><a href="http://www.digipubs.vic.edu.au/vcaa/vce-computing/vce-computing-introduction">VCAA&#8217;s advice for teachers</a></li>
+<li style="text-align: left;"><a href="http://www.vcaa.vic.edu.au/Documents/exams/technology/it-softdev-specs-samp.pdf">VCAA Sample exam questions 2016</a> (with sample exam questions). Or get a copy <a href="../../m/it-softdev-specs-samp.html">here</a>.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<h5 style="text-align: left;" align="center">Remember</h5>
+<ul>
+<li style="text-align: left;">All of the items listed after the word &#8220;including&#8221; are examinable.</li>
+<li style="text-align: left;">All relevant items in the <a href="../indexc45e.html?page_id=637">glossary</a> are examinable.</li>
+</ul>
+<hr />
+</td>
+</tr>
+<tr>
+<td style="width: 140px; background-color: #e1f5f4;" valign="top" width="140">
+<p><strong><span style="font-size: 16px; line-height: 21.8182px;">Software Tools -SD</span></strong></p>
+<p><strong>Unit 3</strong> Software tools that students are required to <strong>both study and use</strong> in Unit 3*</p>
+<ul>
+<li>AOS 1 -An appropriate programming language</li>
+<li>AOS 2 &#8211; Unified modelling language to create use cases</li>
+</ul>
+<p>Software tools that students are required to <strong>use, but not study</strong> in unit 3*</p>
+<ul>
+<li>U3 AOS 2 &#8211; Appropriate tool for documenting project plans</li>
+</ul>
+<p><strong>Unit 4</strong> Software tool that students are required to <strong>both study and use</strong> in unit 4*</p>
+<ul>
+<li>U4 AOS 1 &#8211; An appropriate programming language</li>
+</ul>
+<p>Software tool that students are required to <strong>use, but not study</strong>, in unit 4*</p>
+<ul>
+<li>U4 AOS 1 &#8211; Appropriate tool for documenting project plans</li>
+</ul>
+<p><span style="font-size: 16px; line-height: 21.8182px;">* </span><span style="line-height: 21.8182px;">The  <a href="http://www.digipubs.vic.edu.au/vcaa/vce-computing/docs/EL_Sof_Dev_Introduction.pptx">&#8216;Advice for Teachers&#8217; slideshow</a></span> <span style="line-height: 21.8182px; font-family: inherit;">explains that:</span><span style="font-size: 16px; line-height: 21.8182px; font-family: inherit;"> </span><span style="font-family: inherit; font-size: inherit; line-height: 1.5; color: #ff0000;">Software that is to be &#8220;STUDIED AND USED&#8221; have explicit reference made to the relevant software functions in the key knowledge and hence the skills in using this software are assessable</span><span style="font-family: inherit; font-size: inherit; line-height: 1.5;">  </span></p>
+<p><span style="color: #ff0000;">Software that is said to be just &#8216;USED?? needs to be used by students, but is not part of the key knowledge and their skills in using the software are not assessed. What is assessed is the knowledge or skills that are demonstrated through the use of the software.</span></p>
+<p style="text-align: left;">
+</td>
+</tr>
+<tr>
+<td style="width: 658px; background-color: #f0e195;" valign="top" width="658">
+<h2><a id="SDu3o1"></a>SD U3O1</h2>
+<p>Interpret designs and apply a range of functions and techniques using a programming language to develop working modules.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p><strong>SD U3O1-KK01 &#8211; characteristics of data types </strong></p>
+<p>The VCAA <a href="../vce-computing-glossary-2016-2019/index.html">Glossary</a> says that</p>
+<ul>
+<li>Data types are the particular forms that an item of data can take including <strong>numeric</strong>, <strong>character</strong> and <strong>Boolean</strong>, and are characterised by the kind of operations that can be performed on it&#8230;</li>
+<li>these fundamental types can be divided into more specific types, for example <strong>integer</strong> and <strong>floating point</strong> are numeric types.</li>
+<li>More sophisticated types can be derived from them, for example a <strong>string</strong> of characters or a <strong>date</strong> type.</li>
+<li>Their names may vary, such as <strong>text </strong>versus <strong>string</strong>.</li>
+</ul>
+<p><a href="../../ppt2016/Data-Types.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" />Data Types</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658"><strong>SD U3O1-KK02 &#8211; types of data structures, including</strong></p>
+<ul>
+<li><strong>one-dimensional arrays (single data type, integer index) and</strong></li>
+<li><strong>records (varying data types, field index)</strong></li>
+</ul>
+<p><a href="../../ppt2016/data-structures_arrays.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" />Arrays</a> (keep in mind that <em>two dimensional</em> arrays are <strong>not</strong> examinable)</p>
+<p>A <strong>record</strong> is a user-defined fixed-length group of fields (of various data types) that can be treated as a single unit. When saved to disk as a random file, records are very quickly loaded since any record&#8217;s position in the file can be calculated by its record number and the record length. The drawback of records is that text fields must have their maximum length pre-defined, so excess text is truncated (cut off and lost) and small pieces of text still consume the entire pre-defined storage space, leading to wasteful storage.</p>
+<p>A record might be defined like this:</p>
+<p>(Note: the &#8216;as string * 15&#8217; means the string field is 15 characters long. The lengths of other field types are automatic.)</p>
+<p><code><strong>STRUCTURE</strong> person</code><br />
+<code>   GivenName as string * 15</code><br />
+<code>   FamilyName as string * 25</code><br />
+<code>   DOB as date</code><br />
+<code>   NumKids as integer</code><br />
+<code>   Married as boolean</code><br />
+<code><strong>END STRUCTURE</strong></code></p>
+<p>In a program, fields within the record might be addressed like so:</p>
+<p><code>if person.NumKids = 0 then FamilyAllowance ? False</code></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p><strong>SD U3O1-KK03 &#8211; methods of representing designs, including </strong></p>
+<ul>
+<li><strong><a href="../../ppt2016/ss_DataDictionary.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /></a></strong><a href="../../ppt2016/DataDictionary.pptx" rel="">Data Dictionaries</a></li>
+<li><strong><a href="../../ppt2016/ss_mockups.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /></a> </strong><a href="../../ppt2016/mockups.pptx">Mock-ups</a></li>
+<li><a href="../../ppt2016/Pseudocode.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" />Pseudocode</a></li>
+<li><strong>Object descriptions</strong></li>
+</ul>
+<p><strong><a id="od"></a>Object description</strong> &#8211; this simply lists all of the necessary properties of an object, such as for a <em>textbox</em> on an interface:</p>
+<table style="height: 244px;" border="1" width="479">
+<tbody>
+<tr>
+<td style="width: 200px; border-color: #eb8383;"><strong>Name</strong></td>
+<td style="width: 200px;">txtFamilyName</td>
+</tr>
+<tr>
+<td><strong>Caption</strong></td>
+<td>Family Name</td>
+</tr>
+<tr>
+<td><strong>Visible</strong></td>
+<td>True</td>
+</tr>
+<tr>
+<td><strong>ForeColour</strong></td>
+<td>Black</td>
+</tr>
+<tr>
+<td><strong>Size</strong></td>
+<td>12</td>
+</tr>
+<tr>
+<td><strong>Font</strong></td>
+<td>Arial</td>
+</tr>
+</tbody>
+</table>
+<p>Obviously, only the properties relevant to the object&#8217;s class would be listed.<br />
+Properties whose default value is satisfactory need not be listed.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p><strong>SD U3O1-KK04 &#8211; formatting and structural characteristics of input and output, including XML file formats</strong></p>
+<p><a href="../../ppt2016/xml.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> XML file formats</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p><strong>SD U3O1-KK05 &#8211; a programming language as a method for developing working modules that meet specific needs</strong></p>
+<p>I have no idea what to say about this KK.<br />
+What does it mean?</p>
+<p>I think the answer is &#8220;Yes. It is&#8221;</p>
+<p>There are hundreds of programming languages, and each one has different strengths, weaknesses and features. Most professional programmers know a handful of languages intimately, and are acquainted with several more. This lets them choose the best language for each occasion, for example C for a device driver, Visual Basic for a prototype, Python for a web-based script.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658"><strong>SD U3O1-KK06 &#8211; processing features of a programming language, including</strong></p>
+<ul>
+<li><strong>instructions</strong></li>
+<li><strong>procedures</strong></li>
+<li><strong>methods</strong></li>
+<li><strong>functions</strong></li>
+<li><strong>control structures</strong></li>
+</ul>
+<p>In brief:</p>
+<p><strong>Instruction</strong> &#8211; a statement that describes an action that a program should carry out.<br />
+<strong>Procedure</strong> &#8211; a self-contained group of instructions that carry out a specific task. Also known as a routine, subroutine, module.<br />
+<strong>Method</strong> &#8211; an action that can be carried out on an object of a given class.  e.g. Button.Show &#8211; to make a button visible<br />
+<strong>Function</strong> &#8211; a procedure that calculates and returns a value.<br />
+<strong style="font-family: inherit; font-size: inherit; line-height: 2;">Control Structure</strong><span style="font-family: inherit; font-size: inherit; line-height: 2;"> &#8211; a block of code that controls which lines of code will be executed. </span></p>
+<ul>
+<li><em>Selection structure, e.g. </em>IF/THEN/ENDIF</li>
+<li><em>Iteration structure</em> &#8211; any looping structure such as FOR/NEXT, DO/WHILE</li>
+<li><em>Sequence structure</em> &#8211; lines are executed in the order they appear. And GOTO/EXIT</li>
+</ul>
+<p><a href="../../ppt2016/Functions-Statements-etc.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Functions, procedures, etc</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p><strong>SD U3O1-KK07 &#8211; techniques for linear and binary searching</strong></p>
+<p><strong>Linear search</strong> &#8211; slow, simple, easy-to-implement method. Start with item 1: is this what we&#8217;re looking for? No? Let&#8217;s try the next item. Repeat until item is found, or data is finished. The only way to search unsorted data.</p>
+<p><em>Linear search</em> requires up to N comparisons to search N data items. If the dataset is small, a linear search will be quicker and easier to program, and may be (near as dammit) just as acceptable as a binary search. Who cares if a search takes 10 nanoseconds or 20 nanoseconds?</p>
+<p><strong>Binary search</strong> &#8211; much faster, harder to program, requires data to be sorted in ascending order.  Find the value mid-way through the data and ask &#8220;Is this the value we seek?&#8221; If so, search is finished. If not, is the value less than or greater than the mid-way value?  Dispose of the half of the dataset that cannot contain the sought value. Repeat until the value is found, or is proved to be not present.</p>
+<p><em>Binary search</em> rarely needs more than 4 or 5 comparisons regardless of the number of items searched &#8211; but it requires processing overhead to sort the dataset. Binary search becomes necessary for huge datasets.</p>
+<p> <a href="../../ppt2016/SD-Searching.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Linear and binary searching</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658"><strong>SD U3O1-KK08 &#8211; techniques for checking that modules meet design specifications, including</strong></p>
+<ul>
+<li><strong>trace tables and</strong></li>
+<li><strong>test data</strong></li>
+</ul>
+<p><a href="../../ppt2016/Trace-Tables-Desk-Checks.pptx" target="_blank" rel="noopener noreferrer"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" />Trace tables (and desk checks)</a></p>
+<p><strong>Trace Tables</strong> (adapted from the <a href="http://www.bbc.co.uk/education/guides/z8n3d2p/revision/8">BBC</a>)</p>
+<header>
+<p class="k-type-sub-header">When testing software, it is sometimes necessary to test a number of conditions and sub-conditions at the same time.</p>
+</header>
+<section>
+<p class="k-type-body-article">A <strong>trace table</strong> can be used to record the outcomes of the test.<br />
+The trace table for a very simple example, such as x=y+2, would look like this:</p>
+<table class="has-header-row" border="1" summary="">
+<thead>
+<tr>
+<th>y</th>
+<th>x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-title="y">13</td>
+<td data-title="x">15</td>
+</tr>
+<tr>
+<td data-title="y">25</td>
+<td data-title="x">27</td>
+</tr>
+<tr>
+<td data-title="y">1200</td>
+<td data-title="x">1202</td>
+</tr>
+</tbody>
+</table>
+<p class="k-type-body-article"><strong>Test data </strong></p>
+<p class="k-type-body-article">Specifically designed to find weaknesses in code. Test data should act as the ultimate stress test to show up every possible code fault.</p>
+</section>
+<p>Test data should <strong>include every conceivable type of input</strong>, and focus on data that will most rigorously test the points where errors are most likely to occur. Especially <em>boundary conditions</em> or &#8216;tipping points&#8217;.</p>
+<p>Test data should also be <strong>as brief as possible </strong>(except when load testing)</p>
+<p><strong>Hint</strong>: most logical errors in real life programming, and especially in exam questions, occur on boundaries. Be on the lookout for code with a statement like  <span style="font-family: 'courier new', courier, monospace;">IF x &lt; y THEN&#8230;</span> because often the error is that &lt; should have been &lt;= .</p>
+<p>Comprehensive test data includes <strong>invalid inputs</strong> to test validation code, <strong>valid inputs</strong> and inputs that are <strong>valid but unusual</strong> or unexpected.</p>
+<p> <a href="../../ppt2016/test-data.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" />Test data </a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658"><strong>SD U3O1-KK09 &#8211; purposes and characteristics of internal documentation, including</strong></p>
+<ul>
+<li><strong>comments and</strong></li>
+<li><strong>meaningful names.</strong></li>
+</ul>
+<p>Remember that internal documentation are comments in source code that explain the purpose of instructions. They are intended for programmers, not end-users of the software.</p>
+<p>Compilers ignore internal documentation, so comments add no size to executable programs.</p>
+<p>Often programmers will re-visit their software years after finishing it, so explanations of its function are always welcome reminders. Also, other programmers will usually work on your code, so it is polite to explain complex or mysterious code to them.</p>
+<p>Good internal documentation should be non-trivial. Explaining that</p>
+<p><span style="font-family: 'courier new', courier, monospace;">// add one to the count</span><br />
+<span style="font-family: 'courier new', courier, monospace;">Count <img class="alignnone size-full wp-image-598" src="../wp-content/uploads/2015/06/equals.jpg" alt="equals" width="15" height="13" /> Count + 1</span></p>
+<p>will not be useful to <em>anyone</em>!</p>
+<p>But something like this</p>
+<p><span style="font-family: 'courier new', courier, monospace;">// Temp is in Fahrenheit</span><br />
+<span style="font-family: 'courier new', courier, monospace;">Temp <img class="alignnone size-full wp-image-598" src="../wp-content/uploads/2015/06/equals.jpg" alt="equals" width="15" height="13" /> Temp + 1</span></p>
+<p><em>does</em> add information that the raw code lacks.</p>
+<p><a href="../../ppt2016/naming-conventions.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Naming Conventions</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//--><br />
+</script> <script type="text/javascript" src="../../../pagead2.googlesyndication.com/pagead/f.txt"><br />
+</script></p>
+<h2><a id="SDu3o2"></a>SD U3O2</h2>
+<p><em>Remember &#8211; this is part 1 of the SAT that concludes with U4O1</em></p>
+<p><strong>&#8220;Analyse and document a need or opportunity, generate alternative design ideas, represent the preferred solution design and formulate a project plan for creating the solution.&#8221;</strong></p>
+<p><a href="software-development-sat/index.html">Read details of the SAT</a></p>
+<table>
+<tbody>
+<tr>
+<td valign="top" width="658"><strong> SD U3O2-KK01 &#8211; techniques for collecting data to determine needs and requirements, including</strong></p>
+<ul>
+<li><strong>interviews,</strong></li>
+<li><strong>surveys and</strong></li>
+<li><strong>observation</strong></li>
+</ul>
+<p><img class="alignnone size-full wp- image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/data-collection-techniques.pptx" rel="">Data collection techniques</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p><strong>SD U3O2-KK02 &#8211; features of functional and non-functional requirements</strong></p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> </a><a href="../../ppt2016/PSM-Analysis-Activities.pptx">Analysis Activities &#8211; requirements, constraints etc</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658"><strong>SD U3O2-KK03 &#8211; constraints that influence solutions, including</strong></p>
+<ul>
+<li><strong>economic,</strong></li>
+<li><strong>legal,</strong></li>
+<li><strong>social,</strong></li>
+<li><strong>technical and</strong></li>
+<li><strong>useability factors</strong></li>
+</ul>
+<p>Here are only a few ideas&#8230;</p>
+<p><strong>Economic</strong></p>
+<ul>
+<li>The ideal solution may be too expensive for the organisation to develop or maintain once it has been developed. For example, developing a super-sophisticated network that requires a team of technicians, programmers and consultants to keep it working properly.</li>
+<li>The preferred product may end up being too expensive for its target market. Features may need to be removed or scaled down to get a competitive product onto the shelves.</li>
+</ul>
+<p><strong>Legal</strong></p>
+<ul>
+<li>It might be tempting to &#8216;borrow&#8217; code you developed for a previous employer to solve a current problem with your new employer. But using the code would violate the Copyright Act 1968, even though you created it. You previous employer is its legal owner.</li>
+<li>Increasing the size of your mailing list by harvesting addresses from forums and websites would violate the Spam Act 2003.</li>
+<li>Cutting corners on security may knowingly put sensitive data at risk and violate the Privacy Act 1988.</li>
+</ul>
+<p><strong>Social</strong></p>
+<ul>
+<li>Releasing a mega-violent game aimed at young children that would offend the community.</li>
+<li>Using language or beliefs that are meant to deliberately offend or exclude sections of society.</li>
+<li>Creating a social networking product that prevents young people deleting photos or posts that they later regret and want to remove.</li>
+<li>Protecting users from spammers, con men, identity thieves, haters.</li>
+<li>Making users feel comfortable and safe when using the solution.</li>
+<li>Complying with social preferences and taboos in known markets (e.g. images of gods or unclad women).</li>
+</ul>
+<p><strong>Technical</strong></p>
+<ul>
+<li>Creating a product that creates documents that cannot import the market leader&#8217;s product or export in a compatible format for the competition&#8217;s product.</li>
+<li>Needing to create a product that is compatible with global standards, protocols and practices. For example, an onscreen keyboard should be in QWERTY format. HTTP is used for web page transfer.</li>
+<li>Creating a product that will still work well within the technical limits of a product&#8217;s RAM, secondary storage (HDD, SDD, Flash RAM), bandwidth, screen size.</li>
+<li>A product may need to be compatible with a partner&#8217;s information system so you can exchange documents. For example, if an author produces documents that the publisher&#8217;s or printer&#8217;s systems cannot read, things will not go well.</li>
+</ul>
+<p><strong>Useability</strong></p>
+<ul>
+<li>Products should cater to the known accessibility needs of its audience.</li>
+<li>A product should be designed so it minimises the need for learning how to use it.</li>
+<li>Products should follow conventions to make new solutions seem familiar and approachable to their users.</li>
+<li>Products should anticipate common user errors and gracefully allow users to recover from undesired actions (e.g. &#8216;Back&#8217; and &#8216;Cancel&#8217; buttons, &#8216;Are you sure?&#8217; warnings before major actions, &#8216;undo&#8217; and automatic background backups to allow rolling back to previous states or recovering data from &#8216;lost&#8217; documents.)</li>
+</ul>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p><strong>SD U3O2-KK04 &#8211; factors that determine the scope of solutions</strong></p>
+<p> <a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p><strong>SD U3O2-KK05 &#8211; features and purposes of software requirements specifications</strong></p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p><strong>SD U3O2-KK06 &#8211; techniques for generating design ideas</strong></p>
+<p>No one technique is directly examinable, but typical and common techniques include:</p>
+<ul>
+<li>brainstorming</li>
+<li>mind maps</li>
+<li>various diagrams like PMI (Plus/Minus/Interesting), POOCH, Venn, Fishbone</li>
+<li>SCAMPER (see the slideshow)</li>
+<li>forums</li>
+<li>external consultants</li>
+</ul>
+<p><a href="../../ppt2016/design-ideas.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Techniques for generating design ideas</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p><strong>SD U3O2-KK07 &#8211; criteria for evaluating alternative design ideas and the efficiency and effectiveness of solutions</strong></p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658"><strong>SD U3O2-KK08 &#8211; tools and techniques for depicting the interfaces between solutions, users and networks, including</strong></p>
+<ul>
+<li><strong>use case diagrams created using Unified Modelling Language</strong></li>
+</ul>
+<p><a href="../../ppt2016/Use-Case-Diagram-UCD.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" />Use Case Diagrams</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p><strong>SD U3O2-KK09 &#8211; features of context diagrams and data flow diagrams</strong></p>
+<p> <a href="../../ppt2016/DFD-Design-Tools.ppt"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" />Context diagrams and data flow diagrams (DFD)</a></p>
+<p><a href="../../ppt2016/DFD-library-example.ppt"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" />Data flow diagram worked example</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658"><strong>SD U3O2-KK10 &#8211; methods of expressing software designs using</strong></p>
+<ul>
+<li><strong>data dictionaries,</strong></li>
+<li><strong>object descriptions,</strong></li>
+<li><strong>mock-ups and</strong></li>
+<li><strong>pseudocode</strong></li>
+</ul>
+<p><a href="../../ppt2016/Pseudocode.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Pseudocode</a></p>
+<p><a href="../../ppt2016/mockups.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Mock-ups</a></p>
+<p><a href="../../ppt2016/DataDictionary.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Data Dictionary</a></p>
+<p>Object descriptions are described in <a href="#od">SDU3O1 KK3</a> (above)</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658"><strong>SD U3O2-KK11 &#8211; factors influencing the design of solutions, including</strong></p>
+<ul>
+<li><strong>useability,</strong></li>
+<li><strong>affordability,</strong></li>
+<li><strong>security,</strong></li>
+<li><strong>interoperability and</strong></li>
+<li><strong>marketability</strong></li>
+</ul>
+<p><em>Useability</em> &#8211; The degree to which an object, device, software application, etc. is easy to use to achieve objectives.</p>
+<p><em>Affordability</em> &#8211; includes the original purchase price or development costs (or ongoing subscription costs), plus ongoing running and maintenance costs.</p>
+<p><em>Security</em> &#8211; in some solutions, especially those that are online or responsible for managing money or sensitive data, security is a vital criterion. Achieving good security is a difficult and expensive process.</p>
+<p><em>Interoperability</em> &#8211; the ability of a solution to cooperate and communicate with other systems.</p>
+<p><em>Marketability</em> &#8211; the ease of selling the solution.</p>
+<p>For details, see the slideshow&#8230;</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/design-factors.pptx">Design Factors</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658"><strong>SD U3O2-KK12 &#8211; characteristics of user experiences, including</strong></p>
+<ul>
+<li><strong>efficient and </strong><strong>effective user interfaces</strong></li>
+</ul>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> </a><a href="../../ppt2016/Interfaces.pptx">User Interfaces</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p><strong>SD U3O2-KK13 &#8211; naming conventions for solution elements</strong></p>
+<p> <a href="../../ppt2016/naming-conventions.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Naming Conventions</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p><strong> SD U3O2-KK14 &#8211; project management concepts and processes,</strong></p>
+<p><strong>including</strong> (concepts)</p>
+<ul>
+<li>milestones and</li>
+<li>dependencies,</li>
+</ul>
+<p>and (processes)</p>
+<ul>
+<li>task identification,</li>
+<li>sequencing,</li>
+<li>time allocation,</li>
+<li>resources and documentation using Gantt charts</li>
+</ul>
+<p><strong>Milestones</strong> are major points of progress in a project, for example the end of the design stage.<br />
+There are no tasks or time required for the event, so milestones are shown as zero-duration, and are represented as diamond shapes.<br />
+Milestones are used to judge whether a project is on schedule or not.</p>
+<p>A <strong>dependency</strong> means that a following dependent task cannot be begun until a previous task has been completed.<br />
+The first task is called the <em>predecessor</em>, and the dependent task is the <em>successor</em>.<br />
+For example:<br />
+Task 1: Put on socks. (The predecessor task)<br />
+Task 2: Put on shoes. (The successor task, is dependent on Task 1. It cannot be started before the socks are on. Unless you&#8217;re <em>really</em> weird.)</p>
+<p>The <strong>processes</strong> of</p>
+<ul>
+<li>task identification,</li>
+<li>sequencing,</li>
+<li>time allocation,</li>
+<li>resources and</li>
+<li>documentation using Gantt charts</li>
+</ul>
+<p>You <em>must</em> use a Gantt chart for the SAT.<br />
+(You can also use PERT if you like, but it&#8217;s <em>not examinable</em> and only the Gantt chart will be assessed for the SAC.)</p>
+<ul>
+<li><em>Task ID</em> &#8211; The first step is to list every task that needs to be done in the project. Don&#8217;t leave any out.</li>
+<li><em>Sequencing</em> &#8211; Getting tasks in order, based on their dependencies.</li>
+<li><em>Time allocation</em> &#8211; Deciding how much time each task will take. In a Gantt chart, this affects how long each task&#8217;s bar is.</li>
+<li><em>Resources</em> &#8211; assigning workers and equipment to tasks so people and hardware/software are available when needed, and not already busy working on a different task. Good Gantt software will warn when resources are being double-booked.</li>
+<li>Documentation using Gantt charts &#8211;  put these pieces of information step by step into the Gantt chart.</li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/gantt.pptx">Gantt Charts</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U3O2-KK15 &#8211; security considerations influencing the design of solutions, <strong>including</strong></p>
+<ul>
+<li>data protection and</li>
+<li>authentication</li>
+</ul>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U3O2-KK16 &#8211; styles of modern application architecture, <strong>including</strong></p>
+<ul>
+<li>mobile,</li>
+<li>rich client,</li>
+<li>peer-to-peer and</li>
+<li>internet applications</li>
+</ul>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p>SD U3O2-KK17 &#8211; types of goals and objectives of organisations and information systems</p>
+<p> <a href="../../ppt2016/goals-objectives.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Goals and objectives</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p>SD U3O2-KK18 &#8211; key legal requirements relating to the ownership and privacy of data and information.</p>
+<p>These would especially include: Copyright Act, Privacy Act, Health Records Act</p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//--><br />
+</script> <script type="text/javascript" src="../../../pagead2.googlesyndication.com/pagead/f.txt"><br />
+</script></p>
+<table>
+<tbody>
+<tr>
+<td style="width: 658px; background-color: #f0e195;" valign="top" width="658">
+<h2><a id="SDu4o1"></a>SD U4O1</h2>
+<p><em>Remember &#8211; this is part 2 of the SAT that began in U3O2</em></p>
+<p><strong>&#8220;Apply stages of the problem-solving methodology to create a solution using a programming language that fulfils identified requirements and assess the effectiveness of the project plan in monitoring progress.&#8221;</strong></p>
+<p>Read details of the SAT</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p>SD U4O1-KK01 &#8211; ways in which file size, storage medium and organisation of files affect access of data</p>
+<p> <a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U4O1-KK02 &#8211; uses of data structures to organise and manipulate data, <strong>including</strong></p>
+<ul>
+<li>associative arrays (or dictionaries or hash tables)</li>
+</ul>
+<p><a href="../../ppt2016/hash.pptx"> <img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Associative arrays, hash tables, hashing functions</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U4O1-KK03 &#8211; procedures and techniques for handling and managing files, <strong>including</strong></p>
+<ul>
+<li>security,</li>
+<li>archiving,</li>
+<li>backing up and</li>
+<li>disposing of files</li>
+</ul>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U4O1-KK04 &#8211; processing features of a programming language, <strong>including</strong></p>
+<ul>
+<li>instructions,</li>
+<li>procedures,</li>
+<li>methods,</li>
+<li>functions and</li>
+<li>control structures</li>
+</ul>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U4O1-KK05 &#8211; algorithms for sorting, <strong>including</strong></p>
+<ul>
+<li>selection sort and</li>
+<li>quick sort</li>
+</ul>
+<p>and their suitability for a given purpose, measured in terms of algorithm complexity and sort time.</p>
+<p><span style="color: #0000ff;"><strong>Selection sort</strong> is inefficient when sorting large lists, but is relatively simple to implement, like bubble sort.</span></p>
+<p><span style="color: #0000ff;">Method: the data to be sorted are divided into two parts: the data items that have already been sorted and moved to the start of the list; and the data items that have not yet been sorted.</span></p>
+<p><span style="color: #0000ff;">Selection sort then finds the smallest (or largest, if sorting in descending order) data item in the unsorted items.  It swaps that item with the leftmost item in the unsorted list. It then moves the dividing line between sorted/unsorted items 1 place to the right.</span></p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Selection sort</a></p>
+<p><span style="color: #0000ff;"><strong>Quicksort</strong> is a more complex algorithm, and its harder to code, but it is generally faster than selection sort &#8211; especially when the dataset is large</span>.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p>SD U4O1-KK06 &#8211; characteristics of efficient and effective solutions</p>
+<p> <a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U4O1-KK07 &#8211; techniques for checking that coded solutions meet design specifications, <strong>including</strong></p>
+<ul>
+<li>construction of test data</li>
+</ul>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Testing</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U4O1-KK08 &#8211; validation techniques, <strong>including</strong></p>
+<ul>
+<li>existence checking,</li>
+<li>range checking and</li>
+<li>type checking</li>
+</ul>
+<p><a href="../../ppt2016/validation.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Validation</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p>SD U4O1-KK09 &#8211; techniques for testing the useability of solutions, and forms of documenting test results</p>
+<p> <a href="../../ppt2016/testing.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Testing, test data</a> etc</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U4O1-KK10 &#8211; techniques for recording the progress of projects, <strong>including</strong></p>
+<ul>
+<li>annotations,</li>
+<li>adjustments to tasks and timeframes, and</li>
+<li>logs</li>
+</ul>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p>SD U4O1-KK11 &#8211; factors that influence the effectiveness of project plans</p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p>SD U4O1-KK12 &#8211; strategies for evaluating the efficiency and effectiveness of solutions and project plans.</p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td style="width: 658px; background-color: #f0e195;" valign="top" width="658">
+<h2><a id="SDu4o2"></a>SD U4O2</h2>
+<p>Analyse and explain the dependencies between two information systems and evaluate the controls in place in one information system to protect the integrity of its source data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//--><br />
+</script> <script type="text/javascript" src="../../../pagead2.googlesyndication.com/pagead/f.txt"><br />
+</script></p>
+<table>
+<tbody>
+<tr>
+<td valign="top" width="658">
+<p>SD U4O2-KK01 &#8211; reasons why individuals and organisations use information systems</p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p>SD U4O2-KK02 &#8211; goals and objectives of information systems</p>
+<p><a href="../../ppt2016/goals-objectives.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Goals and objectives</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p>SD U4O2-KK03 &#8211; types of interactions (inputs and outputs) generated by information systems</p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U4O2-KK04 &#8211; characteristics of data that has integrity, <strong>including</strong></p>
+<ul>
+<li>accuracy,</li>
+<li>timeliness,</li>
+<li>reasonableness,</li>
+<li>authenticity,</li>
+<li>correctness</li>
+</ul>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U4O2-KK05 &#8211; key legislation that affects how organisations control the storage, communication and disposal of their data and information:</p>
+<ul>
+<li>the Privacy Act 1988,</li>
+<li>the Privacy and Data Protection Act 2014,</li>
+<li>the Copyright Act 1968,</li>
+<li>the Spam Act 2003 and</li>
+<li>the Charter of Human Rights and Responsibilities Act 2012</li>
+</ul>
+<p><a href="../../ppt2016/Legislation-Privacy.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Privacy Act 1988 (plus amendments)</a></p>
+<p><a href="../../ppt2016/Legislation-Copyright.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Copyright Act 1966</a></p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Charter of Human Rights and Responsibilities Act 2012</a></p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> </a><a href="../../ppt2016/Legislation-Rights-Spam.pptx">Spam Act 2003</a></p>
+<p>The <em>Privacy and Data Protection Act 2014</em> replaces the previous study design&#8217;s <em>Information Privacy Act </em>which &#8211; in brief &#8211; regulates only the way <strong>Victorian government and public service</strong> departments (including state schools, universities, police etc) handle data. It does not affect private companies or citizens.</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U4O2-KK06 &#8211; data management practices that cause conflict between information systems, <strong>including</strong></p>
+<ul>
+<li>data mining</li>
+</ul>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p>SD U4O2-KK07 &#8211; advantages and disadvantages for stakeholders affected by the operation of information systems</p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p>SD U4O2-KK08 &#8211; the impact of diminished data integrity on dependent systems</p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U4O2-KK09 &#8211; the technical underpinnings of</p>
+<ul>
+<li>intranets,</li>
+<li>the internet and</li>
+<li>virtual private networks</li>
+</ul>
+<p><a href="../../ppt2016/webservers.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Web Servers</a></p>
+<p><a href="../../ppt2016/SD-Intranet-Internet-VPN.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Intranet, internet, VPN (link fixed 1 Sept 2017)</a></p>
+<p><a href="../../ppt2016/Networks-hardware.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Network Hardware</a></p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">SD U4O2-KK10 &#8211; characteristics of</p>
+<ul>
+<li>wired and</li>
+<li>wireless networks</li>
+</ul>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658"><strong>SD U4O2-KK11 &#8211; types and causes of accidental, deliberate and events-based threats to the integrity and security of data and information shared between information systems</strong></p>
+<p><a href="../../ppt2016/Threats.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Security Threats</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p>SD U4O2-KK12 &#8211; the physical and software controls used by organisations to secure the storage and communication of data in a networked environment</p>
+<p><a href="../../ppt2016/network-audits-errorlogs-tracking.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Network audits, error logs</a></p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658"><strong><a id="SD-U4O2kk13"></a>SD U4O2-KK13 &#8211; the role of</strong></p>
+<ul>
+<li><strong>hardware,</strong></li>
+<li><strong>software and</strong></li>
+<li><strong>technical protocols</strong></li>
+</ul>
+<p><strong>in</strong></p>
+<ul>
+<li><strong>managing,</strong></li>
+<li><strong>controlling</strong></li>
+<li><strong>securing</strong></li>
+</ul>
+<p><strong>data shared between information systems</strong></p>
+<p>Wow. You could write 3 entire books on this one KK.<br />
+Let&#8217;s try a table to expand all nine of the KK&#8217;s possibilities&#8230;</p>
+<table style="width: 587px;">
+<tbody>
+<tr>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;"></td>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;"><strong>Hardware</strong></td>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;"><strong>Software</strong></td>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;"><strong>Protocols</strong></td>
+</tr>
+<tr>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;"><strong>Managing</strong></td>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;">&#8211; Switches, to connect LAN nodes and allow data exchange</td>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;">&#8211; File manager<br />
+&#8211; Batch renaming<br />
+&#8211; Media metatag editor<br />
+&#8211;</td>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;">&#8211; HTTP to manage web traffic<br />
+-FTP to manage file transfers</td>
+</tr>
+<tr>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;"><strong>Controlling</strong></td>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;">&#8211;</td>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;"><span style="color: #ff0000;"><strong>TO BE CONTINUED</strong></span></td>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;"> &#8211;</td>
+</tr>
+<tr>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;"><strong>Securing</strong></td>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;">
+<p>&#8211; Routers to prevent unauthorised LAN access from outside the LAN.<br />
+&#8211; VPN box<br />
+&#8211; Dual-factor authentication code generator (security tokens)<br />
+&#8211; Biometric scanners (e.g. fingerprint scanner)<br />
+&#8211; Fibre optic cable (which is nearly impossible to tap into without being detected)<br />
+-Physical locks on server room doors, windows.<br />
+-Swipe card access to sensitive data or locations.<br />
+&#8211; Firewall hardware in router.<br />
+&#8211; Running data cables through conduit to hide and protect them.<br />
+-Kensington cables to lock down devices containing sensitive data.<br />
+&#8211; Burglar/fire alarms to identify physical threats to infrastructure.<br />
+&#8211; Backup hardware<br />
+&#8211; External drives with inbuilt hardware encryption<br />
+&#8211; UPS to protect servers from power cuts or surges<br />
+&#8211; Air conditioning to protect servers from heat or humidity.</p>
+</p>
+</td>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;">
+<p>&#8211; Antivirus<br />
+&#8211; Spyware scanners<br />
+&#8211; Malware scanners (e.g.  for Trojans, root kits)<br />
+&#8211; Network monitoring software to detect intrusion attempts (e.g. via wifi)<br />
+&#8211; File encryption (e.g. PGP)<br />
+&#8211; CAPTCHA to identify robotic logins<br />
+&#8211; Software firewall in operating system<br />
+&#8211; Software to lock out accounts after a given number of failed login attempts</p>
+</td>
+<td style="border-color: #bbbbbb; width: 80.3125px; vertical-align: top; background-color: #e9ebc5;">
+<p>&#8211; SSL or TLS (to allow HTTPS)<br />
+&#8211; VPN</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="658">
+<p>SD U4O2-KK14 &#8211; tools and techniques for tracing transactions between users of information systems.</p>
+<p><a href="../../ppt2016/.html"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//--><br />
+</script> <script type="text/javascript" src="../../../pagead2.googlesyndication.com/pagead/f.txt"><br />
+</script></p>
+<p>Page created : 2015-06-18 at 11:14:40 AM</p>
+<p>VCE IT Lecture notes copyright © Mark Kelly 2001- now</p>
+<p>VCE Computing Study Design copyright © VCAA. Used with permission. Thanks, VCAA!</p>
+											</div><!-- .entry-content -->
+
+					<footer class="entry-meta">
+											</footer><!-- .entry-meta -->
+				</article><!-- #post -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3><p class="must-log-in">You must be <a href="../wp-login1afa.html?redirect_to=http%3A%2F%2Fvceit.com%2Fwp%2Fsoftware-development%2F">logged in</a> to post a comment.</p>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	<div id="tertiary" class="sidebar-container" role="complementary">
+		<div class="sidebar-inner">
+			<div class="widget-area">
+				<aside id="search-4" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://vceit.com/wp/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside>			</div><!-- .widget-area -->
+		</div><!-- .sidebar-inner -->
+	</div><!-- #tertiary -->
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+				<div id="secondary" class="sidebar-container" role="complementary">
+		<div class="widget-area">
+			<aside id="search-2" class="widget widget_search"><h3 class="widget-title">Search the vceit.com site</h3><form role="search" method="get" class="search-form" action="http://vceit.com/wp/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside><aside id="pages-2" class="widget widget_pages"><h3 class="widget-title">Pages</h3>		<ul>
+			<li class="page_item page-item-939"><a href="../contact-me-at-vceit-com-2/index.html">Contact me</a></li>
+<li class="page_item page-item-425 page_item_has_children"><a href="../exams-2/index.html">Exams</a>
+<ul class='children'>
+	<li class="page_item page-item-956"><a href="../exams-2/exam-tips/index.html">Exam Tips</a></li>
+</ul>
+</li>
+<li class="page_item page-item-637"><a href="../vce-computing-glossary-2016-2019/index.html">Glossary</a></li>
+<li class="page_item page-item-283 page_item_has_children"><a href="../informatics/index.html">Informatics</a>
+<ul class='children'>
+	<li class="page_item page-item-918"><a href="../informatics/informatics-mandated-software-tools-and-functions/index.html">Informatics &#8211; software tools and functions</a></li>
+	<li class="page_item page-item-1284"><a href="../informatics/informatics-sat/index.html">Informatics SAT</a></li>
+	<li class="page_item page-item-1350"><a href="../informatics/informatics-vcaa-sample-exam-answers/index.html">Informatics VCAA Sample Exam Answers</a></li>
+</ul>
+</li>
+<li class="page_item page-item-908"><a href="../newsblog/index.html">News/Blog</a></li>
+<li class="page_item page-item-309 page_item_has_children current_page_item"><a href="index.html" aria-current="page">Software Development</a>
+<ul class='children'>
+	<li class="page_item page-item-1397"><a href="sd-sample-exam/index.html">SD Sample Exam Solutions</a></li>
+	<li class="page_item page-item-915"><a href="software-development-programming-requirements-for-2016/index.html">SD: Language requirements</a></li>
+	<li class="page_item page-item-1288"><a href="software-development-sat/index.html">Software Development SAT</a></li>
+</ul>
+</li>
+<li class="page_item page-item-323"><a href="../computing-units-1-and-2/index.html">Units 1 and 2</a></li>
+<li class="page_item page-item-4"><a href="../index.html">VCE IT by Mark Kelly</a></li>
+		</ul>
+			</aside><aside id="text-2" class="widget widget_text"><h3 class="widget-title">Thanks</h3>			<div class="textwidget"><p>Extracts from VCAA's study design, examinations and examiners' reports and other publications are used with permission of VCAA. I appreciate their generosity.</p>
+</div>
+		</aside><aside id="text-3" class="widget widget_text"><h3 class="widget-title">Site History</h3>			<div class="textwidget"><p>VCE IT Lecture Notes Copyright © 2015 Mark Kelly<br />
+ABN – 393 8194 2977</p>
+<p>Site created: 7 November 2001.<br />
+Moved from McKinnon SC to vceit.com: 8 June 2010.<br />
+CMS version started – December 2015</p>
+</div>
+		</aside>		</div><!-- .widget-area -->
+	</div><!-- #secondary -->
+
+			<div class="site-info">
+												<a href="https://wordpress.org/" class="imprint">
+					Proudly powered by WordPress				</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/vceit.com\/wp\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/scripts58e0.js?ver=5.1.4'></script>
+<script type='text/javascript' src='../wp-includes/js/comment-reply.minac12.js?ver=0360611ccebca7c9f53642f61982dc0f'></script>
+<script type='text/javascript' src='../wp-includes/js/imagesloaded.min55a0.js?ver=3.2.0'></script>
+<script type='text/javascript' src='../wp-includes/js/masonry.mind617.js?ver=3.3.2'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.masonry.minef70.js?ver=3.1.2b'></script>
+<script type='text/javascript' src='../wp-content/themes/twentythirteen/js/functionsf84f.js?ver=20160717'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.minac12.js?ver=0360611ccebca7c9f53642f61982dc0f'></script>
+</body>
+
+<!-- Mirrored from vceit.com/wp/software-development/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 09:12:51 GMT -->
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+
+Served from: vceit.com @ 2019-09-18 18:28:18 by W3 Total Cache
+-->

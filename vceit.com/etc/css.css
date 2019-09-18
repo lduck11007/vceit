@@ -1,0 +1,82 @@
+body {
+	font-size: small;
+	color: #000;
+	background-image: url(sidebar.jpg);
+	background-repeat: repeat-y;
+	line-height: 150%;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.yellow {
+	color: #FFC;
+}
+.comment {
+	font-style: italic;
+	color: #00F;
+}
+.blue {
+	color: #00F;
+}
+.myanswer {
+	color: #00F;
+	font-style: normal;
+	text-decoration: none;
+}
+.red {
+	color: #F00;
+}
+.black {
+	color: #000;
+}
+.cursive {
+	font-family: "Comic Sans MS", cursive;
+}
+.white {
+	color: #FFF;
+}
+.greyedout {
+	color: #666;
+}
+.examiner {
+	font-style: italic;
+	color: #F00;
+}
+.question {
+		color: #000;
+}
+.blink {
+	text-decoration: blink;
+}
+
+.absmiddle {
+	vertical-align: middle;
+}
+.greyback {
+	background-color: #DDD;
+}
+.yellowback {
+	background-color: #FFC;
+}
+.blueback {
+	background-color: #9CF;
+}
+.Inverse_heading {
+	font-size: x-large;
+	font-variant: small-caps;
+	color: #CCC;
+	background-color: #000;
+	font-weight: normal;
+}
+.code {
+	font-family: "Courier New", Courier, monospace;
+}
+.explanation {
+	color: #909;
+	font-style: normal;
+}
+.xsmall {
+	font-size: x-small;
+}
+blinker {
+	-moz-text-blink: true;
+}

@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-AU">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-AU">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-AU">
+<!--<![endif]-->
+
+<!-- Mirrored from vceit.com/wp/informatics/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 08:28:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Informatics | VCE IT Lecture Notes by Mark Kelly</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="../xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://vceit.com/wp/wp-content/themes/twentythirteen/js/html5.js"></script>
+	<![endif]-->
+	<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://s.w.org/' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="VCE IT Lecture Notes by Mark Kelly &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="VCE IT Lecture Notes by Mark Kelly &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="VCE IT Lecture Notes by Mark Kelly &raquo; Informatics Comments Feed" href="feed/index.html" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/vceit.com\/wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=0360611ccebca7c9f53642f61982dc0f"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../wp-includes/css/dist/block-library/style.minac12.css?ver=0360611ccebca7c9f53642f61982dc0f' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='../wp-includes/css/dist/block-library/theme.minac12.css?ver=0360611ccebca7c9f53642f61982dc0f' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='../wp-content/plugins/contact-form-7/includes/css/styles58e0.css?ver=5.1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='king-countdowner-css'  href='../wp-content/plugins/easy-countdowner/assets/TimeCircles5152.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='../wp-content/themes/twentythirteen/genericons/genericons19ce.css?ver=3.0.3' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-style-css'  href='../wp-content/themes/twentythirteen/style4a02.css?ver=2013-07-18' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-block-style-css'  href='../wp-content/themes/twentythirteen/css/blocks0329.css?ver=2018-12-30' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentythirteen-ie-css'  href='http://vceit.com/wp/wp-content/themes/twentythirteen/css/ie.css?ver=2013-07-18' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery4a5f.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script type='text/javascript' src='../wp-content/plugins/easy-countdowner/assets/TimeCircles5152.js?ver=1.0'></script>
+<link rel='https://api.w.org/' href='../wp-json/index.html' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+
+<link rel="canonical" href="index.html" />
+<link rel='shortlink' href='../index30e3.html?p=283' />
+<link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed5a33.json?url=http%3A%2F%2Fvceit.com%2Fwp%2Finformatics%2F" />
+<link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed7c11?url=http%3A%2F%2Fvceit.com%2Fwp%2Finformatics%2F&amp;format=xml" />
+    <style type="text/css">
+        .paypal_donation_button:before,
+        .paypal_donation_button:after {
+            content: " ";
+            display: table;
+        }
+        .paypal_donation_button:after {
+            clear: both;
+        }
+        .paypal_donation_button {
+            max-width: 147px;
+            margin: 0 auto;
+            padding: 0;
+            display: block;
+        }
+    </style>
+    <script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		if (window.wfLogHumanRan) { return; }
+		window.wfLogHumanRan = true;
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('../index9ddd.html?wordfence_lh=1&amp;hid=967A7C21916048D924165FC6407FE89F');
+</script>	<style type="text/css" id="twentythirteen-header-css">
+		.site-header {
+		background: url(../wp-content/uploads/2015/06/title.jpg) no-repeat scroll top;
+		background-size: 1600px auto;
+	}
+	@media (max-width: 767px) {
+		.site-header {
+			background-size: 768px auto;
+		}
+	}
+	@media (max-width: 359px) {
+		.site-header {
+			background-size: 360px auto;
+		}
+	}
+			.site-title,
+	.site-description {
+		position: absolute;
+		clip: rect(1px 1px 1px 1px); /* IE7 */
+		clip: rect(1px, 1px, 1px, 1px);
+	}
+			</style>
+	
+<!-- BEGIN ExactMetrics v5.3.9 Universal Analytics - https://exactmetrics.com/ -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-21490715-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- END ExactMetrics Universal Analytics -->
+<meta data-pso-pv="1.2.1" data-pso-pt="page" data-pso-th="17ac8b6976fac4c9b3bea83e209da52b"></head>
+
+<body class="page-template-default page page-id-283 page-parent wp-embed-responsive sidebar">
+		<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<a class="home-link" href="../index.html" title="VCE IT Lecture Notes by Mark Kelly" rel="home">
+				<h1 class="site-title">VCE IT Lecture Notes by Mark Kelly</h1>
+				<h2 class="site-description">Informatics, Software Development, Computing</h2>
+			</a>
+
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					<button class="menu-toggle">Menu</button>
+					<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
+					<div class="menu-mainmenu-container"><ul id="primary-menu" class="nav-menu"><li id="menu-item-1666" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-283 current_page_item menu-item-1666"><a href="index.html" aria-current="page">Informatics</a></li>
+<li id="menu-item-1667" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1667"><a href="../software-development/index.html">Software Development</a></li>
+<li id="menu-item-1668" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1668"><a href="../computing-units-1-and-2/index.html">IT Units 1 and 2</a></li>
+<li id="menu-item-1669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1669"><a href="../newsblog/index.html">News/Blog</a></li>
+<li id="menu-item-1662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1662"><a href="../exams-2/index.html">Exam Post Mortems</a></li>
+<li id="menu-item-1670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1670"><a href="../exams-2/exam-tips/index.html">Exam Tips</a></li>
+</ul></div>					<form role="search" method="get" class="search-form" action="http://vceit.com/wp/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>				</nav><!-- #site-navigation -->
+			</div><!-- #navbar -->
+		</header><!-- #masthead -->
+
+		<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+						
+				<article id="post-283" class="post-283 page type-page status-publish hentry">
+					<header class="entry-header">
+						
+						<h1 class="entry-title">Informatics</h1>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						<h2 style="text-align: center;">Informatics</h2>
+<h3 style="text-align: center;">Key Knowledge</h3>
+<p style="text-align: center;">Jump to   <a href="#U3O1">U3O1</a> &#8211; <a href="#U3O2">U3O2</a> &#8211; <a href="#U4O1">U4O1</a> &#8211; <a href="#U4O2">U4O2</a></p>
+<p><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> <script type="text/javascript" src="../../../pagead2.googlesyndication.com/pagead/f.txt"> 
+</script></p>
+<table border="1" width="777" frame="border" cellspacing="0" cellpadding="3" align="center">
+<tbody>
+<tr style="height: 350px;">
+<td style="width: 592px; height: 350px;">
+<h5>Legend</h5>
+<ul>
+<li>ITI = Informatics.  I tend to call this subject &#8220;ITI&#8221; out of tradition for the old &#8220;ITA&#8221;, and because it&#8217;s one syllable and 8 letters shorter. Also, I really don&#8217;t like the name &#8220;Informatics&#8221;: it sounds too much like an electronic dishwasher. You may call it what you want.</li>
+<li>UxOy = Unit x Outcome y</li>
+<li>KK = key knowledge</li>
+<li>AOS = area of study</li>
+<li>SAT = school assessed task (U3O2 + U4O1 combined)</li>
+<li>SAC = school assessed coursework (U3O1, U4O2)</li>
+<li>RDBMS = Relational database management software</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 207px;">
+<td style="width: 592px; height: 207px;"></p>
+<hr /></p>
+<ul>
+<li>Section A &#8211; 20 multiple-choice questions = 20 marks</li>
+<li>Section B  &#8211; short-answer questions = 30 marks.</li>
+<li>Section C  &#8211; short-answer and extended-answer questions based on a case study= 50 marks</li>
+<li>Download <a href="http://www.vcaa.vic.edu.au/Documents/exams/technology/it-informatics-specs-samp.pdf">VCAA&#8217;s exam format and sample questions</a> (PDF).</li>
+<li>My <a href="informatics-vcaa-sample-exam-answers/index.html">sample answers</a> to  VCAA&#8217;s exam format and sample questions .</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 489px;">
+<td style="width: 592px; height: 489px;">
+<h5>Other Informatics (ITI) goodies</h5>
+<ul>
+<li><a href="http://www.vcaa.vic.edu.au/Documents/exams/2016 Nov exam covers/2016compinformatics-cov-mc.pdf">The front page, instructions, and section A answer sheet of the 2016 Informatics exam (PDF)</a></li>
+<li><a href="http://www.vcaa.vic.edu.au/Pages/vce/studies/computing/informatics.aspx">VCAA&#8217;s Informatics study page</a></li>
+<li><a href="http://www.vcaa.vic.edu.au/Pages/vce/studies/infotech/it-applications/exams.aspx">VCAA&#8217;s Informatics Past Exams &amp; Examiner&#8217;s reports</a></li>
+<li><a href="informatics-mandated-software-tools-and-functions/index.html">Software tools and functions for ITI</a></li>
+<li><a href="http://www.digipubs.vic.edu.au/vcaa/vce-computing/vce-computing-introduction">VCAA&#8217;s advice for teachers</a></li>
+<li><a href="../what-is-informatics/index.html">What is Informatics?</a></li>
+<li><a href="http://www.vcaa.vic.edu.au/Documents/vce/computing/Informatics_SBA.pdf">VCAA Informatics SAT &amp; School Based Assessment (PDF)</a></li>
+<li><a href="http://www.vcaa.vic.edu.au/Documents/vce/computing/Informatics_examination_ER_Conventions.docx">VCAA ERD convention</a>s</li>
+<li><a href="http://www.vcaa.vic.edu.au/Documents/exams/technology/it-informatics-specs-samp.pdf">VCAA sample Informatics exam questions</a> (PDF)</li>
+</ul>
+<h5 style="text-align: left;" align="center">Remember</h5>
+<ul>
+<li style="text-align: left;">In a KK, all of the items listed after the word &#8220;including&#8221; are examinable.</li>
+<li style="text-align: left;">Items following &#8220;such as&#8221; are only examples, and are not directly examinable.</li>
+<li style="text-align: left;">All relevant items in the <a href="../indexc45e.html?page_id=637">glossary</a> are examinable, depending on the unit being studied. For example the Spam Act is mentioned in the glossary, but is only named as key knowledge (KK) in SD &#8211; not in ITI.</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 547px;">
+<td style="width: 592px; height: 547px; background-color: #e1f5f4;">
+<h4>Informatics Software Tools</h4>
+<p><strong>Unit 3</strong> Software tools that students are required to both study and use in unit 3*</p>
+<ul>
+<li>U3 Area of Study (AOS) 1 &#8211; A relational database management system (RDBMS)</li>
+<li>Drawing or graphics software</li>
+</ul>
+<p>Software tools that students are required to use, but not study in unit 3*</p>
+<ul>
+<li>U3 AOS 2 &#8211; Appropriate tool for documenting project plans</li>
+<li>Software tools to capture, store, prepare and manipulate data</li>
+</ul>
+<p><strong>Unit 4</strong> Software tool that students are required to both study and use in unit 4*</p>
+<ul>
+<li>U4 AOS 1 &#8211; Software tools to manipulate data for creating a multimodal online solution</li>
+</ul>
+<p>Software tool that students are required to use, but not study, in unit 4*</p>
+<ul>
+<li>U4 AOS 1 &#8211; Appropriate tool for documenting project plans</li>
+</ul>
+<p>* The <a href="http://www.digipubs.vic.edu.au/vcaa/vce-computing/docs/EL_Sof_Dev_Introduction.pptx">&#8216;Advice for Teachers&#8217; slideshow</a> explains that: &#8221; Software that is to be &#8220;STUDIED AND USED&#8221; have explicit reference made to the relevant software functions in the key knowledge and hence the skills in using this software are assessable Software that is said to be just &#8216;USED’  needs to be used by students, but is not part of the key knowledge and their skills in using the software are not assessed. What is assessed is the knowledge or skills that are demonstrated through the use of the software.</td>
+</tr>
+<tr style="height: 143px;">
+<td style="width: 592px; height: 143px; background-color: #f0e195;">
+<h2 style="text-align: center;">Informatics U3O1</h2>
+<p>Design a solution, develop it using a relational database management system, and diagrammatically represent how users interact with an online solution when supplying data for a transaction.</td>
+</tr>
+<tr style="height: 262px;">
+<td style="width: 592px; height: 262px;"><strong><a id="U3O1" style="color: #000000;"></a>ITI U3O1 KK01 &#8211; techniques used by organisations to acquire data through their interactive online solutions and reasons for their choice<br />
+</strong><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/websites-data.pptx" rel="">Websites and data</a> This KK  repeats KK 14 below &#8211; reasons why organisations acquire data using online facilities, including</p>
+<ul>
+<li>24 &#8211; hour customer access,</li>
+<li>improved efficiencies through direct data entry by customers,</li>
+<li>improvements in effectiveness, and</li>
+<li>access to global markets, marketing opportunities and ongoing services</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 197px;">
+<td style="width: 592px; height: 197px;">
+<p><strong>ITI U3O1 KK02 &#8211; techniques for efficient and effective data collection</strong></p>
+<p><img class="alignnone size-full wp- image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/data-collection-techniques.pptx" rel="">Data collection techniques</a></p>
+<p>Also see</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/data-entry-controls.pptx" rel="">Data entry controls</a> for GUI interfaces</td>
+</tr>
+<tr style="height: 922px;">
+<td style="width: 592px; height: 922px;"><strong>ITI U3O1 KK03 &#8211; characteristics of data types <a href="../../ppt2016/Data-Types.html"> </a></strong></p>
+<p>&nbsp;</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/Data-Types.pptx" rel="">Data-Types</a> (link fixed 7 Sep 2016)</p>
+<p>Data types are not defined for Informatics. The glossary says</p>
+<p style="padding-left: 30px;">&#8220;Data types are the particular forms that an item of data can take including numeric, character and Boolean, and are characterised by the kind of operations that can be performed on it. Depending on the software being used, these fundamental types can be divided into more specific types, for example integer and floating point are numeric types. More sophisticated types can be derived from them, for example a string of characters or a date type and their names may vary, such as text data type versus string data type. &#8220;</p>
+<p>Common data types include:</p>
+<ul>
+<li>character (a single letter or symbol)</li>
+<li>text (or string) (a series of characters)</li>
+<li>number including subtypes such as integer, floating point, byte, short/long integer, etc.</li>
+<li>Boolean &#8211;  logically true or false values. Note: just because an answer can have only two possible answers (like &#8220;dead or alive&#8221;) does not make it Boolean. Boolean values can only be true or false, such as : &#8220;Is dead?&#8221; or &#8220;Is alive?&#8221;</li>
+<li>date/time/timestamp &#8211; stores calendar dates and/or times of day as numbers. A  timestamp data type stores both date and time in a single value.</li>
+</ul>
+<p>Data types determine the storage requirements and properties of fields. For example, defining field DOB as type &#8216;Date&#8217; not only lets the RDBMS allocate the exact amount of storage space, but it also notifies the database that it can perform date calculations with that field. If the DOB field had been defined as text, an operation like <code>(DateToday - DOB)/365.25</code> would not be possible for calculating an age.</p>
+</td>
+</tr>
+<tr style="height: 86px;">
+<td style="width: 592px; height: 86px;">
+<p><strong>ITI U3O1 KK04 &#8211; physical and software security controls used by organisations to protect their data</strong></p>
+<p>The main controls:</p>
+<p><em>Physical</em> &#8211; locked doors/windows, swipe card door keys, biometric readers (e.g. fingerprint scanner), UPS to protect servers from power outages, air conditioning for servers.</p>
+<p><em>Software</em> &#8211; usernames/passwords, encryption, two-factor authentication, firewalls, malware scanners, SMART (detects hard disk abnormalities), backup software.</p>
+<p>
+<img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/Data-Security.pptx" rel="">Data Security</a> (link updated 11 Sep 2016)</p>
+</td>
+</tr>
+<tr style="height: 208px;">
+<td style="width: 592px; height: 208px;">
+<p><strong>ITI U3O1 KK05 &#8211; purposes and structure of an RDBMS, including comparison with flat file databases</strong></p>
+<p>A <em>flat file database</em> only contains one table, and there are no relationships.</p>
+<p>A spreadsheet is a flat file database.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/beginning-databases.pptx" rel="">Beginning with databases<br />
+</a><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/Databases-Purposes.pptx" rel="">Purposes of databases<br />
+</a><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /><a href="../../ppt2016/Databases-Struc-Datatypes-Naming.pptx" rel="">Database Structure, data types, naming</a></p>
+</td>
+</tr>
+<tr style="height: 657px;">
+<td style="width: 592px; height: 657px;">
+<p><strong>ITI U3O1 KK06 &#8211; naming conventions to support efficient use and maintenance of an RDBMS</strong></p>
+<p>The study design does not name specific conventions, but here are the accepted norms:</p>
+<ul>
+<li><em>Hungarian Notation</em> &#8211; prefixing a name with an identifcation of the object&#8217;s type, e.g. strFamilyName, intAge, lblHeading. It avoids mis &#8211; using objects, such as trying to store decimal places in an integer field, or trying to set text box properties on a label.</li>
+<li><em>CamelCase</em> &#8211; the use of capital letters at the start of words in a multi &#8211; word name. It makes it easier to see the individual words when spaces cannot be used in names, e.g. pageattributessection vs PageAttributesSection.</li>
+</ul>
+<p>Please remember that if you are asked to <em>describe</em> a filenaming convention, don&#8217;t just <em>name</em> it. Explain how it works, and &#8211; if relevant &#8211; why it is useful.</p>
+<p>Field and table names (and forms, reports, queries etc) should be</p>
+<ul>
+<li>self &#8211; explanatory</li>
+<li>not so long that they invite typing errors or get cut off when displayed</li>
+<li>not so short that their meaning or purpose are lost</li>
+<li>leave out special punctuation (such as foreign characters which may choke some RDBMSs)</li>
+<li>not use reserved words that have special meaning to the software</li>
+</ul>
+<p>Preferably do not use spaces or underscores in names &#8211; use dashes or CamelCase instead. Underscores are bad because they become invisible when the name is used in a hyperlink.</p>
+<p>Most databases and programming languages forbid spaces in names since spaces indicate the end of the name.</p>
+<p><a href="../../ppt2016/naming-conventions.pptx"> <img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Object Naming Conventions</a></p>
+<p><img class="alignnone size- full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/FileNaming.pptx">File Naming Conventions</a></p>
+</td>
+</tr>
+<tr style="height: 416px;">
+<td style="width: 592px; height: 416px;"><strong>ITI U3O1 KK07 &#8211; a methodology for creating an RDBMS structure:</strong></p>
+<ul>
+<li><strong>identifying entities,</strong></li>
+<li><strong>defining tables and fields to represent entities;</strong></li>
+<li><strong>defining relationships by identifying primary key and foreign key fields;</strong></li>
+<li><strong>defining data types and field sizes;</strong></li>
+<li><strong>normalisation to third level</strong></li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/Database-Normalisation.pptx" rel="">Database Normalisation<br />
+</a><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/database-normalisation-example.ppt" rel="">Database Normalisation &#8211; example</a></p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/database-normalisation-forms.ppt" rel="">Database Normalisation forms</a></p>
+<p>Also see</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /><a href="../../ppt2016/Database-Referential-Integrity.pptx" rel="">Database Referential Integrity</a>  (not assessable, but useful to know)</td>
+</tr>
+<tr style="height: 773px;">
+<td style="width: 592px; height: 773px;">
+<p><strong>ITI U3O1 KK08 &#8211; design tools for describing data types and the value of entity relationship (ER) diagrams for representing the structure of an RDBMS</strong></p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /><a href="../../ppt2016/Design-Tools-Database.pptx" rel="">Design Tools for Databases</a></p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /><a href="../../ppt2016/Design-Tools-ERD.pptx" rel="">Entity Relationships Diagram (ERD) </a> (updated version for 2016 with Chen, Crow&#8217;s feet and cardinality)</p>
+<p>At long last, VCAA published its <a href="http://www.vcaa.vic.edu.au/Documents/vce/computing/Informatics_examination_ER_Conventions.docx">ERD exam conventions</a>. In short, they accept both Chen (the style used in the last study design) and the &#8216;crowsfeet&#8217;  style. Any of the 3 styles may appear in the exam. You should also use one of these styles in your outcomes.</p>
+<p>Note how cardinality (e.g. 1:many) is now officially included</p>
+<p>Examples:</p>
+<p>Chen showing only top-level elements</p>
+<p><a href="../wp-content/uploads/2015/06/2016-erd1.png"><img class="alignnone size-medium wp-image-1316" src="../wp-content/uploads/2015/06/2016-erd1-300x70.png" alt="2016-erd1" width="300" height="70" srcset="http://vceit.com/wp/wp-content/uploads/2015/06/2016-erd1-300x70.png 300w, http://vceit.com/wp/wp-content/uploads/2015/06/2016-erd1.png 586w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Detailed Chen</p>
+<p><a href="../wp-content/uploads/2015/06/2016-erd2.png"><img class="alignnone size-medium wp-image-1317" src="../wp-content/uploads/2015/06/2016-erd2-300x109.png" alt="2016-erd2" width="300" height="109" srcset="http://vceit.com/wp/wp-content/uploads/2015/06/2016-erd2-300x109.png 300w, http://vceit.com/wp/wp-content/uploads/2015/06/2016-erd2.png 700w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Crowsfeet notation</p>
+<p><a href="../wp-content/uploads/2015/06/2016-erd3.png"><img class="alignnone size-medium wp-image-1318" src="../wp-content/uploads/2015/06/2016-erd3-300x62.png" alt="2016-erd3" width="300" height="62" srcset="http://vceit.com/wp/wp-content/uploads/2015/06/2016-erd3-300x62.png 300w, http://vceit.com/wp/wp-content/uploads/2015/06/2016-erd3.png 700w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+</td>
+</tr>
+<tr style="height: 194px;">
+<td style="width: 592px; height: 194px;">
+<p><strong>ITI U3O1 KK09 &#8211; design principles that influence the functionality and appearance of solutions</strong></p>
+<p>The study design says in the <a href="../vce-computing-glossary-2016-2019/index.html">glossary</a> that:</p>
+<p><em>Design principles are accepted characteristics that contribute to the functionality and appearance of solutions</em>.</p>
+<p>Design principles related to <em>functionality</em> are</p>
+<ul>
+<li><strong>useability</strong>, including robustness, flexibility and ease of use, and</li>
+<li><strong>accessibility</strong>, including navigation and error tolerance.</li>
+</ul>
+<p><strong>Design</strong> principles related to <em>appearance</em> are</p>
+<ul>
+<li><strong>alignment</strong></li>
+<li><strong>repetition</strong></li>
+<li><strong>contrast</strong></li>
+<li><strong>space</strong></li>
+<li><strong>balance</strong></li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/design-principles.pptx" rel="">Design principles</a>  (new for 2016)</p>
+</td>
+</tr>
+<tr style="height: 184px;">
+<td style="width: 592px; height: 184px;"><strong>ITI U3O1 KK 10 &#8211; design tools for representing solutions</strong></p>
+<p>&nbsp;</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt- icon" width="25" height="25" /><a href="../../ppt2016/DataDictionary.pptx" rel="">Data Dictionary</a> design tool<br />
+<img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /><a href="../../ppt2016/Design-Tools-ERD.pptx" rel="">Entity Relationships Diagram (ERD) </a> (updated version for 2016 with Chen, Crow&#8217;s feet and cardinality)<br />
+<img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /><a href="../../ppt2016/Design-Tools-Website.pptx" rel="">Design Tools for Websites</a> &#8211; for example, sitemaps, storyboards, mockups (no tools are mandated in the study design)</td>
+</tr>
+<tr style="height: 90px;">
+<td style="width: 592px; height: 90px;">
+<p><strong>ITI U3O1 KK 11 &#8211; functions and techniques within an RDBMS to efficiently and effectively validate and manipulate data</strong></p>
+<p>Data validation checks the reasonableness of input data.</p>
+<p>Validation can be both manual (e.g. proofreading) and electronic (e.g. running a spellchecker).</p>
+<p>Mandated types of validation are not listed for Informatics, but they are for SD and you should know them:</p>
+<ol>
+<li>existence check &#8211; has the data been entered at all or is it missing? Some fields may be optional (e.g. phone number) but missing data in other fields would make further processing pointless (for example an  ID value, an address for a pizza delivery). Electronic validation can be used in databases to ensure key fields are not left empty.</li>
+<li>type check &#8211; is data the expected data type, for example number, correctly formatted date, text?</li>
+<li>range check &#8211;
+<ul>
+<li>is the data value within acceptable upper and lower limits (e.g. age cannot be negative, age must be between 12 and 18), or</li>
+<li>is the entered value one of the pre-approved legitimate values in a limited list, for example one of the states of Australia, male/female/transgender. Warning &#8211; do not force a limited list range check if the list is not actually limited. Trying to create a list of acceptable titles such as Mr, Mrs, Dr, Rabbi, Princess etc will be monstrously long and bound to omit a title you have never heard of. If people must enter incorrect data because  you made a field compulsory and provided an incomplete list of options, you are damaging the integrity of your own database!</li>
+</ul>
+</li>
+</ol>
+<p>Validation cannot and does not check the accuracy of the data. If a person said on a form that they were 18 whereas they were in fact 19, no database could discover the fault. The database could, however, detect that no age was provided or that the answer was &#8220;eighteen&#8221;.</p>
+<p>Testing checks the accuracy of outputs and solution behaviours.</p>
+<p>
+<img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /><a href="../../ppt2016/validation.pptx" rel="">Data Validation</a></p>
+</td>
+</tr>
+<tr style="height: 206px;">
+<td style="width: 592px; height: 206px;"><strong>ITI U3O1 KK 12 &#8211; functions and techniques to retrieve required information through</strong></p>
+<ul>
+<li><strong>searching,</strong></li>
+<li><strong>sorting,</strong></li>
+<li><strong>filtering and</strong></li>
+<li><strong>querying data sets</strong></li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/search-sort-filter.pptx" rel="">Search, sorting, filtering</a></td>
+</tr>
+<tr style="height: 525px;">
+<td style="width: 592px; height: 525px;">
+<p><strong>ITI U3O1 KK 13 &#8211; methods and techniques for testing that solutions perform as intended</strong></p>
+<p>Testing includes issues like:</p>
+<ul>
+<li>Creating test data that includes values that thoroughly test all possible types of valid, invalid and troublesome inputs (e.g. those on the borderline)</li>
+<li>Testing tables to record testing activity &#8211; a testing table&#8217;s columns may include:
+<ul>
+<li>What was tested</li>
+<li>How it was tested</li>
+<li>The expected result</li>
+<li>The actual result</li>
+<li>If the actual result was wrong, how it was fixed.</li>
+</ul>
+</li>
+<li>Alpha (informal) testing &#8211; by the developer</li>
+<li>Beta testing &#8211; by people other than the developer.
+<ul>
+<li>Useless Tip: Beta is pronounced &#8220;beeta&#8221; in the UK and Australia, and bayta&#8221; in the US. Apparently the ancient Greeks pronounced the second letter in their alphabet as &#8220;bear-ta&#8221; and modern Greeks say it something like &#8220;vee-ta&#8221;. Pick one and have fun.</li>
+</ul>
+</li>
+<li>Acceptance testing (formal testing) &#8211; by the client who commissioned the product</li>
+<li>User Acceptance Testing (UAT) &#8211; by a typical end user</li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt- icon" width="25" height="25" /> <a href="../../ppt2016/User-Acceptance-Testing-UAT.pptx" rel="">User Acceptance Testing<br />
+</a><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/PSM3-Development.html" rel="">PSM3-Development</a> &#8211;  discussses informal (beta) and formal (acceptance) testing</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt- icon" width="25" height="25" /> <a href="../../ppt2016/testing.pptx" rel="">Testing</a></p>
+<p><a href="../../ppt2016/test-data.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" />Test data </a></p>
+</td>
+</tr>
+<tr style="height: 206px;">
+<td style="width: 592px; height: 206px;"><strong>ITI U3O1 KK 14 &#8211; reasons why organisations acquire data using online facilities, including</strong></p>
+<ul>
+<li><strong>24 &#8211; hour customer access,</strong></li>
+<li><strong>improved efficiencies through direct data entry by customers,</strong></li>
+<li><strong>improvements in effectiveness, and</strong></li>
+<li><strong>access to global markets, marketing opportunities and ongoing services</strong></li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /><a href="../../ppt2016/websites-data.pptx" rel="">Websites and data</a></td>
+</tr>
+<tr style="height: 178px;">
+<td style="width: 592px; height: 178px;"><strong>ITI U3O1 KK 15 &#8211; reasons why users supply data for online transactions, including</strong></p>
+<ul>
+<li><strong>convenience,</strong></li>
+<li><strong>variety of choice,</strong></li>
+<li><strong>reducing costs</strong></li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/websites-data.pptx" rel="">Websites and data</a> (again)</td>
+</tr>
+<tr style="height: 638px;">
+<td style="width: 592px; height: 638px;"><strong>ITI U3O1 KK 16 &#8211; techniques used by organisations to protect the rights of individuals and organisations who supply data, including</strong></p>
+<ul>
+<li><strong>security protocols and</strong></li>
+<li><strong>stating privacy, shipping and returns policies</strong></li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/websites-data.pptx" rel="">Websites and data</a> (again)</p>
+<p>Security protocols include:</p>
+<ul>
+<li>SSL or TLS to encrypt web traffic.</li>
+<li>Logins with usernames and passwords.</li>
+<li>Requiring strong passwords.</li>
+<li>Using Captcha to deter robotic logins.</li>
+<li>Automatic timeout of idle connections.</li>
+<li>Using secret questions to back up passwords.</li>
+<li>Using multi &#8211; factor authentication, e.g. sending a code to the person&#8217;s phone to authorise transactions</li>
+</ul>
+<p>Stating policies regarding privacy, shipping and returns &#8211; so consumers are well &#8211; informed about their rights and responsibilities before committing to a transaction. Also consider:</p>
+<ul>
+<li>A contacts link for people to use in case their rights may not have been protected.</li>
+<li>Sending a verification email before signing someone up to a mailing list or a site.</li>
+<li>Only allowing password changes by sending an email to a user’s registered email address.</li>
+</ul>
+</td>
+</tr>
+<tr style="height: 1487px;">
+<td style="width: 592px; height: 1487px;"><strong>ITI U3O1 KK 17 &#8211; user flow diagrams [UFD] that depict different ways in which users interact with online solutions.</strong></p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/user-flow-diagrams-UFD.pptx">User Flow Diagrams (UFD)</a> &#8211; new for 2016</p>
+<p>The study design glossary defines a UFD as&#8230;</p>
+<p>User flow diagrams are diagrammatic representations of the path a user travels through when using an online interactive solution to complete a task or transaction, such as making a reservation or purchasing a product. It is a diagram showing a user’s journey to complete a task. User flow diagrams incorporate user interfaces and show the multiple entry points to interactive online solutions, for example, paid advertisements, social media and search engines may direct a user to a location in the solution other than the home page.</p>
+<p>The <a href="http://www.digipubs.vic.edu.au/vcaa/vce-computing/vce-computing-introduction">Advice for Teachers</a> says&#8230;</p>
+<p>The VCAA will not be mandating a specific style of user flow diagrams; however, it is important that the diagrammatic representations show a user’s interaction with an online solution when conducting a transaction, as well as the user interface for the page that initiates the transaction.</p>
+<p>The Advice points to UFD examples at&#8230;</p>
+<ul>
+<li><a href="http://gauravpanchal.stuntnyc.com/">http://gauravpanchal.stuntnyc.com</a> (as far as I can tell, it&#8217;s one of the worst pages on the internet by a web designer! And most &#8211; if not all &#8211; of the links on it are broken)</li>
+<li><a href="https://netbeans.org/">https://netbeans.org</a></li>
+<li><a href="http://www.newfangled.com/">http://www.newfangled.com</a></li>
+</ul>
+<p> Here&#8217;s an example of one that I prepared earlier. The different shapes indicate different operations in a traditional flowchart, but since no rules apply you can use whatever format you choose in your UFD, as long as its meaning is clear and consistent.</p>
+<p><a href="../wp-content/uploads/2015/06/ufd2.png"><img class="alignnone wp-image-1415 size-medium" src="../wp-content/uploads/2015/06/ufd2-128x300.png" alt="UFD" width="128" height="300" srcset="http://vceit.com/wp/wp-content/uploads/2015/06/ufd2-128x300.png 128w, http://vceit.com/wp/wp-content/uploads/2015/06/ufd2.png 314w" sizes="(max-width: 128px) 100vw, 128px" /></a></p>
+<p>This one appeared in the 2016  VCAA Informatics Exam&#8230;</p>
+<p><a href="16i-c08/index.html"><img class="alignnone wp-image-1593 size-full" src="../wp-content/uploads/16i-c08_tn.jpg" alt="16i-c08_tn" width="106" height="300" /></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> <script type="text/javascript" src="../../../pagead2.googlesyndication.com/pagead/f.txt"> 
+</script></p>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr style="height: 195px;">
+<td style="width: 592px; height: 195px; background-color: #f0e195;">
+<h2 style="text-align: center;">Informatics U3O2</h2>
+<p style="text-align: center;">Remember &#8211; U3O2 is part 1 of the SAT. It finishes in U4O1.</p>
+<p>Use a range of appropriate techniques and processes to acquire, prepare, manipulate and interpret complex data to confirm or refute a hypothesis, and formulate a project plan to manage progress.</td>
+</tr>
+<tr style="height: 27px;">
+<td style="text-align: center; width: 592px; height: 27px;"><a href="../informatics-sat/index.html">Details about the Informatics SAT</a></td>
+</tr>
+<tr style="height: 2101px;">
+<td style="width: 592px; height: 2101px;"><a id="U3O2" style="color: #ff0000;"></a><strong>ITI U3O2 KK01 &#8211; primary and secondary data sources (digital and non digital) and methods of data acquisition, including</strong></p>
+<ul>
+<li><strong>observation,</strong></li>
+<li><strong>interview and</strong></li>
+<li><strong>querying of resources</strong></li>
+</ul>
+<p>Primary data is collected by the researcher for a specific purpose. It is not collected or processed by others. Primary data &#8211; if gathered properly &#8211; will be reliable and relevant to the research question. Its collection will, however, be expensive, slow, and of limited quantity. It will require considerable time, labour and skill for its processing. The main sources of primary data for the SAT would be questionnaires, surveys, and interviews. Another common method is direct observation of people acting naturally in their environment.</p>
+<p>Secondary data has been collected by other people or organisations. It will also probably have been processed (validated, sorted, categorised, encoded, summarised) . Secondary data often includes opinions, conclusions or interpretations of the meaning of the data by other people. Secondary data may or may not be reliable or relevant. At worst, it may have been selectively chosen or misleadingly processed to support a particular point of view. Collecting secondary data is cheap, quick and easy. It is also available in huge quantities, and is the only way to collect data from the past. Secondary data is most commonly from: the internet; encyclopaedias; newspapers, magazines, TV, radio shows; reference books.</p>
+<p>Note: sometimes the distinction between primary and secondary data is blurry.  For example, a newspaper&#8217;s editorial on politics is clearly secondary data, but when it is used as data for an original purpose (e.g. tracking changes in newspaper&#8217;s political attitudes over time) it could qualify as being primary data.</p>
+<p>&#8216;Querying of resources&#8217; refers to the practice of extracting data from datasets. Many government bodies (e.g. CSIRO, <a href="http://data.gov.au/">data.gov.au</a>, <a href="https://www.data.vic.gov.au/">Victorian government data</a>) provide public data that can be searched by citizens.  Also many organisations with large data repositories (e.g. Facebook, the weather bureau) provide an API (Application Programming Interface) that provides a gateway to let other people&#8217;s software extract data from the repository. In that way, for example, anyone can write an app that extracts today&#8217;s weather forecast from the met bureau&#8217;s dataset, or login to an online service using their Facebook credentials.</p>
+<p>Queries take two major forms: Query by Example (QBE) and Structured Query Language (SQL). You do not need to know those terms, but they are handy to know.</p>
+<p>QBE is the style used by GUI databases (Access, Filemaker etc) and spreadsheets where there are columns for each field, and rows that you can use to specify actions for those fields &#8211; for example selection and sorting criteria, and whether the field should be shown. Fill in the desired data into the appropriate fields and rows, and the software will &#8211; in the background &#8211; create a query that finds and manipulates the data required. For example:</p>
+<figure id="attachment_1416" aria-describedby="caption-attachment-1416" style="width: 569px" class="wp-caption alignnone"><img class=" wp-image-1416" src="../wp-content/uploads/2015/06/QBE.jpg" alt="QBE" width="569" height="381" /><figcaption id="caption-attachment-1416" class="wp-caption-text">Query By Example &#8211; thanks to http://www.databasejournal.com</figcaption></figure>
+<p>SQL &#8211; Structured Query Language is a text-based instruction to a database that specifies all of the same requirements for data selection and manipulation that QBE generates. Often, the pretty QBE front-end simply generates SQL that the database then carries out. It&#8217;s a powerful scripting language for database queries. SQL looks like this (thanks to http://www.w3schools.com):</p>
+<pre>SELECT * FROM Customers
+WHERE Country='Germany'
+AND (City='Berlin' OR City='München');</pre>
+<p>Keep in mind that data extracted from an online query must still be considered secondary data. Even if it looks like raw data, it will probably have already been processed in some way, such as being summarised, sorted, categorised, and presented as percentages.</p>
+<p>Repeat after me: Just because you found data online and extracted some with a query does not mean you created the data. It is not primary data. It is secondary. </p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come &#8211; but the info above should keep you going for a while.</td>
+</tr>
+<tr style="height: 690px;">
+<td style="width: 592px; height: 690px;"><strong>ITI U3O2 KK02 &#8211; suitability of quantitative and qualitative data for manipulation including</strong></p>
+<ul>
+<li><strong>comparisons (quantitative) and</strong></li>
+<li><strong>policy formation (qualitative)</strong></li>
+</ul>
+<p><strong>Quantitative data</strong> is objective, measurable, and based on facts, e.g. temperature readings, numbers of daily visitors to a website.</p>
+<p><strong>Qualitative data</strong> is subjective, based on opinion, e.g. how people feel in a hot building, whether visitors enjoy visiting a website.)</p>
+<p>Qualitative data is often collected at the start of research to discover what aspects of the topic are important and relevant. Once these are known, more detailed and specific quantitative data can be collected in much larger quantities.</p>
+<p style="padding-left: 30px;">For example, a company might want to know why sales of its boots are falling. Instead of guessing the reasons and creating a questionnaire or survey asking about those reasons, they interview people about their boots, or observe people trying their boots on in stores. They believed sales were falling because of cost, but discovered that people were actually put off by the comfort and dated style.  The company could then use this qualitative data to formulate questions for a survey to fine-tune their understanding: specifically, what was uncomfortable? what styling seem dated? Without the preliminary interviews, the survey would have been asking about irrelevant factors and collecting irrelevant data.</p>
+<p>Warning &#8211; to achieve full marks for U3O2 <em>you must use both qualitative and quantitative data</em>. This is buried in middle of the assessment rubric for criterion 2 and it not stated again in the highest performance descriptor.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</td>
+</tr>
+<tr style="height: 1206px;">
+<td style="width: 592px; height: 1206px;">
+<p><strong>ITI U3O2 KK03 &#8211; data types and data structures relevant to selected software tools</strong></p>
+<p><strong>Data types</strong> &#8211; just as boxes come in a variety of sizes, materials and shapes to suit their intended purposes (compare a shoe box with a matchbox, for example) so data structures come in a variety of types to store that type of data with minimum waste (of RAM or disk space), and processing effort. </p>
+<p>Common data types supported by most relational databases are:</p>
+<ul>
+<li>number (usually subdivided into floating point with decimal fractions, and integers)</li>
+<li>text, string (letters, punctuation, control codes such as carriage returns)</li>
+<li>date (which store complete calendar dates in one piece of data. Timestamps store both dates and times of day in one datum. The storage is very efficient and allows powerful date/time calculations since the software can easily interpret the data)</li>
+<li>Boolean (a special type that only stores logical true/false data. Note that just because a value in a field can have one of only two possible values does not make it Boolean. For example, a &#8220;Sex&#8221; field which can have values that are only be &#8220;M&#8221; or &#8220;F&#8221; is not Boolean &#8211; it is text. To be truly Boolean, the field name would have to be &#8220;Is Male?&#8221; and the value would be either TRUE or FALSE and stored as numbers, usually 0 for false and non-zero for true. &#8220;M&#8221; or &#8220;F&#8221; would be character data type.) </li>
+</ul>
+<p>Different databases offer specialist, non-universal data types:</p>
+<ul>
+<li>Filemaker Pro &#8211; allows &#8216;Container&#8217; type in which any binary media such as JPG, PDF, MP3, WMV can be stored. Filemaker only supports &#8216;Number&#8217; data type, which includes all types of numeric data.</li>
+<li>MS Access &#8211; offers &#8216;memo&#8217; data type which allows large, variable-length text strings. Access offers more specific number types, such as byte, integer, and floating point which may store data more efficiently, but require more planning by the database creator.</li>
+</ul>
+<p>When creating a database, considerable thought needs to be put into choosing appropriate data types for the data to be stored. Selecting an inappropriate data type (e.g. storing dates of birth as text) will result in slow and difficult processing later. Lack of foresight can lead to a database &#8216;breaking&#8217; later in its life, such as by choosing &#8216;byte&#8217; as the data type for TotalMemberCount. Since a &#8216;byte&#8217; field can only store values between 0 and 255, it will work fine until the member count reaches 256 &#8211; and then the database will freak out.</p>
+<p>The Informatics study design is rather vague about which data types are examinable. The only help is the <a href="../vce-computing-glossary-2016-2019/index.html">glossary</a> that says:</p>
+<p style="padding-left: 30px;">Data types are the particular forms that an item of data can take including numeric, character and Boolean, and are characterised by the kind of operations that can be performed on it. <br />
+Depending on the software being used, these fundamental types can be divided into more specific types, for example integer and floating point are numeric types. <br />
+More sophisticated types can be derived from them, for example a string of characters or a date type and their names may vary, such as text data type versus string data type.</p>
+<p>If I were you, I&#8217;d clean my room every day to keep mum happy, and learn the data types in bold above.</p>
+<p>As for <strong>data structures</strong>&#8230; we can only guess what VCAA means because no data structure is named in the KK.</p>
+<p>I would only be able to suggest the obvious:</p>
+<ul>
+<li>fields, records, tables in an RDBMS</li>
+<li>lookup tables in a spreadsheet</li>
+</ul>
+<p>But don&#8217;t worry. the exam <strong>can&#8217;t</strong> question you on things like <em>double-ended priority queues</em> or <em>self-balancing trees </em>because they not listed in the KK. The exam could only ask you to select a data structure and maybe explain what it is, in which case you&#8217;d want to choose one of the RDBMS or spreadsheet structures listed above.</p>
+<p><img class="alignnone size-full wp-image- 966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/Data-Types.pptx">Data types</a></p>
+</td>
+</tr>
+<tr style="height: 1258px;">
+<td style="width: 592px; height: 1258px;"><strong>ITI U3O2 KK04 &#8211; one of the following methods for referencing primary and secondary sources:</strong></p>
+<ul>
+<li><strong>Harvard,</strong></li>
+<li><strong>American Psychological Association (latest edition),</strong></li>
+<li><strong>Chicago,</strong></li>
+<li><strong>Institute of Electrical and Electronics Engineers (IEEE)</strong></li>
+</ul>
+<p>All four referencing methods do the same thing &#8211; they help an author acknowledge the intellectual property of other people used in the author&#8217;s work. They only differ in their style.</p>
+<p>Harvard and APA both use a parenthetical [i.e. in round parentheses] &#8216;author, year&#8217; style in the body text such as</p>
+<p>&#8220;&#8230;one researcher (Smith, 1980) claimed that&#8230;&#8221; and there would be a corresponding entry in the reference list at the end of the document such as </p>
+<p><span style="font-family: 'courier new', courier, monospace;">Smith, AB. The Life Cycle of Frogs. Frog Life Monthly, vol.65, num.11, 1980.</span></p>
+<p>Chicago and IEEE use numbers in the body text to indicate links to the reference list, for example:</p>
+<p>Chicago &#8211; &#8220;&#8230;one researcher <sup>32</sup> claimed that&#8230;&#8221;</p>
+<p>or</p>
+<p>IEEE &#8211; &#8220;&#8230;one researcher [32] claimed that&#8230;&#8221;</p>
+<p>For all four methods there would be a corresponding entry in the reference list at the end of the document.</p>
+<p>For Chicago and IEEE it would look like this:</p>
+<p><span style="font-family: 'courier new', courier, monospace;">32. Smith, AB. (1980) The Life Cycle of Frogs. Frog Life Monthly, vol.65, num.11, 1980.</span></p>
+<p>For Harvard and APA, it would look something like this:</p>
+<p><span style="font-family: 'courier new', courier, monospace;">Smith, AB. (1980) The Life Cycle of Frogs. Frog Life Monthly, vol.65, num.11, 1980.</span></p>
+<p>The differences between Chicago and IEEE are trivial &#8211; one uses superscript for the numbers. The other uses square brackets. Similarly, the differences between Harvard and APA are trivial &#8211; one may have a comma between the author&#8217;s surname and the year of publication whereas the other does not.</p>
+<p>It does not matter which of the four referencing styles you use, but you must use one of the named styles, and you must use it consistently and correctly. </p>
+<p><strong>Do not mix different methods together in a reference. Choose one method and get it right.</strong></p>
+<p>As I interpret the key knowledge,  you only need to be able to write references in only one of the four named methods. <br />
+You should not be asked to write a reference in one specific method of the examiner&#8217;s choosing.</p>
+<p>Learn ONE style fully and use it consistently.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come &#8211; but the stuff above is pretty good in the meanwhile.</td>
+</tr>
+<tr style="height: 506px;">
+<td style="width: 592px; height: 506px;"><strong>ITI U3O2 KK05 &#8211; criteria to check the integrity of data including</strong></p>
+<ul>
+<li><strong>timeliness,</strong></li>
+<li><strong>authenticity,</strong></li>
+<li><strong>relevance,</strong></li>
+<li><strong>accuracy</strong></li>
+</ul>
+<p>Note &#8211; unlike the previous study designs, in this study design, &#8220;<strong>timeliness</strong>&#8221; now means both/either:</p>
+<ul>
+<li>data is available when needed <strong>and/or</strong></li>
+<li>data is produced quickly so it&#8217;s available when required</li>
+</ul>
+<p><strong>Authenticity</strong> relates to how genuine the data is. Has it actually come from the named source? Has it been forged? Has it been distorted, for example: dishonestly edited, photoshopped, taken out of context, changed in any way to deceive the audience ? A statement that &#8216;there are four cows in the top paddock&#8217; came from a person who never actually counted the cows, and just made up a number to save herself some effort or to avoid being punished.</p>
+<p><strong>Relevance</strong> &#8211; does the data relate to the issue being investigated? Data may be irrelevant because it&#8217;s</p>
+<ul>
+<li>off-topic (figures about house sales when the investigation is into apartment sales, data on efficiency when a question is about effectiveness),</li>
+<li>outdated (using 1993 data to investigate current rates of students leaving school early),</li>
+<li>foreign (German students&#8217; experiences with an issue involving Australian students)</li>
+<li>atypical (relating to a small, unrelated or extreme sample that bears no similarity to the population in question)</li>
+</ul>
+<p><strong>Accuracy</strong> &#8211; data is an abstract representation of real-world realities. To say to people that &#8220;There are four cows in my top paddock&#8221; is a more convenient representation of a fact than physically taking all the people to your top paddock and looking at the cows. If there actually <em>are</em> four cows in the top paddock, then the data is accurate. If there were actually three or five cows, the data would be less accurate. If there were four hundred cows, the data would not be <em>at all</em> representative of the true bovine quantity, and the data would be called inaccurate.</p>
+<p>Data might be or become inaccurate due to</p>
+<ul>
+<li><em>going out of date</em> &#8211; the state of the real world has changed (a few new cows were put into the paddock) but the data has not been updated to reflect that change. Or the number of cows had been copied from one database to a mirror site, but the mirror has not been synchronised recently with the master copy so the mirror is  no longer representative of the current size of the herd.</li>
+<li><em>being damaged</em> &#8211; someone accidentally or deliberately changes the text &#8220;4 cows&#8221; to &#8220;40 cows&#8221;. Or <a href="https://en.wikipedia.org/wiki/Disc_rot"><em>disk rot</em></a> caused the recorded data to be misread by the digital system.</li>
+<li><em>poor data collection &#8211; </em>the cows were counted by someone glancing out of the window of a fast-moving car, or the cows kept moving about and some were counted twice.</li>
+<li><em>coming from an unreliable source</em> &#8211; there were not four cows: there were four <em>goats</em>. The data came from an idiot from the city who could not tell the difference.</li>
+<li><em>bias</em> &#8211; the cow-counter had some reason to misrepresent the true number of cows in the top paddock, e.g. to reduce his tax bill, or to show off his cow status to the milk maid next door.</li>
+<li><em>faulty data processing</em> &#8211; the wrong formula was used in the spreadsheet that added up the number of cows.</li>
+<li><em>poor validation</em> &#8211; the number of cows was entered into the software as &#8220;four&#8221; instead of &#8220;4&#8221;. The software was not expecting text, and &#8211; because there were no recognisable digits &#8211; converted the word &#8220;four&#8221; into a value of zero.</li>
+<li><em>translation or conversion errors</em> &#8211; the reader of the data did not speak English and relied on an incorrect electronic translation of the text.  Or the text said &#8220;There are 4 (four) cows&#8221; and a careless data entry person entered &#8220;There are 4 (4) cows&#8221; which was later turned into &#8220;There are 44 cows&#8221;. Or poor optical character recognition of &#8220;4 cows&#8221; became &#8220;9 cows&#8221; without being detected.
+<ul>
+<li><strong>True story</strong>: I was listening to an audiobook on the history of space travel and was astounded to hear that &#8220;Apollo Two landed on the moon.&#8221; It took me a while to realise that the reader had seen &#8220;Apollo <strong>11</strong> landed on the moon&#8221; and mistook &#8220;11&#8221; for the Roman numerals &#8220;II&#8221;.  D&#8217;oh!</li>
+</ul>
+</li>
+</ul>
+<p>And let&#8217;s not argue about the <a href="../correctness-versus-accuracy/index.html">difference between accuracy and correctness</a> of data. <br />
+Teachers are <em>still</em> arguing about that one a year later.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</p>
+<p><strong>Unexaminable bonus</strong> : Evaluating secondary sources can be difficult. There are some <a href="../logical-fallacies-and-failures/index.html">logical fallacies</a> you might want to be aware of that are often based on arguments or evidence that are irrelevant to the issue in question (e.g. a correlation may be irrelevant to causation).</p>
+</td>
+</tr>
+<tr style="height: 1514px;">
+<td style="width: 592px; height: 1514px;">
+<p><strong>ITI U3O2 KK06 &#8211; techniques for coding qualitative data to support manipulation</strong></p>
+<p>Qualitative data is often textual, not numeric. It often comes as comments, statements, opinions that may include important information in all sorts of ways. Different people use different words, phrases, vocabulary to say the same basic idea. Coding this information is needed to reduce an infinitely-variable input of text into values that can be averaged, totalled and understood.</p>
+<p>For example, in an interview, you might ask, &#8220;Has your business been affected by the opening of local supermarkets?&#8221; You might receive the following answers:</p>
+<ul>
+<li>&#8220;Yeah. Heaps&#8221;</li>
+<li>&#8220;Quite a lot&#8221;</li>
+<li>&#8220;I&#8217;d say the answer would have to be &#8216;considerably&#8217; &#8220;</li>
+<li>&#8220;Yep. Yeah. A bunch.&#8221;</li>
+</ul>
+<p>How could you summarise these variable-length responses meaningfully? Human interpretation is required to boil down the essence of a response into a limited range of possible answers, such as :</p>
+<ul>
+<li>5. Completely</li>
+<li>4. Quite a lot</li>
+<li>3. A reasonable amount</li>
+<li>2. Somewhat</li>
+<li>1. A very small amount</li>
+<li>0. Not at all</li>
+</ul>
+<p>This encoding (or coding, as the study design prefers) of the free-form textual answers allows you to process the data statistically.</p>
+<p>The drawbacks of encoding are:</p>
+<ul>
+<li>it requires human interpretation and judgement of the meaning of responses. Different encoders may generate different codes from the same inputs unless they are well trained and know what the codes mean.</li>
+<li>encoding is labour-intensive and cannot be easily automated. It requires considerable expensive effort by trained people.</li>
+</ul>
+<p>One way of judging free-form responses more consistently is by using a rubric (not examinable) . A rubric lists descriptions of inputs and assigns them numeric values. VCAA outcomes and exams are assessed like this to ensure that different markers know what responses deserve.</p>
+<p>A rubric may look like this:</p>
+<ul>
+<li>5. Consistently uses very strong language to agree with the statement.</li>
+<li>4. Often uses very strong language to agree with the statement.</li>
+<li>3. Sometimes uses strong language agree with the statement.</li>
+<li>2. Rarely uses strong language to agree with the statement, or sometimes disagrees with the statement.</li>
+<li>1.  Never uses strong language to agree with the statement, or often disagrees with the statement.</li>
+<li>0. Never agrees with the statement.  Often strongly disagrees with it.</li>
+</ul>
+<p>The encoding effort and the risk of error during interpretation of qualitative data is why researchers often prefer to collect quantitative data using questionnaires with fixed choices of answers that do not require human interpretation.</p>
+<p>The value of interviews and free-form answers, however, is the richness and depth of the answers that may yield valuable information that the researchers may not have ever dreamed of including as options. This is why early research often uses limited in-depth qualitative data collection (e.g. interviews, observation) to better understand what questions to ask and what answers to allow during later larger-scale quantitative research (with questionnaires and surveys)</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</p>
+</td>
+</tr>
+<tr style="height: 320px;">
+<td style="width: 592px; height: 320px;"><strong>ITI U3O2 KK07 &#8211; key legal requirements for storage and communication of data and information, including</strong></p>
+<ul>
+<li><strong>privacy,</strong></li>
+<li><strong>intellectual property and</strong></li>
+<li><strong>human rights requirements</strong></li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Privacy &#8211; <a href="../../ppt2016/Legislation-Privacy.pptx">Privacy Act</a></p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Intellectual Property &#8211; <a href="../../ppt2016/Legislation-Copyright.pptx">Copyright</a></p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Human Rights Requirements  &#8211; <a href="../../ppt2016/Legislation-Rights-Spam.pptx"> Charter of Human Rights</a></p>
+<p>Note &#8211; <em>The Spam Act</em> is <strong>not</strong> listed as an Informatics requirement (as it is for SD). Strange, but true. <br />
+Ignore that bit in the Informatics textbook.</p>
+<p>The only legislation named for Informatics is in U4O2:</p>
+<ul>
+<li><em>Privacy Act 1988</em></li>
+<li><em>Privacy and Data Protection Act 2014</em> [replacing the IPA from the last study design]</li>
+<li><em>Health Records Act 2001</em>.</li>
+</ul>
+<p>
+The legislation relevant to this U3O2 KK is categorised but not named.</p>
+</td>
+</tr>
+<tr style="height: 598px;">
+<td style="width: 592px; height: 598px;"><strong>ITI U3O2 KK08 &#8211; features of a reasonable hypothesis including a specific statement identifying</strong></p>
+<ul>
+<li><strong>a prediction and</strong></li>
+<li><strong>the variables</strong></li>
+</ul>
+<p><strong>Variables</strong></p>
+<ul>
+<li>Independent variable &#8211; the factor that the researcher controls (e.g. the amount of sleep students get). i.e. the &#8220;cause&#8221;</li>
+<li>Dependent variable &#8211; the factor that is affected by changes to the independent variable (e.g. students&#8217; test results). i.e. the &#8220;effect&#8221;.</li>
+</ul>
+<p><strong>Prediction</strong> &#8211; a forecast of how the dependent variable will be affected by changes to the independent variable, e.g. &#8220;The less sleep students get, the worse their test results will be.&#8221;</p>
+<p>A hypothesis must be able to make testable predictions. If it can&#8217;t, it&#8217;s pure speculation, or faith.<br />
+e.g. The theory of relativity can be used to theorise that a clock in a satellite will run more slowly than a similar clock on earth. This can be tested experimentally (even if it took about forty years for the necessary technology to arrive.)</p>
+<p>A hypothesis that &#8220;After good people die, they go to heaven&#8221; can never be tested, so it fails as a reasonable hypothesis.</p>
+<p>Another hypothesis like, &#8220;Our entire universe is just a single atom in a larger universe!&#8221; cannot yield any testable prediction, so it also fails as a reasonable hypothesis.</p>
+<p>Vague hypotheses (the plural of &#8216;hypothesis&#8217;) are unreasonable, for example &#8220;Dogs are better pets than cats because they&#8217;re more loving&#8221; cannot be measured scientifically. &#8220;Better&#8221; is an undefined and vague term. How can &#8220;loving&#8221; be quantified in animals? Does a dog&#8217;s licking mean love, or he&#8217;s tasting you to see if you&#8217;re worth eating? Does a cat&#8217;s purring mean love, or self-centred satisfaction in finding a warm lap on which to sleep?</p>
+<p>And does it mean that <em>every</em> breed of dog and every breed of cat follow this rule, on only some of them?</p>
+<p>A <strong>reasonable hypothesis</strong> is very specific. It has this format:</p>
+<p><em>Independent Variable</em> (IV) <strong>causes</strong> <em>Dependent Variable</em> (DV) <strong>to</strong> <em>increase/decrease</em> <strong>because</strong> <em>reason Z</em>.</p>
+<p>Examples: <br />
+&#8220;Teaching sex education in schools increases teen pregnancy rates because students are made curious about sex.&#8221;<br />
+<em>or<br />
+</em>&#8220;Teaching sex education in schools decreases teen pregnancy rates because students are made aware of how sex causes pregnancy.&#8221;</p>
+<p>A reasonable hypothesis cannot just vaguely say that one variable &#8220;affects&#8221; another. It must specify the <em>nature</em> of the effect.</p>
+<p>It must specify one independent variable and one dependent variable and make sure that any other uncontrolled variables are removed from consideration during investigation. For example, if you look at two English classes and find that the smaller class has better grades than the larger class. You hypothesise that smaller class size (IV) causes learning (DV) to increase because students get more attention from the teacher.</p>
+<p>But are there factors unaccounted for in this hypothesis? Could it in fact be that the difference is caused by:</p>
+<ul>
+<li>the teacher of the smaller class having much more teaching experience?</li>
+<li>the students in the larger class being recent immigrants from non-English speaking countries?</li>
+<li>any of another dozen possible variables you have not even considered?</li>
+</ul>
+<p>The hypothesis must be able to make testable predictions, for example &#8220;If the larger class were divided into two classes taught by the same teacher, each half would get better grades.&#8221;</p>
+<p>Also, you must not introduce new variables during investigation. For example, after dividing the large class into two, you should not give one half a different teaching style. If there were any any changes observed, you could never tell whether they were due to the size reduction or the change in teaching style.</p>
+<p>A good investigation relies on the fact that any observed changes between groups can only be attributed to the independent variable and to no other cause.</p>
+<p>Tip: this is wise during <em>any</em> problem-solving mission, such as finding out why your computer has started running slowly. If you change <em>five</em> things and the computer runs well again, how can you tell which change fixed the problem? Try to always test only one variable at a time. Control the others.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</td>
+</tr>
+<tr style="height: 790px;">
+<td style="width: 592px; height: 790px;"><strong>ITI U3O2 KK09 &#8211; solution specifications: requirements, including</strong></p>
+<ul>
+<li><strong>data to support the prediction of the hypothesis,</strong></li>
+<li><strong>constraints and</strong></li>
+<li><strong>scope</strong></li>
+</ul>
+<p>In other words:</p>
+<p><strong>data</strong>: what data will needed to support the hypothesis (e.g. the numbers of new supermarkets openings; numbers of closures of small businesses in the same period; opinions of the small business owners regarding the effect of the supermarket opening on the closure of their businesses.</p>
+<p>The distinction between constraints and scope in the key knowledge is a bit unclear. VCAA has not offered any example to clarify the difference.</p>
+<p>In IT, <strong>constraints</strong> are usually factors that limit the free design of solutions, such as a limit on the total cost or time for development, the need for the solution to work on certain hardware, the requirement that the solution be very secure, or easy to use by complete idiots.  Your research may be constrained by the public availability of relevant data, the number of reliable primary sources, the software you have available for data collection or processing. </p>
+<p><strong>Scope</strong> defines what is included in the research and what is not. For your SAT the scope may define how far will your hypothesis extends. For example, the hypothesis that supermarkets kill small local shops will only relate to  </p>
+<ul>
+<li>Victoria,</li>
+<li>metropolitan suburbs,</li>
+<li>in the past 10 years,</li>
+<li>only independent owner-operated businesses (not chain stores or franchisees)</li>
+<li>only greengrocer and butcher shops.</li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</td>
+</tr>
+<tr style="height: 994px;">
+<td style="width: 592px; height: 994px;">
+<p><strong>ITI U3O2 KK 10 &#8211; project management concepts and processes, including t</strong><strong>he concepts of</strong></p>
+<ul>
+<li><strong>milestones and</strong></li>
+<li><strong>dependencies</strong></li>
+</ul>
+<p>Milestones are major points of progress in a project, for example the end of the design stage. <br />
+There are no tasks or time required for the event, so milestones are shown as zero-duration, and are represented as diamond shapes. <br />
+Milestones are used to judge whether a project is on schedule or not.</p>
+<p>A dependency means that a following dependent task cannot be begun until a previous task has been completed. <br />
+The first task is called the <em>predecessor</em>, and the dependent task is the <em>successor</em>. <br />
+For example:<br />
+Task 1: Put on socks. (The predecessor task)<br />
+Task 2: Put on shoes. (The successor task, is dependent on Task 1. It cannot be started before the socks are on. Unless you&#8217;re <em>really</em> weird.)</p>
+<p>The <strong>processes</strong> of</p>
+<ul>
+<li>task identification,</li>
+<li>sequencing,</li>
+<li>time allocation,</li>
+<li>resources and</li>
+<li>documentation using Gantt charts</li>
+</ul>
+<p>You <em>must</em> use a Gantt chart for the SAT.<br />
+(You can also use PERT if you like, but it&#8217;s not examinable and only the Gantt chart will be assessed for the SAC.)</p>
+<ul>
+<li><em>Task ID</em> &#8211; The first step is to list every task that needs to be done in the project. Don&#8217;t leave any out.</li>
+<li><em>Sequencing</em> &#8211; Getting tasks in order, based on their dependencies.</li>
+<li><em>Time allocation</em> &#8211; Deciding how much time each task will take. In a Gantt chart, this affects how long each task&#8217;s bar is.</li>
+<li><em>Resources</em> &#8211; assigning workers and equipment to tasks so people and hardware/software are available when needed, and not already busy working on a different task. Good Gantt software will warn when resources are being double-booked.</li>
+<li>Documentation using Gantt charts &#8211;  put these pieces of information step by step into the Gantt chart.</li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/gantt.pptx">Gantt Charts</a></td>
+</tr>
+<tr style="height: 562px;">
+<td style="width: 592px; height: 562px;">
+<p><strong>ITI U3O2 KK 11 &#8211; file naming conventions to support efficient use of software tools</strong></p>
+<p>Good file naming means that names should :</p>
+<ul>
+<li>not be so short that they are meaningless or arbitrary (e.g. &#8220;Doc1.docx&#8221;)</li>
+<li>not be be so long that they cause file system errors</li>
+<li>be meaningful and self-descriptive</li>
+<li>put the most relevant information first</li>
+<li>not contain spaces or underscores</li>
+<li>use capitalisation cautiously. </li>
+<li>not use prohibited characters</li>
+<li>not use characters that have special meaning for web servers and browsers</li>
+<li>be consistent so names are sorted in a logical order and files can be easily found</li>
+<li>preferably contain versioning information (e.g. document-v1.txt, document-v2.txt) to retain old versions and allow roll-backs in case of disaster or stupidity.</li>
+</ul>
+<p>Organisations and teams typically create file naming policies that all workers need to follow when sharing documents.</p>
+<p>More details are in the slideshow&#8230;</p>
+<p><img class="alignnone size- full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/FileNaming.pptx">Good File Naming Conventions</a></p>
+</td>
+</tr>
+<tr style="height: 354px;">
+<td style="width: 592px; height: 354px;"><strong>ITI U3O2 KK 12 &#8211; software functions to organise, manipulate and store data</strong></p>
+<p>This is so vague it could take a dozen books to cover completely. It refers to the commands that can be given in different software applications to handle data. </p>
+<p>A typical exam question would be something like:</p>
+<p><em>Jill has this pile of data. She wants a  list of her shop&#8217;s top ten best-selling products (in order of popularity). Describe a strategy she could use to do this.</em></p>
+<p><strong>Organise</strong>: define and create fields, records and tables in a database. Create worksheets, columns, rows, lookup tables in a spreadsheet. Sort data. Put data into categories, tables. Convert data to a single unit (e.g. grams/kilograms all converted to grams, minutes:seconds all converted to seconds).</p>
+<p><strong>Manipulate</strong>: formulae in spreadsheets or database queries to work out basic arithmetic, totals, averages, maxima or minima, ranges, correlations, standard deviations. Produce charts. Pivot tables in spreadsheets.</p>
+<p><strong>Store</strong>: as files (e.g. Access/Filemaker/Excel proprietary formats, universal CSV, XML, RTF formats). Store as records in files or MySQL databases.</p>
+<p>Note: The exam cannot force you to answer questions relating to spreadsheets (even if 99% of you guys used them for U3O2). The exam <em>is</em> entitled to ask specific questions about RDBMS.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</td>
+</tr>
+<tr style="height: 62px;">
+<td style="width: 592px; height: 62px;">
+<p><strong>ITI U3O2 KK 13 &#8211; techniques for identifying patterns and relationships between data</strong></p>
+<p>This could be a biggie. We are talking about data trends and connections between different data sets. This implies concepts like:</p>
+<ul>
+<li>Patterns: predictable changes such as increases/decreases, unchanging plateaux, maximum and minimum values, recurring data that can be anticipated because of some other factor. For example, summer temperatures have a pattern of being generally higher than winter temperatures. Shopping expenditures show a pattern of increasing just before Christmas and Mother&#8217;s Day. Internet usage has a pattern of increasing during working hours.  Access to news sites tends to increase after disasters.</li>
+<li>Connections: correlations &#8211; changes in one dataset that correspond with changes in a different dataset. Correlations can be positive (an increase in Factor 1 leads to a corresponding increase in Factor 2) or negative (an increase in Factor 1 leads to a corresponding decrease in Factor 2). Correlations are measured from -1.0 (perfect negative correlation) to zero (no correlation whatsoever) to +1.0 (perfect positive correlation).</li>
+</ul>
+<p>A technique for identifying any trend within or between datasets is to reduce the huge bulk of raw data to a form where the trends are more easily visible. This is accomplished by summarising the data using statistics (e.g. averages and totals) and and visualising the data using data visualisation techniques (e.g.  graphs and infographics).</p>
+<p>My advice &#8211; read the textbook. I really don&#8217;t have the time to repeat all of that priceless wisdom here. But here&#8217;s a summary.<br />
+Note: None of the following terms is directly examinable, but may be given in an answer to a related question.</p>
+<h5>Averages (not examinable)</h5>
+<p>a summary of a larger set of data, showing its typical value. The problem is that one can summarise data in different ways and get very different answers.</p>
+<p>For example, six men are asked how many lemurs they have. The answers are: 7, 9, 11, 6, 13, 6, 6, 3, 11.<br />
+What value faithfully reflects the average number of lemurs men have?</p>
+<ul>
+<li>One type of average (the mean) adds up all values, divides by the number of values = 8.</li>
+<li>Another way of calculating an average is to find the most common value (the mode) = 6.</li>
+<li>A third average is to sort the values and see which is in the middle when the data are sorted (the median) = 7.5.</li>
+</ul>
+<p>Which of these different answers best summarises the numbers of lemurs owned by men? <br />
+All, and none of them. The very choice of statistic can distort a report.</p>
+<p>For example, six people in a country are asked how much they earn each week . The answers are 30,30,60,170,1949.</p>
+<ul>
+<li>Mean: 447.8</li>
+<li>Mode: 30</li>
+<li>Median: 60</li>
+</ul>
+<p>If you were the country&#8217;s president trying to prove the well-being of your citizens, which average would you choose?<br />
+If you were trying to prove the president was starving his citizens, which average would you choose?<br />
+Strangely enough, both of you would be technically correct.</p>
+<p>Moral &#8211; statistics can lie when you want them to. The use of statistics is just as important as the data the statistics are using.</p>
+<h5>Standard Deviation (not examinable)</h5>
+<p>Because the mean can be deceptive when the range of the data varies greatly, it is handy to know how much variance is in the dataset. The standard deviation (easily calculated by a spreadsheet, for example) is low when the data are consistently around the same value and the mean accurately describes their average value. A high standard deviation shows that the data vales vary greatly and have no consistent value. A high standard deviation indicates that the mean of the data is unreliable as a summary of the data. A high standard deviation is like a red light flashing the warning,  &#8220;DON&#8217;T TRUST THIS MEAN!&#8221;</p>
+<p>Using the sample data above, the lemur standard deviation was 3.01, indicating the data were pretty close to each other and the mean would be quite reliable as a summary of their values.</p>
+<p>The income standard deviation was 752.3, warning that the mean would be wildly unreliable as a summary of the data.</p>
+<p>
+<img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come. The stuff above should be enough for now.</p>
+</td>
+</tr>
+<tr style="height: 258px;">
+<td style="width: 592px; height: 258px;"><strong>ITI U3O2 KK 14 &#8211; roles, functions and characteristics of digital system components used to</strong></p>
+<ul>
+<li><strong>input,</strong></li>
+<li><strong>store,</strong></li>
+<li><strong>communicate and</strong></li>
+<li><strong>output data and information</strong></li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/hardware.pptx">Hardware for input, storage, communication, and output</a> (new for 2016)</td>
+</tr>
+<tr style="height: 114px;">
+<td style="width: 592px; height: 114px;"><strong>ITI U3O2 KK 15 &#8211; physical and software security controls suitable for protecting stored and communicated data.</strong></p>
+<p>&nbsp;</p>
+<p>Remember to cover all four parts of the KK. Physical/software and stored/communicated.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/Data-Security.pptx">Physical and software security</a></td>
+</tr>
+</tbody>
+</table>
+<p><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> <script type="text/javascript" src="../../../pagead2.googlesyndication.com/pagead/f.txt"> 
+</script></p>
+<table>
+<tbody>
+<tr style="height: 195px;">
+<td style="width: 592px; height: 195px; background-color: #f0e195;">
+<h1 style="text-align: center;">Informatics U4O1</h1>
+<p style="text-align: center;">Remember &#8211; this is part 2 of the SAT that began in U3O2.</p>
+<p>Design, develop and evaluate a multimodal online solution that confirms or refutes a hypothesis, and assess the effectiveness of the project plan in managing progress.</td>
+</tr>
+<tr style="height: 283px;">
+<td style="width: 592px; height: 283px;">
+<hr /><strong><a id="U4O1"></a> ITI U4O1 KK01 &#8211; characteristics of information for educating world &#8211; wide audiences, including </strong></p>
+<ul>
+<li><strong>gender inclusiveness</strong></li>
+<li><strong>culture inclusiveness,</strong></li>
+<li><strong>commonality of language,</strong></li>
+<li><strong>age appropriateness</strong></li>
+</ul>
+<h6><strong>Gender inclusiveness</strong></h6>
+<p>&#8220;In 2013, the Sex Discrimination Act 1984 was amended to introduce new protections from discrimination on the grounds of sexual orientation, gender identity and intersex status in many areas of public life.&#8221;</p>
+<p>Sex &#8211;  &#8220;refers to the chromosomal, gonadal and anatomical characteristics associated with biological sex. &#8220;(i.e. the hardware one is born with).</p>
+<p>Gender &#8211; &#8220;is part of a person’s personal and social identity.  It refers to the way a person feels, presents and is recognised within the community.  A person’s gender may be reflected in outward social markers, including their name, outward appearance, mannerisms and dress.&#8221;</p>
+<p>Intersex &#8211; &#8220;refers to people who are born with genetic, hormonal or physical sex characteristics that are not typically ‘male’ or ‘female’. Intersex people have a diversity of bodies and gender identities, and may identify as male or female or neither.&#8221; </p>
+<p>The moral of this key knowledge is &#8211; don&#8217;t assume. Don&#8217;t exclude people because of their sex or gender. Be fair.</p>
+<h5><strong>Culture inclusiveness</strong></h5>
+<p>A culture is a defining characteristic of a group of people based on their shared beliefs, history, attitudes, religious or political beliefs, preferences, habits, loves and hates,  priorities, goals, etc.</p>
+<p>An individual may belong to many cultures. When writing for a global audience, try to be consciously aware that many or most readers will belong to cultures that may be slightly or completely differently to yours.</p>
+<p>Don&#8217;t refer to politics, sex, religion &#8211; or football. </p>
+<h5>Commonality of language</h5>
+<p>We often use expressions and vocabulary that are bound to our cultures, but these may not be understood by some, many or all other people. Try to use generic, standard, simple English using a smaller vocabulary.</p>
+<h5><strong>Age appropriateness</strong></h5>
+<p> Obviously children have different needs when it comes to information. Their vocabularies may not be as well developed. They might not understand certain concepts, such as death or menopause. Some topics may scare them, like traumatic accidents or domestic violence. They might prefer text to be illustrated. Text may need to be larger to suit their younger eyes. Swearing is not appropriate.</p>
+<p>Then again, older people have different needs. They might not be as technologically up-to-date so new terms may need to be defined or explained. They may know a lot more about things than you and be impatient with your vain self-importance and foolish time-wasting. </p>
+<p>For more details, get the slideshow&#8230;</p>
+<p><a href="../../ppt2016/inclusiveness.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Inclusiveness &#8211; gender, culture, language, age</a></td>
+</tr>
+<tr style="height: 114px;">
+<td style="width: 592px; height: 114px;"><strong>ITI U4O1 KK02 &#8211; techniques for generating design ideas</strong></p>
+<p>No one technique is directly examinable, but typical and common techniques include:</p>
+<ul>
+<li>brainstorming (but its effectiveness is in doubt &#8211; <a href="../the-myth-of-brainstorming/index.html">see this research</a>)</li>
+<li>mind maps </li>
+<li>various diagrams like PMI (Plus/Minus/Interesting), POOCH, Venn, Fishbone</li>
+<li>SCAMPER (see the <a href="../../ppt2016/design-ideas.pptx">slideshow</a>)</li>
+<li>forums </li>
+<li>external consultants </li>
+</ul>
+<p><a href="../../ppt2016/design-ideas.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Techniques for generating design ideas</a></td>
+</tr>
+<tr style="height: 114px;">
+<td style="width: 592px; height: 114px;"><strong>ITI U4O1 KK03 &#8211; criteria for evaluating alternative design ideas and the effectiveness of solutions</strong></p>
+<p>&nbsp;</p>
+<p>You need to develop two or three design ideas for your MMOS before choosing one which will be designed in detail and then developed.</p>
+<p>What factors will you use to choose the winning idea?<br />
+Those factors are the &#8216;criteria&#8217; in the key knowledge.</p>
+<p>Typical criteria for evaluating design ideas may be:</p>
+<ul>
+<li>How quickly or easily can this idea be developed into a working design and solution?</li>
+<li>How much will it cost?</li>
+<li>Do I have the skills necessary or will I have to re-train to be able to implement it?</li>
+<li>How well will it satisfy the necessary functional and non-functional requirements?</li>
+<li>Will it be secure/accurate/easy to use/attractive/robust etc?</li>
+</ul>
+<p>Typical criteria for evaluating the effectiveness of solutions may be (Note the word &#8220;effectiveness&#8221;. It does not include efficiency!):</p>
+<ul>
+<li>Accuracy</li>
+<li>Usability / ease of use (which was an efficiency criterion in the previous study design)</li>
+<li>Security</li>
+<li>Readability</li>
+<li>Portability (if relevant)</li>
+<li>Compatibility (with other technologies, or ability to read documents created by previous versions of itself)</li>
+<li>Robustness (ability to keep working under with difficult conditions)</li>
+<li>Timeliness (in the sense of &#8220;being available when needed&#8221; rather than the speed of development or processing)</li>
+<li>Scalability (ability to be increased in size or performance without a major redesign, rebuild, or replacement)</li>
+<li>Attractiveness</li>
+<li>Being fun to use</li>
+</ul>
+<p>The &#8216;effectiveness&#8217; criteria list can go on endlessly.<br />
+It just means &#8220;any criterion that is not efficiency&#8221; (time/speed, money/cost, or labour/effort)</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/evaluation-criteria.pptx">Evaluation criteria</a> </p>
+</td>
+</tr>
+<tr style="height: 114px;">
+<td style="width: 592px; height: 114px;">I<strong>TI U4O1 KK04 &#8211; characteristics of effective multimodal online solutions</strong></p>
+<p>Again, the key word in the KK is effective, meaning the quality of the MMOS or how well it does its job.</p>
+<p>According to the specific criteria in the study design, the MMOS must</p>
+<ol>
+<li>Educate its audience (rather than entertain, inform or persuade). It must teach them something.</li>
+<li>Be suitable for a global audience and suitable for all countries, cultures, sexes/genders, ages, education levels, disabilities/special needs, etc.</li>
+<li>Be able to go online. Remember that your MMOS does not actually have to be put online for assessment, but it should theoretically be able to go online. So no &#8211; you can&#8217;t create a MMOS in MS Word.</li>
+</ol>
+<p>The other main effectiveness criteria for a MMOS would have to be (in no particular order &#8211; as an exercise you might want to sort these in order of importance):</p>
+<ul>
+<li>communication of its message</li>
+<li>readability</li>
+<li>clarity</li>
+<li>accessibility (for people with disabilities or special needs, such as weaker language skills)</li>
+<li>ease of navigation</li>
+<li>completeness</li>
+<li>accuracy of information</li>
+<li>usability / ease of use</li>
+<li>error tolerance  &#8211; Let users recover from errors without punishing them. Use &#8220;cancel&#8221; or &#8220;back&#8221; buttons to let them repent of their sins and return to the strait and narrow path of righteous use of your interface. Ask for confirmation before committing users to serious actions such as deleting data, printing hundreds of pages, spending money.</li>
+<li>affordance (i.e. &#8220;intuitiveness&#8221; rather than &#8220;cost&#8221; which would be an efficiency criterion).
+<ul>
+<li><em>Affordance</em> is not an easy concept to absorb at first. It refers to the quality of an interface suggesting how it should be used. It includes qualities such as:
+<ul>
+<li>following conventions regarding images and interactions between the user and the solution. As extreme examples, don&#8217;t reverse the behaviour of mouse buttons or put menus into a &#8220;new and improved&#8221; order you invented yourself. </li>
+<li>using clear, simple, self-explaining words and captions, such as &#8220;Click here for details&#8221;, or &#8220;Help&#8221; (rather than &#8220;User Assistance Centre&#8221;)</li>
+<li>consistency, so that once the user has learnt the conventions of one page, they can also be understood throughout the whole solution. Even better, if the conventions don&#8217;t need to be learned at all because they comply with global standards (e.g. File menu is on the left, underlining indicates hyperlinks), then users can immediately start absorbing the message rather than struggling with the interface.</li>
+<li>intuitiveness. It&#8217;s obvious that a button or scrollbar with a 3D effect (for example, shadows and highlights) needs to be clicked or dragged; dropping an object onto a trash icon will delete it; an icon of a chain will create a link. Use standard metaphors that people can understand without having to learn or think. (Tip: many people hate having to learn or think. Sad, but true.)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt- icon" width="25" height="25" /> Still to come</td>
+</tr>
+<tr style="height: 306px;">
+<td style="width: 592px; height: 306px;"><strong>ITI U4O1 KK05 &#8211; formats and conventions appropriate to multimodal online solutions</strong></p>
+<p>&nbsp;</p>
+<p>Format: the manner in which information is presented, e.g. the same statistical data could be presented in the format of a table, a chart, or descriptive text.</p>
+<p>Convention:  the standard, accepted styles associated with a format. For example, if you choose the format of a table, you are subject to following the conventions of a table, such as gridlines, bold headings, left-justified text, numbers being right-justified or centred on the decimal place.) Webpages conventions include the underlining of links, and the use of thumbnailed images linked to big pictures. Conventions give users comfort and security by presenting information and controls in a traditional, predictable and comfortable manner.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/Formats%2bConventions-Web.pptx">Formats and conventions</a></td>
+</tr>
+<tr style="height: 246px;">
+<td style="width: 592px; height: 246px;">
+<p><strong>ITI U4O1 KK06 &#8211; design principles that influence the functionality and appearance of multimodal online solutions</strong></p>
+<p><img class="alignnone size-full wp-image- 966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/design-principles.pptx">Design Principles</a></p>
+<p>The study design says in the glossary that: &#8220;Design principles are accepted characteristics that contribute to the functionality and appearance of solutions. In this study the principles related to functionality are useability, including robustness, flexibility and ease of use, and accessibility, including navigation and error tolerance. Design principles related to appearance are alignment, repetition, contrast, space and balance. &#8220;</p>
+</td>
+</tr>
+<tr style="height: 142px;">
+<td style="width: 592px; height: 142px;"><strong>ITI U4O1 KK07 &#8211; design tools for representing a solution’s appearance and functionality, including relationships, where appropriate</strong></p>
+<p>This could take weeks. We&#8217;re talking about two major components: design of (1) appearance and (2) functionality.</p>
+<h5>Designing the appearance of a solution</h5>
+<ul>
+<li>page or screen mock-ups (the most obvious choice) &#8211; detailed sketches of the appearance of a page or screen, including sizes, colours, positions, alignment, spacing of objects.</li>
+<li>layout diagrams (the term used by VCAA, which the Rest Of The World would call &#8220;Layouts&#8221;). A simple diagram of a page with boxes to show the component parts.</li>
+</ul>
+<h5>Designing the functionality of a solution</h5>
+<p>Be sure to know the ones that are in bold.</p>
+<ul>
+<li>site maps or storyboards (for web pages, animations)</li>
+<li>hierarchy charts &#8211; describing the parts and sub-parts of a complex organisation. A site map is really just a type of hierarchy chart.</li>
+<li>user flow diagram (UFD) (mandated, but no particular style is mandated by VCAA. I&#8217;d use a flowchart if I were you)</li>
+<li>input/processing/output chart (IPO)  &#8211; for designing formulas for spreadsheets, databases, software in <a href="../software-development/index.html">SD</a>.</li>
+<li>Data structure tables</li>
+<li>Data dictionary (for databases)</li>
+</ul>
+<h5>Designing relationships</h5>
+<p>This is a mandated type of functionality design. You need to know entity relationship diagrams (ERDs). VCAA&#8217;s interpretation of ERDs has changed since the previous study design. They now accept Chen style (the one with diamonds) that also has cardinality (1:many markers). They also accept Crow&#8217;s Feet Notation &#8211; the style with boxes (tables) containing fields with lines between the tables indicating relationships and cardinality. Both styles are acceptable, so you may be examined on either style: learn them both. </p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /><a href="../../ppt2016/Design-Tools-ERD.pptx" rel="">Entity Relationships Diagram (ERD) </a> (updated version for 2016 with Chen, Crow&#8217;s feet and cardinality)</p>
+</td>
+</tr>
+<tr style="height: 114px;">
+<td style="width: 592px; height: 114px;"><strong>ITI U4O1 KK08 &#8211; functions, techniques and procedures for efficiently and effectively manipulating data using software tools</strong></p>
+<p>This is another one of those KK that could have hundreds of textbooks written about it.</p>
+<p>I guess some relevant topics might be:</p>
+<ul>
+<li><strong>functions</strong>: total, average, standard deviation, correlation, maximum, minimum, lookup, calculating percentages, simple arithmetic, converting text to uppercase, searching for substrings in text.</li>
+<li><strong>techniques</strong>: sorting, searching, selecting, querying, filtering, converting data formats (e.g. MP4 to MKV, text to numbers), spreadsheet pivot tables, parsing (breaking data into subsets, for example converting &#8220;3 Nov 1998&#8221; to a day, month and year), editing text fields (e.g. stripping leading/trailing spaces), find/replace text</li>
+<li><strong>procedures*</strong> &#8211; data aggregation (combining data from different sources or fields into one dataset or new field); saving data; eliminating  duplicate or invalid data; converting data to a visual form (e.g. a graph).</li>
+</ul>
+<p>*Remember, a <strong>procedure</strong> is a <em>series of steps</em> that accomplish a goal, e.g. backing up data. It is not a single action.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</td>
+</tr>
+<tr style="height: 114px;">
+<td style="width: 592px; height: 114px;"><strong>ITI U4O1 KK09 &#8211; manual and electronic validation techniques</strong></p>
+<p>Remember &#8211; validation checks the reasonableness of inputs (in terms of existence, data type and range).</p>
+<p>It does NOT verify the accuracy of the input data.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/validation.pptx">Validation</a> </td>
+</tr>
+<tr style="height: 114px;">
+<td style="width: 592px; height: 114px;"><strong>ITI U4O1 KK 10 &#8211; functions, techniques and procedures for managing files</strong></p>
+<p>This could include topics such as:</p>
+<ul>
+<li>file naming schemes and conventions &#8211; Hungarian notation, camelcase, special rules for online filenames</li>
+<li>transmitting files &#8211; LANs, internet, FTP, email, cloud</li>
+<li>sharing files &#8211; NAS, cloud, collaborative simultaneous editing in real time</li>
+<li>file managers</li>
+<li>version control &#8211; to prevent confusion between different versions of documents, allow rolling back to previous versions</li>
+<li>encryption &#8211; during storage and transmission</li>
+<li>access hierarchy &#8211; not everyone has equal access to files</li>
+<li>backups &#8211; regular, stored offsite, tested</li>
+<li>directory/folder/disk structures</li>
+</ul>
+<p>See the slideshows for details&#8230;</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/File-Management.pptx">File Management</a></p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/FileNaming.pptx">File Naming</a></p>
+</td>
+</tr>
+<tr style="height: 110px;">
+<td style="width: 592px; height: 110px;">
+<p><strong>ITI U4O1 KK 11 &#8211; techniques for testing that solutions do what is intended</strong></p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/testing.pptx">Testing</a></p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/User-Acceptance-Testing-UAT.pptx">User Acceptance Testing</a></p>
+</td>
+</tr>
+<tr style="height: 230px;">
+<td style="width: 592px; height: 230px;"><strong>ITI U4O1 KK 12 &#8211; techniques for documenting the progress of projects, including</strong></p>
+<ul>
+<li><strong>annotations,</strong></li>
+<li><strong>logs and</strong></li>
+<li><strong>adjustments to tasks and timeframes</strong></li>
+</ul>
+<p>Gantt charts are often complete and accurate when they are first created, but the real-world rarely lets a project stay on track for long. There are delays, problems, supply issues, breakdowns, illnesses and bad weather that can quickly render even the best Gantt chart a vain dream.</p>
+<p>Project plans need to change, develop and reflect the true current state of the project. There is no shame in updating a Gantt chart, but there is foolishness to pretending that everything is on track when it is certainly <em>not</em>.</p>
+<p>Gantt charts can be <strong>annotated</strong> to explain changes and forecasts to other team members, since a chart is rarely used by only one person in a project. Consider it more like a a staff bulletin informing departments and stakeholders what is happening. For example, a note might be added to explain why the last task ran overtime, and the effects it might have. Another note might warn people that if the weather on Tuesday is bad, task X will have to be postponed until Wednesday, so you should advice your staff to be prepared to start task Y instead. </p>
+<p><strong>Logs</strong> are a history of past events. In a project, they may be useful to explain to management why project plans were changed.</p>
+<p><strong>Adjustments to tasks and timeframes</strong> may include reducing the scope of a task to allow it to be completed <em>enough</em> to allow a predecessor to begin on time instead of being delayed.  For example, a corridor may be painted but its wall hangings may not have been hung. The decorations could be made to wait if they were going to delay a more important task that was theoretically dependent on the entire corridor being finished (e.g. laying the carpet).</p>
+<p>Timeframes can be also be modified by rearranging resources, such as moving people from one task to another to get a late-running task finished on time. New or reallocated resources may also accelerate a delayed task, such as using more automation (hiring a cement mixer rather than using shovels, as planned) or taking needed equipment planned for a later task (e.g. paint) and using it to finish a current task.</p>
+<p>Project managers need to be able to adapt to changed circumstances and make the most of what is available, and use their project plan to coordinate many current and upcoming tasks.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</td>
+</tr>
+<tr style="height: 114px;">
+<td style="width: 592px; height: 114px;">
+<p><strong>ITI U4O1 KK 13 &#8211; strategies for </strong></p>
+<ul>
+<li><strong>evaluating the effectiveness of solutions and </strong></li>
+<li><strong>assessing project plans.</strong></li>
+</ul>
+<p><strong>Evaluation</strong> is not the same as <em>testing</em>. Testing proves that a solution works properly: it generates accurate information; if you click a link, the right destination appears.<br />
+<em>Evaluation</em> checks whether the finished and tested solution is achieving the goals for which it was originally created. My usual example is a company that wants to increase profit (an organisational goal) by creating a new or improved website (a system). If the website was had many visitors and had no errors, it means its <em>testing</em> had been successful, but unless it increases profit, it will fail its <em>evaluation</em> since profit was its sole purpose for being created.</p>
+<p><em>Evaluation techniques</em> also differ from those used during testing. Evaluation does not aim to repeat testing (e.g. take out a stopwatch and time how long it takes to produce 10,000 invoices, pulling out a power lead and seeing if the system can recover from an unexpected shutdown). Evaluation often relies on inspecting performance <em>over time, </em>such: as the total amount of output produced since the system was installed 3 months ago; the number of customer complains recorded about inaccurate billing. Evaluation often relies on studying performance <em>over time &#8211; </em>it does not record the system&#8217;s reaction to immediate events &#8211; that was the job of <em>testing</em>. </p>
+<p>Note &#8211; if a system is producing inaccurate output or is failing to work properly, that is a sign that <em>testing</em> failed, and that the system should never have been implemented and put into daily service.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/PSM4-Evaluation.pptx">Evaluation </a>(PSM stage 4)</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/evaluation-criteria.pptx">Evaluation criteria</a> (tangentially-related to this KK)</p>
+</td>
+</tr>
+<tr style="height: 143px;">
+<td style="width: 592px; height: 143px; background-color: #f0e195;">
+<h1 style="text-align: center;">Informatics U4O2</h1>
+<p>Compare and contrast the effectiveness of information management strategies used by two organisations to manage the storage and disposal of data and information, and recommend improvements to their current practices.</td>
+</tr>
+</tbody>
+</table>
+<p><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> <script type="text/javascript" src="../../../pagead2.googlesyndication.com/pagead/f.txt"> 
+</script></p>
+<table>
+<tbody>
+<tr style="height: 167px;">
+<td style="width: 592px; height: 167px;">
+<hr /><a id="U4O2"></a><strong> ITI U402 KK01 &#8211; reasons why data and information are important to organisations, including meeting the goals and objectives of both organisations and information systems</strong></p>
+<p>&nbsp;</p>
+<p><strong>Systems</strong> &#8211; a combination of hardware, software, procedures, people and data that carry out a specific task within a department in an organisation, for example communications, decision making, financial management, customer service.</p>
+<p><strong>Organisations</strong> &#8211; the complete collection of departments and people within a commercial or not-for-profit entity.</p>
+<p><strong>Goals</strong> &#8211; long-term, fuzzily-defined things to be achieved by an entire organisation or system, e.g. &#8220;good customer service&#8221; for an org, &#8220;accuracy&#8221; for a payroll system. An organisation&#8217;s goals (e.g. in its mission statement) often defines the nature of the organisation and what it strives to achieve over time in everything it does in all its departments.</p>
+<p><strong>Objectives</strong> &#8211; specific, measurable, achievable targets that aim to achieve a larger goal, e.g. &#8220;respond to all customer enquiries within 24 hours&#8221;  is an objective that is step towards achieving the goal of achieving good customer service. <br />
+&#8220;No more than 0.1% errors in invoices&#8221; is a measurable objective aiming for the accuracy goal in the payroll system. Objectives can be <em>proven</em> to have been achieved or not using data rather than opinions.</p>
+<p>Tip: objectives usually have <em>numerical</em> targets or limits in them, such as percentages, dollar values, time limits. <br />
+Goals are big, vague and undefined. Goals are organisational  <em>aspirations </em>that are hoped for, but may never be fully realised.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/goals-objectives.pptx">Goals and objectives  of organisations and systems</a></td>
+</tr>
+<tr style="height: 230px;">
+<td style="width: 592px; height: 230px;"><strong>ITI U402 KK02 &#8211; reasons why information management strategies are important to organisations, including</strong></p>
+<ul>
+<li><strong>maximising opportunities,</strong></li>
+<li><strong>minimising risks and</strong></li>
+<li><strong>fulfilling legal requirements</strong></li>
+</ul>
+<p>This is another of the vague and vanilla-flavoured KK that make everyone suddenly very sleepy.<br />
+I think the &#8220;including&#8221; dotpoints explain themselves well enough. If not, <a href="../contact-me-at-vceit-com-2/index.html">let me know</a>.</p>
+<p>Remember in Informatics &#8220;legal requirements&#8221; does <em>not</em> include the Spam Act.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</td>
+</tr>
+<tr style="height: 466px;">
+<td style="width: 592px; height: 466px;"><strong>ITI U402 KK03 &#8211; key legislation that affects how organisations control the storage and disposal of their data and information:</strong></p>
+<ul>
+<li><strong>the Privacy Act 1988,</strong></li>
+<li><strong>the Privacy and Data Protection Act 2014, and</strong></li>
+<li><strong>the Health Records Act 2001</strong></li>
+</ul>
+<p><a href="../../ppt2016/Legislation-Privacy.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Privacy Act 1988 (plus amendments)</a></p>
+<p><strong>The Privacy and Data Protection Act 2014 </strong>controls how Victorian state government bodies (e.g. parliament, schools, police) and their agents (bodies hired to work with a government body) use citizens&#8217; data. It <em>does not apply</em> to private companies or individuals.</p>
+<p>The <strong>Health Records Act</strong> affects all Victorian organisations &#8211; private or government, large or small &#8211; that hold any health information on individuals. It basically repeats the requirements of the federal Privacy Act relating to health information.</p>
+<p>This act affects doctors, nurses, psychiatrists, sports trainers, masseurs, hospitals, old people&#8217;s homes, psychiatrists, psychologists, health insurance companies, etc.</p>
+<p>Data may include health histories, medications and prescriptions, diagnoses, mental health records, lab results, x-rays  etc.</p>
+</td>
+</tr>
+<tr style="height: 114px;">
+<td style="width: 592px; height: 114px;"><strong>ITI U402 KK04 &#8211; ethical dilemmas arising from information management practices</strong></p>
+<p>Also see the next KK.</p>
+<p>Examples:</p>
+<ul>
+<li>A media distributor (e.g. Netflix, BBC) restricts access to their media to specific countries. Is it immoral for people in other countries &#8211; who would pay for the media, if they could &#8211; to use a VPN to gain access to the material?</li>
+<li>A network manager discovers illegal activity by the owner of her company. Her employment contract has strict &#8220;non-disclosure&#8221; conditions that forbid her to tell anyone of her discover. What should she do?</li>
+<li>A person discovers a website promoting illegal or immoral activities. The person knows of several easy ways to take the site down, such as raining down a DDOS attack upon it, or imploding the site with a well-placed zero-day exploit. Should the person attack the site?</li>
+<li>Anu has been looking for a good domain name. He thought up a good name, but it turned out to be registered by MrX in Belgium. Anu emailed MrX, asking whether the domain name might be for sale. MrX said it might be, but the price quoted was far too high for Anu. Nevertheless, MrX and Anu struck up a friendship and corresponded and collaborated for a couple of years on various projects they had in common. In one email, MrX mentions that he needs to renew his domain name really soon because it has just expired. Anu could register the domain name. What is Anu&#8217;s dilemma?</li>
+<li>Sue works in IT. Her employer is notoriously greedy, and often expects staff to work beyond their normal work hours and on weekends, saying &#8220;Well, if you&#8217;re not willing to do some extra unpaid work, there are a lot of other people who would be happy to take your job.&#8221;  Sue suffers in silence because she needs the money. One day, she discovers a bug in the company&#8217;s accounting software that would let her give herself secret bonuses and pay rises that would never be discovered. She could reimburse herself for the hundreds of hours of unpaid work she has been forced to give her employer. What should she do?</li>
+<li>Naz works for a company whose terms of employment forbid the use of company computers for entertainment, time-wasting behaviour, or seeking alternative employment. Naz&#8217;s pay is so low that he cannot afford an internet connection at home. He learns of a good job at another company, but he would have to use his work computer to apply for the job. What is Naz&#8217;s dilemma, and what should he do?</li>
+<li>Arnold&#8217;s company forbids the use of the LAN for non-work purposes. One day, Arnold has a brilliant idea and finishes a project several hours early. He has nothing to do for the rest of the day. He thinks he might bend the rules, since he&#8217;s been so clever and productive, and play an online game. Is he being unethical?</li>
+</ul>
+<p>Do you have other <a href="../contact-me-at-vceit-com-2/index.html">suggestions</a> of ethical dilemmas in IT?</p>
+</td>
+</tr>
+<tr style="height: 142px;">
+<td style="width: 592px; height: 142px;"><strong>ITI U402 KK05 &#8211; strategies for resolving legal and ethical tensions between stakeholders arising from information management practices</strong></p>
+<p>&nbsp;</p>
+<p>Just remember &#8211; if you are asked about an ethical dilemma, don&#8217;t try to convert it to a <em>legal</em> or <em>rule-based</em> issue to make life easier for yourself.</p>
+<p><em>The whole point of ethical dilemmas is that they cannot be easily solved with a magic wand, such as a rule or law.</em></p>
+<p>Ethical dilemmas are difficult because <strong>every possible reaction to them is bad for someone</strong>. They are lose/lose situations. You&#8217;re damned if you do, and damned if you don&#8217;t.</p>
+<p><em>None of the following strategies is examinable!</em></p>
+<ul>
+<li>It&#8217;s easier to prevent ethical dilemmas than it is to resolve them, by advertising and enforcing <em>codes of conduct</em> to define proper, expected behaviours.</li>
+<li><em>Decision support frameworks</em>  are useful to advise decision-makers how to respond to specific dilemmas (similar to judges using precedents in common law to guide their verdicts and sentencing). It reduces stress in decision makers, and leads to a fair and consistent treatment of similar offenders.</li>
+<li><em>Education</em> &#8211; to tell people what behaviour is expected and what is punishable. If no-one knows what they should do, it&#8217;s hard to blame them when they do it wrong.</li>
+<li><em>Sanctions</em> &#8211; to punish villains and ne&#8217;er -do-wells who deliberately and knowingly scoff at your authority. It also sets an example for other potential miscreants when they see you are serious about enforcing your standards.</li>
+</ul>
+<p><a href="../../ppt2016/Managing-Ethical-Dilemmas.pptx"><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> </a><a href="../../ppt2016/Managing-Ethical-Dilemmas.pptx">Managing Ethical Dilemmas</a></td>
+</tr>
+<tr style="height: 230px;">
+<td style="width: 592px; height: 230px;"><strong>ITI U402 KK06 &#8211; reasons for preparing disaster recovery plans, and their scope, including</strong></p>
+<ul>
+<li><strong>evacuation,</strong></li>
+<li><strong>backing up,</strong></li>
+<li><strong>restoration and test plans</strong></li>
+</ul>
+<p>A DRP identifies steps to be performed in case:</p>
+<ul>
+<li>the company loses a key employee</li>
+<li>the company is not able to access its computer</li>
+<li>information on its computer or network was lost</li>
+<li>the office building was destroyed</li>
+<li>information has been corrupted</li>
+</ul>
+<p>&#8230;to name but a few contingencies.</p>
+<p>What sorts of disaster might strike your valuable data?</p>
+<p>According to a White Paper from IBM, the leading causes of data loss are:</p>
+<ul>
+<li>Hardware or System Malfunction 44%</li>
+<li>Human Error 32%</li>
+<li>Software Malfunction 14%</li>
+<li>Viruses 7%</li>
+<li>Natural Disasters 3%</li>
+</ul>
+<p>And as time goes by, the dangers increase because:</p>
+<ul>
+<li>businesses are becoming more and more reliant on IT to stay in business</li>
+<li>paper records are often not kept &#8211; all data is stored electronically</li>
+<li>businesses rely on electronic communications</li>
+<li>IT systems are becoming increasingly complex and hard for the average person to maintain</li>
+<li>viruses and hacking &#8216;exploits&#8217; are becoming more common and more destructive</li>
+<li>more and more employees are being given access to corporate data, increasing the chance of damage or loss</li>
+<li>few corporations know the true value their data until they lose it</li>
+<li>more and more corporations are linking their computer systems to communication systems, such as LANs, WANs and the Internet, thereby increasing the vulnerability of their data to external attack.</li>
+<li>the more a computer is used, the more it is relied upon. At the same time, increased use increases the likelihood of system failure.</li>
+</ul>
+<p>So, just how disastrous can data loss be?</p>
+<p>IBM reported that, &#8220;Fifty percent of companies that lose critical business systems for 10 or more days never recover.&#8221;</p>
+<p>For most companies today, data is their business. If that data is lost or corrupted, or merely interrupted for a long enough period, the blow to the company can be fatal. Studies show truly disastrous results for businesses that lose access to data.</p>
+<p>When businesses in the following fields lost access to their data for the given time periods, 25% suffered immediate bankruptcy; 40% went bankrupt within two years; and almost all were bankrupt after five years.</p>
+<p>And how much does it cost to recover data? MASSIVE AMOUNTS &#8211; at least $1000 per megabyte. Data must be manually found or re-created, re-entered, validated, tested, updated. And remember that there are not many paper records nowadays &#8211; most data may <em>never</em> be recoverable. It takes a lot of labour and time &#8211; and normal profitable business is probably impossible to conduct until the data is restored.</p>
+<p><strong>Building a DRP</strong></p>
+<ul>
+<li>Predefine the conditions that may cause your recovery plan to go into effect: some threats are common to any system; others may be peculiar to a single organisation or location (e.g. in Australia, a bushfire plan would be critical. In Kansas, a tornado plan is important.)</li>
+<li>Identify decision makers and their roles before, during and after an outage emergency</li>
+<li>Inventory the resources required to bring your IT systems back online</li>
+<li>Identify assumptions on backup technique, frequency and location for data vintage and retrieval</li>
+<li>Prioritize and sequence the restoration actions defined in your recovery plan into a detailed timeline and checklist</li>
+<li>Predefine an operation center to coordinate status, issues and assignments</li>
+<li>Develop communication strategies for keeping your employees and customers informed</li>
+<li>Organise your recovery plan into a flexible, easily maintained tool</li>
+<li>Validate your recovery plan by conducting simulations based on real-life outage emergency declarations</li>
+</ul>
+<p>Let&#8217;s imagine there is a fire at your office&#8230; You should ring the office manager, but you don&#8217;t have her home phone number. You need to ring the insurance company immediately to get the destroyed equipment replaced, but you can&#8217;t remember what company insures you or where the policy is (oh&#8230; dear. You remember: the policy was in the filing cabinet your burnt out office.) You need to rent emergency equipment to get back into business&#8230; but you can&#8217;t remember the phone number of that company either. You need to get your backup tapes to restore the file server&#8217;s data&#8230; oh no&#8230;the backup tapes were in the filing cabinet with the insurance policy. At least you can get a copy of your recovery plan and&#8230; oh dear. The only copy of the plan was stored on the file server. You really are up the proverbial brown creek&#8230;</p>
+<p>What do you do to avoid this cruise down a smelly waterway?</p>
+<p>You print out your draft disaster recovery plan and read it. You discover it&#8217;s out of date and does not cover many of the problems you faced in your nightmare. You get a team together from management, IT staff and office staff and update and complete the plan.</p>
+<p><strong>What should a good DRP achieve?</strong></p>
+<ul>
+<li>Provide for the safety and well-being of people on the premises at the time of a disaster;</li>
+<li>Continue critical business operations;</li>
+<li>Minimize the duration of a serious disruption to operations and resources (both information processing and other resources);</li>
+<li>Minimize immediate damage and losses;</li>
+<li>Establish management succession and emergency powers;</li>
+<li>Facilitate effective co-ordination of recovery tasks;</li>
+<li>Reduce the complexity of the recovery effort;</li>
+<li>Identify critical lines of business and supporting function</li>
+</ul>
+<p><strong>Testing the DRP</strong></p>
+<p>Unless you test your DRP, you will never sleep soundly. What if the plan fails when it&#8217;s most needed? Make sure it doesn&#8217;t. Test it.</p>
+<ul>
+<li>get a computer from somewhere and try to install all the software and hardware needed to do its job</li>
+<li>perform sample data restores using test data</li>
+<li>run fire drills</li>
+<li>ring the key emergency phone numbers to make sure they&#8217;re still accurate</li>
+<li>check the list of responsibilities staff have in case of emergency: are they still employed or even alive?</li>
+<li>do staff know what their responsibilities are? Quiz them.</li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come &#8211; or not.</td>
+</tr>
+<tr style="height: 114px;">
+<td style="width: 592px; height: 114px;"><strong>ITI U402 KK07 &#8211; possible consequences for organisations that fail to follow or violate security measures</strong></p>
+<ul>
+<li>loss of trade secrets</li>
+<li>potential violation of the Privacy Act, Health Records Act etc  if personal information is damaged or released</li>
+<li>loss of reputation as a trustworthy organisation</li>
+<li>loss of income after catastrophic data loss destroys your ability to get paid by customers or conduct business</li>
+<li>prosecution by the tax office if tax records are lost</li>
+<li>inability to pay wages</li>
+<li>corporate death</li>
+</ul>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come. Maybe. Probably not, though.</td>
+</tr>
+<tr style="height: 110px;">
+<td style="width: 592px; height: 110px;">
+<p><strong>ITI U402 KK08 &#8211; criteria for evaluating the effectiveness of information management strategies</strong></p>
+<p>Note two key words &#8211; &#8220;evaluating&#8221; and &#8220;effectiveness&#8221;. <br />
+The words are not vaguely similar to &#8220;testing&#8221; and &#8220;efficiency&#8221;.</p>
+<p>Evaluating is done after testing and development and implementation of a solution. The product has already been proved to be working properly during the testing phase. Evaluation is NOT A SECOND TESTING STAGE!</p>
+<p>Evaluation determines if/how well a solution is achieving the goals for which it was originally created. It does NOT determine whether it produces correct output or behaves properly. A website created to increase profit may work 100% accurately but still not create any extra profit: its testing says it&#8217;s perfect (no errors!) but its evaluation shows it&#8217;s a failure (no profit!).</p>
+<p>Evaluation occurs after a solution&#8217;s rollout to its users. It may begin some months after users start using it for real. The delay is to give users time to become familiar with the solution so they can judge it knowledgeably.</p>
+<p>Evaluation criteria are the topics you use to judge a solution&#8217;s level of success or failure. Each solution will have different criteria, based on what it vital for it to achieve.</p>
+<ul>
+<li>A game &#8211; must be fun and playable.</li>
+<li>An encryption utility &#8211; must be hard to decode by unauthorised people.</li>
+<li>A website &#8211; must convey its message clearly and accurately.</li>
+</ul>
+<p>Effectiveness criteria &#8211; You only need to remember that EFFICIENCY criteria comprise measurable TIME (SPEED), COST, LABOUR (EFFORT). Every other criterion is effectiveness. (There. Easy! Aren&#8217;t you glad you came to vceit.com?) Effectiveness criteria are often opinion-based and endless, and relate to how well a solution does its job in terms of: accuracy, readability, ease of use, security, robustness, attractiveness, fun, portability, etc.</p>
+<p>Evaluation criteria are determined during the design stage of the PSM. These are used during evaluation to determine if the project has been successful or not. Lessons may be learned to improve the next project.</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> Still to come</p>
+</td>
+</tr>
+<tr style="height: 114px;">
+<td style="width: 592px; height: 114px;">
+<p><strong>ITI U402 KK09 &#8211; role of people, processes and digital systems in the management of data and information</strong></p>
+<p>This KK dotpoint could launch a dozen textbooks.<br />
+But fortunately for me it&#8217;s really boring and I couldn&#8217;t be much bothered with it.</p>
+<p><strong>Roles</strong> of people:</p>
+<ul>
+<li>data entry staff</li>
+<li>systems managers</li>
+<li>programmers, software architects, engineers</li>
+<li>project managers</li>
+<li>technical support staff</li>
+<li>network managers</li>
+<li>technical consultants</li>
+<li>web developers</li>
+<li>software testers</li>
+</ul>
+<p>Try <a href="https://targetpostgrad.com/subjects/computer-science-and-it/it-job-roles-and-responsibilities-explained">this site</a> for a few more details about ICT jobs and roles.</p>
+<p>Roles of <strong>processes</strong> &#8211; none of these is examinable, but I&#8217;m getting to sleepy to care.</p>
+<ul>
+<li>data acquisition &#8211; primary/secondary, qualitative/quantitative using appropriate methods</li>
+<li>input &#8211; putting the acquired data into the system</li>
+<li>validation &#8211; checking data reasonableness (existence, type, range) using manual or electronic means</li>
+<li>processing &#8211; converting raw data into meaningful information</li>
+<li>storage &#8211; including backups, archives </li>
+<li>retrieval</li>
+<li>output &#8211; to printers, monitors, speakers</li>
+<li>communication &#8211; usually to network nodes or users using TCP/IP, email, messaging etc</li>
+<li>disposal (the recycle bin is not secure!)</li>
+</ul>
+<p><strong>Digital systems</strong> &#8211; people, hardware, software and networks, communication protocols, intranets, internet, mobile communications, VPN, wired/wireless, operating systems, users, data, architectures (thin/thick client).</p>
+<p><strong>Roles of hardware:</strong></p>
+<ul>
+<li>DATA INPUT &#8211; Keyboards, touchscreens, barcode readers, flatbed scanners,  voice recognition, custom dials and buttons on machines.</li>
+<li>DATA PROCESSING &#8211; CPU, GPU</li>
+<li>DATA STORAGE &#8211; RAM (during processing), HDD, SSD, NAS, cloud (secondary storage)</li>
+<li>DATA COMMUNICATION &#8211; switches (within a LAN), routers (between networks), cables (CAT cable, fibre optic), wireless (Wifi, 3G/4G, microwave, Bluetooth, infrared), WAPs (wireless access points).</li>
+<li>DATA OUTPUT &#8211; printers (laser, inkjet, thermal), monitors (LCD, plasma), speakers (audio), LEDs,  haptic feedback (e.g. phone vibrations).</li>
+</ul>
+<p>There. Wasn&#8217;t that quick and easy?</p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/hardware.pptx">Hardware components of digital systems</a></p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/networks-hardware.pptx">Network hardware</a> (servers, NICs, modems, RAID, etc)</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr style="height: 142px;">
+<td style="width: 592px; height: 142px;">
+<p><strong>ITI U402 KK 10 &#8211; types and causes of accidental, deliberate and events-based threats to the integrity and security of data and information</strong></p>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/Threats.pptx" rel="">Threats to data</a></p>
+</td>
+</tr>
+<tr style="height: 142px;">
+<td style="width: 592px; height: 142px;">
+<p><strong>ITI U402 KK 11 &#8211; physical and software security controls for preventing unauthorised access to data and information and for minimising the loss of data accessed by authorised and unauthorised users</strong></p>
+<p>We&#8217;ve done this earlier in U3O1 KK04 &#8211; physical and software security controls used by organisations to protect their data.<br />
+<img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/Data-Security.pptx" rel="">Data Security</a></p>
+</td>
+</tr>
+<tr style="height: 142px;">
+<td style="width: 592px; height: 142px;">
+<p><strong>ITI U402 KK 12 &#8211; the advantages and disadvantages of using networks and cloud computing for storing and disposing of data and information.</strong></p>
+<p>Here are some suggestions. There are many other valid possibilities to consider.</p>
+<table style="width: 720px;">
+<tbody>
+<tr style="height: 26px;">
+<td style="border-color: #000000; width: 99.6222px; height: 26px; background-color: #b8b2b2;"> </td>
+<td style="border-color: #000000; width: 99.6222px; height: 26px; background-color: #b8b2b2;"><strong>Advantages</strong></td>
+<td style="border-color: #000000; width: 99.6222px; height: 26px; background-color: #b8b2b2;"><strong>Disadvantages</strong></td>
+</tr>
+<tr style="height: 26.6016px;">
+<td style="border-color: #000000; width: 99.6222px; height: 26px; background-color: #b8b2b2;"><strong>Networks</strong></td>
+<td style="border-color: #000000; width: 99.6222px; height: 26px; background-color: #b8b2b2;">
+<p>&#8211; Centralised storage can be accessed anywhere on the LAN &#8211; far better sharing for teams.<br />
+&#8211; Fast loading and saving &#8211; especially for huge media files and archives &#8211; compared with internet speeds.<br />
+&#8211; Easier to backup one central file store than dozens of separate workstations. <br />
+&#8211; Data can be deleted in one location instead of finding every copy spread over many workstations&#8217; hard disks.<br />
+&#8211; Data is fully in the control of its owner.</p>
+</td>
+<td style="border-color: #000000; width: 99.6222px; height: 26px; background-color: #b8b2b2;">&#8211; If the single copy of data on the central storage location is damaged or destroyed, the only copy might be lost.<br />
+&#8211; If the network goes down, no file access is possible.<br />
+&#8211; Expensive to set up, complex to maintain and upgrade.<br />
+&#8211; Backups are the data owner&#8217;s responsibility.</td>
+</tr>
+<tr style="height: 26px;">
+<td style="border-color: #000000; width: 99.6222px; height: 26px; background-color: #b8b2b2;"><strong>Cloud</strong></td>
+<td style="border-color: #000000; width: 99.6222px; height: 26px; background-color: #b8b2b2;">&#8211; All the advantages of networks, above.<br />
+&#8211; Less need for local storage hardware that requires purchasing, space, maintenance, upgrades, backing-up.<br />
+&#8211; Scalable &#8211; extra storage or processing resources can easily and quickly be added when necessary.<br />
+&#8211; Service provider should be backing up data on your behalf.</td>
+<td style="border-color: #000000; width: 99.6222px; height: 26px; background-color: #b8b2b2;">&#8211; Data is inaccessible without a working internet connection.<br />
+&#8211; Data is not in the the direct and total control of its owner.<br />
+&#8211; Service provider may unexpectedly fail or cancel an account.<br />
+&#8211; Ongoing costs.<br />
+&#8211; Lack of certainty about how sensitive data is being protected, used or misused by the service provider.<br />
+&#8211; Uploads/downloads via internet can be very slow compared to local storage.<br />
+&#8211; Remote access by unauthorised users is easier.</td>
+</tr>
+</tbody>
+</table>
+<p><img class="alignnone size-full wp-image-966" src="../wp-content/uploads/2015/11/ppt-icon.png" alt="ppt-icon" width="25" height="25" /> <a href="../../ppt2016/Cloud-Computing.pptx">Cloud Computing</a></td>
+</tr>
+</tbody>
+</table>
+<p><script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> <script type="text/javascript" src="../../../pagead2.googlesyndication.com/pagead/f.txt"> 
+</script></p>
+											</div><!-- .entry-content -->
+
+					<footer class="entry-meta">
+											</footer><!-- .entry-meta -->
+				</article><!-- #post -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3><p class="must-log-in">You must be <a href="../wp-login28aa.html?redirect_to=http%3A%2F%2Fvceit.com%2Fwp%2Finformatics%2F">logged in</a> to post a comment.</p>	</div><!-- #respond -->
+	
+</div><!-- #comments -->
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	<div id="tertiary" class="sidebar-container" role="complementary">
+		<div class="sidebar-inner">
+			<div class="widget-area">
+				<aside id="search-4" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://vceit.com/wp/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside>			</div><!-- .widget-area -->
+		</div><!-- .sidebar-inner -->
+	</div><!-- #tertiary -->
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+				<div id="secondary" class="sidebar-container" role="complementary">
+		<div class="widget-area">
+			<aside id="search-2" class="widget widget_search"><h3 class="widget-title">Search the vceit.com site</h3><form role="search" method="get" class="search-form" action="http://vceit.com/wp/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside><aside id="pages-2" class="widget widget_pages"><h3 class="widget-title">Pages</h3>		<ul>
+			<li class="page_item page-item-939"><a href="../contact-me-at-vceit-com-2/index.html">Contact me</a></li>
+<li class="page_item page-item-425 page_item_has_children"><a href="../exams-2/index.html">Exams</a>
+<ul class='children'>
+	<li class="page_item page-item-956"><a href="../exams-2/exam-tips/index.html">Exam Tips</a></li>
+</ul>
+</li>
+<li class="page_item page-item-637"><a href="../vce-computing-glossary-2016-2019/index.html">Glossary</a></li>
+<li class="page_item page-item-283 page_item_has_children current_page_item"><a href="index.html" aria-current="page">Informatics</a>
+<ul class='children'>
+	<li class="page_item page-item-918"><a href="informatics-mandated-software-tools-and-functions/index.html">Informatics &#8211; software tools and functions</a></li>
+	<li class="page_item page-item-1284"><a href="informatics-sat/index.html">Informatics SAT</a></li>
+	<li class="page_item page-item-1350"><a href="informatics-vcaa-sample-exam-answers/index.html">Informatics VCAA Sample Exam Answers</a></li>
+</ul>
+</li>
+<li class="page_item page-item-908"><a href="../newsblog/index.html">News/Blog</a></li>
+<li class="page_item page-item-309 page_item_has_children"><a href="../software-development/index.html">Software Development</a>
+<ul class='children'>
+	<li class="page_item page-item-1397"><a href="../software-development/sd-sample-exam/index.html">SD Sample Exam Solutions</a></li>
+	<li class="page_item page-item-915"><a href="../software-development/software-development-programming-requirements-for-2016/index.html">SD: Language requirements</a></li>
+	<li class="page_item page-item-1288"><a href="../software-development/software-development-sat/index.html">Software Development SAT</a></li>
+</ul>
+</li>
+<li class="page_item page-item-323"><a href="../computing-units-1-and-2/index.html">Units 1 and 2</a></li>
+<li class="page_item page-item-4"><a href="../index.html">VCE IT by Mark Kelly</a></li>
+		</ul>
+			</aside><aside id="text-2" class="widget widget_text"><h3 class="widget-title">Thanks</h3>			<div class="textwidget"><p>Extracts from VCAA's study design, examinations and examiners' reports and other publications are used with permission of VCAA. I appreciate their generosity.</p>
+</div>
+		</aside><aside id="text-3" class="widget widget_text"><h3 class="widget-title">Site History</h3>			<div class="textwidget"><p>VCE IT Lecture Notes Copyright © 2015 Mark Kelly<br />
+ABN – 393 8194 2977</p>
+<p>Site created: 7 November 2001.<br />
+Moved from McKinnon SC to vceit.com: 8 June 2010.<br />
+CMS version started – December 2015</p>
+</div>
+		</aside>		</div><!-- .widget-area -->
+	</div><!-- #secondary -->
+
+			<div class="site-info">
+												<a href="https://wordpress.org/" class="imprint">
+					Proudly powered by WordPress				</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/vceit.com\/wp\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../wp-content/plugins/contact-form-7/includes/js/scripts58e0.js?ver=5.1.4'></script>
+<script type='text/javascript' src='../wp-includes/js/comment-reply.minac12.js?ver=0360611ccebca7c9f53642f61982dc0f'></script>
+<script type='text/javascript' src='../wp-includes/js/imagesloaded.min55a0.js?ver=3.2.0'></script>
+<script type='text/javascript' src='../wp-includes/js/masonry.mind617.js?ver=3.3.2'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.masonry.minef70.js?ver=3.1.2b'></script>
+<script type='text/javascript' src='../wp-content/themes/twentythirteen/js/functionsf84f.js?ver=20160717'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.minac12.js?ver=0360611ccebca7c9f53642f61982dc0f'></script>
+</body>
+
+<!-- Mirrored from vceit.com/wp/informatics/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 08:59:30 GMT -->
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+
+Served from: vceit.com @ 2019-09-18 18:28:17 by W3 Total Cache
+-->

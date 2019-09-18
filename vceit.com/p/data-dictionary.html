@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from vceit.com/p/data-dictionary.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:16:59 GMT -->
+<head>
+<title>Data dictionary - VCE IT Lecture Notes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-21490715-2']);
+ _gaq.push(['_trackPageview']);
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+</script>
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-21490715-2";
+</script>
+<link href="../etc/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<p align="center"><a href="../index.html"><img src="../etc/vceit-main3.jpg" border = "0" /></a></p>
+<div align="center"> 
+ <p><a href="../index.html" target="_top">VCE IT Lecture Notes</a>
+  by <a href="../wp/contact-me-at-vceit-com-2/index.html">Mark Kelly</a> </p>
+ </div>
+
+<table width="666" border="1" cellpadding="5" align="center" cellspacing="0">
+<tr>
+<td>
+<div align="center">
+<h1><font color="#000000">Data Dictionaries</font></h1>
+</div>
+</td>
+</tr>
+<tr>
+ <td>
+ <ul>
+ <li>Can be <em>logical data dictionary</em> which lays down what data is required in a general sense (e.g. &quot;What data should be in a sales contract?&quot;)</li>
+ <li> Can also be a <em>physical data dictionary</em> design tool e.g. in the sales contract record there is a sale_date (type date), customer_ID (text, 10 characters) etc.&quot; </li>
+ <li>See here ... http://www.modernanalyst.com/Careers/InterviewQuestions/tabid/128/articleType/ArticleView/articleId/1392/categoryId/45/What-is-a-logical-data-dictionary-and-what-are-the-benefits-of-maintaining-one.aspx for info</li>
+ </ul></td>
+</tr>
+</table>
+<table width="666" border="1" align="center" cellpadding="5" cellspacing="0">
+ <tr>
+ <td colspan="2"><p>&nbsp;</p>
+ <h3><b><a name="dd"></a>(PHYSICAL) DATA DICTIONARY</b></h3>
+ <p>A data dictionary (as its name implies), defines the data used in a system. 
+ It is a complete and authoritative definition of all the data in the system. 
+ A data dictionary may cover a whole organisation, a part of the organisation 
+ or a database. </p>
+ <p>In its simplest form, the data dictionary is only a collection 
+ of data element definitions, according to descriptions below. More advanced 
+ data dictionary contains database schema with reference keys, still more 
+ advanced data dictionary contains entity-relationship model of the data 
+ elements or objects.</p>
+ <p><b>A data dictionary may contain such things as: </b></p>
+ <p> * Data element name (e.g. a field's name, like &quot;Surname&quot;)<br />
+ * Short description<br />
+ * Data type (characters, numeric, etc.), size<br />
+ * Null value allowed: Null or non-existing data value may or may not be 
+ allowed for an element.<br />
+ * Default value: Data element may have a default value. Default value 
+ may be a variable, like current date and time of the day<br />
+ * Allowed values and validation<br />
+ * Whether the field is a key field.<br />
+ * Rules used in calculations producing 
+ the values are usually written here.</p>
+ <p><b>2. Database table definitions may include</b></p>
+ <p>* Table name<br />
+ * Table owner or database name<br />
+ * List of data element (column) names and details<br />
+ * Key order for all the elements, which are possible keys<br />
+ * Possible information on indexes<br />
+ * Possible information on table organisation<br />
+ * Duplicate rows allowed or not allowed<br />
+ * Possible detailed data element list with complete data element definitions<br />
+ * Possible data on the current contents of the table<br />
+ * Security classification of the table</p>
+ <p>Example:</p>
+ <table width="90%" border="1" cellspacing="0" cellpadding="3">
+ <tr>
+  <th bgcolor="#FFFFFF" scope="col">Field name</th>
+  <th bgcolor="#FFFFFF" scope="col">Field type</th>
+  <th bgcolor="#FFFFFF" scope="col">Length</th>
+  <th bgcolor="#FFFFFF" scope="col">Validation Rules</th>
+ </tr>
+ <tr>
+  <td>Firstname</td>
+  <td>Text</td>
+  <td>15</td>
+  <td>Must exist</td>
+ </tr>
+ <tr>
+  <td>DOB</td>
+  <td>Date</td>
+  <td>-</td>
+  <td>Year must be &gt; 1900</td>
+ </tr>
+ <tr>
+  <td>State</td>
+  <td>Text</td>
+  <td>-</td>
+  <td>Must exist in limited list, must exist</td>
+ </tr>
+ </table>
+ <p><br />
+ </p>
+</td>
+ </tr>
+</table>
+<p>&nbsp;</p>
+<p align="center"><a href="../index.html" target="_top">Back to the IT Lecture Notes index</a></p>
+<p align="center"><a href="javascript:history.go(-1)">Back to the last page you visited</a></p>
+<p align="center"><font size="2">Split off 28 March 2010</font></p>
+<p align="center"><font size="2">Last changed: 
+<!-- #BeginDate format:Am1a -->February 21, 2013 10:49 AM<!-- #EndDate -->
+</font></p>
+<p align="center"><font size="2">VCE IT Lecture notes &copy; Mark Kelly 2001-<script type="text/javascript">
+D = new Date();
+year = D.getFullYear();
+document.write(year);
+</script></font></p><!-- #BeginLibraryItem "/Library/GoogleAd.lbi" --><p align="center">
+</p><p align="center">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7499744887256625";
+/* 728x90, created 2/21/09 */
+google_ad_slot = "0313383460";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="../../pagead2.googlesyndication.com/pagead/f.txt"> </script>
+</p><!-- #EndLibraryItem --></body>
+
+<!-- Mirrored from vceit.com/p/data-dictionary.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Sep 2019 10:16:59 GMT -->
+</html>
